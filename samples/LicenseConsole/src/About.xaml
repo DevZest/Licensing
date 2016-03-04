@@ -1,0 +1,36 @@
+﻿<Window x:Class="LicenseConsole.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:LicenseConsole"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    Style="{StaticResource Dialog}"
+    Title="About License Console"
+    DataContext="{Binding RelativeSource={x:Static RelativeSource.Self}}"
+    Width="317" Height="317" WindowStartupLocation="CenterScreen">
+    <StackPanel Orientation="Vertical" Margin="10">
+        <Label FontWeight="Bold">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>License Console Ver:</TextBlock>
+                <TextBlock Text="{Binding Path=ProductVersion}" />
+            </StackPanel>
+        </Label>
+        <Label Height="40" Width="267">
+            <TextBlock TextWrapping="Wrap">GUI to manage the product and distributable license for .Net components.</TextBlock>
+        </Label>
+        <Label>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Assemblies (.Net Framework " />
+                <TextBlock Text="{Binding FrameworkVersion}" />
+                <TextBlock Text=")" />
+            </StackPanel>
+        </Label>
+        <ListView Height="170" ItemsSource="{Binding References}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Name}" Header="Name" Width="170"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Version}" Header="Version" Width="95"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </StackPanel>
+</Window>

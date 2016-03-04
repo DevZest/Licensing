@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Exception_CanNotVerifySignedLicense" xml:space="preserve">
+    <value>Can not verify signed license.</value>
+  </data>
+  <data name="Exception_DuplicateLicenseItemName" xml:space="preserve">
+    <value>Can not have duplicate name in LicenseItemCollection. Name={0}.</value>
+  </data>
+  <data name="Exception_EmptyLicenseItemName" xml:space="preserve">
+    <value>The Name property of LicenseItem object can not be null or empty string when added to License. Index={0}.</value>
+  </data>
+  <data name="Exception_EmptyLicenseProviderResult" xml:space="preserve">
+    <value>The returned LicenseProviderResult cannot be empty.</value>
+  </data>
+  <data name="Exception_FrozenAccess" xml:space="preserve">
+    <value>The object is frozen and cannot be modified.</value>
+  </data>
+  <data name="Exception_InvalidLicenseKey" xml:space="preserve">
+    <value>The license key "{0}" is invalid.</value>
+  </data>
+  <data name="Exception_InvalidLoaderType" xml:space="preserve">
+    <value>The provided loader type must be IAssemblyLicenseLoader.</value>
+  </data>
+  <data name="Exception_LicenseMustBeFrozenBeforeValidate" xml:space="preserve">
+    <value>The license must be frozen before validate.</value>
+  </data>
+  <data name="Exception_NullPrivateKey" xml:space="preserve">
+    <value>The private key for product "{0}" is null.</value>
+  </data>
+  <data name="Exception_NullPublicKey" xml:space="preserve">
+    <value>The public key for the assembly "{0}" is null. Make sure the assembly is signed with a strong name.</value>
+  </data>
+  <data name="Message_AssemblySignedWithSameKey" xml:space="preserve">
+    <value>The assembly "{0}" is signed with the same key. Validation completed successfully.</value>
+  </data>
+  <data name="Message_EmbeddedResourceNotFound" xml:space="preserve">
+    <value>The embedded resource "{0}" not found.</value>
+  </data>
+  <data name="Message_EmptyFile" xml:space="preserve">
+    <value>The file is empty.</value>
+  </data>
+  <data name="Message_EmptyRegistryValue" xml:space="preserve">
+    <value>The registry value is empty.</value>
+  </data>
+  <data name="Message_ExpiredLicense" xml:space="preserve">
+    <value>The license is expired. The expiration date is "{0}".</value>
+  </data>
+  <data name="Message_FileNotFound" xml:space="preserve">
+    <value>File not found.</value>
+  </data>
+  <data name="Message_InvalidAssemblyData" xml:space="preserve">
+    <value>The assembly data is invalid.</value>
+  </data>
+  <data name="Message_InvalidMachineData" xml:space="preserve">
+    <value>The machine data is invalid.</value>
+  </data>
+  <data name="Message_InvalidProductName" xml:space="preserve">
+    <value>The product name "{0}" is invalid.</value>
+  </data>
+  <data name="Message_InvalidUserData" xml:space="preserve">
+    <value>The user data is invalid.</value>
+  </data>
+  <data name="Message_LicenseError" xml:space="preserve">
+    <value>License Verification Error:
+Assembly: {0}
+Reason: {1}
+Message: {2}
+License:
+{3} </value>
+  </data>
+  <data name="Message_NoMatchingLicenseItem" xml:space="preserve">
+    <value>There is no matching license item found for item name "{0}".</value>
+  </data>
+  <data name="Message_NullLicense" xml:space="preserve">
+    <value>The assembly is not properly licensed. The returned license is null.</value>
+  </data>
+  <data name="Message_OpenRegistryKeyFailed" xml:space="preserve">
+    <value>Open registry key failed.</value>
+  </data>
+  <data name="Message_ReadFileFailed" xml:space="preserve">
+    <value>Reading file failed: {0}.</value>
+  </data>
+  <data name="Message_ReadResgistryFailed" xml:space="preserve">
+    <value>Failed reading registry: {0}.</value>
+  </data>
+  <data name="Message_UpgradeExpired" xml:space="preserve">
+    <value>Upgrade expired on "{0}": cannot use current version released on "{1}".</value>
+  </data>
+</root>

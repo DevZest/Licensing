@@ -1,0 +1,52 @@
+﻿<Window x:Class="LicenseConsole.CheckUpdateWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:LicenseConsole"
+    Style="{StaticResource Dialog}"
+    Title="Check Update" WindowStartupLocation="CenterOwner" ShowInTaskbar="False" Width="420" SizeToContent="Height">
+    <Window.Resources>
+        <local:VersionAndReleaseDateConverter x:Key="VersionAndReleaseDateConverter" />
+    </Window.Resources>
+    <StackPanel Margin="20,15,20,15">
+        <StackPanel Orientation="Horizontal">
+            <Label>Current Version:</Label>
+            <Label Content="{Binding Path=Version, Converter={StaticResource VersionAndReleaseDateConverter}}" />
+        </StackPanel>
+        <Label>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="You can upgrade to release(s) before " />
+                <TextBlock Text="{Binding License.UpgradeExpiration}" />
+            </StackPanel>
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding License}" Value="{x:Null}">
+                            <Setter Property="Visibility" Value="Collapsed" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+        <Label>
+            <StackPanel>
+                <TextBlock TextWrapping="Wrap">There was an error getting the releases data from our server:</TextBlock>
+                <TextBlock TextWrapping="Wrap" Text="{Binding CheckUpdateErrorMessage}"></TextBlock>
+            </StackPanel>
+        </Label>
+        <Label>
+            <TextBlock TextWrapping="Wrap">
+                Do you want to visit our website to download the latest version?
+            </TextBlock>
+        </Label>
+        <Grid Margin="0,10,0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <UniformGrid Grid.Column="1" Columns="2">
+                <Button IsDefault="True" Click="ButtonYes_Click" >Yes</Button>
+                <Button IsCancel="True">No</Button>
+            </UniformGrid>
+        </Grid>
+    </StackPanel>
+</Window>

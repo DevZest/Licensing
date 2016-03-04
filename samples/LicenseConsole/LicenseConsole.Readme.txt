@@ -1,0 +1,27 @@
+The LicenseConsole solution contains the following projects:
+
+LicenseConsole	WPF application providing UI to manage product and distributable license for components.
+TestServer	ASP.Net application providing license publisher web service.
+TestComponent	Class library protected by .Net Licensing.
+TestSignedApp	Console application signed with strong name, referencing TestComponent.
+TestUnsignedApp	Console application not signed with strong name, referencing TestComponent.
+
+To test the product license:
+1. Launch TestServer and LicenseConsole;
+2. Obtain an evaluation or paid license through License Console UI. For paid license, any valid license key is acceptable, for example: M48KX-HZ6H4-W3XRG-7PL6G-QZN92;
+3. Run TestSignedApp and TestUnsignedApp, both output will indicate the TestComponent is licensed successfully.
+
+To test the distributable license for TestSignedApp:
+1. Launch TestServer and LicenseConsole;
+2. Disable product license through License Console UI by clicking "Disable" button;
+3. Run TestSignedApp application, the output will indicate a valid license cannot be granted to TestComponenet;
+4. Through License Console UI, get a distributable license for TestSignedApp.exe, and save the distributable license as embedded resource of TestSignedApp project;
+5. Rebuild TestSignedApp project;
+6. Run TestSignedApp application, the output will indicate the TestComponent is licensed successfully.
+
+To test the distributable license for TestUnsignedApp:
+1. Launch TestServer and LicenseConsole;
+2. Disable product license through License Console UI by clicking "Disable" button;
+3. Run TestUnsignedApp application, the output will indicate a valid license cannot be granted to TestComponenet;
+4. Through License Console UI, get a distributable license for TestUnsignedApp.exe, and save the distributable license to the output directory of TestUnsignedApp project;
+5. Run TestUnsignedApp application, the output will indicate the TestComponent is licensed successfully.

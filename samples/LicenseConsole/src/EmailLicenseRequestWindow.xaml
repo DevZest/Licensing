@@ -1,0 +1,43 @@
+﻿<Window x:Class="LicenseConsole.EmailLicenseRequestWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:LicenseConsole"
+    x:Name="_window"
+    Style="{StaticResource Dialog}"
+    Title="Request License Via Email" WindowStartupLocation="CenterOwner" ShowInTaskbar="False" Width="497" SizeToContent="Height">
+    <StackPanel Margin="20,15,20,15">
+        <Label>
+            <TextBlock TextWrapping="Wrap">Please send the following email to request a license. You will receive a auto-replied
+                email with the requested license and instructions on how to save it:</TextBlock>
+        </Label>
+        <StackPanel Orientation="Horizontal">
+            <Label>To:</Label>
+            <Label Content="{Binding ElementName=_window, Path=Mailto}" />
+            <TextBlock VerticalAlignment="Center"><Hyperlink Click="CopyMailto_Click">Copy</Hyperlink></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label>Message Body:</Label>
+            <TextBlock VerticalAlignment="Center"><Hyperlink Click="CopyMessageBody_Click">Copy</Hyperlink></TextBlock>
+        </StackPanel>
+        <TextBox IsReadOnly="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Height="150" Text="{Binding ElementName=_window, Path=MessageBody, Mode=OneWay}"></TextBox>
+        <Label>
+            <TextBlock TextWrapping="Wrap">Click button "Send" will launch the default mail client with all information automatically filled.
+            If having problem launching the default mail client, compose and send the above email message manually by copying and pasting the
+            Mail To and Message Body information.</TextBlock>
+        </Label>
+        <Label>
+            <TextBlock TextWrapping="Wrap" FontWeight="Bold">Don't modify the text of the message body, or your license request will be failed.</TextBlock>
+        </Label>
+        <Grid Margin="0,10,0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <UniformGrid Grid.Column="1" Columns="3">
+                <Button Click="ButtonBack_Click">&lt; Back</Button>
+                <Button IsDefault="True" Click="ButtonSend_Click">Send</Button>
+                <Button IsCancel="True">Close</Button>
+            </UniformGrid>
+        </Grid>
+    </StackPanel>
+</Window>

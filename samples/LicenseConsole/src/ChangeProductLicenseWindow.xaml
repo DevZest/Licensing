@@ -1,0 +1,170 @@
+﻿<Window x:Class="LicenseConsole.ChangeProductLicenseWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:LicenseConsole"
+    Style="{StaticResource Dialog}"
+    FocusManager.FocusedElement="{Binding ElementName=_licenseKey1}"
+    x:Name="_window"
+    Title="Change Product License" WindowStartupLocation="CenterOwner" ShowInTaskbar="False" Width="320" SizeToContent="Height">
+    <Window.Resources>
+        <local:EnumToBooleanConverter x:Key="EnumToBooleanConverter" />
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="0,5,0,0" />
+        </Style>
+        <Style TargetType="RadioButton">
+            <Setter Property="Margin" Value="10,0,0,5" />
+        </Style>
+        <Style TargetType="CheckBox">
+            <Setter Property="Margin" Value="5" />
+        </Style>
+        <Style x:Key="LicenseKey" TargetType="TextBox">
+            <Setter Property="Margin" Value="0,0,3,0" />
+            <Setter Property="MaxLength" Value="5" />
+            <Setter Property="CharacterCasing" Value="Upper" />
+            <Setter Property="IsEnabled" Value="{Binding ElementName=_radioButtonPaidLicense, Path=IsChecked}" />
+        </Style>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    </Window.Resources>
+    <StackPanel Margin="20,15,20,15">
+        <Label>Change Product License to:</Label>
+        <RadioButton Visibility="{Binding Path=CanGetFreeFeatureLicense, Converter={StaticResource BooleanToVisibilityConverter}}"
+            IsChecked="{Binding ElementName=_window, Path=LicenseType, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=FreeFeature}">
+            Free Feature License
+        </RadioButton>
+        <RadioButton Visibility="{Binding Path=CanGetEvaluationLicense, Converter={StaticResource BooleanToVisibilityConverter}}"
+            IsChecked="{Binding ElementName=_window, Path=LicenseType, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Evaluation}">
+            Evaluation License
+        </RadioButton>
+        <RadioButton x:Name="_radioButtonPaidLicense"
+            IsChecked="{Binding ElementName=_window, Path=LicenseType, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Paid}">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>Paid License (License Key Required):</TextBlock>
+                <ContentControl Focusable="False" VerticalAlignment="Stretch" Margin="10,0,0,0">
+                    <ContentControl.Content>*</ContentControl.Content>
+                    <ContentControl.Style>
+                        <Style TargetType="ContentControl">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding ElementName=_window, Path=ValidationError, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=LicenseKeyRequired}" Value="False">
+                                    <Setter Property="Visibility" Value="Hidden" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ContentControl.Style>
+                </ContentControl>
+            </StackPanel>
+        </RadioButton>
+        <UniformGrid Columns="5" Margin="20,0,0,0" Visibility="{Binding Path=CanGetPaidLicense, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <TextBox x:Name="_licenseKey1" TextChanged="RefreshOnTextChanged" Style="{StaticResource LicenseKey}" />
+            <TextBox x:Name="_licenseKey2" TextChanged="RefreshOnTextChanged" Style="{StaticResource LicenseKey}" />
+            <TextBox x:Name="_licenseKey3" TextChanged="RefreshOnTextChanged" Style="{StaticResource LicenseKey}" />
+            <TextBox x:Name="_licenseKey4" TextChanged="RefreshOnTextChanged" Style="{StaticResource LicenseKey}" />
+            <TextBox x:Name="_licenseKey5" TextChanged="RefreshOnTextChanged" Style="{StaticResource LicenseKey}" />
+        </UniformGrid>
+        <TextBlock Margin="20,5,0,5">
+            <Hyperlink Click="PurchaseUrl_Click" NavigateUri="{Binding PurchaseUrl}">Purchase License Key</Hyperlink>
+        </TextBlock>
+        <StackPanel Orientation="Horizontal" Visibility="{Binding Path=CanGetLicenseViaEmail, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <Label>Via:</Label>
+            <RadioButton VerticalAlignment="Bottom" IsChecked="{Binding ElementName=_window, Path=LicenseMethod, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=WebService}">Web Service</RadioButton>
+            <RadioButton VerticalAlignment="Bottom" IsChecked="{Binding ElementName=_window, Path=LicenseMethod, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Email}">Email</RadioButton>
+        </StackPanel>
+        <Label>User Information:</Label>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal">
+                <Label>User Name:</Label>
+                <Label>
+                    <Label.Content>*</Label.Content>
+                    <Label.Style>
+                        <Style TargetType="Label">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding ElementName=_window, Path=ValidationError, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=UserNameRequired}" Value="False">
+                                    <Setter Property="Visibility" Value="Hidden" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+            </StackPanel>
+            <TextBox x:Name="_textBoxName" Grid.Row="0" Grid.Column="1" TextChanged="RefreshOnTextChanged" />
+            <Label Grid.Row="1">Company:</Label>
+            <TextBox x:Name="_textBoxCompany" Grid.Row="1" Grid.Column="1" TextChanged="RefreshOnTextChanged" />
+            <StackPanel Grid.Row="2" Orientation="Horizontal">
+                <Label>Email:</Label>
+                <Label>
+                    <Label.Content>*</Label.Content>
+                    <Label.Style>
+                        <Style TargetType="Label">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding ElementName=_window, Path=ValidationError, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=EmailAddressRequired}" Value="False">
+                                    <Setter Property="Visibility" Value="Hidden" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <StackPanel.Style>
+                    <Style TargetType="StackPanel">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=_window, Path=LicenseMethod}" Value="Email">
+                                <Setter Property="Visibility" Value="Hidden" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </StackPanel.Style>
+            </StackPanel>
+            <TextBox x:Name="_textBoxEmail" Grid.Row="2" Grid.Column="1" TextChanged="RefreshOnTextChanged">
+                <TextBox.Style>
+                    <Style TargetType="TextBox">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=_window, Path=LicenseMethod}" Value="Email">
+                                <Setter Property="Visibility" Value="Hidden" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+        </Grid>
+        <CheckBox x:Name="_checkBoxAcceptLicenseAgreement" Checked="RefreshOnAcceptLicenseAgreementChanged" Unchecked="RefreshOnAcceptLicenseAgreementChanged">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>
+                    <Run>I Accept the </Run>
+                    <Hyperlink Click="LicenseAgreement_Click">License Agreement</Hyperlink>
+                </TextBlock>
+                <ContentControl Focusable="False" VerticalAlignment="Stretch" Margin="10,0,0,0">
+                    <ContentControl.Content>*</ContentControl.Content>
+                    <ContentControl.Style>
+                        <Style TargetType="ContentControl">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding ElementName=_window, Path=ValidationError, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=AcceptLicenseAgreementRequired}" Value="False">
+                                    <Setter Property="Visibility" Value="Hidden" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ContentControl.Style>
+                </ContentControl>
+            </StackPanel>
+        </CheckBox>
+        <Grid Margin="0,10,0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <UniformGrid Grid.Column="1" Columns="2">
+                <Button IsDefault="True" Grid.Row="5" Grid.Column="1" Click="ButtonOK_Click"
+                    IsEnabled="{Binding ElementName=_window, Path=ValidationError, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=None}">
+                    OK
+                </Button>
+                <Button IsCancel="True">Cancel</Button>
+            </UniformGrid>
+        </Grid>
+    </StackPanel>
+</Window>

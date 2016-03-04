@@ -1,0 +1,190 @@
+﻿<Window x:Class="LicenseConsole.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:LicenseConsole"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    Style="{StaticResource Dialog}"
+    Title="{Binding MainWindowTitle}"
+    FocusManager.FocusedElement="{Binding ElementName=_buttonChange}"
+    Width="400" Height="400" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <local:VersionAndReleaseDateConverter x:Key="VersionAndReleaseDateConverter" />
+        <Style x:Key="Group" TargetType="FrameworkElement">
+            <Setter Property="Margin" Value="5,5,5,5" />
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="5,0" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+        </Style>
+        <DataTemplate DataType="{x:Type local:LicenseItemData}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image x:Name="Image" VerticalAlignment="Center" Margin="5,0,5,0" />
+                <TextBlock Grid.Column="1" Text="{Binding Description}" />
+            </Grid>
+            <DataTemplate.Triggers>
+                <DataTrigger Binding="{Binding State}" Value="Blocked">
+                    <Setter TargetName="Image" Property="Source">
+                        <Setter.Value>
+                            <BitmapImage UriSource="Images\Red.gif" />
+                        </Setter.Value>
+                    </Setter>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding State}" Value="Evaluated">
+                    <Setter TargetName="Image" Property="Source">
+                        <Setter.Value>
+                            <BitmapImage UriSource="Images\Yellow.gif" />
+                        </Setter.Value>
+                    </Setter>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding State}" Value="Granted">
+                    <Setter TargetName="Image" Property="Source">
+                        <Setter.Value>
+                            <BitmapImage UriSource="Images\Green.gif" />
+                        </Setter.Value>
+                    </Setter>
+                </DataTrigger>
+            </DataTemplate.Triggers>
+        </DataTemplate>
+
+    </Window.Resources>
+
+    <Grid Margin="5,5,5,15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal">
+                <Label>Product License:</Label>
+                <TextBlock VerticalAlignment="Center" Text="{Binding LicenseStateDescription}" />
+            </StackPanel>
+            <Label Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right">
+                <Hyperlink Click="CheckUpdate_Click">Check Update...</Hyperlink>
+                <Label.Style>
+                    <Style TargetType="Label">
+                        <Setter Property="Visibility" Value="Collapsed" />
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding CheckUpdateResult}" Value="Failed">
+                                <Setter Property="Visibility" Value="Visible" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Label.Style>
+            </Label>
+            <Label Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right">
+                <Hyperlink Click="NewVersionAvailable_Click">New Version Available...</Hyperlink>
+                <Label.Style>
+                    <Style TargetType="Label">
+                        <Setter Property="Visibility" Value="Collapsed" />
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding CheckUpdateResult}" Value="NewVersionAvailable">
+                                <Setter Property="Visibility" Value="Visible" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Label.Style>
+            </Label>
+        </Grid>
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <Label>User:</Label>
+            <TextBlock VerticalAlignment="Center" Text="{Binding UserInfo}" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <Label>Email:</Label>
+            <TextBlock VerticalAlignment="Center" Text="{Binding UserEmail}" />
+        </StackPanel>
+        <Button x:Name="_buttonChange" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" VerticalAlignment="Center" IsDefault="True" Click="Change_Click">Change...</Button>
+
+        <Label Grid.Row="3" Grid.ColumnSpan="2">License Items:</Label>
+        <ListBox Grid.Row="4" Grid.ColumnSpan="2" Margin="5,0" HorizontalContentAlignment="Stretch" ItemsSource="{Binding LicenseItems}">
+        </ListBox>
+
+        <Label Grid.Row="5">
+            <TextBlock>
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsMachineLicenseEnabled}" Value="True">
+                                <Setter Property="Text" Value="The Product License is enabled. No distributable license required for the caller assembly running on local machine." />
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding IsMachineLicenseEnabled}" Value="False">
+                                <Setter Property="Text" Value="The Product License is disabled. A distributable license is required for the caller assembly." />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsMachineLicenseEnabled}" Value="False">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+        <Button Grid.Row="5" Grid.Column="1" Click="ToggleButton_Click" Margin="5,11.98,5,0" VerticalAlignment="Top">
+            <Button.Style>
+                <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding LicenseState}" Value="NotLicensed">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding IsMachineLicenseEnabled}" Value="True">
+                            <Setter Property="Content" Value="Disable" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding IsMachineLicenseEnabled}" Value="False">
+                            <Setter Property="Content" Value="Enable" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <Label Grid.Row="6" IsEnabled="{Binding CanGetDistributableLicense}">
+            <TextBlock>
+                To get a Distributable License for this component, click the button "Get...".
+            </TextBlock>
+        </Label>
+        <Button Grid.Row="6" Grid.Column="1" IsEnabled="{Binding CanGetDistributableLicense}" Click="GetLicense_Click">Get...</Button>
+
+        <Label Grid.Row="7">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>Version:</TextBlock>
+                <TextBlock Text="{Binding Path=Version, Converter={StaticResource VersionAndReleaseDateConverter}}" />
+            </StackPanel>
+        </Label>
+
+        <Label Grid.Row="9" Grid.ColumnSpan="2">
+            <TextBlock>
+                <Run>Powered by </Run>
+                <Hyperlink Click="DotNetLicensing_Click" NavigateUri="http://www.devzest.com/DotNetLicensing.aspx">.Net Licensing</Hyperlink>
+            </TextBlock>
+        </Label>
+
+        <Button Grid.Row="8" Grid.Column="2" Grid.RowSpan="2" VerticalAlignment="Center" IsDefault="True" Click="About_Click">About...</Button>
+    </Grid>
+</Window>

@@ -1,0 +1,40 @@
+﻿<Window x:Class="LicenseConsole.ClipboardProductLicenseWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Name="_window"
+    Title="Product License" WindowStartupLocation="CenterOwner" ShowInTaskbar="False" SizeToContent="WidthAndHeight">
+    <StackPanel Margin="20,15,20,15">
+        <Label>A Product License detected on the Clipboard:</Label>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0">License Type:</Label>
+            <Label Grid.Row="0" Grid.Column="1" Content="{Binding ElementName=_window, Path=LicenseType}" />
+            <Label Grid.Row="1" Grid.Column="0" >User Name:</Label>
+            <Label Grid.Row="1" Grid.Column="1" Content="{Binding ElementName=_window, Path=UserName}" />
+            <Label Grid.Row="2" Grid.Column="0">Company:</Label>
+            <Label Grid.Row="2" Grid.Column="1" Content="{Binding ElementName=_window, Path=Company}" />
+            <Label Grid.Row="3" Grid.Column="0">Email:</Label>
+            <Label Grid.Row="3" Grid.Column="1" Content="{Binding ElementName=_window, Path=Email}" />
+        </Grid>
+        <Label>Do you want to save this license?</Label>
+        <Grid Margin="0,10,0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <UniformGrid Grid.Column="1" Columns="2">
+                <Button IsDefault="True" Click="ButtonYes_Click" ContentTemplate="{StaticResource UacShieldButton}">Yes</Button>
+                <Button IsCancel="True">No</Button>
+            </UniformGrid>
+        </Grid>
+    </StackPanel>
+</Window>

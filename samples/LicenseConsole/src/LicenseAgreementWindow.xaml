@@ -1,0 +1,9 @@
+﻿<Window x:Class="LicenseConsole.LicenseAgreementWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:LicenseConsole"
+    Style="{StaticResource Dialog}"
+    FocusManager.FocusedElement="{Binding ElementName=_checkBox}"
+    Title="License Agreement" WindowStartupLocation="CenterOwner" ShowInTaskbar="False" Width="564" Height="387">
+    <RichTextBox x:Name="_richTextBox" IsReadOnly="True" VerticalScrollBarVisibility="Auto" Loaded="RichTextBox_Loaded" Grid.Row="0" />
+</Window>
