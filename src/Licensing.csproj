@@ -130,11 +130,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\StrongNameKey.snk">
-      <Link>StrongNameKey.snk</Link>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <CodeAnalysisDictionary Include="Dictionary.xml" />
   </ItemGroup>
   <ItemGroup>
