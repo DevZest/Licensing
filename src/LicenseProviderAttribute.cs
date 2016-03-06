@@ -81,8 +81,6 @@ namespace DevZest.Licensing
         /// <remarks><para>Derived class should never return <see langword="null"/>, otherwise an exception will be thrown. When
         /// multiple license provider attributes declared, the first returned non-null license will be used to validate, in the order
         /// of declaration.</para>
-        /// <para>The derived class must return the license returned by calling <see cref="O:DevZest.Licensing.LicenseProviderAttribute.LoadLicense" />,
-        /// otherwise an <see cref="InvalidOperationException"/> will be thrown during validation.</para>
         /// </remarks>
         protected internal abstract LicenseProviderResult ProvideLicense();
 

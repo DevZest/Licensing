@@ -12,6 +12,7 @@ namespace DevZest.Licensing
         private object _data;
 
         /// <summary>Represents a <see cref="LicenseProviderResult" /> structure with its properties left uninitialized. </summary>
+        /// <value>The <see cref="LicenseProviderResult"/>.</value>
         public static LicenseProviderResult Empty
         {
             get { return new LicenseProviderResult(); }
@@ -63,6 +64,7 @@ namespace DevZest.Licensing
         }
 
         /// <summary>Tests whether all properties of this <see cref="LicenseProviderResult" /> have values of <see langword="null"/>.</summary>
+        /// <value><see langword="true"/> if the result is empty, otherwise <see langword="false"/>.</value>
         public bool IsEmpty
         {
             get { return _license == null && _errorMessage == null && _data == null; }

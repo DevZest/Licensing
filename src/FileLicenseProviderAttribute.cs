@@ -93,8 +93,7 @@ namespace DevZest.Licensing
                 return Path.Combine(Path.GetDirectoryName(assembly.Location), name);
         }
 
-
-        /// <execlude />
+        /// <exclude />
         protected override LicenseProviderResult Load()
         {
             if (!File.Exists(FullPath))
