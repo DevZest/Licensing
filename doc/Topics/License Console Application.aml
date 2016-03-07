@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="a60a0886-5cb1-4c10-8c1d-ff2884c6fc0c" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+        <application>License Console</application> is an application used to manage .Net component
+    licensing. It is extensively used by all of our component products, including .Net Licensing itself.</para>
+      <para>
+        <application>License Console</application> is a WPF application written in C#. The source
+    code is provided in the installed <localUri>Samples</localUri> zipped folder. You may modify to fit your
+    own needs.</para>
+      <autoOutline lead="This topic contains information to develop License Console friendly component:" />
+    </introduction>
+    <section address="Section1">
+      <title>The License Scheme</title>
+      <content>
+        <para>
+          <application>License Console</application> supports the following types of licenses:</para>
+        <table>
+          <tableHeader>
+            <row>
+              <entry>License Type</entry>
+              <entry>License Key</entry>
+              <entry>Description</entry>
+              <entry>License Items</entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry>Free Feature License</entry>
+            <entry>No</entry>
+            <entry>Product License as <codeEntityReference>T:DevZest.Licensing.MachineLicense</codeEntityReference> object.</entry>
+            <entry>Free features</entry>
+          </row>
+          <row>
+            <entry>Evaluation License</entry>
+            <entry>No</entry>
+            <entry>Product License as <codeEntityReference>T:DevZest.Licensing.MachineLicense</codeEntityReference> object, with 
+      	  <codeEntityReference>P:DevZest.Licensing.License.Expiration</codeEntityReference> property set.</entry>
+            <entry>All features. If corresponds a free feature, set the
+      	  <codeEntityReference>P:DevZest.Licensing.LicenseItem.OverrideExpirationDate</codeEntityReference> property
+      	  to true.</entry>
+          </row>
+          <row>
+            <entry>Paid License</entry>
+            <entry>Yes</entry>
+            <entry>Product License as <codeEntityReference>T:DevZest.Licensing.MachineLicense</codeEntityReference> object.</entry>
+            <entry>Determined by the provided license key. Should include all free features.</entry>
+          </row>
+          <row>
+            <entry>Distributable License</entry>
+            <entry>Yes/No</entry>
+            <entry>
+              <codeEntityReference>T:DevZest.Licensing.AssemblyLicense</codeEntityReference> object.</entry>
+            <entry>If license key provided, same as Paid License; otherwise same as Free Feature License.</entry>
+          </row>
+        </table>
+        <para>The Product License (Free Feature License, Evaluation License or Paid License) can be further divided into
+      two sub-types: design time and runtime. It is stored as DesignTimeLicense or RuntimeLicense value of a HKLM registry
+      key specified in the configuration file (LicenseConsole.exe.config).</para>
+      </content>
+    </section>
+    <section address="Section2">
+      <title>License Providers</title>
+      <content>
+        <para>In your assembly, you need to declare <codeEntityReference>T:DevZest.Licensing.RegistryLicenseProviderAttribute</codeEntityReference>
+    for Product License and <codeEntityReference>T:DevZest.Licensing.AssemblyLicenseProviderAttribute</codeEntityReference>
+    for Distributable License. For example, DevZest.Licensing.dll declares the following license providers:</para>
+        <code lang="C#"><![CDATA[
+			[assembly: RegistryLicenseProvider(@"Software\DevZest\.Net Licensing\", "RuntimeLicense")]
+            [assembly: AssemblyLicenseProvider(EntryAssemblyOnly=false)]
+			]]></code>
+        <code lang="VB"><![CDATA[
+			<assembly: RegistryLicenseProvider("Software\DevZest\.Net Licensing\", "RuntimeLicense")>
+            <assembly: AssemblyLicenseProvider(EntryAssemblyOnly:=false)>
+			]]></code>
+        <para>The Product License will be loaded from "RuntimeLicense" value under registry key
+	"HKLM\Software\DevZest\.Net Licensing\X.x", where "X.x" stands for the major and minor version of DevZest.Licensing.dll.
+	The Distributable License will be loaded from the chain of caller assembly.</para>
+      </content>
+    </section>
+    <section address="Section3">
+      <title>LicenseItemAttribute</title>
+      <content>
+        <para>In your assembly, you need to declare <codeEntityReference>T:DevZest.Licensing.LicenseItemAttribute</codeEntityReference>
+      for <application>License Console</application> to get the full list of features (license item names and descriptions). For example,
+      DevZest.Licensing.dll declares the following single feature:</para>
+        <code lang="C#"><![CDATA[
+			[assembly: LicenseItem(@".Net Licensing")]
+			]]></code>
+        <code lang="VB"><![CDATA[
+			<assembly: LicenseItem(".Net Licensing")>
+			]]></code>
+        <para>You can provide localized description for each feature. This will be displayed in <application>License Console</application>
+   	main window. If no description provided, the license item name will be used.</para>
+      </content>
+    </section>
+    <section address="Section4">
+      <title>The Configuration File</title>
+      <content>
+        <para>You can configure <application>License Console</application> by modifing the configuration file LicenseConsole.exe.config:</para>
+        <code lang="XML" title="LicenseConsole.exe.config"><![CDATA[
+<?xml version="1.0"?>
+<configuration>
+  <system.net>
+    <defaultProxy useDefaultCredentials="true" ></defaultProxy>
+  </system.net>
+  <system.serviceModel>
+    <bindings>
+      <customBinding>
+        <binding name="LicensePublisherSoap12">
+          <textMessageEncoding messageVersion="Soap12" writeEncoding="utf-8"/>
+          <httpTransport/>
+        </binding>
+      </customBinding>
+    </bindings>
+    <client>
+      <endpoint
+        address="http://www.devzest.com/LicensePublisher.asmx"
+        binding="customBinding"
+        bindingConfiguration="LicensePublisherSoap12"
+        contract="DevZest.Licensing.ILicensePublisher"/>
+    </client>
+  </system.serviceModel>
+  <appSettings>
+    <add key="Assembly" value="DevZest.Licensing.dll"/>
+    <add key="RegistryKey" value="Software\DevZest\.Net Licensing\"/>
+    <add key="RegistryKeyWow6432" value="Software\Wow6432Node\DevZest\.Net Licensing\"/>
+    <add key="ProductReleasesUrl" value="http://www.devzest.com/ProductReleases.aspx?Product=DotNetLicensing" />
+    <add key="ProductReleasesWebPageUrl" value="http://www.devzest.com/DotNetLicensing.aspx?Show=Releases" />
+    <add key="PurchaseUrl" value="http://www.devzest.com/Buy.aspx?Product=DotNetLicensing"/>
+    <add key="LicenseAgreementFile" value="LicenseAgreement.rtf"/>
+    <add key="LicenseEmail" value="license@devzest.com"/>
+    <add key="DesignTimeFreeFeatureLicenseCategory" value=""/>
+    <add key="DesignTimeEvaluationLicenseCategory" value=""/>
+    <add key="DesignTimePaidLicenseCategory" value=""/>
+    <add key="RuntimeFreeFeatureLicenseCategory" value=""/>
+    <add key="RuntimeEvaluationLicenseCategory" value="Evaluation"/>
+    <add key="RuntimePaidLicenseCategory" value="Paid"/>
+    <add key="DistributableLicenseCategory" value="Distributable"/>
+  </appSettings>
+</configuration>
+      ]]></code>
+        <para>You need to:</para>
+        <list class="bullet">
+          <listItem>Configure the license client in the system.serviceModel section. For more information
+        on how to configure the license client, see <link xlink:href="0323ba32-e52b-47a7-88a0-9f8b1d2e5ec5" />.</listItem>
+          <listItem>
+            <para>Configure <application>License Console</application> application in the appSettings section:</para>
+            <table>
+              <tableHeader>
+                <row>
+                  <entry>Key</entry>
+                  <entry>Required</entry>
+                  <entry>Description</entry>
+                </row>
+              </tableHeader>
+              <row>
+                <entry>Assembly</entry>
+                <entry>Yes</entry>
+                <entry>The path of your assembly.</entry>
+              </row>
+              <row>
+                <entry>RegistryKey</entry>
+                <entry>Yes</entry>
+                <entry>The registry key to store the Product License. Always use HKLM hive. When ends with "\", a
+            [Major].[Minor] version string will be appended.</entry>
+              </row>
+              <row>
+                <entry>RegistryKeyWow6432</entry>
+                <entry>No</entry>
+                <entry>The registry key for 32 bit application to store the Product License under x64 system. Always use HKLM hive.
+            When ends with "\", a [Major].[Minor] version string will be appended.</entry>
+              </row>
+              <row>
+                <entry>ProductReleasesUrl</entry>
+                <entry>No</entry>
+                <entry>The URL of the XML file contains the release data used to check update. If not provided,
+            checking update is disabled. (<externalLink><linkText>Example</linkText><linkUri>http://www.devzest.com/ProductReleases.aspx?Product=DotNetLicensing</linkUri></externalLink>)
+			</entry>
+              </row>
+              <row>
+                <entry>ProductReleasesWebPageUrl</entry>
+                <entry>No</entry>
+                <entry>The URL of the web page contains the release information. When failed reading the release data
+            XML file, user can alternatively navigate to this web page to get the latest release.
+            (<externalLink><linkText>Example</linkText><linkUri>http://www.devzest.com/DotNetLicensing.aspx?Show=Releases</linkUri></externalLink>)
+			</entry>
+              </row>
+              <row>
+                <entry>PurchaseUrl</entry>
+                <entry>Yes</entry>
+                <entry>The URL that a license key can be purchased.
+            (<externalLink><linkText>Example</linkText><linkUri>http://www.devzest.com/Buy.aspx?Product=DotNetLicensing</linkUri></externalLink>)
+			</entry>
+              </row>
+              <row>
+                <entry>LicenseEmail</entry>
+                <entry>No</entry>
+                <entry>The email address where the license request email sent to. If value provided, you must
+            implement the email processor to reply the request license, in the form of URL query string. Refer
+            to the source code for required name-value pairs.</entry>
+              </row>
+              <row>
+                <entry>LicenseAgreementFile</entry>
+                <entry>Yes</entry>
+                <entry>The path of license agreement file, in RTF format.</entry>
+              </row>
+              <row>
+                <entry>DesignTimeFreeFeatureLicenseCategory</entry>
+                <entry>No</entry>
+                <entry>License category string used to communicate with the license publisher for design time Free Feature License.</entry>
+              </row>
+              <row>
+                <entry>DesignTimeEvaluationLicenseCategory</entry>
+                <entry>No</entry>
+                <entry>License category string used to communicate with the license publisher for design time Evaluation License.</entry>
+              </row>
+              <row>
+                <entry>DesignTimePaidLicenseCategory</entry>
+                <entry>No</entry>
+                <entry>License category string used to communicate with the license publisher for design time Paid License.</entry>
+              </row>
+              <row>
+                <entry>RuntimeFreeFeatureLicenseCategory</entry>
+                <entry>No</entry>
+                <entry>License category string used to communicate with the license publisher for runtime Free Feature License.</entry>
+              </row>
+              <row>
+                <entry>RuntimeEvaluationLicenseCategory</entry>
+                <entry>No</entry>
+                <entry>License category string used to communicate with the license publisher for runtime Evaluation License.</entry>
+              </row>
+              <row>
+                <entry>RuntimePaidLicenseCategory</entry>
+                <entry>Yes</entry>
+                <entry>License category string used to communicate with the license publisher for runtime Paid License.</entry>
+              </row>
+              <row>
+                <entry>DistributableLicenseCategory</entry>
+                <entry>Yes</entry>
+                <entry>License category string used to communicate with the license publisher for Distributable License.</entry>
+              </row>
+            </table>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+      <!-- One or more of the following:
+         - A local link
+         - An external link
+         - A code entity reference
+
+    <link xlink:href="Other Topic's ID"/>
+    <link xlink:href="Other Topic's ID">Link inner text</link>
+
+    <externalLink>
+        <linkText>Link text</linkText>
+        <linkAlternateText>Optional alternate link text</linkAlternateText>
+        <linkUri>URI</linkUri>
+    </externalLink>
+
+    <codeEntityReference>API member ID</codeEntityReference>
+
+    Examples:
+
+    <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+    <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+    <externalLink>
+        <linkText>SHFB on CodePlex</linkText>
+        <linkAlternateText>Go to CodePlex</linkAlternateText>
+        <linkUri>http://www.codeplex.com/SHFB</linkUri>
+    </externalLink>
+
+    <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+    <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+    -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

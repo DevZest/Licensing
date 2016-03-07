@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="1d5a397a-cfcd-434c-a83e-1cb61b4b2e11" revisionNumber="1">
+  <developerWalkthroughDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>This walkthrough runs the QuickStart sample previously created.</para>
+    </introduction>
+    <!-- One or more procedure or section with procedure -->
+    <procedure>
+      <title>Run QuickStart sample</title>
+      <steps class="ordered">
+        <step>
+          <content>
+            <para>Enable debugging in the web server</para>
+            <para>change <ui>Web.config</ui> of <ui>SamplePublisher</ui>
+          project:</para>
+            <code lang="XML"><![CDATA[
+<configuration>
+    ...
+	<system.web>
+	    ...
+		<compilation debug="true" />
+		...
+	<system.web>
+	...
+</configuration>
+]]></code>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>Set <ui>SampleApp</ui> as startup project.</para>
+            <para>Right click <ui>SampleApp</ui> project, then select <ui>Set as StartUp Project</ui>.</para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>Press <userInput>F5</userInput> to run the application.</para>
+          </content>
+        </step>
+      </steps>
+    </procedure>
+  </developerWalkthroughDocument>
+</topic>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="cb3e9dc8-4c7a-437b-b47a-4eba4f7dac2d" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>This page contains links to information of programming .Net Licensing.</para>
+    </introduction>
+    <section>
+      <title>In This Section</title>
+      <content>
+        <list class="nobullet">
+          <listItem>
+            <link xlink:href="02d0613c-f9c1-4a28-8ea9-55772b1b7bd3" />
+          </listItem>
+          <listItem>
+            <link xlink:href="4d81b3c3-dce6-49ea-b4f9-657ac67b65f0" />
+          </listItem>
+          <listItem>
+            <link xlink:href="602203d1-5e91-4e63-af59-f12f1e311749" />
+          </listItem>
+          <listItem>
+            <link xlink:href="0323ba32-e52b-47a7-88a0-9f8b1d2e5ec5" />
+          </listItem>
+          <listItem>
+            <link xlink:href="3603f18f-d504-41fa-8a98-8ad968e2c7a4" />
+          </listItem>
+          <listItem>
+            <link xlink:href="1b2861d1-c3a6-4b6c-8d7c-c5f2cd38c277" />
+          </listItem>
+          <listItem>
+            <link xlink:href="63538ac6-6912-453d-ba6d-c1f30e0ac0ef" />
+          </listItem>
+          <listItem>
+            <link xlink:href="cfec3599-061d-4a84-ba8e-49edf3da6505" />
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+      <!-- One or more of the following:
+         - A local link
+         - An external link
+         - A code entity reference
+
+    <link xlink:href="Other Topic's ID"/>
+    <link xlink:href="Other Topic's ID">Link inner text</link>
+
+    <externalLink>
+        <linkText>Link text</linkText>
+        <linkAlternateText>Optional alternate link text</linkAlternateText>
+        <linkUri>URI</linkUri>
+    </externalLink>
+
+    <codeEntityReference>API member ID</codeEntityReference>
+
+    Examples:
+
+    <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+    <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+    <externalLink>
+        <linkText>SHFB on CodePlex</linkText>
+        <linkAlternateText>Go to CodePlex</linkAlternateText>
+        <linkUri>http://www.codeplex.com/SHFB</linkUri>
+    </externalLink>
+
+    <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+    <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+    -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

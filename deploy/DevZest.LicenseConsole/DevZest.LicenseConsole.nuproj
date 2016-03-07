@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>c2ef7679-6f18-4747-9878-79d59e16b2bd</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(MSBuildExtensionsPath)\NuProj\</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <PropertyGroup Label="Configuration">
+    <Id>DevZest.LicenseConsole</Id>
+    <Title>DevZest.LicenseConsole</Title>
+    <Authors>DevZest</Authors>
+    <Owners>DevZest</Owners>
+    <Summary>Tools only package contains compiled LicenseConsole application.</Summary>
+    <Description>Tools only package contains compiled LicenseConsole application.</Description>
+    <ReleaseNotes>
+    </ReleaseNotes>
+    <ProjectUrl>
+    </ProjectUrl>
+    <LicenseUrl>
+    </LicenseUrl>
+    <Copyright>Copyright © DevZest</Copyright>
+    <Tags>DevZest LicenseConsole</Tags>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="..\..\samples\LicenseConsole\src\bin\Release\DevZest.Licensing.dll">
+      <Link>tools\DevZest.Licensing.dll</Link>
+    </Content>
+    <Content Include="..\..\samples\LicenseConsole\src\bin\Release\LicenseConsole.exe">
+      <Link>tools\LicenseConsole.exe</Link>
+    </Content>
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="tools\" />
+  </ItemGroup>
+  <Import Project="..\NuGetPackageVersion.props" />
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>

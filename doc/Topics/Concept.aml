@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="02d0613c-f9c1-4a28-8ea9-55772b1b7bd3" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <autoOutline />
+    </introduction>
+    <section address="Section1">
+      <title>License</title>
+      <content>
+        <para>A license is a <codeEntityReference>T:DevZest.Licensing.License</codeEntityReference>
+		derived object, which is granted to a .Net assembly signed with a strong name. A license can
+		be serialized/deserialized to/from a string. Below is a sample of license string:</para>
+        <code lang="XML"><![CDATA[
+		Signature:TGX4PR3t+ZXM+qICfOMmwhgpkQPinddZo7in7MbERWxXugyzOVTRJjpyVbOp5baVWb8CB0Ix7QvNV400VxBvnKltjzqxDJad2XMt9mU8KSblpS4HAkFahEgRhU5y+0mSKi+UoUZ6p0r75PzAIOjymYsRyLHREW+gaAKdgl5g+jc=
+		<MachineLicense xmlns="http://schemas.devzest.com/licensing" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Id="YA5HT6MEZE" Category="Evaluation" Product=".Net Licensing" Company="DevZest" UserName="Test User" UserCompany="Test Company" Expiration="2009/06/11" Data="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArWgShxVtF0+jdBrFooc0ugQAAAACAAAAAAADZgAAqAAAABAAAACtlTdlY6xg3aOu8dNrGrVbAAAAAASAAACgAAAAEAAAAIxzWfZNBIvX3sq7aUdhneQYAAAAymm1VhZo/KsPQPbX6rxsCRsDkDapoQciFAAAAOFeGq7Wq8n5a3+7Aiat50Caa+wm">
+		    <LicenseItem Name=".Net Licensing" />
+		</MachineLicense>
+		]]></code>
+        <para>The first line is the signature of the license. The rest is the XAML
+		text of the <codeEntityReference>T:DevZest.Licensing.License</codeEntityReference>
+		derived object. The signature is signed with the same key used to sign the assembly,
+		ensuring the license text is from trusted source.</para>
+        <alert class="note">
+          <para>Only assembly signed with strong name can be granted a license. An assembly
+		without a strong name cannot be validated by the licensing system and will throw an
+		exception during validation.</para>
+        </alert>
+        <para>A license contains at lease one <codeEntityReference>T:DevZest.Licensing.LicenseItem
+	    </codeEntityReference>. A license item is a feature of the assembly, identified by a name
+	    as string. License item name can not be null, empty or duplicated.</para>
+        <para>License is copy protected. The <codeEntityReference>P:DevZest.Licensing.License.Data
+        </codeEntityReference> property contains data can only be validated under a valid environment.
+        Copying a license from the valid environment to another will invalid the license.
+        .Net Licensing provides the following types of license implementations:</para>
+        <table>
+          <row>
+            <entry>
+              <codeEntityReference>T:DevZest.Licensing.MachineLicense</codeEntityReference>
+            </entry>
+            <entry>The <codeEntityReference>P:DevZest.Licensing.License.Data</codeEntityReference>
+        		property is set as the string value returned by <codeEntityReference>
+        		P:DevZest.Licensing.MachineLicense.LocalMachineData</codeEntityReference>.
+        		<codeEntityReference>P:DevZest.Licensing.MachineLicense.LocalMachineData</codeEntityReference>
+        		returns a string of encrypted known GUID using DPAPI. The validation is to decrypt the
+        		<codeEntityReference>P:DevZest.Licensing.License.Data</codeEntityReference> property,
+        		compare it with the original known GUID.</entry>
+          </row>
+          <row>
+            <entry>
+              <codeEntityReference>T:DevZest.Licensing.AssemblyLicense</codeEntityReference>
+            </entry>
+            <entry>The <codeEntityReference>P:DevZest.Licensing.License.Data</codeEntityReference>
+        		property is set as the assembly identity string value returned by <codeEntityReference autoUpgrade="true">
+        		M:DevZest.Licensing.AssemblyLicense.GetAssemblyData(System.String)</codeEntityReference>.
+        		The validation is to compare the caller assembly's identity string with this string.</entry>
+          </row>
+          <row>
+            <entry>
+              <codeEntityReference>T:DevZest.Licensing.UserLicense</codeEntityReference>
+            </entry>
+            <entry>The <codeEntityReference>P:DevZest.Licensing.License.Data</codeEntityReference>
+        		property is set as the string value returned by <codeEntityReference>
+        		P:DevZest.Licensing.UserLicense.CurrentUserData</codeEntityReference>.
+        		<codeEntityReference>P:DevZest.Licensing.UserLicense.CurrentUserData</codeEntityReference>
+        		returns the string contains the name and SID of current user. The validation is to 
+        		compare the current user's name and SID with this string.</entry>
+          </row>
+        </table>
+        <alert class="note">
+          <para>
+            <codeEntityReference>T:DevZest.Licensing.MachineLicense</codeEntityReference> requires
+        	<codeEntityReference>T:System.Security.Permissions.DataProtectionPermission</codeEntityReference>.
+        	If your application or component is targeting partial trust environment without 
+        	<codeEntityReference>T:System.Security.Permissions.DataProtectionPermission</codeEntityReference>,
+        	use <codeEntityReference>T:DevZest.Licensing.UserLicense</codeEntityReference> instead.</para>
+        </alert>
+      </content>
+    </section>
+    <section address="Section2">
+      <title>License Publisher and License Client</title>
+      <content>
+        <para>License is created, signed and published by <codeEntityReference>T:DevZest.Licensing.LicensePublisher</codeEntityReference>.
+   		Since license publisher must hold the private key to sign the license, it is normally implemented as a separate web service
+   		instead of as part of the licensed application or component.</para>
+        <para>
+          <codeEntityReference>T:DevZest.Licensing.LicenseClient</codeEntityReference> communicates with license publisher. The
+   		<codeEntityReference autoUpgrade="true">M:DevZest.Licensing.LicenseClient.GetLicense(System.String,System.Version,DevZest.Licensing.LicenseKey,System.String,System.String,System.String,System.String,System.String)</codeEntityReference>
+   		method sends license creation request to license publisher, and gets the created and signed license.</para>
+        <para>License client requests the license by providing a <codeEntityReference>T:DevZest.Licensing.LicenseKey</codeEntityReference>.
+   		Typically a license key is generated and stored in the web server, sent to the user when the purchase completed. The license publisher
+   		verifies the provided license key, returns corresponding license, or returns an error when verification failed.</para>
+        <para>When sending the request to license publisher, the license client encrypts the license key using the public key. The
+   		license publisher then uses the private key to decrypt the license key, and uses this license key to encrypt the response
+   		sent back to license client. Since the communication is encrypted, no SSL is required. This saves cost for web hosting and
+   		improves the performance.</para>
+      </content>
+    </section>
+    <section address="Section3">
+      <title>License Providers</title>
+      <content>
+        <para>The published license must be stored together with the licensed assembly. To specify where the license
+   		can be located, the assembly author declares license provider attributes for the assembly. .Net Licensing
+   		provides the following license providers:</para>
+        <table>
+          <row>
+            <entry>
+              <codeEntityReference>T:DevZest.Licensing.AssemblyLicenseProviderAttribute</codeEntityReference>
+            </entry>
+            <entry>Provides license from embedded resource of caller assembly.</entry>
+          </row>
+          <row>
+            <entry>
+              <codeEntityReference>T:DevZest.Licensing.FileLicenseProviderAttribute</codeEntityReference>
+            </entry>
+            <entry>Provides license from file. This license provider requires
+   				<codeEntityReference>T:System.Security.Permissions.FileIOPermission</codeEntityReference>.</entry>
+          </row>
+          <row>
+            <entry>
+              <codeEntityReference>T:DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute</codeEntityReference>
+            </entry>
+            <entry>Provides license from isolated storage file.</entry>
+          </row>
+          <row>
+            <entry>
+              <codeEntityReference>T:DevZest.Licensing.RegistryLicenseProviderAttribute</codeEntityReference>
+            </entry>
+            <entry>Provides license from registry. This license provider requires read access of
+   				<codeEntityReference>T:System.Security.Permissions.RegistryPermission</codeEntityReference>.</entry>
+          </row>
+        </table>
+        <para>If the license string can be loaded, the license provider verifies the signature and returns a
+   		<codeEntityReference>T:DevZest.Licensing.License</codeEntityReference> object. An exception will throw if verification failed.</para>
+      </content>
+    </section>
+    <section address="Section4">
+      <title>Validation</title>
+      <content>
+        <para>To validate the assembly, call <codeEntityReference autoUpgrade="true">
+   		M:DevZest.Licensing.LicenseManager.Validate(System.String)</codeEntityReference> or <codeEntityReference autoUpgrade="true">
+   		M:DevZest.Licensing.LicenseManager.Check(System.String)</codeEntityReference> in the assembly. The validation will:</para>
+        <steps class="ordered">
+          <step>
+            <content>Retrieve the license provider attributes of the assembly, in the order of declaration, get the first
+   				non null <codeEntityReference>T:DevZest.Licensing.License</codeEntityReference> object. If all license providers
+   				returns null, the validation fails.</content>
+          </step>
+          <step>
+            <content>Validate this <codeEntityReference>T:DevZest.Licensing.License</codeEntityReference> object and its
+   				coresponding <codeEntityReference>T:DevZest.Licensing.LicenseItem</codeEntityReference> object. The validation will
+   				fail if the <codeEntityReference>T:DevZest.Licensing.LicenseItem</codeEntityReference> object with specified
+   				name does not exist.</content>
+          </step>
+        </steps>
+      </content>
+    </section>
+    <section address="Summary">
+      <title>Summary</title>
+      <content>
+        <para>A License is created and signed by <codeEntityReference>T:DevZest.Licensing.LicensePublisher</codeEntityReference>
+		which normally implemented as web service. The <codeEntityReference>T:DevZest.Licensing.LicenseClient</codeEntityReference>
+		communicates with the <codeEntityReference>T:DevZest.Licensing.LicensePublisher</codeEntityReference>, gets the published
+		license and stores it somewhere that can be loaded by the <codeEntityReference>T:DevZest.Licensing.LicenseProviderAttribute</codeEntityReference>
+		declared as assembly attribute. To determine whether an assembly can be granted a valid license, the license provider attributes
+		are retrieved to provide an instance of <codeEntityReference>T:DevZest.Licensing.License</codeEntityReference> object
+		containing a collection of <codeEntityReference>T:DevZest.Licensing.LicenseItem</codeEntityReference> objects. The validation
+		is then performed on the <codeEntityReference>T:DevZest.Licensing.License</codeEntityReference> object and the 
+		<codeEntityReference>T:DevZest.Licensing.LicenseItem</codeEntityReference> object matching the specified license item name:</para>
+        <mediaLink>
+          <image xlink:href="Summary" />
+        </mediaLink>
+        <steps class="ordered">
+          <step>The License Client sends request to License Publisher.</step>
+          <step>The License Publisher publishes the license string.</step>
+          <step>The published license string is stored in a place accessible to the assembly.</step>
+          <step>The license is loaded by license provider and validated at runtime.</step>
+        </steps>
+      </content>
+    </section>
+    <relatedTopics>
+      <!-- One or more of the following:
+         - A local link
+         - An external link
+         - A code entity reference
+
+    <link xlink:href="Other Topic's ID"/>
+    <link xlink:href="Other Topic's ID">Link inner text</link>
+
+    <externalLink>
+        <linkText>Link text</linkText>
+        <linkAlternateText>Optional alternate link text</linkAlternateText>
+        <linkUri>URI</linkUri>
+    </externalLink>
+
+    <codeEntityReference>API member ID</codeEntityReference>
+
+    Examples:
+
+    <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+    <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+    <externalLink>
+        <linkText>SHFB on CodePlex</linkText>
+        <linkAlternateText>Go to CodePlex</linkAlternateText>
+        <linkUri>http://www.codeplex.com/SHFB</linkUri>
+    </externalLink>
+
+    <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+    <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+    -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

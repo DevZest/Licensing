@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="acfb8d0f-6499-41d8-acc4-1224a2cace3f" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>To quickly start using .Net Licensing, read the following topics:</para>
+      <list class="bullet">
+        <listItem>
+          <para>
+            <link xlink:href="02d0613c-f9c1-4a28-8ea9-55772b1b7bd3" />
+          </para>
+          <para>The concept of .Net Licensing.</para>
+        </listItem>
+        <listItem>
+          <para>
+            <link xlink:href="49a89619-6d5d-478a-b3b7-df7fb51bb07d" />
+          </para>
+          <para>A step by step walkthrough on how to create a simple application using .Net Licensing.</para>
+        </listItem>
+      </list>
+    </introduction>
+  </developerConceptualDocument>
+</topic>

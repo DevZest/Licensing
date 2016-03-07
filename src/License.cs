@@ -288,7 +288,7 @@ namespace DevZest.Licensing
         /// <summary>Gets or sets the upgrade expiration date, as string, of this license.</summary>
         /// <value>A string containing the upgrade expiration date of this license, in the format of "yyyy/mm/dd".</value>
         /// <remarks>When validating, the release date of the assembly will be compared with the upgrade exipration date of the license.
-        /// The assembly version Build number specifies the release date as number of days since 2001/01/01.</remarks>
+        /// The assembly version Build number specifies the release date as number of days since 2000/01/01.</remarks>
         [DefaultValue("")]
         public string UpgradeExpiration
         {
@@ -303,7 +303,7 @@ namespace DevZest.Licensing
         /// <summary>Gets the upgrade expiration date of this license.</summary>
         /// <value>The UTC date of the license upgrade expiration.</value>
         /// <remarks>When validating, the release date of the assembly will be compared with the upgrade exipration date of the license.
-        /// The assembly version Build number specifies the release date as number of days since 2001/01/01.</remarks>
+        /// The assembly version Build number specifies the release date as number of days since 2000/01/01.</remarks>
         public DateTime UpgradeExpirationDate
         {
             get { return _upgradeExpirationDate; }

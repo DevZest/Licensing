@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Licensing.deploy", "..\src\Licensing.deploy.csproj", "{B12BA784-C9E4-4CF6-A5F1-5EBD09206E50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicenseConsole.deploy", "..\samples\LicenseConsole\src\LicenseConsole.deploy.csproj", "{FCB3AB4C-9CC6-476C-ABA4-679FF6D41F24}"
+EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "Documentation", "..\doc\Documentation.shfbproj", "{BE414430-71B3-4543-A8BB-978EBBBE1D90}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B12BA784-C9E4-4CF6-A5F1-5EBD09206E50} = {B12BA784-C9E4-4CF6-A5F1-5EBD09206E50}
+	EndProjectSection
+EndProject
+Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "DevZest.Licensing", "DevZest.Licensing\DevZest.Licensing.nuproj", "{3E225C06-F12D-45A7-BEDB-A0919BE2CC82}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BE414430-71B3-4543-A8BB-978EBBBE1D90} = {BE414430-71B3-4543-A8BB-978EBBBE1D90}
+		{FCB3AB4C-9CC6-476C-ABA4-679FF6D41F24} = {FCB3AB4C-9CC6-476C-ABA4-679FF6D41F24}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08D7B4D2-4B90-4C1B-80A4-C4C8DA019EEC}"
+	ProjectSection(SolutionItems) = preProject
+		AssemblyVersion.cs = AssemblyVersion.cs
+		LicensePublishKey.cs = LicensePublishKey.cs
+		NuGetPackageVersion.props = NuGetPackageVersion.props
+		VerGen.AssemblyVersion.cs = VerGen.AssemblyVersion.cs
+		VerGen.bat = VerGen.bat
+		VerGen.NuGetPackageVersion.props = VerGen.NuGetPackageVersion.props
+		VerGen.ps1 = VerGen.ps1
+	EndProjectSection
+EndProject
+Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "DevZest.LicenseConsole", "DevZest.LicenseConsole\DevZest.LicenseConsole.nuproj", "{C2EF7679-6F18-4747-9878-79D59E16B2BD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FCB3AB4C-9CC6-476C-ABA4-679FF6D41F24} = {FCB3AB4C-9CC6-476C-ABA4-679FF6D41F24}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B12BA784-C9E4-4CF6-A5F1-5EBD09206E50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B12BA784-C9E4-4CF6-A5F1-5EBD09206E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B12BA784-C9E4-4CF6-A5F1-5EBD09206E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B12BA784-C9E4-4CF6-A5F1-5EBD09206E50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCB3AB4C-9CC6-476C-ABA4-679FF6D41F24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB3AB4C-9CC6-476C-ABA4-679FF6D41F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB3AB4C-9CC6-476C-ABA4-679FF6D41F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB3AB4C-9CC6-476C-ABA4-679FF6D41F24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE414430-71B3-4543-A8BB-978EBBBE1D90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE414430-71B3-4543-A8BB-978EBBBE1D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE414430-71B3-4543-A8BB-978EBBBE1D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE414430-71B3-4543-A8BB-978EBBBE1D90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E225C06-F12D-45A7-BEDB-A0919BE2CC82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E225C06-F12D-45A7-BEDB-A0919BE2CC82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E225C06-F12D-45A7-BEDB-A0919BE2CC82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E225C06-F12D-45A7-BEDB-A0919BE2CC82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2EF7679-6F18-4747-9878-79D59E16B2BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2EF7679-6F18-4747-9878-79D59E16B2BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2EF7679-6F18-4747-9878-79D59E16B2BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2EF7679-6F18-4747-9878-79D59E16B2BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

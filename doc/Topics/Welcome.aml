@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="ea8fec58-d085-4bad-93aa-ec4cc954eb0e" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <summary>
+    .Net Licensing is a lightweight yet comprehensive licensing solution for Microsoft .Net platform.
+	This solution, provided as a .Net component, provides the same level security as signing your .Net assembly,
+	and gives you utmost control and flexibility.
+  </summary>
+    <introduction>
+    </introduction>
+    <section address="Section1">
+      <title>Product Highlights</title>
+      <content>
+        <autoOutline />
+      </content>
+      <sections>
+        <section address="SubSection1">
+          <title>Everything is under your control</title>
+          <content>
+            <para>All licenses are published through your own web service. You have full control on when and how a
+		      license should be published: with or without a license key, valid for certain period, or upgradable with
+		      future versions within certain period, etc; A license can contain multiple license items (features) you
+		      can grant or revoke accordingly; You can even disable a refunded license key for future use. Everything
+		      is under your control.</para>
+          </content>
+        </section>
+        <section address="SubSection2">
+          <title>Same level security as signing your .Net assembly</title>
+          <content>
+            <para>Each license is digitally signed and verified with the same strong name key used to sign your
+                protected .Net assembly. Only your own license publisher web service can access the private key. This
+                provides the same level security as signing your .Net assembly. Unless your private key is compromised,
+                the verified license can always to trusted.</para>
+            <para>Using the same assembly strong name key also reduces the number of keys to manage and improves
+                security.</para>
+          </content>
+        </section>
+        <section address="SubSection3">
+          <title>Simple and unified API to protect your .Net applications and components</title>
+          <content>
+            <para>We provide simple and unified API to protected your .Net applications and components. After you
+                make the decision where to store the published license (registry, file/isolated storage file, or
+                embedded resource in caller assembly), you can simply declare coresponding assembly level license
+                provider attribute, and call LicenseManager.Validate in your code. This simple, unified API works for
+                all your .Net applications and components, cross all .Net based technologies such as Windows Forms,
+                ASP.Net and WPF.</para>
+          </content>
+        </section>
+        <section address="SubSection4">
+          <title>Least constraints: partial trust and no SSL required</title>
+          <content>
+            <para>The rewards of building applications that run under partial trust are great. The .Net Licensing
+                component can run under medium trust level without any problem. That means you can deploy your license
+                publisher in a shared hosting environment, and the protected applications and components can also run
+                under partial trust.</para>
+            <para>Transparent to developer, the communication between your license client and license publisher is
+                encrypted so that no SSL is required for the web server hosting the license publisher.</para>
+            <para>Altogether, this can save your cost directly.</para>
+          </content>
+        </section>
+        <section address="SubSection5">
+          <title>Fully customizable</title>
+          <content>
+            <para>The .Net Licensing component is fully extensible from all aspects: the license publisher, the
+                license and license items, and the license provider to look up the license. The default implementation
+                can meet most requirements, however you still have the freedom to extend this component easily.</para>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <relatedTopics>
+      <!-- One or more of the following:
+         - A local link
+         - An external link
+         - A code entity reference
+
+    <link xlink:href="Other Topic's ID"/>
+    <link xlink:href="Other Topic's ID">Link inner text</link>
+
+    <externalLink>
+        <linkText>Link text</linkText>
+        <linkAlternateText>Optional alternate link text</linkAlternateText>
+        <linkUri>URI</linkUri>
+    </externalLink>
+
+    <codeEntityReference>API member ID</codeEntityReference>
+
+    Examples:
+
+    <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+    <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+    <externalLink>
+        <linkText>SHFB on CodePlex</linkText>
+        <linkAlternateText>Go to CodePlex</linkAlternateText>
+        <linkUri>http://www.codeplex.com/SHFB</linkUri>
+    </externalLink>
+
+    <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+    <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+    -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

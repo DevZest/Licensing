@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="602203d1-5e91-4e63-af59-f12f1e311749" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>To develop your license publisher, derive your class from the abstract <codeEntityReference>T:DevZest.Licensing.LicensePublisher
+    </codeEntityReference> class, and implement your licensing logic here. Normally this class is hosted as ASP.Net .asmx or .svc web service.
+    For a step by step walkthrough on how to create a license publisher, see <link xlink:href="08fe0a9b-4f1b-4745-b9ce-4c83dc753daa" />.</para>
+      <autoOutline />
+    </introduction>
+    <section address="Section1">
+      <title>Implement Class Derived from LicensePublisher</title>
+      <content>
+        <para>The abstract class <codeEntityReference>T:DevZest.Licensing.LicensePublisher</codeEntityReference> has two abstract methods:
+    <codeEntityReference autoUpgrade="true">M:DevZest.Licensing.LicensePublisher.GetPrivateKeyXml(System.String)</codeEntityReference> and
+    <codeEntityReference autoUpgrade="true">M:DevZest.Licensing.LicensePublisher.GetLicense(System.Globalization.CultureInfo,System.String,System.Version,DevZest.Licensing.LicenseKey,System.String,System.String,System.String,System.String,System.String)</codeEntityReference>.
+    The derived class must provide the implementation by overriding these two methods.</para>
+      </content>
+      <sections>
+        <section address="SubSection1">
+          <title>Override GetPrivateKeyXml</title>
+          <content>
+            <para>The derived class must override the
+	            <codeEntityReference autoUpgrade="true">M:DevZest.Licensing.LicensePublisher.GetPrivateKeyXml(System.String)</codeEntityReference>
+	            method to provide the private key used to sign the license. The implementation must return the same private key used to sign the
+	            coresponding product assembly, otherwise the published license cannot be validated. You can embed the .snk file as embedded resource,
+	            and call <codeEntityReference autoUpgrade="true">M:DevZest.Licensing.LicensePublisher.PrivateKeyXmlFromSnkFile(System.IO.Stream)</codeEntityReference>
+	            to get the private key xml:</para>
+            <code lang="C#"><![CDATA[
+using System;
+using System.Diagnostics;
+using System.Collections.Generic;
+using DevZest.Licensing;
+using System.IO;
+using System.Web.Services;
+using System.Reflection;
+using System.Globalization;
+
+namespace SamplePublisher
+{
+    public class Publisher : LicensePublisher
+    {
+        ...
+        
+        protected override string GetPrivateKeyXml(string product)
+        {
+            using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("SamplePublisher.Key.snk"))
+            {
+                return PrivateKeyXmlFromSnkFile(stream);
+            }
+
+        }
+        
+        ...
+    }
+}
+		        ]]></code>
+            <code lang="VB.Net"><![CDATA[
+Imports System
+Imports System.Diagnostics
+Imports System.Collections.Generic
+Imports DevZest.Licensing
+Imports System.IO
+Imports System.Web.Services
+Imports System.Reflection
+Imports System.Globalization
+
+
+<WebService(Namespace:="http://services.devzest.com/Licensing")> _
+Public Class Publisher
+    Inherits LicensePublisher
+    ...
+    
+    Protected Overrides Function GetPrivateKeyXml(ByVal product As String) As String
+        Using stream As Stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("SamplePublisher.Key.snk")
+            Return PrivateKeyXmlFromSnkFile(stream)
+        End Using
+    End Function
+    
+    ...
+End Class
+    ]]></code>
+            <alert class="security">
+              <para>The private key is the utmost secret of your licensing system. If your private key is compromised,
+                  the whole licensing system is compromised. Since your license publisher holds the private key, make sure
+                  your license publisher is hosted in a secure, trusted environment.</para>
+            </alert>
+          </content>
+        </section>
+        <section address="SubSection2">
+          <title>Override GetLicense</title>
+          <content>
+            <para>The derived class must override the
+			    <codeEntityReference autoUpgrade="true">M:DevZest.Licensing.LicensePublisher.GetLicense(System.Globalization.CultureInfo,System.String,System.Version,DevZest.Licensing.LicenseKey,System.String,System.String,System.String,System.String,System.String)</codeEntityReference>
+	            method to provide the license to publish, based on the combination of provided product name, license key and license category.
+	            Since all your business logic is implemented here, this is the core of your licensing system.</para>
+            <code lang="C#"><![CDATA[
+using System;
+using System.Diagnostics;
+using System.Collections.Generic;
+using DevZest.Licensing;
+using System.IO;
+using System.Web.Services;
+using System.Reflection;
+using System.Globalization;
+
+namespace SamplePublisher
+{
+    public class Publisher : LicensePublisher
+    {
+        ...
+        
+        protected override LicensePublisherResponse GetLicense(CultureInfo cultureInfo, string product, Version version, LicenseKey licenseKey, string category, string userName, string company, string emailAddress, string data)
+        {
+            ...
+        }
+        
+        ...
+    }
+}
+		        ]]></code>
+            <code lang="VB.Net"><![CDATA[
+Imports System
+Imports System.Diagnostics
+Imports System.Collections.Generic
+Imports DevZest.Licensing
+Imports System.IO
+Imports System.Web.Services
+Imports System.Reflection
+Imports System.Globalization
+
+
+<WebService(Namespace:="http://services.devzest.com/Licensing")> _
+Public Class Publisher
+    Inherits LicensePublisher
+    ...
+    
+    Protected Overrides Function GetLicense(ByVal cultureInfo As CultureInfo, ByVal product As String, ByVal version As Version, ByVal licenseKey As LicenseKey, ByVal category As String, ByVal userName As String, ByVal company As String, ByVal emailAddress As String, ByVal data As String) As LicensePublisherResponse
+        ...
+    End Function
+
+    ...
+End Class
+
+		        ]]></code>
+            <alert class="warning">
+              <para>Since there is virtually no way to revoke a published license, test your implementation thoroughly before publishing
+		        any license to public.</para>
+            </alert>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <section address="Section2">
+      <title>Hosting License Publisher as Web Service</title>
+      <content>
+        <para>The developed license publisher class is a WCF (Windows Communication Foundation) service implementing service
+    contract <codeEntityReference>T:DevZest.Licensing.ILicensePublisher</codeEntityReference>. Every WCF service must be hosted
+    in a Windows process called the host process. Typically you can host your developed license publisher class as tranditional
+    ASP.Net .asmx web service or WCF .svc web service.</para>
+        <para>For more information, see WCF documentation on MSDN.</para>
+      </content>
+      <sections>
+        <section>
+          <title>Hosting as .asmx Web Service</title>
+          <content>
+            <para>To host your license publiser as .asmx web service, add a web service file (AsmxPublisher.asmx)
+        to your ASP.Net Application:</para>
+            <code lang="C#" title="AsmxPublisher.asmx (C#)"><![CDATA[
+<%@ WebService Language="C#" CodeBehind="AsmxPublisher.asmx.cs" Class="SamplePublisher.AsmxPublisher" %>
+]]></code>
+            <code lang="C#" title="AsmxPublisher.asmx.cs"><![CDATA[
+using System;
+using System.Web;
+using System.Web.Services;
+
+namespace SamplePublisher
+{
+    [WebService(Namespace = "http://services.devzest.com/Licensing")]
+    public class AsmxPublisher : Publisher
+    {
+    }
+}
+]]></code>
+            <code lang="VB.Net" title="AsmxPublisher.asmx File (VB.Net)"><![CDATA[
+<%@ WebService Language="vb" CodeBehind="AsmxPublisher.asmx.vb" Class="SamplePublisher.AsmxPublisher" %>
+]]></code>
+            <code lang="VB.Net" title="AsmxPublisher.asmx.vb"><![CDATA[
+Imports System.Web.Services
+
+<WebService(Namespace:="http://services.devzest.com/Licensing")> _
+Public Class AsmxPublisher
+    Inherits Publisher
+
+End Class
+]]></code>
+          </content>
+        </section>
+        <section>
+          <title>Hosting as .svc Web Service</title>
+          <content>
+            <para>To host your license publiser as .svc web service:</para>
+            <steps class="ordered">
+              <step>
+                <content>
+                  <para>Add an .svc WCF service file (SvcPublisher.svc) to your ASP.Net application:</para>
+                  <code lang="C#" title="SvcPublisher.svc (C#)"><![CDATA[
+<%@ ServiceHost Language="C#" Debug="true" Service="SamplePublisher.SvcPublisher" CodeBehind="SvcPublisher.svc.cs" %>
+]]></code>
+                  <code lang="C#" title="SvcPublisher.svc.cs"><![CDATA[
+using System;
+using System.ServiceModel;
+
+namespace SamplePublisher
+{
+    public class SvcPublisher : Publisher
+    {
+    }
+}
+]]></code>
+                  <code lang="VB.Net" title="SvcPublisher.svc (VB.Net)"><![CDATA[
+<%@ ServiceHost Language="VB" Debug="true" Service="SamplePublisher.SvcPublisher" CodeBehind="SvcPublisher.svc.vb" %>
+]]></code>
+                  <code lang="VB.Net" title="SvcPublisher.svc.vb"><![CDATA[
+Public Class SvcPublisher
+    Inherits Publisher
+
+End Class
+]]></code>
+                </content>
+              </step>
+              <step>
+                <content>
+                  <para>List the license publisher type in the web site configuration file (Web.Config):</para>
+                  <code lang="XML" title="Web.Config"><![CDATA[
+ <system.serviceModel>
+  <behaviors>
+   <serviceBehaviors>
+    <behavior name="SamplePublisher.SvcPublisherBehavior">
+     <serviceMetadata httpGetEnabled="true" />
+     <serviceDebug includeExceptionDetailInFaults="false" />
+    </behavior>
+   </serviceBehaviors>
+  </behaviors>
+  <services>
+   <service behaviorConfiguration="SamplePublisher.SvcPublisherBehavior" name="SamplePublisher.SvcPublisher">
+    <endpoint binding="wsHttpBinding" contract="DevZest.Licensing.ILicensePublisher" />
+    <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+   </service>
+  </services>
+ </system.serviceModel>
+]]></code>
+                </content>
+              </step>
+            </steps>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <relatedTopics>
+      <!-- One or more of the following:
+         - A local link
+         - An external link
+         - A code entity reference
+
+    <link xlink:href="Other Topic's ID"/>
+    <link xlink:href="Other Topic's ID">Link inner text</link>
+
+    <externalLink>
+        <linkText>Link text</linkText>
+        <linkAlternateText>Optional alternate link text</linkAlternateText>
+        <linkUri>URI</linkUri>
+    </externalLink>
+
+    <codeEntityReference>API member ID</codeEntityReference>
+
+    Examples:
+
+    <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+    <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+    <externalLink>
+        <linkText>SHFB on CodePlex</linkText>
+        <linkAlternateText>Go to CodePlex</linkAlternateText>
+        <linkUri>http://www.codeplex.com/SHFB</linkUri>
+    </externalLink>
+
+    <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+    <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+    -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

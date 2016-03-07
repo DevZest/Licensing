@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>3e225c06-f12d-45a7-bedb-a0919be2cc82</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(MSBuildExtensionsPath)\NuProj\</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <PropertyGroup Label="Configuration">
+    <Id>DevZest.Licensing</Id>
+    <Title>DevZest.Licensing</Title>
+    <Authors>DevZest</Authors>
+    <Owners>DevZest</Owners>
+    <Summary>A lightweight yet comprehensive licensing solution for Microsoft .Net platform. Protect your .Net components and applications from illegal use.</Summary>
+    <Description>Activate this product by executing LicenseConsole.exe under package "tools" folder, and then obtain a 30 days free trial evaluation license, or a purchased product license. See documentation for more information.</Description>
+    <ReleaseNotes>
+    </ReleaseNotes>
+    <ProjectUrl>http://www.devzest.com/DotNetLicensing.aspx</ProjectUrl>
+    <LicenseUrl>http://www.devzest.com/Buy.aspx?Product=DotNetLicensing</LicenseUrl>
+    <Copyright>Copyright © DevZest</Copyright>
+    <Tags>DevZest Licensing</Tags>
+    <RequireLicenseAcceptance>false</RequireLicenseAcceptance>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="..\..\doc\Help\Documentation.chm">
+      <Link>Documentation.chm</Link>
+    </Content>
+    <Content Include="..\..\samples\LicenseConsole\src\bin\Release\DevZest.Licensing.dll">
+      <Link>tools\LicenseConsole\DevZest.Licensing.dll</Link>
+    </Content>
+    <Content Include="..\..\samples\LicenseConsole\src\bin\Release\LicenseConsole.exe">
+      <Link>tools\LicenseConsole\LicenseConsole.exe</Link>
+    </Content>
+    <Content Include="Readme.txt" />
+    <Content Include="tools\LicenseConsole\LicenseAgreement.rtf" />
+    <Content Include="tools\LicenseConsole\LicenseConsole.exe.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Licensing.deploy.csproj" />
+  </ItemGroup>
+  <Import Project="..\NuGetPackageVersion.props" />
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>
