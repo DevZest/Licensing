@@ -7,6 +7,6 @@ and then obtain a 30 days free trial evaluation license, or a purchased product 
 See Documentation.chm for more information.
 
 Samples source code available at:
-
+https://github.com/DevZest/Licensing.Samples
 
 Copyright © DevZest, All Rights Reserved.
