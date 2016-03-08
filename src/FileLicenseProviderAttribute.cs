@@ -96,11 +96,11 @@ namespace DevZest.Licensing
         /// <exclude />
         protected override LicenseProviderResult Load()
         {
-            if (!File.Exists(FullPath))
-                return LicenseProviderResult.FromErrorMessage(Messages.FileNotFound);
-
             try
             {
+                if (!File.Exists(FullPath))
+                    return LicenseProviderResult.FromErrorMessage(Messages.FileNotFound);
+
                 string license = File.ReadAllText(FullPath);
                 if (string.IsNullOrEmpty(license))
                     return LicenseProviderResult.FromErrorMessage(Messages.EmptyFile);
