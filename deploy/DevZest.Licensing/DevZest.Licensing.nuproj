@@ -23,8 +23,7 @@
     <Authors>DevZest</Authors>
     <Owners>DevZest</Owners>
     <Summary>A lightweight yet comprehensive licensing solution for Microsoft .Net platform. Protect your .Net components and applications from illegal use.</Summary>
-    <Description>
-    </Description>
+    <Description>A lightweight yet comprehensive licensing solution for Microsoft .Net platform. Protect your .Net components and applications from illegal use.</Description>
     <ReleaseNotes>
     </ReleaseNotes>
     <ProjectUrl>https://github.com/devzest/licensing</ProjectUrl>
