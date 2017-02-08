@@ -90,7 +90,6 @@
     <Compile Include="IsolatedStorageFileLicenseProviderAttribute.cs" />
     <Compile Include="LicenseItemAttribute.cs" />
     <Compile Include="LicenseProviderAttribute.cs" />
-    <Compile Include="LicenseItems.cs" />
     <Compile Include="LicenseManager.cs" />
     <Compile Include="LicenseKey.cs" />
     <Compile Include="LicensePublicKeyAttribute.cs" />

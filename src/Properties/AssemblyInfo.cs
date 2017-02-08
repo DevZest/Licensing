@@ -34,7 +34,3 @@ using System.Windows.Markup;
 
 [assembly: AllowPartiallyTrustedCallers]
 
-[assembly: FileLicenseProvider(FolderOption = FolderOption.EnvironmentSpecial, SpecialFolder = Environment.SpecialFolder.LocalApplicationData, Name = @"DevZest\.Net Licensing\RuntimeLicense.txt")]
-[assembly: AssemblyLicenseProvider(EntryAssemblyOnly = false)]
-
-[assembly: LicenseItem(LicenseItems.Licensing)]

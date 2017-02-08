@@ -311,7 +311,7 @@ namespace DevZest.Licensing
             return _key == null ? 0 : _key.GetHashCode();
         }
 
-        /// <inheritdoc/>
+        /// <exclude/>
         public override string ToString()
         {
             return _key == null ? string.Empty : string.Format(CultureInfo.InvariantCulture, "{0}-{1}-{2}-{3}-{4}", _key.Substring(0, 5), _key.Substring(5, 5), _key.Substring(10, 5), _key.Substring(15, 5), _key.Substring(20, 5));

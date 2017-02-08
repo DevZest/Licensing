@@ -90,7 +90,6 @@
     <Compile Include="IsolatedStorageFileLicenseProviderAttribute.cs" />
     <Compile Include="LicenseItemAttribute.cs" />
     <Compile Include="LicenseProviderAttribute.cs" />
-    <Compile Include="LicenseItems.cs" />
     <Compile Include="LicenseManager.cs" />
     <Compile Include="LicenseKey.cs" />
     <Compile Include="LicensePublicKeyAttribute.cs" />
@@ -113,9 +112,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="..\deploy\AssemblyVersion.cs">
       <Link>Properties\AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="..\deploy\LicensePublishKey.cs">
-      <Link>Properties\LicensePublishKey.cs</Link>
     </Compile>
     <Compile Include="SR.Designer.cs">
       <AutoGen>True</AutoGen>

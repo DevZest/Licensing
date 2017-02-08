@@ -61,8 +61,6 @@ namespace DevZest.Licensing
                 if (reflectedType == typeof(License) && method.Name == ".ctor") // Re-entry caused by XamlReader detected
                     return;
             }
-
-            LicenseManager.Validate(LicenseItems.Licensing);
         }
 
         /// <summary>Gets the assembly this license is granted to.</summary>
