@@ -1,0 +1,1216 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LicenseManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LicenseManager
+   ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DevZest.Licensing.LicenseManager">
+  
+  
+  <h1 id="DevZest_Licensing_LicenseManager" data-uid="DevZest.Licensing.LicenseManager" class="text-break">Class LicenseManager
+  </h1>
+  <div class="markdown level0 summary"><p>Provides static methods to get license from an assembly, determine if a valid license can be granted to an assembly,
+or reset license providers of an assembly.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">LicenseManager</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DevZest.Licensing.html">DevZest.Licensing</a></h6>
+  <h6><strong>Assembly</strong>: DevZest.Licensing.dll</h6>
+  <h5 id="DevZest_Licensing_LicenseManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class LicenseManager</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseManager_Check_System_String_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseManager.Check(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseManager.cs/#L95">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseManager_Check_" data-uid="DevZest.Licensing.LicenseManager.Check*"></a>
+  <h4 id="DevZest_Licensing_LicenseManager_Check_System_String_" data-uid="DevZest.Licensing.LicenseManager.Check(System.String)">Check(String)</h4>
+  <div class="markdown level1 summary"><p>Determines whether a runtime license can be granted for the specified license item name of executing assembly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LicenseError Check(string licenseItemName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">licenseItemName</span></td>
+        <td><p>The specified license item name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Licensing.LicenseError.html">LicenseError</a></td>
+        <td><p><span class="xref">null</span> if a valid <a class="xref" href="DevZest.Licensing.License.html">License</a> can be granted. Otherwise a <a class="xref" href="DevZest.Licensing.LicenseError.html">LicenseError</a>
+indicates the error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseManager_Check_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method does not throw a <a class="xref" href="DevZest.Licensing.LicenseException.html">LicenseException</a> when a valid <a class="xref" href="DevZest.Licensing.License.html">License</a> cannot be granted.
+    The <see cref="O:DevZest.Licensing.LicenseManager.Validate">LicenseManager.Validate</see> method throws exception.</p>
+<p>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
+the same strong name key, the validation will succeed. It&apos;s not neccessary to provide a <a class="xref" href="DevZest.Licensing.License.html">License</a> for assemblies
+signed with the same strong name key.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseManager_Check_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseManager.Check(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseManager.cs/#L183">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseManager_Check_" data-uid="DevZest.Licensing.LicenseManager.Check*"></a>
+  <h4 id="DevZest_Licensing_LicenseManager_Check_System_String_System_Boolean_" data-uid="DevZest.Licensing.LicenseManager.Check(System.String,System.Boolean)">Check(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Determines whether a license can be granted for the specified license item name of the executing assembly,
+given specified design time or runtime mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LicenseError Check(string licenseItemName, bool designMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">licenseItemName</span></td>
+        <td><p>The specified license item name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">designMode</span></td>
+        <td><p>Specifies the design time or runtime mode. <span class="xref">true</span> for design time, otherwise runtime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Licensing.LicenseError.html">LicenseError</a></td>
+        <td><p><span class="xref">null</span> if a valid <a class="xref" href="DevZest.Licensing.License.html">License</a> can be granted. Otherwise a <a class="xref" href="DevZest.Licensing.LicenseError.html">LicenseError</a>
+indicates the error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseManager_Check_System_String_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method does not throw a <a class="xref" href="DevZest.Licensing.LicenseException.html">LicenseException</a> when a valid <a class="xref" href="DevZest.Licensing.License.html">License</a> cannot be granted.
+    The <see cref="O:DevZest.Licensing.LicenseManager.Validate">LicenseManager.Validate</see> method throws exception.</p>
+<p>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
+the same strong name key, the validation will succeed. It&apos;s not neccessary to provide a <a class="xref" href="DevZest.Licensing.License.html">License</a> for assemblies
+signed with the same strong name key.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseManager_Check_System_String_System_Reflection_Assembly_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseManager.Check(System.String%2CSystem.Reflection.Assembly)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseManager.cs/#L152">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseManager_Check_" data-uid="DevZest.Licensing.LicenseManager.Check*"></a>
+  <h4 id="DevZest_Licensing_LicenseManager_Check_System_String_System_Reflection_Assembly_" data-uid="DevZest.Licensing.LicenseManager.Check(System.String,System.Reflection.Assembly)">Check(String, Assembly)</h4>
+  <div class="markdown level1 summary"><p>Determines whether a runtime license can be granted for the specified license item name of the specified assembly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LicenseError Check(string licenseItemName, Assembly assembly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">licenseItemName</span></td>
+        <td><p>The specified license item name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Reflection.Assembly</span></td>
+        <td><span class="parametername">assembly</span></td>
+        <td><p>The specified assembly.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Licensing.LicenseError.html">LicenseError</a></td>
+        <td><p><span class="xref">null</span> if a valid <a class="xref" href="DevZest.Licensing.License.html">License</a> can be granted. Otherwise a <a class="xref" href="DevZest.Licensing.LicenseError.html">LicenseError</a>
+indicates the error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseManager_Check_System_String_System_Reflection_Assembly__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method does not throw a <a class="xref" href="DevZest.Licensing.LicenseException.html">LicenseException</a> when a valid <a class="xref" href="DevZest.Licensing.License.html">License</a> cannot be granted.
+    The <see cref="O:DevZest.Licensing.LicenseManager.Validate">LicenseManager.Validate</see> method throws exception.</p>
+<p>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
+the same strong name key, the validation will succeed. It&apos;s not neccessary to provide a <a class="xref" href="DevZest.Licensing.License.html">License</a> for assemblies
+signed with the same strong name key.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseManager_Check_System_String_System_Reflection_Assembly_System_Boolean_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseManager.Check(System.String%2CSystem.Reflection.Assembly%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseManager.cs/#L248">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseManager_Check_" data-uid="DevZest.Licensing.LicenseManager.Check*"></a>
+  <h4 id="DevZest_Licensing_LicenseManager_Check_System_String_System_Reflection_Assembly_System_Boolean_" data-uid="DevZest.Licensing.LicenseManager.Check(System.String,System.Reflection.Assembly,System.Boolean)">Check(String, Assembly, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Determines whether a license can be granted for the specified license item name of the specified assembly,
+given specified design time or runtime mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LicenseError Check(string licenseItemName, Assembly assembly, bool designMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">licenseItemName</span></td>
+        <td><p>The specified license item name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Reflection.Assembly</span></td>
+        <td><span class="parametername">assembly</span></td>
+        <td><p>The specified assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">designMode</span></td>
+        <td><p>Specifies the design time or runtime mode. <span class="xref">true</span> for design time, otherwise runtime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Licensing.LicenseError.html">LicenseError</a></td>
+        <td><p><span class="xref">null</span> if a valid <a class="xref" href="DevZest.Licensing.License.html">License</a> can be granted. Otherwise a <a class="xref" href="DevZest.Licensing.LicenseError.html">LicenseError</a>
+indicates the error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseManager_Check_System_String_System_Reflection_Assembly_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method does not throw a <a class="xref" href="DevZest.Licensing.LicenseException.html">LicenseException</a> when a valid <a class="xref" href="DevZest.Licensing.License.html">License</a> cannot be granted.
+    The <see cref="O:DevZest.Licensing.LicenseManager.Validate">LicenseManager.Validate</see> method throws exception.</p>
+<p>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
+the same strong name key, the validation will succeed. It&apos;s not neccessary to provide a <a class="xref" href="DevZest.Licensing.License.html">License</a> for assemblies
+signed with the same strong name key.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseManager_Check_System_String_System_Type_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseManager.Check(System.String%2CSystem.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseManager.cs/#L124">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseManager_Check_" data-uid="DevZest.Licensing.LicenseManager.Check*"></a>
+  <h4 id="DevZest_Licensing_LicenseManager_Check_System_String_System_Type_" data-uid="DevZest.Licensing.LicenseManager.Check(System.String,System.Type)">Check(String, Type)</h4>
+  <div class="markdown level1 summary"><p>Determines whether a runtime license can be granted for the specified license item name of the assembly containing specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LicenseError Check(string licenseItemName, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">licenseItemName</span></td>
+        <td><p>The specified license item name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type contained by the assembly.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Licensing.LicenseError.html">LicenseError</a></td>
+        <td><p><span class="xref">null</span> if a valid <a class="xref" href="DevZest.Licensing.License.html">License</a> can be granted. Otherwise a <a class="xref" href="DevZest.Licensing.LicenseError.html">LicenseError</a>
+indicates the error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseManager_Check_System_String_System_Type__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method does not throw a <a class="xref" href="DevZest.Licensing.LicenseException.html">LicenseException</a> when a valid <a class="xref" href="DevZest.Licensing.License.html">License</a> cannot be granted.
+    The <see cref="O:DevZest.Licensing.LicenseManager.Validate">LicenseManager.Validate</see> method throws exception.</p>
+<p>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
+the same strong name key, the validation will succeed. It&apos;s not neccessary to provide a <a class="xref" href="DevZest.Licensing.License.html">License</a> for assemblies
+signed with the same strong name key.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseManager_Check_System_String_System_Type_System_Boolean_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseManager.Check(System.String%2CSystem.Type%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseManager.cs/#L216">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseManager_Check_" data-uid="DevZest.Licensing.LicenseManager.Check*"></a>
+  <h4 id="DevZest_Licensing_LicenseManager_Check_System_String_System_Type_System_Boolean_" data-uid="DevZest.Licensing.LicenseManager.Check(System.String,System.Type,System.Boolean)">Check(String, Type, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Determines whether a license can be granted for the specified license item name of the assembly containing specified type,
+given specified design time or runtime mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LicenseError Check(string licenseItemName, Type type, bool designMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">licenseItemName</span></td>
+        <td><p>The specified license item name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type contained by the assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">designMode</span></td>
+        <td><p>Specifies the design time or runtime mode. <span class="xref">true</span> for design time, otherwise runtime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Licensing.LicenseError.html">LicenseError</a></td>
+        <td><p><span class="xref">null</span> if a valid <a class="xref" href="DevZest.Licensing.License.html">License</a> can be granted. Otherwise a <a class="xref" href="DevZest.Licensing.LicenseError.html">LicenseError</a>
+indicates the error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseManager_Check_System_String_System_Type_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method does not throw a <a class="xref" href="DevZest.Licensing.LicenseException.html">LicenseException</a> when a valid <a class="xref" href="DevZest.Licensing.License.html">License</a> cannot be granted.
+    The <see cref="O:DevZest.Licensing.LicenseManager.Validate">LicenseManager.Validate</see> method throws exception.</p>
+<p>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
+the same strong name key, the validation will succeed. It&apos;s not neccessary to provide a <a class="xref" href="DevZest.Licensing.License.html">License</a> for assemblies
+signed with the same strong name key.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseManager_GetLicense.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseManager.GetLicense%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseManager.cs/#L319">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseManager_GetLicense_" data-uid="DevZest.Licensing.LicenseManager.GetLicense*"></a>
+  <h4 id="DevZest_Licensing_LicenseManager_GetLicense" data-uid="DevZest.Licensing.LicenseManager.GetLicense">GetLicense()</h4>
+  <div class="markdown level1 summary"><p>Gets a license for executing assembly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static License GetLicense()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Licensing.License.html">License</a></td>
+        <td><p>A <a class="xref" href="DevZest.Licensing.License.html">License</a> object, or <span class="xref">null</span> for the assembly is not licensed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseManager_GetLicense_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The returned <a class="xref" href="DevZest.Licensing.License.html">License</a> object may not be able to be granted as a valid license. Call
+<see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see> method to determine whether a
+valid license can be granted.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseManager_GetLicense_System_Boolean_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseManager.GetLicense(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseManager.cs/#L331">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseManager_GetLicense_" data-uid="DevZest.Licensing.LicenseManager.GetLicense*"></a>
+  <h4 id="DevZest_Licensing_LicenseManager_GetLicense_System_Boolean_" data-uid="DevZest.Licensing.LicenseManager.GetLicense(System.Boolean)">GetLicense(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets a license for executing assembly, given specified design time or runtime mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static License GetLicense(bool designMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">designMode</span></td>
+        <td><p>Specifies the design time or runtime mode. <span class="xref">true</span> for design time, otherwise runtime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Licensing.License.html">License</a></td>
+        <td><p>A <a class="xref" href="DevZest.Licensing.License.html">License</a> object, or <span class="xref">null</span> for the assembly is not licensed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseManager_GetLicense_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The returned <a class="xref" href="DevZest.Licensing.License.html">License</a> object may not be able to be granted as a valid license. Call
+<see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see> method to determine whether a
+valid license can be granted.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseManager_GetLicense_System_Reflection_Assembly_System_Boolean_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseManager.GetLicense(System.Reflection.Assembly%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseManager.cs/#L361">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseManager_GetLicense_" data-uid="DevZest.Licensing.LicenseManager.GetLicense*"></a>
+  <h4 id="DevZest_Licensing_LicenseManager_GetLicense_System_Reflection_Assembly_System_Boolean_" data-uid="DevZest.Licensing.LicenseManager.GetLicense(System.Reflection.Assembly,System.Boolean)">GetLicense(Assembly, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets a license for specified assembly, given specified design time or runtime mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static License GetLicense(Assembly assembly, bool designMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Reflection.Assembly</span></td>
+        <td><span class="parametername">assembly</span></td>
+        <td><p>The specified assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">designMode</span></td>
+        <td><p>Specifies the design time or runtime mode. <span class="xref">true</span> for design time, otherwise runtime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Licensing.License.html">License</a></td>
+        <td><p>A <a class="xref" href="DevZest.Licensing.License.html">License</a> object, or <span class="xref">null</span> for the assembly is not licensed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseManager_GetLicense_System_Reflection_Assembly_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The returned <a class="xref" href="DevZest.Licensing.License.html">License</a> object may not be able to be granted as a valid license. Call
+<see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see> method to determine whether a
+valid license can be granted.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">assembly</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseManager_GetLicense_System_Type_System_Boolean_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseManager.GetLicense(System.Type%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseManager.cs/#L345">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseManager_GetLicense_" data-uid="DevZest.Licensing.LicenseManager.GetLicense*"></a>
+  <h4 id="DevZest_Licensing_LicenseManager_GetLicense_System_Type_System_Boolean_" data-uid="DevZest.Licensing.LicenseManager.GetLicense(System.Type,System.Boolean)">GetLicense(Type, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets a license for assembly containing specified type, given specified design time or runtime mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static License GetLicense(Type type, bool designMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type contained by the assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">designMode</span></td>
+        <td><p>Specifies the design time or runtime mode. <span class="xref">true</span> for design time, otherwise runtime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Licensing.License.html">License</a></td>
+        <td><p>A <a class="xref" href="DevZest.Licensing.License.html">License</a> object, or <span class="xref">null</span> for the assembly is not licensed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseManager_GetLicense_System_Type_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The returned <a class="xref" href="DevZest.Licensing.License.html">License</a> object may not be able to be granted as a valid license. Call
+<see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see> method to determine whether a
+valid license can be granted.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">type</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseManager_Reset.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseManager.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseManager.cs/#L374">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseManager_Reset_" data-uid="DevZest.Licensing.LicenseManager.Reset*"></a>
+  <h4 id="DevZest_Licensing_LicenseManager_Reset" data-uid="DevZest.Licensing.LicenseManager.Reset">Reset()</h4>
+  <div class="markdown level1 summary"><p>Resets the license providers for the executing assembly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Reset()</code></pre>
+  </div>
+  <h5 id="DevZest_Licensing_LicenseManager_Reset_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>License providers cache the lookup result by default. Calling this method can enforce license providers to perform
+a new lookup for the next validation, instead of returning the cached result.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseManager_Reset_System_Reflection_Assembly_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseManager.Reset(System.Reflection.Assembly)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseManager.cs/#L398">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseManager_Reset_" data-uid="DevZest.Licensing.LicenseManager.Reset*"></a>
+  <h4 id="DevZest_Licensing_LicenseManager_Reset_System_Reflection_Assembly_" data-uid="DevZest.Licensing.LicenseManager.Reset(System.Reflection.Assembly)">Reset(Assembly)</h4>
+  <div class="markdown level1 summary"><p>Resets the license providers for specified assembly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Reset(Assembly assembly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Reflection.Assembly</span></td>
+        <td><span class="parametername">assembly</span></td>
+        <td><p>The specified assembly.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseManager_Reset_System_Reflection_Assembly__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>License providers cache the lookup result by default. Calling this method can enforce license providers to perform
+a new lookup for the next validation, instead of returning the cached result.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">assembly</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseManager_Reset_System_Type_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseManager.Reset(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseManager.cs/#L385">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseManager_Reset_" data-uid="DevZest.Licensing.LicenseManager.Reset*"></a>
+  <h4 id="DevZest_Licensing_LicenseManager_Reset_System_Type_" data-uid="DevZest.Licensing.LicenseManager.Reset(System.Type)">Reset(Type)</h4>
+  <div class="markdown level1 summary"><p>Resets the license providers for the assembly containing specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Reset(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type contained by the assembly.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseManager_Reset_System_Type__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>License providers cache the lookup result by default. Calling this method can enforce license providers to perform
+a new lookup for the next validation, instead of returning the cached result.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">type</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseManager_Validate_System_String_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseManager.Validate(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseManager.cs/#L79">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseManager_Validate_" data-uid="DevZest.Licensing.LicenseManager.Validate*"></a>
+  <h4 id="DevZest_Licensing_LicenseManager_Validate_System_String_" data-uid="DevZest.Licensing.LicenseManager.Validate(System.String)">Validate(String)</h4>
+  <div class="markdown level1 summary"><p>Determines whether a runtime license can be granted for the specified license item name of executing assembly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Validate(string licenseItemName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">licenseItemName</span></td>
+        <td><p>The specified license item name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseManager_Validate_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method throws a <a class="xref" href="DevZest.Licensing.LicenseException.html">LicenseException</a> when a valid <a class="xref" href="DevZest.Licensing.License.html">License</a> cannot be granted.
+    The <see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see> method does not throw an exception.</p>
+<p>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
+the same strong name key, the validation will succeed. It&apos;s not neccessary to provide a <a class="xref" href="DevZest.Licensing.License.html">License</a> for assemblies
+signed with the same strong name key.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseManager_Validate_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseManager.Validate(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseManager.cs/#L166">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseManager_Validate_" data-uid="DevZest.Licensing.LicenseManager.Validate*"></a>
+  <h4 id="DevZest_Licensing_LicenseManager_Validate_System_String_System_Boolean_" data-uid="DevZest.Licensing.LicenseManager.Validate(System.String,System.Boolean)">Validate(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Determines whether a license can be granted for the specified license item name of the executing assembly,
+given specified design time or runtime mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Validate(string licenseItemName, bool designMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">licenseItemName</span></td>
+        <td><p>The specified license item name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">designMode</span></td>
+        <td><p>Specifies the design time or runtime mode. <span class="xref">true</span> for design time, otherwise runtime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseManager_Validate_System_String_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method throws a <a class="xref" href="DevZest.Licensing.LicenseException.html">LicenseException</a> when a valid <a class="xref" href="DevZest.Licensing.License.html">License</a> cannot be granted.
+    The <see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see> method does not throw an exception.</p>
+<p>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
+the same strong name key, the validation will succeed. It&apos;s not neccessary to provide a <a class="xref" href="DevZest.Licensing.License.html">License</a> for assemblies
+signed with the same strong name key.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseManager_Validate_System_String_System_Reflection_Assembly_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseManager.Validate(System.String%2CSystem.Reflection.Assembly)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseManager.cs/#L137">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseManager_Validate_" data-uid="DevZest.Licensing.LicenseManager.Validate*"></a>
+  <h4 id="DevZest_Licensing_LicenseManager_Validate_System_String_System_Reflection_Assembly_" data-uid="DevZest.Licensing.LicenseManager.Validate(System.String,System.Reflection.Assembly)">Validate(String, Assembly)</h4>
+  <div class="markdown level1 summary"><p>Determines whether a runtime license can be granted for the specified license item name of the specified assembly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Validate(string licenseItemName, Assembly assembly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">licenseItemName</span></td>
+        <td><p>The specified license item name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Reflection.Assembly</span></td>
+        <td><span class="parametername">assembly</span></td>
+        <td><p>The specified assembly.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseManager_Validate_System_String_System_Reflection_Assembly__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method throws a <a class="xref" href="DevZest.Licensing.LicenseException.html">LicenseException</a> when a valid <a class="xref" href="DevZest.Licensing.License.html">License</a> cannot be granted.
+    The <see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see> method does not throw an exception.</p>
+<p>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
+the same strong name key, the validation will succeed. It&apos;s not neccessary to provide a <a class="xref" href="DevZest.Licensing.License.html">License</a> for assemblies
+signed with the same strong name key.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseManager_Validate_System_String_System_Reflection_Assembly_System_Boolean_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseManager.Validate(System.String%2CSystem.Reflection.Assembly%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseManager.cs/#L231">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseManager_Validate_" data-uid="DevZest.Licensing.LicenseManager.Validate*"></a>
+  <h4 id="DevZest_Licensing_LicenseManager_Validate_System_String_System_Reflection_Assembly_System_Boolean_" data-uid="DevZest.Licensing.LicenseManager.Validate(System.String,System.Reflection.Assembly,System.Boolean)">Validate(String, Assembly, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Determines whether a license can be granted for the specified license item name of the specified assembly,
+given specified design time or runtime mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Validate(string licenseItemName, Assembly assembly, bool designMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">licenseItemName</span></td>
+        <td><p>The specified license item name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Reflection.Assembly</span></td>
+        <td><span class="parametername">assembly</span></td>
+        <td><p>The specified assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">designMode</span></td>
+        <td><p>Specifies the design time or runtime mode. <span class="xref">true</span> for design time, otherwise runtime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseManager_Validate_System_String_System_Reflection_Assembly_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method throws a <a class="xref" href="DevZest.Licensing.LicenseException.html">LicenseException</a> when a valid <a class="xref" href="DevZest.Licensing.License.html">License</a> cannot be granted.
+    The <see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see> method does not throw an exception.</p>
+<p>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
+the same strong name key, the validation will succeed. It&apos;s not neccessary to provide a <a class="xref" href="DevZest.Licensing.License.html">License</a> for assemblies
+signed with the same strong name key.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseManager_Validate_System_String_System_Type_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseManager.Validate(System.String%2CSystem.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseManager.cs/#L109">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseManager_Validate_" data-uid="DevZest.Licensing.LicenseManager.Validate*"></a>
+  <h4 id="DevZest_Licensing_LicenseManager_Validate_System_String_System_Type_" data-uid="DevZest.Licensing.LicenseManager.Validate(System.String,System.Type)">Validate(String, Type)</h4>
+  <div class="markdown level1 summary"><p>Determines whether a runtime license can be granted for the specified license item name of the assembly containing specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Validate(string licenseItemName, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">licenseItemName</span></td>
+        <td><p>The specified license item name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type contained by the assembly.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseManager_Validate_System_String_System_Type__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method throws a <a class="xref" href="DevZest.Licensing.LicenseException.html">LicenseException</a> when a valid <a class="xref" href="DevZest.Licensing.License.html">License</a> cannot be granted.
+    The <see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see> method does not throw an exception.</p>
+<p>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
+the same strong name key, the validation will succeed. It&apos;s not neccessary to provide a <a class="xref" href="DevZest.Licensing.License.html">License</a> for assemblies
+signed with the same strong name key.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseManager_Validate_System_String_System_Type_System_Boolean_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseManager.Validate(System.String%2CSystem.Type%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseManager.cs/#L199">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseManager_Validate_" data-uid="DevZest.Licensing.LicenseManager.Validate*"></a>
+  <h4 id="DevZest_Licensing_LicenseManager_Validate_System_String_System_Type_System_Boolean_" data-uid="DevZest.Licensing.LicenseManager.Validate(System.String,System.Type,System.Boolean)">Validate(String, Type, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Determines whether a license can be granted for the specified license item name of the assembly containing specified type,
+given specified design time or runtime mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Validate(string licenseItemName, Type type, bool designMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">licenseItemName</span></td>
+        <td><p>The specified license item name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type contained by the assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">designMode</span></td>
+        <td><p>Specifies the design time or runtime mode. <span class="xref">true</span> for design time, otherwise runtime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseManager_Validate_System_String_System_Type_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method throws a <a class="xref" href="DevZest.Licensing.LicenseException.html">LicenseException</a> when a valid <a class="xref" href="DevZest.Licensing.License.html">License</a> cannot be granted.
+    The <see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see> method does not throw an exception.</p>
+<p>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
+the same strong name key, the validation will succeed. It&apos;s not neccessary to provide a <a class="xref" href="DevZest.Licensing.License.html">License</a> for assemblies
+signed with the same strong name key.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseManager.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseManager.RsaKey.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

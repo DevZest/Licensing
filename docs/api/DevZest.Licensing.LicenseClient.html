@@ -1,0 +1,732 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LicenseClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LicenseClient
+   ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DevZest.Licensing.LicenseClient">
+  
+  
+  <h1 id="DevZest_Licensing_LicenseClient" data-uid="DevZest.Licensing.LicenseClient" class="text-break">Class LicenseClient
+  </h1>
+  <div class="markdown level0 summary"><p>Communicates with <a class="xref" href="DevZest.Licensing.LicensePublisher.html">LicensePublisher</a> to get published <a class="xref" href="DevZest.Licensing.License.html">License</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.ServiceModel.ClientBase</span>&lt;<a class="xref" href="DevZest.Licensing.ILicensePublisher.html">ILicensePublisher</a>&gt;</div>
+    <div class="level2"><span class="xref">LicenseClient</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ServiceModel.ICommunicationObject</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.GetDefaultValueForInitialization&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.Open()</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.Abort()</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.Close()</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.DisplayInitializationUI()</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.CreateChannel()</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.System.IDisposable.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.System.ServiceModel.ICommunicationObject.Open(System.TimeSpan)</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.System.ServiceModel.ICommunicationObject.Close(System.TimeSpan)</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.System.ServiceModel.ICommunicationObject.BeginClose(System.AsyncCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.System.ServiceModel.ICommunicationObject.BeginClose(System.TimeSpan, System.AsyncCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.System.ServiceModel.ICommunicationObject.EndClose(System.IAsyncResult)</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.System.ServiceModel.ICommunicationObject.BeginOpen(System.AsyncCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.System.ServiceModel.ICommunicationObject.BeginOpen(System.TimeSpan, System.AsyncCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.System.ServiceModel.ICommunicationObject.EndOpen(System.IAsyncResult)</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.InvokeAsync(System.ServiceModel.ClientBase.BeginOperationDelegate&lt;&gt;, System.Object[], System.ServiceModel.ClientBase.EndOperationDelegate&lt;&gt;, System.Threading.SendOrPostCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.Channel</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.ChannelFactory</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.ClientCredentials</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.State</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.InnerChannel</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.Endpoint</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.System.ServiceModel.ICommunicationObject.Closed</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.System.ServiceModel.ICommunicationObject.Closing</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.System.ServiceModel.ICommunicationObject.Faulted</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.System.ServiceModel.ICommunicationObject.Opened</span>
+    </div>
+    <div>
+      <span class="xref">System.ServiceModel.ClientBase&lt;DevZest.Licensing.ILicensePublisher&gt;.System.ServiceModel.ICommunicationObject.Opening</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DevZest.Licensing.html">DevZest.Licensing</a></h6>
+  <h6><strong>Assembly</strong>: DevZest.Licensing.dll</h6>
+  <h5 id="DevZest_Licensing_LicenseClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LicenseClient : ClientBase&lt;ILicensePublisher&gt;, ICommunicationObject, IDisposable</code></pre>
+  </div>
+  <h5 id="DevZest_Licensing_LicenseClient_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p><a class="xref" href="DevZest.Licensing.LicenseClient.html">LicenseClient</a> is a WCF (Windows Communication Foundation) client object. For WCF client configuration,
+refer to WCF documentation.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseClient__ctor_System_String_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseClient.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseClient.cs/#L31">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseClient__ctor_" data-uid="DevZest.Licensing.LicenseClient.#ctor*"></a>
+  <h4 id="DevZest_Licensing_LicenseClient__ctor_System_String_" data-uid="DevZest.Licensing.LicenseClient.#ctor(System.String)">LicenseClient(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="DevZest.Licensing.LicenseClient.html">LicenseClient</a> class using specified public key XML string
+and the default target endpoint from the application configuration file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LicenseClient(string publicKeyXml)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">publicKeyXml</span></td>
+        <td><p>The public key XML string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseClient__ctor_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <see cref="O:DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly">LicenseClient.PublicKeyXmlFromAssembly</see> method returns
+the public key XML string for specified assembly.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">publicKeyXml</code> is <span class="xref">null</span> or empty string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseClient__ctor_System_String_System_ServiceModel_Channels_Binding_System_ServiceModel_EndpointAddress_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseClient.%23ctor(System.String%2CSystem.ServiceModel.Channels.Binding%2CSystem.ServiceModel.EndpointAddress)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseClient.cs/#L57">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseClient__ctor_" data-uid="DevZest.Licensing.LicenseClient.#ctor*"></a>
+  <h4 id="DevZest_Licensing_LicenseClient__ctor_System_String_System_ServiceModel_Channels_Binding_System_ServiceModel_EndpointAddress_" data-uid="DevZest.Licensing.LicenseClient.#ctor(System.String,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)">LicenseClient(String, Binding, EndpointAddress)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="DevZest.Licensing.LicenseClient.html">LicenseClient</a> class using the specified public key XML string,
+binding and target address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LicenseClient(string publicKeyXml, Binding binding, EndpointAddress remoteAddress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">publicKeyXml</span></td>
+        <td><p>The public key XML string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ServiceModel.Channels.Binding</span></td>
+        <td><span class="parametername">binding</span></td>
+        <td><p>The binding with which to make calls to the service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ServiceModel.EndpointAddress</span></td>
+        <td><span class="parametername">remoteAddress</span></td>
+        <td><p>The address of the service endpoint.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseClient__ctor_System_String_System_ServiceModel_Channels_Binding_System_ServiceModel_EndpointAddress__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <see cref="O:DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly">LicenseClient.PublicKeyXmlFromAssembly</see> method returns
+the public key XML string for specified assembly.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">publicKeyXml</code> is <span class="xref">null</span> or empty string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseClient__ctor_System_String_System_String_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseClient.%23ctor(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseClient.cs/#L43">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseClient__ctor_" data-uid="DevZest.Licensing.LicenseClient.#ctor*"></a>
+  <h4 id="DevZest_Licensing_LicenseClient__ctor_System_String_System_String_" data-uid="DevZest.Licensing.LicenseClient.#ctor(System.String,System.String)">LicenseClient(String, String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="DevZest.Licensing.LicenseClient.html">LicenseClient</a> class using specified public key XML string
+and the configuration information specified in the application configuration file by endpointConfigurationName.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LicenseClient(string publicKeyXml, string endpointConfigurationName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">publicKeyXml</span></td>
+        <td><p>The public key XML string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">endpointConfigurationName</span></td>
+        <td><p>The name of the endpoint in the application configuration file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Licensing_LicenseClient__ctor_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <see cref="O:DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly">LicenseClient.PublicKeyXmlFromAssembly</see> method returns
+the public key XML string for specified assembly.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">publicKeyXml</code> is <span class="xref">null</span> or empty string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseClient_GetLicense_System_Globalization_CultureInfo_System_String_System_Version_DevZest_Licensing_LicenseKey_System_String_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseClient.GetLicense(System.Globalization.CultureInfo%2CSystem.String%2CSystem.Version%2CDevZest.Licensing.LicenseKey%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseClient.cs/#L100">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseClient_GetLicense_" data-uid="DevZest.Licensing.LicenseClient.GetLicense*"></a>
+  <h4 id="DevZest_Licensing_LicenseClient_GetLicense_System_Globalization_CultureInfo_System_String_System_Version_DevZest_Licensing_LicenseKey_System_String_System_String_System_String_System_String_System_String_" data-uid="DevZest.Licensing.LicenseClient.GetLicense(System.Globalization.CultureInfo,System.String,System.Version,DevZest.Licensing.LicenseKey,System.String,System.String,System.String,System.String,System.String)">GetLicense(CultureInfo, String, Version, LicenseKey, String, String, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets <a class="xref" href="DevZest.Licensing.License.html">License</a> from <a class="xref" href="DevZest.Licensing.LicensePublisher.html">LicensePublisher</a> using specified culture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LicensePublisherResponse GetLicense(CultureInfo cultureInfo, string product, Version version, LicenseKey licenseKey, string category, string name, string company, string email, string data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Globalization.CultureInfo</span></td>
+        <td><span class="parametername">cultureInfo</span></td>
+        <td><p>The specified culture information.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">product</span></td>
+        <td><p>The product name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Version</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The product version.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a></td>
+        <td><span class="parametername">licenseKey</span></td>
+        <td><p>The license key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">category</span></td>
+        <td><p>The license category.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The user name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">company</span></td>
+        <td><p>The user company.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">email</span></td>
+        <td><p>The user email address.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data to set in the license.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Licensing.LicensePublisherResponse.html">LicensePublisherResponse</a></td>
+        <td><p>The response from <a class="xref" href="DevZest.Licensing.LicensePublisher.html">LicensePublisher</a> which encapsulates a <a class="xref" href="DevZest.Licensing.License.html">License</a> object or
+an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseClient_GetLicense_System_String_System_Version_DevZest_Licensing_LicenseKey_System_String_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseClient.GetLicense(System.String%2CSystem.Version%2CDevZest.Licensing.LicenseKey%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseClient.cs/#L83">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseClient_GetLicense_" data-uid="DevZest.Licensing.LicenseClient.GetLicense*"></a>
+  <h4 id="DevZest_Licensing_LicenseClient_GetLicense_System_String_System_Version_DevZest_Licensing_LicenseKey_System_String_System_String_System_String_System_String_System_String_" data-uid="DevZest.Licensing.LicenseClient.GetLicense(System.String,System.Version,DevZest.Licensing.LicenseKey,System.String,System.String,System.String,System.String,System.String)">GetLicense(String, Version, LicenseKey, String, String, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets <a class="xref" href="DevZest.Licensing.License.html">License</a> from <a class="xref" href="DevZest.Licensing.LicensePublisher.html">LicensePublisher</a> using current thread's culture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LicensePublisherResponse GetLicense(string product, Version version, LicenseKey licenseKey, string category, string name, string company, string email, string data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">product</span></td>
+        <td><p>The product name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Version</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The product version.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a></td>
+        <td><span class="parametername">licenseKey</span></td>
+        <td><p>The license key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">category</span></td>
+        <td><p>The license category.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The user name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">company</span></td>
+        <td><p>The user company.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">email</span></td>
+        <td><p>The user email address.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data to set in the license.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Licensing.LicensePublisherResponse.html">LicensePublisherResponse</a></td>
+        <td><p>The response from <a class="xref" href="DevZest.Licensing.LicensePublisher.html">LicensePublisher</a> which encapsulates a <a class="xref" href="DevZest.Licensing.License.html">License</a> object or
+an error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseClient_PublicKeyXmlFromAssembly_System_Reflection_Assembly_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly(System.Reflection.Assembly)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseClient.cs/#L118">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseClient_PublicKeyXmlFromAssembly_" data-uid="DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly*"></a>
+  <h4 id="DevZest_Licensing_LicenseClient_PublicKeyXmlFromAssembly_System_Reflection_Assembly_" data-uid="DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly(System.Reflection.Assembly)">PublicKeyXmlFromAssembly(Assembly)</h4>
+  <div class="markdown level1 summary"><p>Gets public key XML string from specified assembly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PublicKeyXmlFromAssembly(Assembly assembly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Reflection.Assembly</span></td>
+        <td><span class="parametername">assembly</span></td>
+        <td><p>The specified assembly.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The public key XML. <span class="xref">null</span> if assembly is not signed with a strong name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseClient_PublicKeyXmlFromAssembly_System_String_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseClient.cs/#L126">View Source</a>
+  </span>
+  <a id="DevZest_Licensing_LicenseClient_PublicKeyXmlFromAssembly_" data-uid="DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly*"></a>
+  <h4 id="DevZest_Licensing_LicenseClient_PublicKeyXmlFromAssembly_System_String_" data-uid="DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly(System.String)">PublicKeyXmlFromAssembly(String)</h4>
+  <div class="markdown level1 summary"><p>Gets public key XML string from specified assembly file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PublicKeyXmlFromAssembly(string assemblyPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">assemblyPath</span></td>
+        <td><p>The full path of the assembly file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The public key XML. <span class="xref">null</span> if assembly is not signed with a strong name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ServiceModel.ICommunicationObject</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseClient.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseClient.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
