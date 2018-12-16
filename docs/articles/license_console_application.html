@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>License Console Application </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="License Console Application ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="license_console_application">
+<h1 id="license-console-application">License Console Application</h1>
+
+<p><code>License Console</code> is an application used to manage .Net component licensing. It is extensively used by all of our component products, including .Net Licensing itself.</p>
+<p><code>License Console</code> is a WPF application written in C#. The source code is provided in the installed Samples zipped folder. You may modify to fit your own needs.</p>
+<h2 id="the-license-scheme">The License Scheme</h2>
+<p><code>License Console</code> supports the following types of licenses:</p>
+<table>
+<thead>
+<tr>
+<th>License Type</th>
+<th>License Key</th>
+<th>Description</th>
+<th>License Items</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Free Feature License</td>
+<td>No</td>
+<td>Product License as <a class="xref" href="../api/DevZest.Licensing.MachineLicense.html">MachineLicense</a> object.</td>
+<td>Free features</td>
+</tr>
+<tr>
+<td>Evaluation License</td>
+<td>No</td>
+<td>Product License as <a class="xref" href="../api/DevZest.Licensing.MachineLicense.html">MachineLicense</a> object, with <a class="xref" href="../api/DevZest.Licensing.License.html#DevZest_Licensing_License_ExpirationDate">Expiration</a> property set.</td>
+<td>All features. If corresponds a free feature, set the <a class="xref" href="../api/DevZest.Licensing.LicenseItem.html#DevZest_Licensing_LicenseItem_OverrideExpirationDate">OverrideExpirationDate</a> property to true.</td>
+</tr>
+<tr>
+<td>Paid License</td>
+<td>Yes</td>
+<td>Product License as <a class="xref" href="../api/DevZest.Licensing.MachineLicense.html">MachineLicense</a> object.</td>
+<td>Determined by the provided license key. Should include all free features.</td>
+</tr>
+<tr>
+<td>Distributable License</td>
+<td>Yes/No</td>
+<td><a class="xref" href="../api/DevZest.Licensing.AssemblyLicense.html">AssemblyLicense</a> object.</td>
+<td>If license key provided, same as Paid License; otherwise same as Free Feature License.</td>
+</tr>
+</tbody>
+</table>
+<p>The Product License (Free Feature License, Evaluation License or Paid License) can be further divided into two sub-types: design time and runtime. It is stored as DesignTimeLicense or RuntimeLicense value of a HKLM registry key specified in the configuration file (LicenseConsole.exe.config).</p>
+<h2 id="license-providers">License Providers</h2>
+<p>In your assembly, you need to declare <a class="xref" href="../api/DevZest.Licensing.RegistryLicenseProviderAttribute.html">RegistryLicenseProviderAttribute</a> for Product License and <a class="xref" href="../api/DevZest.Licensing.AssemblyLicenseProviderAttribute.html">AssemblyLicenseProviderAttribute</a> for Distributable License. For example, <code>DevZest.Licensing.dll</code> declares the following license providers:</p>
+<pre><code class="lang-csharp">[assembly: RegistryLicenseProvider(@&quot;Software\DevZest\.Net Licensing\&quot;, &quot;RuntimeLicense&quot;)]
+[assembly: AssemblyLicenseProvider(EntryAssemblyOnly=false)]
+</code></pre>
+<pre><code class="lang-vb">&lt;assembly: RegistryLicenseProvider(&quot;Software\DevZest\.Net Licensing\&quot;, &quot;RuntimeLicense&quot;)&gt;
+&lt;assembly: AssemblyLicenseProvider(EntryAssemblyOnly:=false)&gt;
+</code></pre>
+<p>The Product License will be loaded from &quot;RuntimeLicense&quot; value under registry key &quot;HKLM\Software\DevZest.Net Licensing\X.x&quot;, where &quot;X.x&quot; stands for the major and minor version of DevZest.Licensing.dll. The Distributable License will be loaded from the chain of caller assembly.</p>
+<h2 id="licenseitemattribute">LicenseItemAttribute</h2>
+<p>In your assembly, you need to declare <a class="xref" href="../api/DevZest.Licensing.LicenseItemAttribute.html">LicenseItemAttribute</a> for <code>License Console</code> to get the full list of features (license item names and descriptions). For example, DevZest.Licensing.dll declares the following single feature:</p>
+<pre><code class="lang-csharp">[assembly: LicenseItem(@&quot;.Net Licensing&quot;)]
+</code></pre>
+<pre><code class="lang-vb">&lt;assembly: LicenseItem(&quot;.Net Licensing&quot;)&gt;
+</code></pre>
+<p>You can provide localized description for each feature. This will be displayed in <code>License Console</code> main window. If no description provided, the license item name will be used.</p>
+<h2 id="the-configuration-file">The Configuration File</h2>
+<p>You can configure <code>License Console</code> by modifying the configuration file <code>LicenseConsole.exe.config</code>:</p>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;configuration&gt;
+  &lt;system.net&gt;
+    &lt;defaultProxy useDefaultCredentials=&quot;true&quot; &gt;&lt;/defaultProxy&gt;
+  &lt;/system.net&gt;
+  &lt;system.serviceModel&gt;
+    &lt;bindings&gt;
+      &lt;customBinding&gt;
+        &lt;binding name=&quot;LicensePublisherSoap12&quot;&gt;
+          &lt;textMessageEncoding messageVersion=&quot;Soap12&quot; writeEncoding=&quot;utf-8&quot;/&gt;
+          &lt;httpTransport/&gt;
+        &lt;/binding&gt;
+      &lt;/customBinding&gt;
+    &lt;/bindings&gt;
+    &lt;client&gt;
+      &lt;endpoint
+        address=&quot;http://www.devzest.com/LicensePublisher.asmx&quot;
+        binding=&quot;customBinding&quot;
+        bindingConfiguration=&quot;LicensePublisherSoap12&quot;
+        contract=&quot;DevZest.Licensing.ILicensePublisher&quot;/&gt;
+    &lt;/client&gt;
+  &lt;/system.serviceModel&gt;
+  &lt;appSettings&gt;
+    &lt;add key=&quot;Assembly&quot; value=&quot;DevZest.Licensing.dll&quot;/&gt;
+    &lt;add key=&quot;RegistryKey&quot; value=&quot;Software\DevZest\.Net Licensing\&quot;/&gt;
+    &lt;add key=&quot;RegistryKeyWow6432&quot; value=&quot;Software\Wow6432Node\DevZest\.Net Licensing\&quot;/&gt;
+    &lt;add key=&quot;ProductReleasesUrl&quot; value=&quot;http://www.devzest.com/ProductReleases.aspx?Product=DotNetLicensing&quot; /&gt;
+    &lt;add key=&quot;ProductReleasesWebPageUrl&quot; value=&quot;http://www.devzest.com/DotNetLicensing.aspx?Show=Releases&quot; /&gt;
+    &lt;add key=&quot;PurchaseUrl&quot; value=&quot;http://www.devzest.com/Buy.aspx?Product=DotNetLicensing&quot;/&gt;
+    &lt;add key=&quot;LicenseAgreementFile&quot; value=&quot;LicenseAgreement.rtf&quot;/&gt;
+    &lt;add key=&quot;LicenseEmail&quot; value=&quot;license@devzest.com&quot;/&gt;
+    &lt;add key=&quot;DesignTimeFreeFeatureLicenseCategory&quot; value=&quot;&quot;/&gt;
+    &lt;add key=&quot;DesignTimeEvaluationLicenseCategory&quot; value=&quot;&quot;/&gt;
+    &lt;add key=&quot;DesignTimePaidLicenseCategory&quot; value=&quot;&quot;/&gt;
+    &lt;add key=&quot;RuntimeFreeFeatureLicenseCategory&quot; value=&quot;&quot;/&gt;
+    &lt;add key=&quot;RuntimeEvaluationLicenseCategory&quot; value=&quot;Evaluation&quot;/&gt;
+    &lt;add key=&quot;RuntimePaidLicenseCategory&quot; value=&quot;Paid&quot;/&gt;
+    &lt;add key=&quot;DistributableLicenseCategory&quot; value=&quot;Distributable&quot;/&gt;
+  &lt;/appSettings&gt;
+&lt;/configuration&gt;
+</code></pre>
+<p>You need to:</p>
+<ul>
+<li>Configure the license client in the <code>system.serviceModel</code> section. For more information on how to configure the license client, see <a class="xref" href="programming_license_client.html">Programming License Client</a>.</li>
+<li>Configure <code>License Console</code> application in the appSettings section:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Assembly</td>
+<td>Yes</td>
+<td>The path of your assembly.</td>
+</tr>
+<tr>
+<td>RegistryKey</td>
+<td>Yes</td>
+<td>The registry key to store the Product License. Always use HKLM hive. When ends with &quot;&quot;, a <code>Major.Minor</code> version string will be appended.</td>
+</tr>
+<tr>
+<td>RegistryKeyWow6432</td>
+<td>No</td>
+<td>The registry key for 32 bit application to store the Product License under x64 system. Always use HKLM hive. When ends with &quot;&quot;, a <code>Major.Minor</code> version string will be appended.</td>
+</tr>
+<tr>
+<td>ProductReleasesUrl</td>
+<td>No</td>
+<td>The URL of the XML file contains the release data used to check update. If not provided, checking update is disabled. (Example)</td>
+</tr>
+<tr>
+<td>ProductReleasesWebPageUrl</td>
+<td>No</td>
+<td>The URL of the web page contains the release information. When failed reading the release data XML file, user can alternatively navigate to this web page to get the latest release. (Example)</td>
+</tr>
+<tr>
+<td>PurchaseUrl</td>
+<td>Yes</td>
+<td>The URL that a license key can be purchased. (Example)</td>
+</tr>
+<tr>
+<td>LicenseEmail</td>
+<td>No</td>
+<td>The email address where the license request email sent to. If value provided, you must implement the email processor to reply the request license, in the form of URL query string. Refer to the source code for required name-value pairs.</td>
+</tr>
+<tr>
+<td>LicenseAgreementFile</td>
+<td>Yes</td>
+<td>The path of license agreement file, in RTF format.</td>
+</tr>
+<tr>
+<td>DesignTimeFreeFeatureLicenseCategory</td>
+<td>No</td>
+<td>License category string used to communicate with the license publisher for design time Free Feature License.</td>
+</tr>
+<tr>
+<td>DesignTimeEvaluationLicenseCategory</td>
+<td>No</td>
+<td>License category string used to communicate with the license publisher for design time Evaluation License.</td>
+</tr>
+<tr>
+<td>DesignTimePaidLicenseCategory</td>
+<td>No</td>
+<td>License category string used to communicate with the license publisher for design time Paid License.</td>
+</tr>
+<tr>
+<td>RuntimeFreeFeatureLicenseCategory</td>
+<td>No</td>
+<td>License category string used to communicate with the license publisher for runtime Free Feature License.</td>
+</tr>
+<tr>
+<td>RuntimeEvaluationLicenseCategory</td>
+<td>No</td>
+<td>License category string used to communicate with the license publisher for runtime Evaluation License.</td>
+</tr>
+<tr>
+<td>RuntimePaidLicenseCategory</td>
+<td>Yes</td>
+<td>License category string used to communicate with the license publisher for runtime Paid License.</td>
+</tr>
+<tr>
+<td>DistributableLicenseCategory</td>
+<td>Yes</td>
+<td>License category string used to communicate with the license publisher for Distributable License.</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/DevZest/Licensing/blob/master/docs_src/articles/license_console_application.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
