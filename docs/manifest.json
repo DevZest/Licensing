@@ -408,6 +408,18 @@
           "hash": "B6eVNiZERKSgv0a4qFe3zQ=="
         }
       },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/extending_dotnet_licensing.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/extending_dotnet_licensing.html",
+          "hash": "WsAHt6WfzlDaozXEfy6f5w=="
+        }
+      },
       "is_incremental": false,
       "version": ""
     },
@@ -468,7 +480,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "CkvDDEKLD5fevUltFS6cgg=="
+          "hash": "wjZDEQycQoUq9wLQJt2V4Q=="
         }
       },
       "is_incremental": false,
