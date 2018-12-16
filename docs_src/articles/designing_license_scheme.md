@@ -14,11 +14,12 @@ For each kind of license you will grant to your user, you need to map it to one 
 
 | License | Description |
 | --- | --- |
-| Evaluation License | @DevZest.Licensing.MachineLicense object with [Expiration](xref:DevZest.Licensing.License#DevZest_Licensing_License_Expiration) property set.<br/>This license can be obtained without a license key, valid on local machine only. |
-| Paid License | @DevZest.Licensing.MachineLicense object with [Expiration](xref:DevZest.Licensing.License#DevZest_Licensing_License_Expiration) property set.<br/>This license can be only be obtained with a valid license key, valid on local machine only. |
-| Distributable License | @DevZest.Licensing.AssemblyLicense object.<br/>This license can be only be obtained with a valid license key, valid for one specific caller assembly only. |
+| Evaluation License | @DevZest.Licensing.MachineLicense object with [Expiration](xref:DevZest.Licensing.License#DevZest_Licensing_License_Expiration) property set. This license can be obtained without a license key, valid on local machine only. |
+| Paid License | @DevZest.Licensing.MachineLicense object with [Expiration](xref:DevZest.Licensing.License#DevZest_Licensing_License_Expiration) property set. This license can be only be obtained with a valid license key, valid on local machine only. |
+| Distributable License | @DevZest.Licensing.AssemblyLicense object. This license can be only be obtained with a valid license key, valid for one specific caller assembly only. |
 
 ## License Provider
+
 You have to make the decision where to store the license together with your software product. .Net Licensing provides the following license providers:
 
 | Provider | Description |
@@ -31,12 +32,14 @@ You have to make the decision where to store the license together with your soft
 Choose the license providers based on your license types and how your software product is deployed. For example, .Net Licensing itself may have the following license providers declared:
 
 C#:
+
 ```csharp
 [assembly: RegistryLicenseProvider(@"Software\DevZest\.Net Licensing\", "RuntimeLicense")]
 [assembly: AssemblyLicenseProvider(EntryAssemblyOnly=false)]
 ```
 
 VB.Net:
+
 ```vb
 <assembly: RegistryLicenseProvider("Software\DevZest\.Net Licensing\", "RuntimeLicense")>
 <assembly: AssemblyLicenseProvider(EntryAssemblyOnly:=false)>
