@@ -369,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "BXYhPYzk1oyO8KlVQl0tuQ=="
+          "hash": "3Dd9Vrxyf1tLVp1QS9bkCQ=="
         }
       },
       "is_incremental": true,
@@ -420,7 +420,7 @@
           "hash": "gCzI2WaB0ZiZ+0ULS62JpQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -429,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "k+/dkjFuwAVS32HduMpmBw=="
+          "hash": "t/5vJ4Cb8ti7DaPBFYvd8g=="
         }
       },
       "is_incremental": false,
