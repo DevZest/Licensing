@@ -1,4 +1,4 @@
-# Welcome
+# Welcome to DevZest .Net Licensing
 .Net Licensing is a lightweight yet comprehensive licensing solution for Microsoft .Net platform. This solution, provided as a .Net component, provides the same level security as signing your .Net assembly, and gives you utmost control and flexibility.
 
 # Summary
