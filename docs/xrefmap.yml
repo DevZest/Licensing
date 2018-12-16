@@ -2206,6 +2206,9 @@ references:
   isSpec: "True"
   fullName: DevZest.Licensing.UserLicense.Validate
   nameWithType: UserLicense.Validate
+- uid: enabling_licensing_for_your_assembly
+  name: Enabling Licensing for Your Assembly
+  href: articles/enabling_licensing_for_your_assembly.html
 - uid: programming_license_client
   name: Programming License Client
   href: articles/programming_license_client.html
