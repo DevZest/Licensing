@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SampleApp </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="SampleApp ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="sample_app">
+<h1 id="sampleapp">SampleApp</h1>
+
+<p>This walk-through creates the <code>SampleApp</code>, the console application consumes the license.</p>
+<h2 id="create-sampleapp-project">Create SampleApp Project</h2>
+<p>In <code>Solution Explorer</code>, right click the <code>QuickStart</code> solution, select <code>Add -&gt; New Project...</code>:</p>
+<p><img src="../images/QuickStartSampleApp1_Cs.jpg" alt="image"></p>
+<p>In left side <code>Project types</code>, select <code>Visual C#</code> -&gt; <code>Windows</code>, then select <code>Console Application</code> in <code>Templates</code>. Enter <code>SampleApp</code> as <code>Name</code>.</p>
+<p>A <code>SampleApp</code> console application project created.</p>
+<p>Right click the created <code>SampleApp</code> project in <code>Solution Explorer</code>, select <code>Add</code> -&gt; <code>Existing Item</code>:</p>
+<p><img src="../images/QuickStartSampleApp2.jpg" alt="image"></p>
+<p>Navigate to the file <code>key.snk</code> previously created, click the drop down arrow of button <code>Add</code>, then click <code>Add as Link</code>.</p>
+<p>Right click <code>SampleApp</code> project in <code>Solution Explorer</code>, select <code>Properties</code>:</p>
+<p><img src="../images/QuickStartSampleApp3.jpg" alt="image"></p>
+<p>In <code>Signing</code> tab, Check <code>Sign the assembly</code>, select the previously added <code>key.snk</code> file from <code>Choose a strong name key file</code>.</p>
+<h2 id="add-reference-to-systemservicemodel-assembly-and-devzestlicensingdll-assembly">Add Reference to System.ServiceModel assembly and DevZest.Licensing.dll assembly</h2>
+<p>In <code>Solution Explorer</code>, right click <code>SampleApp</code> project, select <code>References...</code></p>
+<p>Under .NET tab:</p>
+<p><img src="../images/QuickStartSampleApp4.jpg" alt="image"></p>
+<p>Browse to assembly <code>System.ServiceModel</code>, and click button <code>OK</code>.</p>
+<p>Under <code>Browse</code> tab:</p>
+<p><img src="../images/QuickStartSampleApp5.jpg" alt="image"></p>
+<p>Browse to file <code>DevZest.Licensing.dll</code> and click button <code>OK</code>. This file is installed in the <code>C:\Program Files\DevZest\.Net Licensing\1.0</code> folder by default.</p>
+<h2 id="add-testing-code">Add Testing Code</h2>
+<p>Enter code in file <code>Program.cs</code>:</p>
+<pre><code class="lang-csharp">using System;
+using System.IO;
+using System.Reflection;
+using System.ServiceModel;
+using DevZest.Licensing;
+
+[assembly: FileLicenseProvider]
+
+namespace SampleApp
+{
+    static class Program
+    {
+        // The AssemblyProduct attribute of SampleApp
+        private const string Product = &quot;SampleApp&quot;;
+
+        // The license item names
+        private static class LicenseItems
+        {
+            public const string Feature1 = &quot;Feature1&quot;;
+            public const string Feature2 = &quot;Feature2&quot;;
+        }
+
+        private enum LicenseCategory
+        {
+            ExpiredEvaluation = 0,
+            Evaluation,
+            Registered
+        }
+
+        private static LicenseKey[] s_licenseKeys = {
+            new LicenseKey(&quot;6VL8P-QHCRS-PF2GJ-8XLYG-VKHH4&quot;),
+            new LicenseKey(&quot;ZSWPT-Q3QV8-V9MM9-4WVFA-9Z9CQ&quot;),
+            new LicenseKey(&quot;XYDSY-LSKC5-9XVSJ-3QYLT-MALBQ&quot;) };
+
+        static void Main(string[] args)
+        {
+            Output();
+            for (int input = Input(); input != 0; input = Input())
+            {
+                GetLicense((LicenseCategory)(input - 1));
+                Output();
+            }
+        }
+
+        private static void GetLicense(LicenseCategory licenseCategory)
+        {
+            LicenseClient licenseClient = new LicenseClient(LicenseClient.PublicKeyXmlFromAssembly(Assembly.GetExecutingAssembly()));
+            try
+            {
+                LicensePublisherResponse response = licenseClient.GetLicense(
+                    Product,
+                    Assembly.GetExecutingAssembly().GetName().Version,
+                    s_licenseKeys[(int)licenseCategory],
+                    licenseCategory.ToString(),
+                    &quot;Test User&quot;,
+                    &quot;Test Company&quot;,
+                    &quot;testuser@test.com&quot;,
+                    MachineLicense.LocalMachineData);
+                License license = response.License;
+                if (license == null)
+                    Console.WriteLine(&quot;ERROR: &quot; + response.ErrorMessage);
+                else
+                {
+                    File.WriteAllText(Assembly.GetExecutingAssembly().Location + &quot;.lic&quot;, license.SignedString);
+                    LicenseManager.Reset();
+                }
+
+                licenseClient.Close();
+            }
+            catch (CommunicationException exception)
+            {
+                Console.WriteLine(&quot;EXCEPTION: &quot; + exception.Message);
+                licenseClient.Abort();
+            }
+        }
+
+        private static int Input()
+        {
+            string[] categories = Enum.GetNames(typeof(LicenseCategory));
+            for (int i = 0; i &lt; categories.Length; i++)
+                Console.WriteLine(string.Format(&quot;{0}: {1} ({2})&quot;, i + 1, categories[i], s_licenseKeys[i]));
+
+            Console.WriteLine(&quot;0: Exit&quot;);
+            while (true)
+            {
+                Console.Write(&quot;Please Enter: &quot;);
+                string input = Console.ReadLine();
+                try
+                {
+                    int returnValue = Convert.ToInt32(input);
+                    if (returnValue &gt;= 0 &amp;&amp; returnValue &lt;= categories.Length)
+                        return returnValue;
+                }
+                catch (FormatException)
+                {
+                }
+            }
+        }
+
+        private static void Output()
+        {
+            Console.WriteLine();
+            License license = LicenseManager.GetLicense();
+            if (license == null)
+                Console.WriteLine(&quot;This application is not licensed&quot;);
+            else
+            {
+                Console.WriteLine(&quot;License of this application:&quot;);
+                Console.WriteLine(license.SignedString);
+                OutputLicenseItemValidation(LicenseItems.Feature1);
+                OutputLicenseItemValidation(LicenseItems.Feature2);
+            }
+
+            Console.WriteLine();
+        }
+
+        private static void OutputLicenseItemValidation(string licenseItemName)
+        {
+            LicenseError licenseError = LicenseManager.Check(licenseItemName);
+            Console.Write(licenseItemName + &quot;: &quot;);
+            if (licenseError == null)
+                Console.WriteLine(&quot;A valid license granted&quot;);
+            else
+                Console.WriteLine(string.Format(&quot;Cannot grant a valid license, reason=\&quot;{0}\&quot;, message=\&quot;{1}\&quot;&quot;, licenseError.Reason, licenseError.Message));
+        }
+    }
+}
+</code></pre>
+<h2 id="configure-the-application">Configure the Application</h2>
+<p>In <code>Solution Explorer</code>, right click <code>SampleApp</code> project, select <code>Add New Item...</code>:</p>
+<p><img src="../images/QuickStartSampleApp6_Cs.jpg" alt="image"></p>
+<p>In left side <code>Categories</code>, select <code>Visual C# Items</code>, then select <code>Application Configuration File</code> in <code>Templates</code>. Don't change the default name <code>App.config</code>.</p>
+<p>Enter the following XML in file <code>App.config</code>:</p>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+&lt;configuration&gt;
+  &lt;!--
+  &lt;system.serviceModel&gt;
+    &lt;bindings&gt;
+      &lt;customBinding&gt;
+        &lt;binding name=&quot;LicensePublisherSoap12&quot;&gt;
+          &lt;textMessageEncoding messageVersion=&quot;Soap12&quot; writeEncoding=&quot;utf-8&quot; /&gt;
+          &lt;httpTransport /&gt;
+        &lt;/binding&gt;
+      &lt;/customBinding&gt;
+    &lt;/bindings&gt;
+    &lt;client&gt;
+      &lt;endpoint
+        address=&quot;http://localhost:16885/AsmxPublisher.asmx&quot;
+        binding=&quot;customBinding&quot; bindingConfiguration=&quot;LicensePublisherSoap12&quot;
+        contract=&quot;DevZest.Licensing.ILicensePublisher&quot; /&gt;      
+    &lt;/client&gt;
+  &lt;/system.serviceModel&gt;
+  --&gt;
+
+  &lt;system.serviceModel&gt;
+    &lt;client&gt;
+      &lt;endpoint
+        address=&quot;http://localhost:16885/SvcPublisher.svc&quot;
+        binding=&quot;wsHttpBinding&quot;
+        contract=&quot;DevZest.Licensing.ILicensePublisher&quot; /&gt;
+    &lt;/client&gt;
+  &lt;/system.serviceModel&gt;
+&lt;/configuration&gt;
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/DevZest/Licensing/blob/master/docs_src/articles/sample_app.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

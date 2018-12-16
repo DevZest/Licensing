@@ -2224,6 +2224,9 @@ references:
 - uid: quickstart_sample
   name: QuickStart Sample
   href: articles/quickstart_sample.html
+- uid: sample_app
+  name: SampleApp
+  href: articles/sample_app.html
 - uid: sample_publisher
   name: SamplePublisher
   href: articles/sample_publisher.html
