@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SamplePublisher </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="SamplePublisher ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="sample_publisher">
+<h1 id="samplepublisher">SamplePublisher</h1>
+
+<p>This walk-through creates the <code>SamplePublisher</code>, the web service which publishes the license.</p>
+<h2 id="create-samplepublisher-project">Create SamplePublisher Project</h2>
+<p>In <code>Solution Explorer</code>, right click the <code>QuickStart</code> solution, select <code>Add</code> -&gt; <code>New Project...</code>:</p>
+<p><img src="../images/QuickStartSamplePublisher1_Cs.jpg" alt="image"></p>
+<p>In left side <code>Project types</code>, select <code>Visual C#</code> -&gt; <code>Web</code>, then select <code>ASP .Net Web Application</code> in Templates. Enter <code>SamplePublisher</code> as Name.</p>
+<p>A <code>SamplePublisher</code> ASP .Net web project created.</p>
+<p>Right click the created <code>SamplePublisher</code> project in <code>Solution Explorer</code>, select <code>Add</code> -&gt; <code>Existing Item</code>:</p>
+<p><img src="../images/QuickStartSamplePublisher2.jpg" alt="image"></p>
+<p>Navigate to the file <code>key.snk</code> previously created, click the drop down arrow of button <code>Add</code>, then click <code>Add as Link</code>.</p>
+<p>Right click <code>key.snk</code> in <code>SamplePublisher</code> project, select <code>Properties</code>:</p>
+<p><img src="../images/QuickStartSamplePublisher3.jpg" alt="image"></p>
+<p>set the <code>Build Action</code> as <code>Embedded Resource</code>.</p>
+<p>Right click <code>SamplePublisher</code> project in <code>Solution Explorer</code>, select <code>Properties</code>.</p>
+<p>In <code>Signing</code> tab:</p>
+<p><img src="../images/QuickStartSamplePublisher4.jpg" alt="image"></p>
+<p>Check <code>Sign the assembly</code>, select the previously added <code>key.snk</code> file from <code>Choose a strong name key file</code>.</p>
+<p>In <code>Web</code> tab:</p>
+<p><img src="../images/QuickStartSamplePublisher5.jpg" alt="image"></p>
+<p>Enter port number <code>16885</code> under <code>Servers</code> -&gt; <code>Use Visual Stuido Development Server</code> -&gt; <code>Specific port</code>. This port number will be used in <code>SampleApp</code> configuration file.</p>
+<h2 id="add-reference-to-windowsbase-assembly-and-devzestlicensingdll-assembly">Add reference to WindowsBase assembly and DevZest.Licensing.dll assembly</h2>
+<p>In <code>Solution Explorer</code>, right click <code>SamplePublisher</code> project, select <code>References...</code></p>
+<p>Under <code>.NET</code> tab:</p>
+<p><img src="../images/QuickStartSamplePublisher6.jpg" alt="image"></p>
+<p>Browse to assembly <code>WindowsBase</code>, and click button <code>OK</code>.</p>
+<p>Under <code>Browse</code> tab:</p>
+<p><img src="../images/QuickStartSamplePublisher7.jpg" alt="image"></p>
+<p>Browse to file <code>DevZest.Licensing.dll</code> and click button <code>OK</code>. This file is installed in the <code>C:\Program Files\DevZest\.Net Licensing\1.0</code> folder by default.</p>
+<h2 id="add-new-class-publishervb-to-the-project">Add new class Publisher.vb to the project</h2>
+<p>In <code>Solution Explorer</code>, right click <code>SamplePublisher</code> project, select <code>Add New Item...</code>:</p>
+<p><img src="../images/QuickStartSamplePublisher8_Vb.jpg" alt="image"></p>
+<p>In left side <code>Categories</code>, select <code>Visual Basic</code> -&gt; <code>Code</code>, then select <code>Class</code> in <code>Templates</code>. Enter <code>Publisher.vb</code> as <code>Name</code>.</p>
+<p>Enter code in file <code>Publisher.vb</code>:</p>
+<pre><code class="lang-vb">Imports System
+Imports System.Diagnostics
+Imports System.Collections.Generic
+Imports DevZest.Licensing
+Imports System.IO
+Imports System.Web.Services
+Imports System.Reflection
+Imports System.Globalization
+
+
+&lt;WebService(Namespace:=&quot;http://services.devzest.com/Licensing&quot;)&gt; _
+Public Class Publisher
+    Inherits LicensePublisher
+
+    'The AssemblyProduct attribute of SampleApp
+    Private Const Product As String = &quot;SampleApp&quot;
+
+    'The license item names
+    Private NotInheritable Class LicenseItems
+        Public Const Feature1 As String = &quot;Feature1&quot;
+        Public Const Feature2 As String = &quot;Feature2&quot;
+    End Class
+
+    Private Enum LicenseCategory
+        ExpiredEvaluation = 0
+        Evaluation
+        Registered
+    End Enum
+
+
+    Private Shared s_licenseKeys As LicenseKey() = { _
+        New LicenseKey(&quot;6VL8P-QHCRS-PF2GJ-8XLYG-VKHH4&quot;), _
+        New LicenseKey(&quot;ZSWPT-Q3QV8-V9MM9-4WVFA-9Z9CQ&quot;), _
+        New LicenseKey(&quot;XYDSY-LSKC5-9XVSJ-3QYLT-MALBQ&quot;)}
+
+    Protected Overrides Function GetPrivateKeyXml(ByVal product As String) As String
+        ' Load the private key file from current assembly's embedded resource.
+        ' Note the resource name is namespace + file name, and it's CASE SENSITIVE.
+        ' If wrong resource name provided, PrivateKeyXmlFromSnkFile throws ArgumentNullException!    
+        Using stream As Stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(&quot;SamplePublisher.Key.snk&quot;)
+            Return PrivateKeyXmlFromSnkFile(stream)
+        End Using
+    End Function
+
+    Protected Overrides Function GetLicense(ByVal cultureInfo As CultureInfo, ByVal product As String, ByVal version As Version, ByVal licenseKey As LicenseKey, ByVal category As String, ByVal userName As String, ByVal company As String, ByVal emailAddress As String, ByVal data As String) As LicensePublisherResponse
+        'Check the product
+        If product &lt;&gt; Publisher.Product Then
+            Return New LicensePublisherResponse(&quot;Invalid product!&quot;)
+        End If
+
+        'Check the license key and category
+        Dim licenseCategory As Nullable(Of LicenseCategory) = Nothing
+        For i As Integer = 0 To s_licenseKeys.Length - 1
+            If s_licenseKeys(i) = licenseKey Then
+                licenseCategory = CType(i, LicenseCategory)
+                Exit For
+            End If
+        Next
+
+        If Not licenseCategory.HasValue Then
+            Return New LicensePublisherResponse(&quot;Invalid license key!&quot;)
+        End If
+        If licenseCategory.ToString() &lt;&gt; category Then
+            Return New LicensePublisherResponse(&quot;Invalid category!&quot;)
+        End If
+
+        Dim license As License = New MachineLicense()
+        license.Product = product
+        license.Category = category
+        license.UserName = userName
+        license.Company = company
+        license.Data = data
+        license.Items.Add(New LicenseItem(LicenseItems.Feature1, True))  'Feature1's OverrideExpirationDate is true
+        license.Items.Add(New LicenseItem(LicenseItems.Feature2))
+
+        If licenseCategory = Publisher.LicenseCategory.Evaluation Then
+            license.SetExpirationDate(DateTime.UtcNow.AddMonths(3))
+        ElseIf licenseCategory = Publisher.LicenseCategory.ExpiredEvaluation Then
+            license.SetExpirationDate(DateTime.UtcNow) 'Set ExpirationDate to now always expires the license
+        End If
+
+        Return New LicensePublisherResponse(license)
+    End Function
+
+End Class
+</code></pre>
+<h2 id="add-asmxpublisherasmx-to-the-project">Add AsmxPublisher.asmx to the project</h2>
+<p>In <code>Solution Explorer</code>, right click <code>SamplePublisher</code> project, select <code>Add New Item...</code>:</p>
+<p><img src="../images/QuickStartSamplePublisher9_Vb.jpg" alt="image"></p>
+<p>In left side <code>Categories</code>, select <code>Visual Basic</code> -&gt; <code>Web</code>, then select <code>Web Service</code> in <code>Templates</code>. Enter <code>AsmxPublisher.asmx</code> as <code>Name</code>.</p>
+<p>Enter code in file <code>AsmxPublisher.asmx.vb</code>:</p>
+<pre><code class="lang-vb">Imports System.Web.Services
+
+&lt;WebService(Namespace:=&quot;http://services.devzest.com/Licensing&quot;)&gt; _
+Public Class AsmxPublisher
+    Inherits Publisher
+
+End Class
+</code></pre>
+<h2 id="add-svcpublishersvc-to-the-project">Add SvcPublisher.svc to the project</h2>
+<p>In <code>Solution Explorer</code>, right click <code>SamplePublisher</code> project, select <code>Add New Item...</code>:</p>
+<p><img src="../images/QuickStartSamplePublisherA_Vb.jpg" alt="image"></p>
+<p>In left side <code>Categories</code>, select <code>Visual Basic</code>, then select <code>WCF Service</code> in <code>Templates</code>. Enter <code>SvcPublisher.svc</code> as <code>Name</code>.</p>
+<p>Delete the auto generated file <code>ISvcPublisher.vb</code> by right clicking this file in <code>Solution Explorer</code>, then select <code>Delete</code> from the context menu.</p>
+<p>Enter code in <code>SvcPublisher.svc.vb</code>:</p>
+<pre><code class="lang-vb">Public Class SvcPublisher
+    Inherits Publisher
+
+End Class
+</code></pre>
+<p>Update <code>Web.config</code>:</p>
+<pre><code class="lang-xml">&lt;system.serviceModel&gt;
+ &lt;behaviors&gt;
+  &lt;serviceBehaviors&gt;
+   &lt;behavior name=&quot;SamplePublisher.SvcPublisherBehavior&quot;&gt;
+    &lt;serviceMetadata httpGetEnabled=&quot;true&quot; /&gt;
+    &lt;serviceDebug includeExceptionDetailInFaults=&quot;false&quot; /&gt;
+   &lt;/behavior&gt;
+  &lt;/serviceBehaviors&gt;
+ &lt;/behaviors&gt;
+ &lt;services&gt;
+  &lt;service behaviorConfiguration=&quot;SamplePublisher.SvcPublisherBehavior&quot; name=&quot;SamplePublisher.SvcPublisher&quot;&gt;
+   &lt;endpoint binding=&quot;wsHttpBinding&quot; contract=&quot;DevZest.Licensing.ILicensePublisher&quot; /&gt;
+   &lt;endpoint address=&quot;mex&quot; binding=&quot;mexHttpBinding&quot; contract=&quot;IMetadataExchange&quot; /&gt;
+  &lt;/service&gt;
+ &lt;/services&gt;
+&lt;/system.serviceModel&gt;
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/DevZest/Licensing/blob/master/docs_src/articles/sample_publisher.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

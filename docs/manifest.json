@@ -384,7 +384,7 @@
           "hash": "dv0gMd9sqtBuPfJHoNLVhQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -396,7 +396,7 @@
           "hash": "a0MJM4ta0KlvpUh8jVpbGg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -408,7 +408,7 @@
           "hash": "XzJB6a3W211DDeRPieQjIw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -420,7 +420,7 @@
           "hash": "B6eVNiZERKSgv0a4qFe3zQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -432,7 +432,7 @@
           "hash": "WsAHt6WfzlDaozXEfy6f5w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -444,7 +444,7 @@
           "hash": "/A9lag5UYXPaOPbRK/NfEg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -456,22 +456,19 @@
           "hash": "l4/buVb6J6Q5CfbNTZq3Wg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "articles/programming_license_publisher.md",
       "output": {
         ".html": {
           "relative_path": "articles/programming_license_publisher.html",
-          "hash": "mLVONbhSPvv9GzoOrN8Kjg=="
+          "hash": "6rElY0UW7FBs2RX69upRjg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -483,7 +480,7 @@
           "hash": "SPTBMoan7BRwmQL5k60kiA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -495,7 +492,19 @@
           "hash": "PN3ho6bKeglMEPO0UE8Wzg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/sample_publisher.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/sample_publisher.html",
+          "hash": "gvsedoqRXnUuIoDB2QwvZQ=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -507,7 +516,7 @@
           "hash": "1ugQEzLWeHuUP58Ya3c+Aw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -519,7 +528,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "VH8fUxCXO7IgrPsm9yJEjQ=="
+          "hash": "1rlQPWUpE7J5yKKuEatpvg=="
         }
       },
       "is_incremental": false,
@@ -582,6 +591,248 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/QuickStartSampleApp1_Cs.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSampleApp1_Cs.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSampleApp1_Vb.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSampleApp1_Vb.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSampleApp2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSampleApp2.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSampleApp3.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSampleApp3.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSampleApp4.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSampleApp4.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSampleApp5.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSampleApp5.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSampleApp6_Cs.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSampleApp6_Cs.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSampleApp6_Vb.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSampleApp6_Vb.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSamplePublisher1_Cs.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSamplePublisher1_Cs.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSamplePublisher1_Vb.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSamplePublisher1_Vb.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSamplePublisher2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSamplePublisher2.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSamplePublisher3.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSamplePublisher3.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSamplePublisher4.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSamplePublisher4.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSamplePublisher5.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSamplePublisher5.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSamplePublisher6.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSamplePublisher6.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSamplePublisher7.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSamplePublisher7.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSamplePublisher8_Cs.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSamplePublisher8_Cs.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSamplePublisher8_Vb.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSamplePublisher8_Vb.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSamplePublisher9_Cs.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSamplePublisher9_Cs.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSamplePublisher9_Vb.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSamplePublisher9_Vb.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSamplePublisherA_Cs.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSamplePublisherA_Cs.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QuickStartSamplePublisherA_Vb.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/QuickStartSamplePublisherA_Vb.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/concept_summary.JPG",
       "output": {
         "resource": {
@@ -623,22 +874,22 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
           "incrementalPhase": "build"
         }
       }

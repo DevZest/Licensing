@@ -4,7 +4,7 @@ uid: programming_license_publisher
 
 # Programming License Publisher
 
-To develop your license publisher, derive your class from the abstract @DevZest.Licensing.LicensePublisher class, and implement your licensing logic here. Normally this class is hosted as ASP.Net .asmx or .svc web service. For a step by step walk-through on how to create a license publisher, see [SamplePublisher](xref:sample_publisher).
+To develop your license publisher, derive your class from the abstract @DevZest.Licensing.LicensePublisher class, and implement your licensing logic here. Normally this class is hosted as ASP.Net .asmx or .svc web service. For a step by step walk-through on how to create a license publisher, see @sample_publisher.
 
 ## Implement Class Derived from LicensePublisher
 
