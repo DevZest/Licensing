@@ -5,3 +5,5 @@
   items:
   - name: Concept
     href: concept.md
+  - name: Designing License Scheme
+    href: designing_license_scheme.md

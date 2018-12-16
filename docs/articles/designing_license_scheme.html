@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Designing License Scheme </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Designing License Scheme ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="designing_license_scheme">
+<h1 id="designing-license-scheme">Designing License Scheme</h1>
+
+<p>The license scheme determines how your software product is being licensed. Since there is virtually no way to revoke a published license, plan and design your license scheme carefully in advance.</p>
+<h2 id="mapping-license">Mapping License</h2>
+<p>You can grant different kind of licenses to the user to use your software product. For example, you might want to grant a evaluation license to the user to evaluation your software for a certain period, or grant a permanent license for paid, registered user with a valid license key. You can also grant different license for design time or runtime if you're authoring a component. How many kind of licenses you will grant to your software product, together with how you want to manage your license keys, is your business decision you have to make before releasing your software.</p>
+<p>For each kind of license you will grant to your user, you need to map it to one <a class="xref" href="../api/DevZest.Licensing.License.html">License</a> object. Different kind of licenses can be of different <a class="xref" href="../api/DevZest.Licensing.License.html">License</a> derived class, such as <a class="xref" href="../api/DevZest.Licensing.MachineLicense.html">MachineLicense</a>, <a class="xref" href="../api/DevZest.Licensing.AssemblyLicense.html">AssemblyLicense</a> or <a class="xref" href="../api/DevZest.Licensing.UserLicense.html">UserLicense</a>; or of the same type with different property values. For example, .Net Licensing itself may have the following licenses mapped:</p>
+<table>
+<thead>
+<tr>
+<th>License</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Evaluation License</td>
+<td><a class="xref" href="../api/DevZest.Licensing.MachineLicense.html">MachineLicense</a> object with <a class="xref" href="../api/DevZest.Licensing.License.html#DevZest_Licensing_License_Expiration">Expiration</a> property set.<br>This license can be obtained without a license key, valid on local machine only.</td>
+</tr>
+<tr>
+<td>Paid License</td>
+<td><a class="xref" href="../api/DevZest.Licensing.MachineLicense.html">MachineLicense</a> object with <a class="xref" href="../api/DevZest.Licensing.License.html#DevZest_Licensing_License_Expiration">Expiration</a> property set.<br>This license can be only be obtained with a valid license key, valid on local machine only.</td>
+</tr>
+<tr>
+<td>Distributable License</td>
+<td><a class="xref" href="../api/DevZest.Licensing.AssemblyLicense.html">AssemblyLicense</a> object.<br>This license can be only be obtained with a valid license key, valid for one specific caller assembly only.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="license-provider">License Provider</h2>
+<p>You have to make the decision where to store the license together with your software product. .Net Licensing provides the following license providers:</p>
+<table>
+<thead>
+<tr>
+<th>Provider</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="../api/DevZest.Licensing.AssemblyLicenseProviderAttribute.html">AssemblyLicenseProviderAttribute</a></td>
+<td>Provides license from caller assembly.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/DevZest.Licensing.FileLicenseProviderAttribute.html">FileLicenseProviderAttribute</a></td>
+<td>Provides license from file. This license provider requires <a href="https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.fileiopermission">FileIOPermission</a>.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.html">IsolatedStorageFileLicenseProviderAttribute</a></td>
+<td>Provides license from isolated storage file.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/DevZest.Licensing.RegistryLicenseProviderAttribute.html">RegistryLicenseProviderAttribute</a></td>
+<td>Provides license from registry. This license provider requires read access of <a href="https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.registrypermission">RegistryPermission</a>.</td>
+</tr>
+</tbody>
+</table>
+<p>Choose the license providers based on your license types and how your software product is deployed. For example, .Net Licensing itself may have the following license providers declared:</p>
+<p>C#:</p>
+<pre><code class="lang-csharp">[assembly: RegistryLicenseProvider(@&quot;Software\DevZest\.Net Licensing\&quot;, &quot;RuntimeLicense&quot;)]
+[assembly: AssemblyLicenseProvider(EntryAssemblyOnly=false)]
+</code></pre>
+<p>VB.Net:</p>
+<pre><code class="lang-vb">&lt;assembly: RegistryLicenseProvider(&quot;Software\DevZest\.Net Licensing\&quot;, &quot;RuntimeLicense&quot;)&gt;
+&lt;assembly: AssemblyLicenseProvider(EntryAssemblyOnly:=false)&gt;
+</code></pre>
+<p>In this case, .Net Licensing will attempt to load the Product License (Evaluation or Paid License) from &quot;RuntimeLicense&quot; value under registry key &quot;HKLM\Software\DevZest.Net Licensing\X.x&quot;, where &quot;X.x&quot; stands for the major and minor version of DevZest.Licensing.dll. If the evaluation or developer license cannot be found, it will try to look up a Distributable License from the chain of caller assemblies.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/DevZest/Licensing/blob/master/docs_src/articles/designing_license_scheme.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

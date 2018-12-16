@@ -4,6 +4,9 @@ references:
 - uid: concept
   name: Concept
   href: articles/concept.html
+- uid: designing_license_scheme
+  name: Designing License Scheme
+  href: articles/designing_license_scheme.html
 - uid: DevZest.Licensing
   name: DevZest.Licensing
   href: api/DevZest.Licensing.html
