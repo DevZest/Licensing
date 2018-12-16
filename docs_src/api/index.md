@@ -1,2 +1,0 @@
-# Namespace
-@DevZest.Licensing
