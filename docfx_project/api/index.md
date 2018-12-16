@@ -1,2 +1,2 @@
-# Namespaces
-(DevZest.Licensing)
+# Namespace
+@DevZest.Licensing
