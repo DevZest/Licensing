@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Programming License Client </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Programming License Client ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="programming_license_client">
+<h1 id="programming-license-client">Programming License Client</h1>
+
+<p>To get the license published by license publisher, you can use <a class="xref" href="../api/DevZest.Licensing.LicenseClient.html">LicenseClient</a> class, which is a WCF (Windows Communication Foundation) client. For more information on WCF client configuration, refer to WCF documentation.</p>
+<h2 id="programming-licenseclient-class">Programming LicenseClient Class</h2>
+<p>The following sample code demonstrates how to program <a class="xref" href="../api/DevZest.Licensing.LicenseClient.html">LicenseClient</a> class:</p>
+<pre><code class="lang-csharp">private static void GetLicense(LicenseCategory licenseCategory)
+{
+    LicenseClient licenseClient = new LicenseClient(LicenseClient.PublicKeyXmlFromAssembly(Assembly.GetExecutingAssembly()));
+    try
+    {
+        LicensePublisherResponse response = licenseClient.GetLicense(
+            Product,
+            Assembly.GetExecutingAssembly().GetName().Version,
+            s_licenseKeys[(int)licenseCategory],
+            licenseCategory.ToString(),
+            &quot;Test User&quot;,
+            &quot;Test Company&quot;,
+            &quot;testuser@test.com&quot;,
+            MachineLicense.LocalMachineData);
+        License license = response.License;
+        if (license == null)
+            Console.WriteLine(&quot;ERROR: &quot; + response.ErrorMessage);
+        else
+        {
+            File.WriteAllText(Assembly.GetExecutingAssembly().Location + &quot;.lic&quot;, license.SignedString);
+            LicenseManager.Reset();
+        }
+
+        licenseClient.Close();
+    }
+    catch (CommunicationException exception)
+    {
+        Console.WriteLine(&quot;EXCEPTION: &quot; + exception.Message);
+        licenseClient.Abort();
+    }
+}
+</code></pre>
+<pre><code class="lang-vb">Private Sub GetLicense(ByVal licCategory As LicenseCategory)
+    Dim licClient = New LicenseClient(LicenseClient.PublicKeyXmlFromAssembly(Assembly.GetExecutingAssembly()))
+    Try
+        Dim response As LicensePublisherResponse = licClient.GetLicense( _
+            Product, _
+            Assembly.GetExecutingAssembly().GetName().Version, _
+            s_licenseKeys(CType(licCategory, Integer)), _
+            licCategory.ToString(), _
+            &quot;Test User&quot;, _
+            &quot;Test Company&quot;, _
+            &quot;testuser@test.com&quot;, _
+            MachineLicense.LocalMachineData)
+        Dim lic As License = response.License
+        If lic Is Nothing Then
+            Console.WriteLine(&quot;ERROR: &quot; + response.ErrorMessage)
+        Else
+            File.WriteAllText(Assembly.GetExecutingAssembly().Location + &quot;.lic&quot;, lic.SignedString)
+            LicenseManager.Reset()
+        End If
+        licClient.Close()
+    Catch ex As CommunicationException
+        Console.WriteLine(&quot;EXCEPTION: &quot; + ex.Message)
+        licClient.Abort()
+    End Try
+End Sub
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Use &quot;try...catch&quot; block instead of &quot;using&quot; statement. For more information, see <a href="https://docs.microsoft.com/en-us/dotnet/framework/wcf/samples/use-close-abort-release-wcf-client-resources">Close and Abort release resources safely when network connections have dropped</a></p>
+</div>
+<h2 id="configure-license-client">Configure License Client</h2>
+<p><a class="xref" href="../api/DevZest.Licensing.LicenseClient.html">LicenseClient</a> class is a WCF client and needs to be configured to work with the license publisher. Refer to WCF documentation for more information.</p>
+<h3 id="configure-for-license-publisher-hosted-as-asmx-web-service">Configure for license publisher hosted as .asmx web service</h3>
+<p>The following configuration file demostrates how to configure license client for license publisher hosted as .asmx web service (the endpoint address needs to be replaced with the actual one of course):</p>
+<p>App.Config</p>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+&lt;configuration&gt;
+  &lt;system.serviceModel&gt;
+    &lt;bindings&gt;
+      &lt;customBinding&gt;
+        &lt;binding name=&quot;LicensePublisherSoap12&quot;&gt;
+          &lt;textMessageEncoding messageVersion=&quot;Soap12&quot; writeEncoding=&quot;utf-8&quot; /&gt;
+          &lt;httpTransport /&gt;
+        &lt;/binding&gt;
+      &lt;/customBinding&gt;
+    &lt;/bindings&gt;
+    &lt;client&gt;
+      &lt;endpoint
+        address=&quot;http://localhost:16885/AsmxPublisher.asmx&quot;
+        binding=&quot;customBinding&quot; bindingConfiguration=&quot;LicensePublisherSoap12&quot;
+        contract=&quot;DevZest.Licensing.ILicensePublisher&quot; /&gt;      
+    &lt;/client&gt;
+  &lt;/system.serviceModel&gt;
+&lt;/configuration&gt;
+</code></pre>
+<h3 id="configure-for-license-publisher-hosted-as-svc-wcf-service">Configure for license publisher hosted as .svc WCF service</h3>
+<p>The following configuration file demostrates how to configure license client for license publisher hosted as .svc WCF service (the endpoint address needs to be replaced with the actual one of course):</p>
+<p>App.Config</p>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+&lt;configuration&gt;
+  &lt;system.serviceModel&gt;
+    &lt;client&gt;
+      &lt;endpoint
+        address=&quot;http://localhost:16885/SvcPublisher.svc&quot;
+        binding=&quot;wsHttpBinding&quot;
+        contract=&quot;DevZest.Licensing.ILicensePublisher&quot; /&gt;
+    &lt;/client&gt;
+  &lt;/system.serviceModel&gt;
+&lt;/configuration&gt;
+</code></pre>
+<h2 id="integrate-license-client-with-your-software-product">Integrate License Client with Your Software Product</h2>
+<p>Here is the guideline on how to integrate the license client with your software product:</p>
+<ul>
+<li>If your software product is an executable application, integrate the license client within the executable. A typical implementation is: when your application started, check the license. If there is no license granted, display the user interface to activate your product (evaluate without a license key or register with a license key), then get a license from license publisher through license client. The QuickStart Sample demonstrates how to integrate the license client this way.</li>
+<li>If your software product is not an executable application such as a component, develop an executable application to manage the license and distribute this application together with your product. The license client is integrated into this application and your end user can then use this application to manage licenses. The License Console Application demonstrates how to integrate the license client this way.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/DevZest/Licensing/blob/master/docs_src/articles/programming_license_client.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -2206,6 +2206,9 @@ references:
   isSpec: "True"
   fullName: DevZest.Licensing.UserLicense.Validate
   nameWithType: UserLicense.Validate
+- uid: programming_license_client
+  name: Programming License Client
+  href: articles/programming_license_client.html
 - uid: programming_license_publisher
   name: Programming License Publisher
   href: articles/programming_license_publisher.html
