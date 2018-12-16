@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Concept </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Concept ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="concept">Concept</h1>
+
+<h2 id="license">License</h2>
+<p>A license is a <a class="xref" href="../api/DevZest.Licensing.License.html">License</a> derived object, which is granted to a .Net assembly signed with a strong name. A license can be serialized/deserialized to/from a string. Below is a sample of license string:</p>
+<pre><code class="lang-xml">Signature:TGX4PR3t+ZXM+qICfOMmwhgpkQPinddZo7in7MbERWxXugyzOVTRJjpyVbOp5baVWb8CB0Ix7QvNV400VxBvnKltjzqxDJad2XMt9mU8KSblpS4HAkFahEgRhU5y+0mSKi+UoUZ6p0r75PzAIOjymYsRyLHREW+gaAKdgl5g+jc=
+&lt;MachineLicense xmlns=&quot;http://schemas.devzest.com/licensing&quot; xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot; Id=&quot;YA5HT6MEZE&quot; Category=&quot;Evaluation&quot; Product=&quot;.Net Licensing&quot; Company=&quot;DevZest&quot; UserName=&quot;Test User&quot; UserCompany=&quot;Test Company&quot; Expiration=&quot;2009/06/11&quot; Data=&quot;AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArWgShxVtF0+jdBrFooc0ugQAAAACAAAAAAADZgAAqAAAABAAAACtlTdlY6xg3aOu8dNrGrVbAAAAAASAAACgAAAAEAAAAIxzWfZNBIvX3sq7aUdhneQYAAAAymm1VhZo/KsPQPbX6rxsCRsDkDapoQciFAAAAOFeGq7Wq8n5a3+7Aiat50Caa+wm&quot;&gt;
+    &lt;LicenseItem Name=&quot;.Net Licensing&quot; /&gt;
+&lt;/MachineLicense&gt;
+</code></pre>
+<p>The first line is the signature of the license. The rest is the XAML text of the <a class="xref" href="../api/DevZest.Licensing.License.html">License</a> derived object. The signature is signed with the same key used to sign the assembly, ensuring the license text is from trusted source.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Only assembly signed with strong name can be granted a license. An assembly without a strong name cannot be validated by the licensing system and will throw an exception during validation.</p>
+</div>
+<p>A license contains at lease one <a class="xref" href="../api/DevZest.Licensing.LicenseItem.html">LicenseItem</a>. A license item is a feature of the assembly, identified by a name as string. License item name can not be null, empty or duplicated.</p>
+<p>License is copy protected. The <a class="xref" href="../api/DevZest.Licensing.License.html#DevZest_Licensing_License_Data">License.Data</a> property contains data can only be validated under a valid environment. Copying a license from the valid environment to another will invalid the license. .Net Licensing provides the following types of license implementations:</p>
+<table>
+<thead>
+<tr>
+<th>License Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="../api/DevZest.Licensing.MachineLicense.html">MachineLicense</a></td>
+<td>The <a class="xref" href="../api/DevZest.Licensing.License.html#DevZest_Licensing_License_Data">License.Data</a> property is set as the string value returned by <a class="xref" href="../api/DevZest.Licensing.MachineLicense.html#DevZest_Licensing_MachineLicense_LocalMachineData">LocalMachineData</a>. <a class="xref" href="../api/DevZest.Licensing.MachineLicense.html#DevZest_Licensing_MachineLicense_LocalMachineData">LocalMachineData</a> returns a string of encrypted known GUID using DPAPI. The validation is to decrypt the <a class="xref" href="../api/DevZest.Licensing.License.html#DevZest_Licensing_License_Data">License.Data</a> property, compare it with the original known GUID.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/DevZest.Licensing.AssemblyLicense.html">AssemblyLicense</a></td>
+<td>The <a class="xref" href="../api/DevZest.Licensing.License.html#DevZest_Licensing_License_Data">License.Data</a> property is set as the assembly identity string value returned by <a class="xref" href="../api/DevZest.Licensing.AssemblyLicense.html#DevZest_Licensing_AssemblyLicense_GetAssemblyData_System_String_">GetAssemblyData</a>. The validation is to compare the caller assembly's identity string with this string.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/DevZest.Licensing.UserLicense.html">UserLicense</a></td>
+<td>The <a class="xref" href="../api/DevZest.Licensing.License.html#DevZest_Licensing_License_Data">License.Data</a> property is set as the string value returned by <a class="xref" href="../api/DevZest.Licensing.UserLicense.html#DevZest_Licensing_UserLicense_CurrentUserData">CurrentUserData</a>. <a class="xref" href="../api/DevZest.Licensing.UserLicense.html#DevZest_Licensing_UserLicense_CurrentUserData">CurrentUserData</a> returns the string contains the name and SID of current user. The validation is to compare the current user's name and SID with this string.</td>
+</tr>
+</tbody>
+</table>
+<div class="WARNING">
+<h5>Warning</h5>
+<p><a class="xref" href="../api/DevZest.Licensing.MachineLicense.html">MachineLicense</a> requires <a href="https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.dataprotectionpermission">DataProtectionPermission</a>. If your application or component is targeting partial trust environment without <a href="https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.dataprotectionpermission">DataProtectionPermission</a>, use <a class="xref" href="../api/DevZest.Licensing.UserLicense.html">UserLicense</a> instead.</p>
+</div>
+<h2 id="license-publisher-and-license-client">License Publisher and License Client</h2>
+<p>License is created, signed and published by <a class="xref" href="../api/DevZest.Licensing.LicensePublisher.html">LicensePublisher</a>. Since license publisher must hold the private key to sign the license, it is normally implemented as a separate web service instead of as part of the licensed application or component.</p>
+<p><a class="xref" href="../api/DevZest.Licensing.LicenseClient.html">LicenseClient</a> communicates with license publisher. The <a class="xref" href="../api/DevZest.Licensing.LicenseClient.html#DevZest_Licensing_LicenseClient_GetLicense_System_Globalization_CultureInfo_System_String_System_Version_DevZest_Licensing_LicenseKey_System_String_System_String_System_String_System_String_System_String_">GetLicense</a> method sends license creation request to license publisher, and gets the created and signed license.</p>
+<p>License client requests the license by providing a <a class="xref" href="../api/DevZest.Licensing.LicenseKey.html">LicenseKey</a>. Typically a license key is generated and stored in the web server, sent to the user when the purchase completed. The license publisher verifies the provided license key, returns corresponding license, or returns an error when verification failed.</p>
+<p>When sending the request to license publisher, the license client encrypts the license key using the public key. The license publisher then uses the private key to decrypt the license key, and uses this license key to encrypt the response sent back to license client. Since the communication is encrypted, no SSL is required. This saves cost for web hosting and improves the performance.</p>
+<h2 id="license-providers">License Providers</h2>
+<p>The published license must be stored together with the licensed assembly. To specify where the license can be located, the assembly author declares license provider attributes for the assembly. .Net Licensing provides the following license providers:</p>
+<table>
+<thead>
+<tr>
+<th>Provider</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="../api/DevZest.Licensing.AssemblyLicenseProviderAttribute.html">AssemblyLicenseProviderAttribute</a></td>
+<td>Provides license from embedded resource of caller assembly.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/DevZest.Licensing.FileLicenseProviderAttribute.html">FileLicenseProviderAttribute</a></td>
+<td>Provides license from file. This license provider requires <a href="https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.fileiopermission">FileIOPermission</a>.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.html">IsolatedStorageFileLicenseProviderAttribute</a></td>
+<td>Provides license from isolated storage file.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/DevZest.Licensing.RegistryLicenseProviderAttribute.html">RegistryLicenseProviderAttribute</a></td>
+<td>Provides license from registry. This license provider requires read access of <a href="https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.registrypermission">RegistryPermission</a>.</td>
+</tr>
+</tbody>
+</table>
+<p>If the license string can be loaded, the license provider verifies the signature and returns a <a class="xref" href="../api/DevZest.Licensing.License.html">License</a> object. An exception will throw if verification failed.</p>
+<h2 id="validation">Validation</h2>
+<p>To validate the assembly, call <a class="xref" href="../api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Validate_System_String_">LicenseManager.Validate</a> or <a class="xref" href="../api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Check_System_String_">LicenseManager.Check</a> in the assembly. The validation will:</p>
+<ol>
+<li>Retrieve the license provider attributes of the assembly, in the order of declaration, get the first non null <a class="xref" href="../api/DevZest.Licensing.License.html">License</a> object. If all license providers returns null, the validation fails.</li>
+<li>Validate this <a class="xref" href="../api/DevZest.Licensing.License.html">License</a> object and its coresponding <a class="xref" href="../api/DevZest.Licensing.LicenseItem.html">LicenseItem</a> object. The validation will fail if the <a class="xref" href="../api/DevZest.Licensing.LicenseItem.html">LicenseItem</a> object with specified name does not exist.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>A <a class="xref" href="../api/DevZest.Licensing.License.html">License</a> is created and signed by <a class="xref" href="../api/DevZest.Licensing.LicensePublisher.html">LicensePublisher</a> which normally implemented as web service. The <a class="xref" href="../api/DevZest.Licensing.LicenseClient.html">LicenseClient</a> communicates with the <a class="xref" href="../api/DevZest.Licensing.LicensePublisher.html">LicensePublisher</a>, gets the published license and stores it somewhere that can be loaded by the <a class="xref" href="../api/DevZest.Licensing.LicenseProviderAttribute.html">LicenseProviderAttribute</a> declared as assembly attribute. To determine whether an assembly can be granted a valid license, the license provider attributes are retrieved to provide an instance of <a class="xref" href="../api/DevZest.Licensing.License.html">License</a> object containing a collection of <a class="xref" href="../api/DevZest.Licensing.LicenseItem.html">LicenseItem</a> objects. The validation is then performed on the <a class="xref" href="../api/DevZest.Licensing.License.html">License</a> object and the <a class="xref" href="../api/DevZest.Licensing.LicenseItem.html">LicenseItem</a> object matching the specified license item name:</p>
+<p><img src="../images/concept_summary.JPG" alt="image"></p>
+<ol>
+<li>The License Client sends request to License Publisher.</li>
+<li>The License Publisher publishes the license string.</li>
+<li>The published license string is stored in a place accessible to the assembly.</li>
+<li>The license is loaded by license provider and validated at runtime.</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/DevZest/Licensing/blob/master/docs_src/articles/concept.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
