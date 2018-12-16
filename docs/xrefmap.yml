@@ -1,6 +1,9 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: concept
+  name: Concept
+  href: articles/concept.html
 - uid: DevZest.Licensing
   name: DevZest.Licensing
   href: api/DevZest.Licensing.html
