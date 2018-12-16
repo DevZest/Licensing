@@ -15,3 +15,5 @@
     href: enabling_licensing_for_your_assembly.md
   - name: Extending .Net Licensing
     href: extending_dotnet_licensing.md
+  - name: Diagnostic Tracing Output
+    href: diagnostic_tracing_output.md

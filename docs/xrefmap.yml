@@ -2206,6 +2206,9 @@ references:
   isSpec: "True"
   fullName: DevZest.Licensing.UserLicense.Validate
   nameWithType: UserLicense.Validate
+- uid: diagnostic_tracing_output
+  name: Diagnostic Tracing Output
+  href: articles/diagnostic_tracing_output.html
 - uid: enabling_licensing_for_your_assembly
   name: Enabling Licensing for Your Assembly
   href: articles/enabling_licensing_for_your_assembly.html
