@@ -33,15 +33,19 @@ The .Net Licensing component is fully extensible from all aspects: the license p
 ## Screenshots
 
 The product is not licensed:
+
 ![image](images/LicenseConsole1.jpg)
 
 Change the product license:
+
 ![image](images/LicenseConsole2.jpg)
 
 An Evaluation License obtained:
+
 ![image](images/LicenseConsole3.jpg)
 
 A Paid License obtained:
+
 ![image](images/LicenseConsole4.jpg)
 
 ## How to Use
