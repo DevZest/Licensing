@@ -63,30 +63,30 @@
 <h1 id="welcome-to-devzest-net-licensing">Welcome to DevZest .Net Licensing</h1>
 
 <p>.Net Licensing is a lightweight yet comprehensive licensing solution for Microsoft .Net platform. This solution, provided as a .Net component, provides the same level security as signing your .Net assembly, and gives you utmost control and flexibility.</p>
-<h1 id="summary">Summary</h1>
-<h2 id="everything-is-under-your-control">Everything is under your control</h2>
+<h2 id="summary">Summary</h2>
+<h3 id="everything-is-under-your-control">Everything is under your control</h3>
 <p>All licenses are published through your own web service. You have full control on when and how a license should be published: with or without a license key, valid for certain period, or upgradable with future versions within certain period, etc; A license can contain multiple license items (features) you can grant or revoke accordingly; You can even disable a refunded license key for future use. Everything is under your control.</p>
-<h2 id="same-level-security-as-signing-your-net-assembly">Same level security as signing your .Net assembly</h2>
+<h3 id="same-level-security-as-signing-your-net-assembly">Same level security as signing your .Net assembly</h3>
 <p>Each license is digitally signed and verified with the same strong name key used to sign your protected .Net assembly. Only your own license publisher web service can access the private key. This provides the same level security as signing your .Net assembly. Unless your private key is compromised, the verified license can always to trusted.</p>
 <p>Using the same assembly strong name key also reduces the number of keys to manage and improves security.</p>
-<h2 id="simple-and-unified-api-to-protect-your-net-applications-and-components">Simple and unified API to protect your .Net applications and components</h2>
-<p>We provide simple and unified API to protected your .Net applications and components. After you make the decision where to store the published license (registry, file/isolated storage file, or embedded resource in caller assembly), you can simply declare coresponding assembly level license provider attribute, and call LicenseManager.Validate in your code. This simple, unified API works for all your .Net applications and components, cross all .Net based technologies such as Windows Forms, ASP.Net and WPF.</p>
-<h2 id="least-constraints-partial-trust-and-no-ssl-required">Least constraints: partial trust and no SSL required</h2>
+<h3 id="simple-and-unified-api-to-protect-your-net-applications-and-components">Simple and unified API to protect your .Net applications and components</h3>
+<p>We provide simple and unified API to protected your .Net applications and components. After you make the decision where to store the published license (registry, file/isolated storage file, or embedded resource in caller assembly), you can simply declare corresponding assembly level license provider attribute, and call LicenseManager.Validate in your code. This simple, unified API works for all your .Net applications and components, cross all .Net based technologies such as Windows Forms, ASP.Net and WPF.</p>
+<h3 id="least-constraints-partial-trust-and-no-ssl-required">Least constraints: partial trust and no SSL required</h3>
 <p>The rewards of building applications that run under partial trust are great. The .Net Licensing component can run under medium trust level without any problem. That means you can deploy your license publisher in a shared hosting environment, and the protected applications and components can also run under partial trust.</p>
 <p>Transparent to developer, the communication between your license client and license publisher is encrypted so that no SSL is required for the web server hosting the license publisher.</p>
 <p>Altogether, this can save your cost directly.</p>
-<h2 id="fully-customizable">Fully customizable</h2>
+<h3 id="fully-customizable">Fully customizable</h3>
 <p>The .Net Licensing component is fully extensible from all aspects: the license publisher, the license and license items, and the license provider to look up the license. The default implementation can meet most requirements, however you still have the freedom to extend this component easily.</p>
-<h1 id="screenshots">Screenshots</h1>
-<h2 id="the-product-is-not-licensed">The product is not licensed</h2>
-<p><img src="images/LicenseConsole1.jpg" alt="image"></p>
-<h2 id="change-the-product-license">Change the product license</h2>
-<p><img src="images/LicenseConsole2.jpg" alt="image"></p>
-<h2 id="an-evaluation-license-obtained">An Evaluation License obtained</h2>
-<p><img src="images/LicenseConsole3.jpg" alt="image"></p>
-<h2 id="a-paid-license-obtained">A Paid License obtained</h2>
-<p><img src="images/LicenseConsole4.jpg" alt="image"></p>
-<h1 id="how-to-use">How to Use</h1>
+<h2 id="screenshots">Screenshots</h2>
+<p>The product is not licensed:
+<img src="images/LicenseConsole1.jpg" alt="image"></p>
+<p>Change the product license:
+<img src="images/LicenseConsole2.jpg" alt="image"></p>
+<p>An Evaluation License obtained:
+<img src="images/LicenseConsole3.jpg" alt="image"></p>
+<p>A Paid License obtained:
+<img src="images/LicenseConsole4.jpg" alt="image"></p>
+<h2 id="how-to-use">How to Use</h2>
 <ul>
 <li>Create a project in Visual Studio 2017, targeting .Net Framework 3.0 or later;</li>
 <li>Add nuget package <a href="https://www.nuget.org/packages/DevZest.Licensing/">DevZest.Licensing</a> to your project.</li>
