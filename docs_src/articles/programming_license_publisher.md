@@ -29,16 +29,13 @@ namespace SamplePublisher
     public class Publisher : LicensePublisher
     {
         ...
-
         protected override string GetPrivateKeyXml(string product)
         {
             using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("SamplePublisher.Key.snk"))
             {
                 return PrivateKeyXmlFromSnkFile(stream);
             }
-
         }
-
         ...
     }
 }
@@ -54,23 +51,20 @@ Imports System.Web.Services
 Imports System.Reflection
 Imports System.Globalization
 
-
 <WebService(Namespace:="http://services.devzest.com/Licensing")> _
 Public Class Publisher
     Inherits LicensePublisher
     ...
-
     Protected Overrides Function GetPrivateKeyXml(ByVal product As String) As String
         Using stream As Stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("SamplePublisher.Key.snk")
             Return PrivateKeyXmlFromSnkFile(stream)
         End Using
     End Function
-
     ...
 End Class
 ```
 
->[!Note]
+>[!Caution]
 >The private key is the utmost secret of your licensing system. If your private key is compromised, the whole licensing system is compromised. Since your license publisher holds the private key, make sure your license publisher is hosted in a secure, trusted environment.
 
 ### Override GetLicense
@@ -92,12 +86,10 @@ namespace SamplePublisher
     public class Publisher : LicensePublisher
     {
         ...
-
         protected override LicensePublisherResponse GetLicense(CultureInfo cultureInfo, string product, Version version, LicenseKey licenseKey, string category, string userName, string company, string emailAddress, string data)
         {
             ...
         }
-
         ...
     }
 }
@@ -113,16 +105,13 @@ Imports System.Web.Services
 Imports System.Reflection
 Imports System.Globalization
 
-
 <WebService(Namespace:="http://services.devzest.com/Licensing")> _
 Public Class Publisher
     Inherits LicensePublisher
     ...
-
     Protected Overrides Function GetLicense(ByVal cultureInfo As CultureInfo, ByVal product As String, ByVal version As Version, ByVal licenseKey As LicenseKey, ByVal category As String, ByVal userName As String, ByVal company As String, ByVal emailAddress As String, ByVal data As String) As LicensePublisherResponse
         ...
     End Function
-
     ...
 End Class
 ```
@@ -201,7 +190,6 @@ namespace SamplePublisher
 ```vb
 Public Class SvcPublisher
     Inherits Publisher
-
 End Class
 ```
 

@@ -88,16 +88,13 @@ namespace SamplePublisher
     public class Publisher : LicensePublisher
     {
         ...
-
         protected override string GetPrivateKeyXml(string product)
         {
             using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(&quot;SamplePublisher.Key.snk&quot;))
             {
                 return PrivateKeyXmlFromSnkFile(stream);
             }
-
         }
-
         ...
     }
 }
@@ -111,23 +108,20 @@ Imports System.Web.Services
 Imports System.Reflection
 Imports System.Globalization
 
-
 &lt;WebService(Namespace:=&quot;http://services.devzest.com/Licensing&quot;)&gt; _
 Public Class Publisher
     Inherits LicensePublisher
     ...
-
     Protected Overrides Function GetPrivateKeyXml(ByVal product As String) As String
         Using stream As Stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(&quot;SamplePublisher.Key.snk&quot;)
             Return PrivateKeyXmlFromSnkFile(stream)
         End Using
     End Function
-
     ...
 End Class
 </code></pre>
-<div class="NOTE">
-<h5>Note</h5>
+<div class="CAUTION">
+<h5>Caution</h5>
 <p>The private key is the utmost secret of your licensing system. If your private key is compromised, the whole licensing system is compromised. Since your license publisher holds the private key, make sure your license publisher is hosted in a secure, trusted environment.</p>
 </div>
 <h3 id="override-getlicense">Override GetLicense</h3>
@@ -146,12 +140,10 @@ namespace SamplePublisher
     public class Publisher : LicensePublisher
     {
         ...
-
         protected override LicensePublisherResponse GetLicense(CultureInfo cultureInfo, string product, Version version, LicenseKey licenseKey, string category, string userName, string company, string emailAddress, string data)
         {
             ...
         }
-
         ...
     }
 }
@@ -165,16 +157,13 @@ Imports System.Web.Services
 Imports System.Reflection
 Imports System.Globalization
 
-
 &lt;WebService(Namespace:=&quot;http://services.devzest.com/Licensing&quot;)&gt; _
 Public Class Publisher
     Inherits LicensePublisher
     ...
-
     Protected Overrides Function GetLicense(ByVal cultureInfo As CultureInfo, ByVal product As String, ByVal version As Version, ByVal licenseKey As LicenseKey, ByVal category As String, ByVal userName As String, ByVal company As String, ByVal emailAddress As String, ByVal data As String) As LicensePublisherResponse
         ...
     End Function
-
     ...
 End Class
 </code></pre>
@@ -230,7 +219,6 @@ namespace SamplePublisher
 </code></pre>
 <pre><code class="lang-vb">Public Class SvcPublisher
     Inherits Publisher
-
 End Class
 </code></pre>
 <h4 id="list-the-license-publisher-type-in-the-web-site-configuration-file-webconfig">List the license publisher type in the web site configuration file (Web.Config)</h4>
