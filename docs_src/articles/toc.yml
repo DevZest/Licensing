@@ -17,3 +17,17 @@
     href: extending_dotnet_licensing.md
   - name: Diagnostic Tracing Output
     href: diagnostic_tracing_output.md
+- name: Samples and Tools
+  href: samples_and_tools.md
+  items:
+  - name: QuickStart Sample
+    href: quickstart_sample.md
+    items:
+    - name: SamplePublisher
+      href: sample_publisher.md
+    - name: SampleApp
+      href: sample_app.md
+    - name: Run QuickStart Sample
+      href: run_quickstart_sample.md
+  - name: License Console Application
+    href: license_console_application.md

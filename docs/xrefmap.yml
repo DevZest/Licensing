@@ -2221,3 +2221,9 @@ references:
 - uid: programming_license_publisher
   name: Programming License Publisher
   href: articles/programming_license_publisher.html
+- uid: quickstart_sample
+  name: QuickStart Sample
+  href: articles/quickstart_sample.html
+- uid: samples_and_tools
+  name: Samples and Tools
+  href: articles/samples_and_tools.html
