@@ -31,14 +31,10 @@ You have to make the decision where to store the license together with your soft
 
 Choose the license providers based on your license types and how your software product is deployed. For example, .Net Licensing itself may have the following license providers declared:
 
-C#:
-
 ```csharp
 [assembly: RegistryLicenseProvider(@"Software\DevZest\.Net Licensing\", "RuntimeLicense")]
 [assembly: AssemblyLicenseProvider(EntryAssemblyOnly=false)]
 ```
-
-VB.Net:
 
 ```vb
 <assembly: RegistryLicenseProvider("Software\DevZest\.Net Licensing\", "RuntimeLicense")>

@@ -384,7 +384,7 @@
           "hash": "dv0gMd9sqtBuPfJHoNLVhQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -393,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/designing_license_scheme.html",
-          "hash": "XqL0VMvbUCeVlWcfTR8xUg=="
+          "hash": "a0MJM4ta0KlvpUh8jVpbGg=="
         }
       },
       "is_incremental": false,
@@ -408,7 +408,7 @@
           "hash": "/A9lag5UYXPaOPbRK/NfEg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -499,7 +499,7 @@
           "hash": "aOt7HkRASaPfco1nSdgi+A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -522,14 +522,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
