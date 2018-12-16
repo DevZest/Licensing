@@ -377,14 +377,14 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/intro.md",
+      "source_relative_path": "articles/getting_started.md",
       "output": {
         ".html": {
-          "relative_path": "articles/intro.html",
-          "hash": "XhoFEsi5t4Sm5ud4TVUgHA=="
+          "relative_path": "articles/getting_started.html",
+          "hash": "H+porrZLUwHM5qIz3orVWg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -393,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "t7iiFrmuYmrKWisdq+lN6Q=="
+          "hash": "KSfwNQ64KCnQobOet9mTDA=="
         }
       },
       "is_incremental": false,
@@ -461,7 +461,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "UjjCBsF2Ft19qVZ2nXwt1g=="
+          "hash": "oYW73LJNxfdTrIE4uZdi9w=="
         }
       },
       "is_incremental": false,
