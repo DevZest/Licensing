@@ -6,4 +6,4 @@ This solution, provided as a .Net component, provides the same level security as
 
 [![Version](https://img.shields.io/nuget/v/DevZest.Licensing.svg)](https://www.nuget.org/packages/DevZest.Licensing)
 
-For more details, check out [http://www.devzest.com/DotNetLicensing.aspx](http://www.devzest.com/DotNetLicensing.aspx).
+For more details, check out [https://licensing.devzest.com/](http://licensing.devzest.com/).
