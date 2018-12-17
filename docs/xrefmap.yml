@@ -2215,6 +2215,9 @@ references:
 - uid: extending_dotnet_licensing
   name: Extending .Net Licensing
   href: articles/extending_dotnet_licensing.html
+- uid: getting_started
+  name: Getting Started
+  href: articles/getting_started.html
 - uid: license_console_application
   name: License Console Application
   href: articles/license_console_application.html
