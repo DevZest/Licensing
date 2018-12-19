@@ -82,7 +82,7 @@
 <p>Only assembly signed with strong name can be granted a license. An assembly without a strong name cannot be validated by the licensing system and will throw an exception during validation.</p>
 </div>
 <p>A license contains at lease one <a class="xref" href="../api/DevZest.Licensing.LicenseItem.html">LicenseItem</a>. A license item is a feature of the assembly, identified by a name as string. License item name can not be null, empty or duplicated.</p>
-<p>License is copy protected. The <a class="xref" href="../api/DevZest.Licensing.License.html#DevZest_Licensing_License_Data">License.Data</a> property contains data can only be validated under a valid environment. Copying a license from the valid environment to another will invalid the license. .Net Licensing provides the following types of license implementations:</p>
+<p>License is copy protected. The <a class="xref" href="../api/DevZest.Licensing.License.Data.html#DevZest_Licensing_License_Data">License.Data</a> property contains data can only be validated under a valid environment. Copying a license from the valid environment to another will invalid the license. .Net Licensing provides the following types of license implementations:</p>
 <table>
 <thead>
 <tr>
@@ -93,15 +93,15 @@
 <tbody>
 <tr>
 <td><a class="xref" href="../api/DevZest.Licensing.MachineLicense.html">MachineLicense</a></td>
-<td>The <a class="xref" href="../api/DevZest.Licensing.License.html#DevZest_Licensing_License_Data">License.Data</a> property is set as the string value returned by <a class="xref" href="../api/DevZest.Licensing.MachineLicense.html#DevZest_Licensing_MachineLicense_LocalMachineData">LocalMachineData</a>. <a class="xref" href="../api/DevZest.Licensing.MachineLicense.html#DevZest_Licensing_MachineLicense_LocalMachineData">LocalMachineData</a> returns a string of encrypted known GUID using DPAPI. The validation is to decrypt the <a class="xref" href="../api/DevZest.Licensing.License.html#DevZest_Licensing_License_Data">License.Data</a> property, compare it with the original known GUID.</td>
+<td>The <a class="xref" href="../api/DevZest.Licensing.License.Data.html#DevZest_Licensing_License_Data">License.Data</a> property is set as the string value returned by <a class="xref" href="../api/DevZest.Licensing.MachineLicense.LocalMachineData.html#DevZest_Licensing_MachineLicense_LocalMachineData">LocalMachineData</a>. <a class="xref" href="../api/DevZest.Licensing.MachineLicense.LocalMachineData.html#DevZest_Licensing_MachineLicense_LocalMachineData">LocalMachineData</a> returns a string of encrypted known GUID using DPAPI. The validation is to decrypt the <a class="xref" href="../api/DevZest.Licensing.License.Data.html#DevZest_Licensing_License_Data">License.Data</a> property, compare it with the original known GUID.</td>
 </tr>
 <tr>
 <td><a class="xref" href="../api/DevZest.Licensing.AssemblyLicense.html">AssemblyLicense</a></td>
-<td>The <a class="xref" href="../api/DevZest.Licensing.License.html#DevZest_Licensing_License_Data">License.Data</a> property is set as the assembly identity string value returned by <a class="xref" href="../api/DevZest.Licensing.AssemblyLicense.html#DevZest_Licensing_AssemblyLicense_GetAssemblyData_System_String_">GetAssemblyData</a>. The validation is to compare the caller assembly's identity string with this string.</td>
+<td>The <a class="xref" href="../api/DevZest.Licensing.License.Data.html#DevZest_Licensing_License_Data">License.Data</a> property is set as the assembly identity string value returned by <a class="xref" href="../api/DevZest.Licensing.AssemblyLicense.GetAssemblyData.html">GetAssemblyData</a>. The validation is to compare the caller assembly's identity string with this string.</td>
 </tr>
 <tr>
 <td><a class="xref" href="../api/DevZest.Licensing.UserLicense.html">UserLicense</a></td>
-<td>The <a class="xref" href="../api/DevZest.Licensing.License.html#DevZest_Licensing_License_Data">License.Data</a> property is set as the string value returned by <a class="xref" href="../api/DevZest.Licensing.UserLicense.html#DevZest_Licensing_UserLicense_CurrentUserData">CurrentUserData</a>. <a class="xref" href="../api/DevZest.Licensing.UserLicense.html#DevZest_Licensing_UserLicense_CurrentUserData">CurrentUserData</a> returns the string contains the name and SID of current user. The validation is to compare the current user's name and SID with this string.</td>
+<td>The <a class="xref" href="../api/DevZest.Licensing.License.Data.html#DevZest_Licensing_License_Data">License.Data</a> property is set as the string value returned by <a class="xref" href="../api/DevZest.Licensing.UserLicense.CurrentUserData.html#DevZest_Licensing_UserLicense_CurrentUserData">CurrentUserData</a>. <a class="xref" href="../api/DevZest.Licensing.UserLicense.CurrentUserData.html#DevZest_Licensing_UserLicense_CurrentUserData">CurrentUserData</a> returns the string contains the name and SID of current user. The validation is to compare the current user's name and SID with this string.</td>
 </tr>
 </tbody>
 </table>
@@ -111,7 +111,7 @@
 </div>
 <h2 id="license-publisher-and-license-client">License Publisher and License Client</h2>
 <p>License is created, signed and published by <a class="xref" href="../api/DevZest.Licensing.LicensePublisher.html">LicensePublisher</a>. Since license publisher must hold the private key to sign the license, it is normally implemented as a separate web service instead of as part of the licensed application or component.</p>
-<p><a class="xref" href="../api/DevZest.Licensing.LicenseClient.html">LicenseClient</a> communicates with license publisher. The <a class="xref" href="../api/DevZest.Licensing.LicenseClient.html#DevZest_Licensing_LicenseClient_GetLicense_System_Globalization_CultureInfo_System_String_System_Version_DevZest_Licensing_LicenseKey_System_String_System_String_System_String_System_String_System_String_">GetLicense</a> method sends license creation request to license publisher, and gets the created and signed license.</p>
+<p><a class="xref" href="../api/DevZest.Licensing.LicenseClient.html">LicenseClient</a> communicates with license publisher. The <a class="xref" href="../api/DevZest.Licensing.LicenseClient.GetLicense.html">GetLicense</a> method sends license creation request to license publisher, and gets the created and signed license.</p>
 <p>License client requests the license by providing a <a class="xref" href="../api/DevZest.Licensing.LicenseKey.html">LicenseKey</a>. Typically a license key is generated and stored in the web server, sent to the user when the purchase completed. The license publisher verifies the provided license key, returns corresponding license, or returns an error when verification failed.</p>
 <p>When sending the request to license publisher, the license client encrypts the license key using the public key. The license publisher then uses the private key to decrypt the license key, and uses this license key to encrypt the response sent back to license client. Since the communication is encrypted, no SSL is required. This saves cost for web hosting and improves the performance.</p>
 <h2 id="license-providers">License Providers</h2>
@@ -144,7 +144,7 @@
 </table>
 <p>If the license string can be loaded, the license provider verifies the signature and returns a <a class="xref" href="../api/DevZest.Licensing.License.html">License</a> object. An exception will throw if verification failed.</p>
 <h2 id="validation">Validation</h2>
-<p>To validate the assembly, call <a class="xref" href="../api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Validate_System_String_">LicenseManager.Validate</a> or <a class="xref" href="../api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Check_System_String_">LicenseManager.Check</a> in the assembly. The validation will:</p>
+<p>To validate the assembly, call <a class="xref" href="../api/DevZest.Licensing.LicenseManager.Validate.html">LicenseManager.Validate</a> or <a class="xref" href="../api/DevZest.Licensing.LicenseManager.Check.html">LicenseManager.Check</a> in the assembly. The validation will:</p>
 <ol>
 <li>Retrieve the license provider attributes of the assembly, in the order of declaration, get the first non null <a class="xref" href="../api/DevZest.Licensing.License.html">License</a> object. If all license providers returns null, the validation fails.</li>
 <li>Validate this <a class="xref" href="../api/DevZest.Licensing.License.html">License</a> object and its corresponding <a class="xref" href="../api/DevZest.Licensing.LicenseItem.html">LicenseItem</a> object. The validation will fail if the <a class="xref" href="../api/DevZest.Licensing.LicenseItem.html">LicenseItem</a> object with specified name does not exist.</li>

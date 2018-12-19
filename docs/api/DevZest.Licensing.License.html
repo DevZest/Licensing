@@ -88,7 +88,7 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="DevZest.Licensing.Freezable-1.html#DevZest_Licensing_Freezable_1_VerifyFrozenAccess">Freezable&lt;LicenseProviderAttribute&gt;.VerifyFrozenAccess()</a>
+      <a class="xref" href="DevZest.Licensing.Freezable-1.VerifyFrozenAccess.html#DevZest_Licensing_Freezable_1_VerifyFrozenAccess">Freezable&lt;LicenseProviderAttribute&gt;.VerifyFrozenAccess()</a>
     </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
@@ -126,843 +126,210 @@ an assembly can be granted a valid license, the license provider attributes are 
 object containing a collection of <a class="xref" href="DevZest.Licensing.LicenseItem.html">LicenseItem</a> objects. The validation is then performed on the <a class="xref" href="DevZest.Licensing.License.html">License</a>
 object and the <a class="xref" href="DevZest.Licensing.LicenseItem.html">LicenseItem</a> object matching the specified license item name.</p>
 <p>Before performing the validation on the <a class="xref" href="DevZest.Licensing.LicenseItem.html">LicenseItem</a> object, the license provider seals the <a class="xref" href="DevZest.Licensing.License.html">License</a>
-object by setting its <a class="xref" href="DevZest.Licensing.Freezable-1.html#DevZest_Licensing_Freezable_1_IsFrozen">IsFrozen</a> property to <span class="xref">true</span>. Any attempting to modify the
+object by setting its <a class="xref" href="DevZest.Licensing.Freezable-1.IsFrozen.html#DevZest_Licensing_Freezable_1_IsFrozen">IsFrozen</a> property to <span class="xref">true</span>. Any attempting to modify the
 <a class="xref" href="DevZest.Licensing.License.html">License</a> object throws an <span class="xref">System.InvalidOperationException</span>. All derived classes should respect this rule by
-calling <a class="xref" href="DevZest.Licensing.Freezable-1.html#DevZest_Licensing_Freezable_1_VerifyFrozenAccess">VerifyFrozenAccess()</a> in all public methods and property setters that might
+calling <a class="xref" href="DevZest.Licensing.Freezable-1.VerifyFrozenAccess.html#DevZest_Licensing_Freezable_1_VerifyFrozenAccess">VerifyFrozenAccess()</a> in all public methods and property setters that might
 modify the object.</p>
 </div>
   <h3 id="constructors">Constructors
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License__ctor.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L51">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License__ctor_" data-uid="DevZest.Licensing.License.#ctor*"></a>
-  <h4 id="DevZest_Licensing_License__ctor" data-uid="DevZest.Licensing.License.#ctor">License()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="DevZest.Licensing.License.html">License</a> class</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected License()</code></pre>
-  </div>
-  <h3 id="properties">Properties
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_Assembly.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.Assembly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L68">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_Assembly_" data-uid="DevZest.Licensing.License.Assembly*"></a>
-  <h4 id="DevZest_Licensing_License_Assembly" data-uid="DevZest.Licensing.License.Assembly">Assembly</h4>
-  <div class="markdown level1 summary"><p>Gets the assembly this license is granted to.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Assembly Assembly { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Reflection.Assembly</span></td>
-        <td><p>The assembly this license is granted to.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_Category.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.Category%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L136">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_Category_" data-uid="DevZest.Licensing.License.Category*"></a>
-  <h4 id="DevZest_Licensing_License_Category" data-uid="DevZest.Licensing.License.Category">Category</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the license category information.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Category { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A string containing the license category information.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="DevZest_Licensing_License_Category_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The license publisher uses this category value to publish different kind of licenses. This value does not
-participate the validation process.</p>
-</div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_Company.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.Company%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L162">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_Company_" data-uid="DevZest.Licensing.License.Company*"></a>
-  <h4 id="DevZest_Licensing_License_Company" data-uid="DevZest.Licensing.License.Company">Company</h4>
-  <div class="markdown level1 summary"><p>Gets or sets product company information.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Company { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A string containing the product company name.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_Data.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.Data%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L321">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_Data_" data-uid="DevZest.Licensing.License.Data*"></a>
-  <h4 id="DevZest_Licensing_License_Data" data-uid="DevZest.Licensing.License.Data">Data</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the data that the validation is performed against.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Data { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A string containing the data that the validation is performed against.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_Expiration.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.Expiration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L252">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_Expiration_" data-uid="DevZest.Licensing.License.Expiration*"></a>
-  <h4 id="DevZest_Licensing_License_Expiration" data-uid="DevZest.Licensing.License.Expiration">Expiration</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the expiration date, as string, of this license.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Expiration { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A string containing the expiration date of this license, in the format of &quot;yyyy/mm/dd&quot;.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="DevZest_Licensing_License_Expiration_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The value will be converted to UTC date.</p>
-</div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_ExpirationDate.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.ExpirationDate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L265">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_ExpirationDate_" data-uid="DevZest.Licensing.License.ExpirationDate*"></a>
-  <h4 id="DevZest_Licensing_License_ExpirationDate" data-uid="DevZest.Licensing.License.ExpirationDate">ExpirationDate</h4>
-  <div class="markdown level1 summary"><p>Gets the expiration date of this license.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime ExpirationDate { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><p>The UTC date of the license expiration.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_Id.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L122">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_Id_" data-uid="DevZest.Licensing.License.Id*"></a>
-  <h4 id="DevZest_Licensing_License_Id" data-uid="DevZest.Licensing.License.Id">Id</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the license ID information.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Id { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A string containing the license ID information.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="DevZest_Licensing_License_Id_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This value is set by license publisher to identify this license. It does not participate the validateion process.</p>
-</div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_IsExpired.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.IsExpired%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L281">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_IsExpired_" data-uid="DevZest.Licensing.License.IsExpired*"></a>
-  <h4 id="DevZest_Licensing_License_IsExpired" data-uid="DevZest.Licensing.License.IsExpired">IsExpired</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether this license is expired.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsExpired { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if this license is expired, otherwise <span class="xref">false</span>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_IsFrozen.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.IsFrozen%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L87">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_IsFrozen_" data-uid="DevZest.Licensing.License.IsFrozen*"></a>
-  <h4 id="DevZest_Licensing_License_IsFrozen" data-uid="DevZest.Licensing.License.IsFrozen">IsFrozen</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override sealed bool IsFrozen { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">DevZest.Licensing.Freezable&lt;DevZest.Licensing.LicenseProviderAttribute&gt;.IsFrozen</span></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_Item_System_String_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.Item(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L188">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_Item_" data-uid="DevZest.Licensing.License.Item*"></a>
-  <h4 id="DevZest_Licensing_License_Item_System_String_" data-uid="DevZest.Licensing.License.Item(System.String)">Item[String]</h4>
-  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="DevZest.Licensing.LicenseItem.html">LicenseItem</a> object for specified name.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LicenseItem this[string name] { get; }</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
         <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>The name of the <a class="xref" href="DevZest.Licensing.LicenseItem.html">LicenseItem</a> object.</p>
+        <td id="DevZest_Licensing_License__ctor" data-uid="DevZest.Licensing.License.#ctor">
+          <a class="xref" href="DevZest.Licensing.License.-ctor.html#DevZest_Licensing_License__ctor">License()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="DevZest.Licensing.License.html">License</a> class</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 class="propertyValue">Property Value</h5>
+  <h3 id="properties">Properties
+  </h3>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DevZest.Licensing.LicenseItem.html">LicenseItem</a></td>
-        <td><p>The <a class="xref" href="DevZest.Licensing.LicenseItem.html">LicenseItem</a> object.</p>
+        <td id="DevZest_Licensing_License_Assembly" data-uid="DevZest.Licensing.License.Assembly">
+          <a class="xref" href="DevZest.Licensing.License.Assembly.html#DevZest_Licensing_License_Assembly">Assembly</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the assembly this license is granted to.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_Items.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.Items%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L174">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_Items_" data-uid="DevZest.Licensing.License.Items*"></a>
-  <h4 id="DevZest_Licensing_License_Items" data-uid="DevZest.Licensing.License.Items">Items</h4>
-  <div class="markdown level1 summary"><p>Gets a collection of <a class="xref" href="DevZest.Licensing.LicenseItem.html">LicenseItem</a> objects.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LicenseItemCollection Items { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DevZest.Licensing.LicenseItemCollection.html">LicenseItemCollection</a></td>
-        <td><p>A <a class="xref" href="DevZest.Licensing.LicenseItemCollection.html">LicenseItemCollection</a></p>
+        <td id="DevZest_Licensing_License_Category" data-uid="DevZest.Licensing.License.Category">
+          <a class="xref" href="DevZest.Licensing.License.Category.html#DevZest_Licensing_License_Category">Category</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets the license category information.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_Product.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.Product%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L150">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_Product_" data-uid="DevZest.Licensing.License.Product*"></a>
-  <h4 id="DevZest_Licensing_License_Product" data-uid="DevZest.Licensing.License.Product">Product</h4>
-  <div class="markdown level1 summary"><p>Gets or sets product name information.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Product { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A string containing the product name.</p>
+        <td id="DevZest_Licensing_License_Company" data-uid="DevZest.Licensing.License.Company">
+          <a class="xref" href="DevZest.Licensing.License.Company.html#DevZest_Licensing_License_Company">Company</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets product company information.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h5 id="DevZest_Licensing_License_Product_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The validation will compare this property with the <span class="xref">System.Reflection.AssemblyProductAttribute.Product</span> property of the
-assembly level <span class="xref">System.Reflection.AssemblyProductAttribute</span>.</p>
-</div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_Provider.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.Provider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L75">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_Provider_" data-uid="DevZest.Licensing.License.Provider*"></a>
-  <h4 id="DevZest_Licensing_License_Provider" data-uid="DevZest.Licensing.License.Provider">Provider</h4>
-  <div class="markdown level1 summary"><p>Gets the license provider which provides this license. License providers are declared as assembly level attributes.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected LicenseProviderAttribute Provider { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DevZest.Licensing.LicenseProviderAttribute.html">LicenseProviderAttribute</a></td>
-        <td><p>The license provider which provides this license.</p>
+        <td id="DevZest_Licensing_License_Data" data-uid="DevZest.Licensing.License.Data">
+          <a class="xref" href="DevZest.Licensing.License.Data.html#DevZest_Licensing_License_Data">Data</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets the data that the validation is performed against.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_ProviderData.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.ProviderData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L96">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_ProviderData_" data-uid="DevZest.Licensing.License.ProviderData*"></a>
-  <h4 id="DevZest_Licensing_License_ProviderData" data-uid="DevZest.Licensing.License.ProviderData">ProviderData</h4>
-  <div class="markdown level1 summary"><p>Gets the data set by the license provider.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object ProviderData { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><p>The data set by license provider.</p>
+        <td id="DevZest_Licensing_License_Expiration" data-uid="DevZest.Licensing.License.Expiration">
+          <a class="xref" href="DevZest.Licensing.License.Expiration.html#DevZest_Licensing_License_Expiration">Expiration</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets the expiration date, as string, of this license.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h5 id="DevZest_Licensing_License_ProviderData_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The license provider may provide additional data for validation. For example, the assembly license provider sets this
-property to the calling assembly object.</p>
-</div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_SignedString.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.SignedString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L109">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_SignedString_" data-uid="DevZest.Licensing.License.SignedString*"></a>
-  <h4 id="DevZest_Licensing_License_SignedString" data-uid="DevZest.Licensing.License.SignedString">SignedString</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the XAML string that can be converted from/to this <a class="xref" href="DevZest.Licensing.License.html">License</a> object, signed by the assembly private key.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string SignedString { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>The XAML string that can be converted from/to this <a class="xref" href="DevZest.Licensing.License.html">License</a> object, signed by the assembly private key.
-This property is set by the license provider.</p>
+        <td id="DevZest_Licensing_License_ExpirationDate" data-uid="DevZest.Licensing.License.ExpirationDate">
+          <a class="xref" href="DevZest.Licensing.License.ExpirationDate.html#DevZest_Licensing_License_ExpirationDate">ExpirationDate</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the expiration date of this license.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_UpgradeExpiration.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.UpgradeExpiration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L290">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_UpgradeExpiration_" data-uid="DevZest.Licensing.License.UpgradeExpiration*"></a>
-  <h4 id="DevZest_Licensing_License_UpgradeExpiration" data-uid="DevZest.Licensing.License.UpgradeExpiration">UpgradeExpiration</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the upgrade expiration date, as string, of this license.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string UpgradeExpiration { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A string containing the upgrade expiration date of this license, in the format of &quot;yyyy/mm/dd&quot;.</p>
+        <td id="DevZest_Licensing_License_Id" data-uid="DevZest.Licensing.License.Id">
+          <a class="xref" href="DevZest.Licensing.License.Id.html#DevZest_Licensing_License_Id">Id</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets the license ID information.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h5 id="DevZest_Licensing_License_UpgradeExpiration_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>When validating, the release date of the assembly will be compared with the upgrade exipration date of the license.
-The assembly version Build number specifies the release date as number of days since 2000/01/01.</p>
-</div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_UpgradeExpirationDate.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.UpgradeExpirationDate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L305">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_UpgradeExpirationDate_" data-uid="DevZest.Licensing.License.UpgradeExpirationDate*"></a>
-  <h4 id="DevZest_Licensing_License_UpgradeExpirationDate" data-uid="DevZest.Licensing.License.UpgradeExpirationDate">UpgradeExpirationDate</h4>
-  <div class="markdown level1 summary"><p>Gets the upgrade expiration date of this license.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime UpgradeExpirationDate { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><p>The UTC date of the license upgrade expiration.</p>
+        <td id="DevZest_Licensing_License_IsExpired" data-uid="DevZest.Licensing.License.IsExpired">
+          <a class="xref" href="DevZest.Licensing.License.IsExpired.html#DevZest_Licensing_License_IsExpired">IsExpired</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets a value indicating whether this license is expired.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h5 id="DevZest_Licensing_License_UpgradeExpirationDate_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>When validating, the release date of the assembly will be compared with the upgrade exipration date of the license.
-The assembly version Build number specifies the release date as number of days since 2000/01/01.</p>
-</div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_UserCompany.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.UserCompany%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L207">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_UserCompany_" data-uid="DevZest.Licensing.License.UserCompany*"></a>
-  <h4 id="DevZest_Licensing_License_UserCompany" data-uid="DevZest.Licensing.License.UserCompany">UserCompany</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the user company information.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string UserCompany { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
+        <td id="DevZest_Licensing_License_IsFrozen" data-uid="DevZest.Licensing.License.IsFrozen">
+          <a class="xref" href="DevZest.Licensing.License.IsFrozen.html#DevZest_Licensing_License_IsFrozen">IsFrozen</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
-    </thead>
-    <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A string containing the user company information.</p>
+        <td id="DevZest_Licensing_License_Item_System_String_" data-uid="DevZest.Licensing.License.Item(System.String)">
+          <a class="xref" href="DevZest.Licensing.License.Item.html#DevZest_Licensing_License_Item_System_String_">Item[String]</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the <a class="xref" href="DevZest.Licensing.LicenseItem.html">LicenseItem</a> object for specified name.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_UserName.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.UserName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L195">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_UserName_" data-uid="DevZest.Licensing.License.UserName*"></a>
-  <h4 id="DevZest_Licensing_License_UserName" data-uid="DevZest.Licensing.License.UserName">UserName</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the user name information.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string UserName { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
+        <td id="DevZest_Licensing_License_Items" data-uid="DevZest.Licensing.License.Items">
+          <a class="xref" href="DevZest.Licensing.License.Items.html#DevZest_Licensing_License_Items">Items</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets a collection of <a class="xref" href="DevZest.Licensing.LicenseItem.html">LicenseItem</a> objects.</p>
+</td>
       </tr>
-    </thead>
-    <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A string containing the user name information.</p>
+        <td id="DevZest_Licensing_License_Product" data-uid="DevZest.Licensing.License.Product">
+          <a class="xref" href="DevZest.Licensing.License.Product.html#DevZest_Licensing_License_Product">Product</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets product name information.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DevZest_Licensing_License_Provider" data-uid="DevZest.Licensing.License.Provider">
+          <a class="xref" href="DevZest.Licensing.License.Provider.html#DevZest_Licensing_License_Provider">Provider</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the license provider which provides this license. License providers are declared as assembly level attributes.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DevZest_Licensing_License_ProviderData" data-uid="DevZest.Licensing.License.ProviderData">
+          <a class="xref" href="DevZest.Licensing.License.ProviderData.html#DevZest_Licensing_License_ProviderData">ProviderData</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the data set by the license provider.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DevZest_Licensing_License_SignedString" data-uid="DevZest.Licensing.License.SignedString">
+          <a class="xref" href="DevZest.Licensing.License.SignedString.html#DevZest_Licensing_License_SignedString">SignedString</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets the XAML string that can be converted from/to this <a class="xref" href="DevZest.Licensing.License.html">License</a> object, signed by the assembly private key.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DevZest_Licensing_License_UpgradeExpiration" data-uid="DevZest.Licensing.License.UpgradeExpiration">
+          <a class="xref" href="DevZest.Licensing.License.UpgradeExpiration.html#DevZest_Licensing_License_UpgradeExpiration">UpgradeExpiration</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets the upgrade expiration date, as string, of this license.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DevZest_Licensing_License_UpgradeExpirationDate" data-uid="DevZest.Licensing.License.UpgradeExpirationDate">
+          <a class="xref" href="DevZest.Licensing.License.UpgradeExpirationDate.html#DevZest_Licensing_License_UpgradeExpirationDate">UpgradeExpirationDate</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the upgrade expiration date of this license.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DevZest_Licensing_License_UserCompany" data-uid="DevZest.Licensing.License.UserCompany">
+          <a class="xref" href="DevZest.Licensing.License.UserCompany.html#DevZest_Licensing_License_UserCompany">UserCompany</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets the user company information.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DevZest_Licensing_License_UserName" data-uid="DevZest.Licensing.License.UserName">
+          <a class="xref" href="DevZest.Licensing.License.UserName.html#DevZest_Licensing_License_UserName">UserName</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets the user name information.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_LoadFromXaml_System_String_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.LoadFromXaml(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L380">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_LoadFromXaml_" data-uid="DevZest.Licensing.License.LoadFromXaml*"></a>
-  <h4 id="DevZest_Licensing_License_LoadFromXaml_System_String_" data-uid="DevZest.Licensing.License.LoadFromXaml(System.String)">LoadFromXaml(String)</h4>
-  <div class="markdown level1 summary"><p>Loads the license from XAML string.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static License LoadFromXaml(string xaml)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
         <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">xaml</span></td>
-        <td><p>The XAML string, returned by license publisher without signature.</p>
+        <td id="DevZest_Licensing_License_LoadFromXaml_System_String_" data-uid="DevZest.Licensing.License.LoadFromXaml(System.String)">
+          <a class="xref" href="DevZest.Licensing.License.LoadFromXaml.html#DevZest_Licensing_License_LoadFromXaml_System_String_">LoadFromXaml(String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Loads the license from XAML string.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DevZest.Licensing.License.html">License</a></td>
-        <td><p>The <a class="xref" href="DevZest.Licensing.License.html">License</a> object.</p>
+        <td id="DevZest_Licensing_License_SetExpirationDate_System_DateTime_" data-uid="DevZest.Licensing.License.SetExpirationDate(System.DateTime)">
+          <a class="xref" href="DevZest.Licensing.License.SetExpirationDate.html#DevZest_Licensing_License_SetExpirationDate_System_DateTime_">SetExpirationDate(DateTime)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the expiration date of this license.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h5 id="DevZest_Licensing_License_LoadFromXaml_System_String__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method provides <a class="xref" href="DevZest.Licensing.License.html">License</a> object for analysis purpose only, such as in License Console application.
-Validating against this license throws an <span class="xref">System.InvalidOperationException</span>.</p>
-</div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_SetExpirationDate_System_DateTime_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.SetExpirationDate(System.DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L273">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_SetExpirationDate_" data-uid="DevZest.Licensing.License.SetExpirationDate*"></a>
-  <h4 id="DevZest_Licensing_License_SetExpirationDate_System_DateTime_" data-uid="DevZest.Licensing.License.SetExpirationDate(System.DateTime)">SetExpirationDate(DateTime)</h4>
-  <div class="markdown level1 summary"><p>Sets the expiration date of this license.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetExpirationDate(DateTime date)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><span class="parametername">date</span></td>
-        <td><p>The date of the license expiration.</p>
+        <td id="DevZest_Licensing_License_SetUpgradeExpirationDate_System_DateTime_" data-uid="DevZest.Licensing.License.SetUpgradeExpirationDate(System.DateTime)">
+          <a class="xref" href="DevZest.Licensing.License.SetUpgradeExpirationDate.html#DevZest_Licensing_License_SetUpgradeExpirationDate_System_DateTime_">SetUpgradeExpirationDate(DateTime)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the upgrade expiration date of this license.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h5 id="DevZest_Licensing_License_SetExpirationDate_System_DateTime__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The provided date will be converted to UTC date.</p>
-</div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_SetUpgradeExpirationDate_System_DateTime_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.SetUpgradeExpirationDate(System.DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L313">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_SetUpgradeExpirationDate_" data-uid="DevZest.Licensing.License.SetUpgradeExpirationDate*"></a>
-  <h4 id="DevZest_Licensing_License_SetUpgradeExpirationDate_System_DateTime_" data-uid="DevZest.Licensing.License.SetUpgradeExpirationDate(System.DateTime)">SetUpgradeExpirationDate(DateTime)</h4>
-  <div class="markdown level1 summary"><p>Sets the upgrade expiration date of this license.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetUpgradeExpirationDate(DateTime date)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><span class="parametername">date</span></td>
-        <td><p>The date of the license upgrade expiration.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="DevZest_Licensing_License_SetUpgradeExpirationDate_System_DateTime__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The provided date will be converted to UTC date.</p>
-</div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_License_Validate.md&amp;value=---%0Auid%3A%20DevZest.Licensing.License.Validate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/License.cs/#L373">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_License_Validate_" data-uid="DevZest.Licensing.License.Validate*"></a>
-  <h4 id="DevZest_Licensing_License_Validate" data-uid="DevZest.Licensing.License.Validate">Validate()</h4>
-  <div class="markdown level1 summary"><p>Determines whether valid license can be granted.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract LicenseError Validate()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DevZest.Licensing.LicenseError.html">LicenseError</a></td>
-        <td><p><span class="xref">null</span> if a valid license can be granted. Otherwise a <a class="xref" href="DevZest.Licensing.LicenseError.html">LicenseError</a>
-indicates the error.</p>
+        <td id="DevZest_Licensing_License_Validate" data-uid="DevZest.Licensing.License.Validate">
+          <a class="xref" href="DevZest.Licensing.License.Validate.html#DevZest_Licensing_License_Validate">Validate()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Determines whether valid license can be granted.</p>
 </td>
       </tr>
     </tbody>

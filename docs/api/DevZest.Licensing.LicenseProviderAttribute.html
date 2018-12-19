@@ -237,343 +237,99 @@
   </div>
   <h5 id="DevZest_Licensing_LicenseProviderAttribute_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>License provider is declared as assembly level attribute. It loads a <a class="xref" href="DevZest.Licensing.License.html">License</a> object from a specified location.</p>
-<p>When initialized during validation, the license provider is sealed by setting its <a class="xref" href="DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_IsFrozen">IsFrozen</a>
+<p>When initialized during validation, the license provider is sealed by setting its <a class="xref" href="DevZest.Licensing.LicenseProviderAttribute.IsFrozen.html#DevZest_Licensing_LicenseProviderAttribute_IsFrozen">IsFrozen</a>
 property to <span class="xref">true</span>. Any attempting to modify the <a class="xref" href="DevZest.Licensing.LicenseProviderAttribute.html">LicenseProviderAttribute</a>
 object throws an <span class="xref">System.InvalidOperationException</span>. All derived classes should respect this rule by calling
-<a class="xref" href="DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_VerifyFrozenAccess">VerifyFrozenAccess()</a> in all public methods and property setters that
+<a class="xref" href="DevZest.Licensing.LicenseProviderAttribute.VerifyFrozenAccess.html#DevZest_Licensing_LicenseProviderAttribute_VerifyFrozenAccess">VerifyFrozenAccess()</a> in all public methods and property setters that
 might change the object.</p>
 </div>
   <h3 id="properties">Properties
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseProviderAttribute_Assembly.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseProviderAttribute.Assembly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseProviderAttribute.cs/#L49">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_LicenseProviderAttribute_Assembly_" data-uid="DevZest.Licensing.LicenseProviderAttribute.Assembly*"></a>
-  <h4 id="DevZest_Licensing_LicenseProviderAttribute_Assembly" data-uid="DevZest.Licensing.LicenseProviderAttribute.Assembly">Assembly</h4>
-  <div class="markdown level1 summary"><p>Gets the assembly that this license provider attribute is declared.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Assembly Assembly { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Reflection.Assembly</span></td>
-        <td><p>The assembly that this license provider attribute is declared.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseProviderAttribute_Debug.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseProviderAttribute.Debug%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseProviderAttribute.cs/#L132">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_LicenseProviderAttribute_Debug_" data-uid="DevZest.Licensing.LicenseProviderAttribute.Debug*"></a>
-  <h4 id="DevZest_Licensing_LicenseProviderAttribute_Debug" data-uid="DevZest.Licensing.LicenseProviderAttribute.Debug">Debug</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a value to turn on/off tracing.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Debug { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> to turn on tracing of this license provider, otherwise <span class="xref">false</span>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="DevZest_Licensing_LicenseProviderAttribute_Debug_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>To turn on tracing for all license providers globally, add the following section to your application
-configuration file: </p>
-<pre><code>  &lt;system.diagnostics>
-   &lt;switches>
-     &lt;add name=&quot;DevZest.Licensing&quot; value=&quot;true&quot;/>
-   &lt;/switches>
-  &lt;/system.diagnostics></code></pre>
-</div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseProviderAttribute_DesignMode.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseProviderAttribute.DesignMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseProviderAttribute.cs/#L32">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_LicenseProviderAttribute_DesignMode_" data-uid="DevZest.Licensing.LicenseProviderAttribute.DesignMode*"></a>
-  <h4 id="DevZest_Licensing_LicenseProviderAttribute_DesignMode" data-uid="DevZest.Licensing.LicenseProviderAttribute.DesignMode">DesignMode</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a value indicates whether this license provider is to load design time or runtime license.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool DesignMode { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if this license provider is to load design time license, otherwise <span class="xref">false</span>.
-The default value is <span class="xref">false</span>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseProviderAttribute_IsFrozen.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseProviderAttribute.IsFrozen%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseProviderAttribute.cs/#L66">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_LicenseProviderAttribute_IsFrozen_" data-uid="DevZest.Licensing.LicenseProviderAttribute.IsFrozen*"></a>
-  <h4 id="DevZest_Licensing_LicenseProviderAttribute_IsFrozen" data-uid="DevZest.Licensing.LicenseProviderAttribute.IsFrozen">IsFrozen</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicates whether this license provider is currently modifiable.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected bool IsFrozen { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if this license provider is frozen and cannot be modified; otherwise <span class="xref">false</span>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="DevZest_Licensing_LicenseProviderAttribute_IsFrozen_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This property value is set to <span class="xref">true</span> before loading any <a class="xref" href="DevZest.Licensing.License.html">License</a>.
-Attempting to modify a license provider when its <a class="xref" href="DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_IsFrozen">IsFrozen</a> property is true throws an <span class="xref">System.InvalidOperationException</span>.</p>
-</div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseProviderAttribute_IsTraceEnabled.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseProviderAttribute.IsTraceEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseProviderAttribute.cs/#L107">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_LicenseProviderAttribute_IsTraceEnabled_" data-uid="DevZest.Licensing.LicenseProviderAttribute.IsTraceEnabled*"></a>
-  <h4 id="DevZest_Licensing_LicenseProviderAttribute_IsTraceEnabled" data-uid="DevZest.Licensing.LicenseProviderAttribute.IsTraceEnabled">IsTraceEnabled</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicates whether trace is enabled</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsTraceEnabled { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if trace is enabled, otherwise <span class="xref">false</span>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="DevZest_Licensing_LicenseProviderAttribute_IsTraceEnabled_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Tracing is turned off by default. To turn on tracing for this license provider only, set its
-<a class="xref" href="DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_Debug">Debug</a> property to <span class="xref">true</span>; to turn on tracing for all license providers
-globally, add the following section to your application configuration file: </p>
-<pre><code>  &lt;system.diagnostics>
-   &lt;switches>
-     &lt;add name=&quot;DevZest.Licensing&quot; value=&quot;true&quot;/>
-   &lt;/switches>
-  &lt;/system.diagnostics></code></pre>
-</div>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseProviderAttribute_GetTraceMessage_DevZest_Licensing_LicenseProviderResult_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseProviderAttribute.GetTraceMessage(DevZest.Licensing.LicenseProviderResult)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseProviderAttribute.cs/#L115">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_LicenseProviderAttribute_GetTraceMessage_" data-uid="DevZest.Licensing.LicenseProviderAttribute.GetTraceMessage*"></a>
-  <h4 id="DevZest_Licensing_LicenseProviderAttribute_GetTraceMessage_DevZest_Licensing_LicenseProviderResult_" data-uid="DevZest.Licensing.LicenseProviderAttribute.GetTraceMessage(DevZest.Licensing.LicenseProviderResult)">GetTraceMessage(LicenseProviderResult)</h4>
-  <div class="markdown level1 summary"><p>Gets the diagnostics trace message.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract string GetTraceMessage(LicenseProviderResult result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
         <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DevZest.Licensing.LicenseProviderResult.html">LicenseProviderResult</a></td>
-        <td><span class="parametername">result</span></td>
-        <td><p>The result of this license provider.</p>
+        <td id="DevZest_Licensing_LicenseProviderAttribute_Assembly" data-uid="DevZest.Licensing.LicenseProviderAttribute.Assembly">
+          <a class="xref" href="DevZest.Licensing.LicenseProviderAttribute.Assembly.html#DevZest_Licensing_LicenseProviderAttribute_Assembly">Assembly</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the assembly that this license provider attribute is declared.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DevZest_Licensing_LicenseProviderAttribute_Debug" data-uid="DevZest.Licensing.LicenseProviderAttribute.Debug">
+          <a class="xref" href="DevZest.Licensing.LicenseProviderAttribute.Debug.html#DevZest_Licensing_LicenseProviderAttribute_Debug">Debug</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a value to turn on/off tracing.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DevZest_Licensing_LicenseProviderAttribute_DesignMode" data-uid="DevZest.Licensing.LicenseProviderAttribute.DesignMode">
+          <a class="xref" href="DevZest.Licensing.LicenseProviderAttribute.DesignMode.html#DevZest_Licensing_LicenseProviderAttribute_DesignMode">DesignMode</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets a value indicates whether this license provider is to load design time or runtime license.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DevZest_Licensing_LicenseProviderAttribute_IsFrozen" data-uid="DevZest.Licensing.LicenseProviderAttribute.IsFrozen">
+          <a class="xref" href="DevZest.Licensing.LicenseProviderAttribute.IsFrozen.html#DevZest_Licensing_LicenseProviderAttribute_IsFrozen">IsFrozen</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets a value indicates whether this license provider is currently modifiable.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DevZest_Licensing_LicenseProviderAttribute_IsTraceEnabled" data-uid="DevZest.Licensing.LicenseProviderAttribute.IsTraceEnabled">
+          <a class="xref" href="DevZest.Licensing.LicenseProviderAttribute.IsTraceEnabled.html#DevZest_Licensing_LicenseProviderAttribute_IsTraceEnabled">IsTraceEnabled</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets a value indicates whether trace is enabled</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
+  <h3 id="methods">Methods
+  </h3>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>The diagnostics trace message</p>
+        <td id="DevZest_Licensing_LicenseProviderAttribute_GetTraceMessage_DevZest_Licensing_LicenseProviderResult_" data-uid="DevZest.Licensing.LicenseProviderAttribute.GetTraceMessage(DevZest.Licensing.LicenseProviderResult)">
+          <a class="xref" href="DevZest.Licensing.LicenseProviderAttribute.GetTraceMessage.html#DevZest_Licensing_LicenseProviderAttribute_GetTraceMessage_DevZest_Licensing_LicenseProviderResult_">GetTraceMessage(LicenseProviderResult)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the diagnostics trace message.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DevZest_Licensing_LicenseProviderAttribute_ProvideLicense" data-uid="DevZest.Licensing.LicenseProviderAttribute.ProvideLicense">
+          <a class="xref" href="DevZest.Licensing.LicenseProviderAttribute.ProvideLicense.html#DevZest_Licensing_LicenseProviderAttribute_ProvideLicense">ProvideLicense()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Provides the license.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DevZest_Licensing_LicenseProviderAttribute_Reset" data-uid="DevZest.Licensing.LicenseProviderAttribute.Reset">
+          <a class="xref" href="DevZest.Licensing.LicenseProviderAttribute.Reset.html#DevZest_Licensing_LicenseProviderAttribute_Reset">Reset()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Resets this license provider.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="DevZest_Licensing_LicenseProviderAttribute_VerifyFrozenAccess" data-uid="DevZest.Licensing.LicenseProviderAttribute.VerifyFrozenAccess">
+          <a class="xref" href="DevZest.Licensing.LicenseProviderAttribute.VerifyFrozenAccess.html#DevZest_Licensing_LicenseProviderAttribute_VerifyFrozenAccess">VerifyFrozenAccess()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Enforces that this license provider is modifiable.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseProviderAttribute_ProvideLicense.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseProviderAttribute.ProvideLicense%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseProviderAttribute.cs/#L85">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_LicenseProviderAttribute_ProvideLicense_" data-uid="DevZest.Licensing.LicenseProviderAttribute.ProvideLicense*"></a>
-  <h4 id="DevZest_Licensing_LicenseProviderAttribute_ProvideLicense" data-uid="DevZest.Licensing.LicenseProviderAttribute.ProvideLicense">ProvideLicense()</h4>
-  <div class="markdown level1 summary"><p>Provides the license.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract LicenseProviderResult ProvideLicense()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DevZest.Licensing.LicenseProviderResult.html">LicenseProviderResult</a></td>
-        <td><p>The result of license provider, either a <a class="xref" href="DevZest.Licensing.License.html">License</a> object or an error message string.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="DevZest_Licensing_LicenseProviderAttribute_ProvideLicense_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Derived class should never return <span class="xref">null</span>, otherwise an exception will be thrown. When
-    multiple license provider attributes declared, the first returned non-null license will be used to validate, in the order
-    of declaration.</p>
-</div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseProviderAttribute_Reset.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseProviderAttribute.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseProviderAttribute.cs/#L90">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_LicenseProviderAttribute_Reset_" data-uid="DevZest.Licensing.LicenseProviderAttribute.Reset*"></a>
-  <h4 id="DevZest_Licensing_LicenseProviderAttribute_Reset" data-uid="DevZest.Licensing.LicenseProviderAttribute.Reset">Reset()</h4>
-  <div class="markdown level1 summary"><p>Resets this license provider.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract void Reset()</code></pre>
-  </div>
-  <h5 id="DevZest_Licensing_LicenseProviderAttribute_Reset_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>License provider caches the lookup result by default. Calling this method can enforce license provider to perform
-a new lookup for the next validation, instead of returning the cached result.</p>
-</div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseProviderAttribute_VerifyFrozenAccess.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseProviderAttribute.VerifyFrozenAccess%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseProviderAttribute.cs/#L73">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_LicenseProviderAttribute_VerifyFrozenAccess_" data-uid="DevZest.Licensing.LicenseProviderAttribute.VerifyFrozenAccess*"></a>
-  <h4 id="DevZest_Licensing_LicenseProviderAttribute_VerifyFrozenAccess" data-uid="DevZest.Licensing.LicenseProviderAttribute.VerifyFrozenAccess">VerifyFrozenAccess()</h4>
-  <div class="markdown level1 summary"><p>Enforces that this license provider is modifiable.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void VerifyFrozenAccess()</code></pre>
-  </div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.InvalidOperationException</span></td>
-        <td><p>This license provider is not modifiable.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">System.Runtime.InteropServices._Attribute</span>
-  </div>
 </article>
           </div>
           

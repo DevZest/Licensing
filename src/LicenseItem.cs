@@ -73,8 +73,9 @@ namespace DevZest.Licensing
 
         /// <summary>Gets the name of this <see cref="LicenseItem" />.</summary>
         /// <value>The name of this <see cref="LicenseItem" />.</value>
-        /// <remarks>This property is used to match the license item name specified by <see cref="O:DevZest.Licensing.LicenseManager.Validate">
-        /// LicenseManager.Validate</see> or <see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see>.
+        /// <remarks>This property is used to match the license item name specified by
+        /// <format type="text/markdown">[LicenseManager.Validate](xref:DevZest.Licensing.LicenseManager.Validate*)</format>
+        /// or <format type="text/markdown">[LicenseManager.Check](xref:DevZest.Licensing.LicenseManager.Check*)</format>.
         /// Adding a <see cref="LicenseItem" /> into a <see cref="LicenseItemCollection" /> with its <see cref="Name" /> property set to
         /// <see langword="null" /> or empty string throws <see cref="InvalidOperationException" />.</remarks>
         public string Name

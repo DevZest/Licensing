@@ -110,7 +110,7 @@ namespace DevZest.Licensing
         }
 
         /// <summary>Gets the assembly data.</summary>
-        /// <value>The assembly data returned by <see cref="O:DevZest.Licensing.AssemblyLicense.GetAssemblyData"/></value>
+        /// <value>The assemlby data returned by <format type="text/markdown">[AssemblyLicense.GetAssemblyData](xref:DevZest.Licensing.AssemblyLicense.GetAssemblyData*)</format>.</value>
         public string AssemblyData
         {
             get { return _assemblyData; }

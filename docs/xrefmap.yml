@@ -21,119 +21,110 @@ references:
   nameWithType: AssemblyInfo
 - uid: DevZest.Licensing.AssemblyInfo.#ctor(System.String)
   name: AssemblyInfo(String)
-  href: api/DevZest.Licensing.AssemblyInfo.html#DevZest_Licensing_AssemblyInfo__ctor_System_String_
+  href: api/DevZest.Licensing.AssemblyInfo.-ctor.html#DevZest_Licensing_AssemblyInfo__ctor_System_String_
   commentId: M:DevZest.Licensing.AssemblyInfo.#ctor(System.String)
   fullName: DevZest.Licensing.AssemblyInfo.AssemblyInfo(System.String)
   nameWithType: AssemblyInfo.AssemblyInfo(String)
 - uid: DevZest.Licensing.AssemblyInfo.#ctor*
   name: AssemblyInfo
-  href: api/DevZest.Licensing.AssemblyInfo.html#DevZest_Licensing_AssemblyInfo__ctor_
+  href: api/DevZest.Licensing.AssemblyInfo.-ctor.html
   commentId: Overload:DevZest.Licensing.AssemblyInfo.#ctor
-  isSpec: "True"
   fullName: DevZest.Licensing.AssemblyInfo.AssemblyInfo
   nameWithType: AssemblyInfo.AssemblyInfo
 - uid: DevZest.Licensing.AssemblyInfo.AssemblyData
   name: AssemblyData
-  href: api/DevZest.Licensing.AssemblyInfo.html#DevZest_Licensing_AssemblyInfo_AssemblyData
+  href: api/DevZest.Licensing.AssemblyInfo.AssemblyData.html#DevZest_Licensing_AssemblyInfo_AssemblyData
   commentId: P:DevZest.Licensing.AssemblyInfo.AssemblyData
   fullName: DevZest.Licensing.AssemblyInfo.AssemblyData
   nameWithType: AssemblyInfo.AssemblyData
 - uid: DevZest.Licensing.AssemblyInfo.AssemblyData*
   name: AssemblyData
-  href: api/DevZest.Licensing.AssemblyInfo.html#DevZest_Licensing_AssemblyInfo_AssemblyData_
+  href: api/DevZest.Licensing.AssemblyInfo.AssemblyData.html
   commentId: Overload:DevZest.Licensing.AssemblyInfo.AssemblyData
-  isSpec: "True"
   fullName: DevZest.Licensing.AssemblyInfo.AssemblyData
   nameWithType: AssemblyInfo.AssemblyData
 - uid: DevZest.Licensing.AssemblyInfo.AssemblyFileVersion
   name: AssemblyFileVersion
-  href: api/DevZest.Licensing.AssemblyInfo.html#DevZest_Licensing_AssemblyInfo_AssemblyFileVersion
+  href: api/DevZest.Licensing.AssemblyInfo.AssemblyFileVersion.html#DevZest_Licensing_AssemblyInfo_AssemblyFileVersion
   commentId: P:DevZest.Licensing.AssemblyInfo.AssemblyFileVersion
   fullName: DevZest.Licensing.AssemblyInfo.AssemblyFileVersion
   nameWithType: AssemblyInfo.AssemblyFileVersion
 - uid: DevZest.Licensing.AssemblyInfo.AssemblyFileVersion*
   name: AssemblyFileVersion
-  href: api/DevZest.Licensing.AssemblyInfo.html#DevZest_Licensing_AssemblyInfo_AssemblyFileVersion_
+  href: api/DevZest.Licensing.AssemblyInfo.AssemblyFileVersion.html
   commentId: Overload:DevZest.Licensing.AssemblyInfo.AssemblyFileVersion
-  isSpec: "True"
   fullName: DevZest.Licensing.AssemblyInfo.AssemblyFileVersion
   nameWithType: AssemblyInfo.AssemblyFileVersion
 - uid: DevZest.Licensing.AssemblyInfo.AssemblyVersion
   name: AssemblyVersion
-  href: api/DevZest.Licensing.AssemblyInfo.html#DevZest_Licensing_AssemblyInfo_AssemblyVersion
+  href: api/DevZest.Licensing.AssemblyInfo.AssemblyVersion.html#DevZest_Licensing_AssemblyInfo_AssemblyVersion
   commentId: P:DevZest.Licensing.AssemblyInfo.AssemblyVersion
   fullName: DevZest.Licensing.AssemblyInfo.AssemblyVersion
   nameWithType: AssemblyInfo.AssemblyVersion
 - uid: DevZest.Licensing.AssemblyInfo.AssemblyVersion*
   name: AssemblyVersion
-  href: api/DevZest.Licensing.AssemblyInfo.html#DevZest_Licensing_AssemblyInfo_AssemblyVersion_
+  href: api/DevZest.Licensing.AssemblyInfo.AssemblyVersion.html
   commentId: Overload:DevZest.Licensing.AssemblyInfo.AssemblyVersion
-  isSpec: "True"
   fullName: DevZest.Licensing.AssemblyInfo.AssemblyVersion
   nameWithType: AssemblyInfo.AssemblyVersion
 - uid: DevZest.Licensing.AssemblyInfo.GetReleaseDate(System.Version)
   name: GetReleaseDate(Version)
-  href: api/DevZest.Licensing.AssemblyInfo.html#DevZest_Licensing_AssemblyInfo_GetReleaseDate_System_Version_
+  href: api/DevZest.Licensing.AssemblyInfo.GetReleaseDate.html#DevZest_Licensing_AssemblyInfo_GetReleaseDate_System_Version_
   commentId: M:DevZest.Licensing.AssemblyInfo.GetReleaseDate(System.Version)
   fullName: DevZest.Licensing.AssemblyInfo.GetReleaseDate(System.Version)
   nameWithType: AssemblyInfo.GetReleaseDate(Version)
 - uid: DevZest.Licensing.AssemblyInfo.GetReleaseDate*
   name: GetReleaseDate
-  href: api/DevZest.Licensing.AssemblyInfo.html#DevZest_Licensing_AssemblyInfo_GetReleaseDate_
+  href: api/DevZest.Licensing.AssemblyInfo.GetReleaseDate.html
   commentId: Overload:DevZest.Licensing.AssemblyInfo.GetReleaseDate
-  isSpec: "True"
   fullName: DevZest.Licensing.AssemblyInfo.GetReleaseDate
   nameWithType: AssemblyInfo.GetReleaseDate
 - uid: DevZest.Licensing.AssemblyInfo.LicenseItems
   name: LicenseItems
-  href: api/DevZest.Licensing.AssemblyInfo.html#DevZest_Licensing_AssemblyInfo_LicenseItems
+  href: api/DevZest.Licensing.AssemblyInfo.LicenseItems.html#DevZest_Licensing_AssemblyInfo_LicenseItems
   commentId: P:DevZest.Licensing.AssemblyInfo.LicenseItems
   fullName: DevZest.Licensing.AssemblyInfo.LicenseItems
   nameWithType: AssemblyInfo.LicenseItems
 - uid: DevZest.Licensing.AssemblyInfo.LicenseItems*
   name: LicenseItems
-  href: api/DevZest.Licensing.AssemblyInfo.html#DevZest_Licensing_AssemblyInfo_LicenseItems_
+  href: api/DevZest.Licensing.AssemblyInfo.LicenseItems.html
   commentId: Overload:DevZest.Licensing.AssemblyInfo.LicenseItems
-  isSpec: "True"
   fullName: DevZest.Licensing.AssemblyInfo.LicenseItems
   nameWithType: AssemblyInfo.LicenseItems
 - uid: DevZest.Licensing.AssemblyInfo.Product
   name: Product
-  href: api/DevZest.Licensing.AssemblyInfo.html#DevZest_Licensing_AssemblyInfo_Product
+  href: api/DevZest.Licensing.AssemblyInfo.Product.html#DevZest_Licensing_AssemblyInfo_Product
   commentId: P:DevZest.Licensing.AssemblyInfo.Product
   fullName: DevZest.Licensing.AssemblyInfo.Product
   nameWithType: AssemblyInfo.Product
 - uid: DevZest.Licensing.AssemblyInfo.Product*
   name: Product
-  href: api/DevZest.Licensing.AssemblyInfo.html#DevZest_Licensing_AssemblyInfo_Product_
+  href: api/DevZest.Licensing.AssemblyInfo.Product.html
   commentId: Overload:DevZest.Licensing.AssemblyInfo.Product
-  isSpec: "True"
   fullName: DevZest.Licensing.AssemblyInfo.Product
   nameWithType: AssemblyInfo.Product
 - uid: DevZest.Licensing.AssemblyInfo.PublicKeyXml
   name: PublicKeyXml
-  href: api/DevZest.Licensing.AssemblyInfo.html#DevZest_Licensing_AssemblyInfo_PublicKeyXml
+  href: api/DevZest.Licensing.AssemblyInfo.PublicKeyXml.html#DevZest_Licensing_AssemblyInfo_PublicKeyXml
   commentId: P:DevZest.Licensing.AssemblyInfo.PublicKeyXml
   fullName: DevZest.Licensing.AssemblyInfo.PublicKeyXml
   nameWithType: AssemblyInfo.PublicKeyXml
 - uid: DevZest.Licensing.AssemblyInfo.PublicKeyXml*
   name: PublicKeyXml
-  href: api/DevZest.Licensing.AssemblyInfo.html#DevZest_Licensing_AssemblyInfo_PublicKeyXml_
+  href: api/DevZest.Licensing.AssemblyInfo.PublicKeyXml.html
   commentId: Overload:DevZest.Licensing.AssemblyInfo.PublicKeyXml
-  isSpec: "True"
   fullName: DevZest.Licensing.AssemblyInfo.PublicKeyXml
   nameWithType: AssemblyInfo.PublicKeyXml
 - uid: DevZest.Licensing.AssemblyInfo.ReleaseDate
   name: ReleaseDate
-  href: api/DevZest.Licensing.AssemblyInfo.html#DevZest_Licensing_AssemblyInfo_ReleaseDate
+  href: api/DevZest.Licensing.AssemblyInfo.ReleaseDate.html#DevZest_Licensing_AssemblyInfo_ReleaseDate
   commentId: P:DevZest.Licensing.AssemblyInfo.ReleaseDate
   fullName: DevZest.Licensing.AssemblyInfo.ReleaseDate
   nameWithType: AssemblyInfo.ReleaseDate
 - uid: DevZest.Licensing.AssemblyInfo.ReleaseDate*
   name: ReleaseDate
-  href: api/DevZest.Licensing.AssemblyInfo.html#DevZest_Licensing_AssemblyInfo_ReleaseDate_
+  href: api/DevZest.Licensing.AssemblyInfo.ReleaseDate.html
   commentId: Overload:DevZest.Licensing.AssemblyInfo.ReleaseDate
-  isSpec: "True"
   fullName: DevZest.Licensing.AssemblyInfo.ReleaseDate
   nameWithType: AssemblyInfo.ReleaseDate
 - uid: DevZest.Licensing.AssemblyLicense
@@ -144,34 +135,32 @@ references:
   nameWithType: AssemblyLicense
 - uid: DevZest.Licensing.AssemblyLicense.GetAssemblyData(System.Reflection.Assembly)
   name: GetAssemblyData(Assembly)
-  href: api/DevZest.Licensing.AssemblyLicense.html#DevZest_Licensing_AssemblyLicense_GetAssemblyData_System_Reflection_Assembly_
+  href: api/DevZest.Licensing.AssemblyLicense.GetAssemblyData.html#DevZest_Licensing_AssemblyLicense_GetAssemblyData_System_Reflection_Assembly_
   commentId: M:DevZest.Licensing.AssemblyLicense.GetAssemblyData(System.Reflection.Assembly)
   fullName: DevZest.Licensing.AssemblyLicense.GetAssemblyData(System.Reflection.Assembly)
   nameWithType: AssemblyLicense.GetAssemblyData(Assembly)
 - uid: DevZest.Licensing.AssemblyLicense.GetAssemblyData(System.String)
   name: GetAssemblyData(String)
-  href: api/DevZest.Licensing.AssemblyLicense.html#DevZest_Licensing_AssemblyLicense_GetAssemblyData_System_String_
+  href: api/DevZest.Licensing.AssemblyLicense.GetAssemblyData.html#DevZest_Licensing_AssemblyLicense_GetAssemblyData_System_String_
   commentId: M:DevZest.Licensing.AssemblyLicense.GetAssemblyData(System.String)
   fullName: DevZest.Licensing.AssemblyLicense.GetAssemblyData(System.String)
   nameWithType: AssemblyLicense.GetAssemblyData(String)
 - uid: DevZest.Licensing.AssemblyLicense.GetAssemblyData*
   name: GetAssemblyData
-  href: api/DevZest.Licensing.AssemblyLicense.html#DevZest_Licensing_AssemblyLicense_GetAssemblyData_
+  href: api/DevZest.Licensing.AssemblyLicense.GetAssemblyData.html
   commentId: Overload:DevZest.Licensing.AssemblyLicense.GetAssemblyData
-  isSpec: "True"
   fullName: DevZest.Licensing.AssemblyLicense.GetAssemblyData
   nameWithType: AssemblyLicense.GetAssemblyData
 - uid: DevZest.Licensing.AssemblyLicense.Validate
   name: Validate()
-  href: api/DevZest.Licensing.AssemblyLicense.html#DevZest_Licensing_AssemblyLicense_Validate
+  href: api/DevZest.Licensing.AssemblyLicense.Validate.html#DevZest_Licensing_AssemblyLicense_Validate
   commentId: M:DevZest.Licensing.AssemblyLicense.Validate
   fullName: DevZest.Licensing.AssemblyLicense.Validate()
   nameWithType: AssemblyLicense.Validate()
 - uid: DevZest.Licensing.AssemblyLicense.Validate*
   name: Validate
-  href: api/DevZest.Licensing.AssemblyLicense.html#DevZest_Licensing_AssemblyLicense_Validate_
+  href: api/DevZest.Licensing.AssemblyLicense.Validate.html
   commentId: Overload:DevZest.Licensing.AssemblyLicense.Validate
-  isSpec: "True"
   fullName: DevZest.Licensing.AssemblyLicense.Validate
   nameWithType: AssemblyLicense.Validate
 - uid: DevZest.Licensing.AssemblyLicenseLoaderAttribute
@@ -182,28 +171,26 @@ references:
   nameWithType: AssemblyLicenseLoaderAttribute
 - uid: DevZest.Licensing.AssemblyLicenseLoaderAttribute.#ctor(System.Type)
   name: AssemblyLicenseLoaderAttribute(Type)
-  href: api/DevZest.Licensing.AssemblyLicenseLoaderAttribute.html#DevZest_Licensing_AssemblyLicenseLoaderAttribute__ctor_System_Type_
+  href: api/DevZest.Licensing.AssemblyLicenseLoaderAttribute.-ctor.html#DevZest_Licensing_AssemblyLicenseLoaderAttribute__ctor_System_Type_
   commentId: M:DevZest.Licensing.AssemblyLicenseLoaderAttribute.#ctor(System.Type)
   fullName: DevZest.Licensing.AssemblyLicenseLoaderAttribute.AssemblyLicenseLoaderAttribute(System.Type)
   nameWithType: AssemblyLicenseLoaderAttribute.AssemblyLicenseLoaderAttribute(Type)
 - uid: DevZest.Licensing.AssemblyLicenseLoaderAttribute.#ctor*
   name: AssemblyLicenseLoaderAttribute
-  href: api/DevZest.Licensing.AssemblyLicenseLoaderAttribute.html#DevZest_Licensing_AssemblyLicenseLoaderAttribute__ctor_
+  href: api/DevZest.Licensing.AssemblyLicenseLoaderAttribute.-ctor.html
   commentId: Overload:DevZest.Licensing.AssemblyLicenseLoaderAttribute.#ctor
-  isSpec: "True"
   fullName: DevZest.Licensing.AssemblyLicenseLoaderAttribute.AssemblyLicenseLoaderAttribute
   nameWithType: AssemblyLicenseLoaderAttribute.AssemblyLicenseLoaderAttribute
 - uid: DevZest.Licensing.AssemblyLicenseLoaderAttribute.LoaderType
   name: LoaderType
-  href: api/DevZest.Licensing.AssemblyLicenseLoaderAttribute.html#DevZest_Licensing_AssemblyLicenseLoaderAttribute_LoaderType
+  href: api/DevZest.Licensing.AssemblyLicenseLoaderAttribute.LoaderType.html#DevZest_Licensing_AssemblyLicenseLoaderAttribute_LoaderType
   commentId: P:DevZest.Licensing.AssemblyLicenseLoaderAttribute.LoaderType
   fullName: DevZest.Licensing.AssemblyLicenseLoaderAttribute.LoaderType
   nameWithType: AssemblyLicenseLoaderAttribute.LoaderType
 - uid: DevZest.Licensing.AssemblyLicenseLoaderAttribute.LoaderType*
   name: LoaderType
-  href: api/DevZest.Licensing.AssemblyLicenseLoaderAttribute.html#DevZest_Licensing_AssemblyLicenseLoaderAttribute_LoaderType_
+  href: api/DevZest.Licensing.AssemblyLicenseLoaderAttribute.LoaderType.html
   commentId: Overload:DevZest.Licensing.AssemblyLicenseLoaderAttribute.LoaderType
-  isSpec: "True"
   fullName: DevZest.Licensing.AssemblyLicenseLoaderAttribute.LoaderType
   nameWithType: AssemblyLicenseLoaderAttribute.LoaderType
 - uid: DevZest.Licensing.AssemblyLicenseProviderAttribute
@@ -214,67 +201,62 @@ references:
   nameWithType: AssemblyLicenseProviderAttribute
 - uid: DevZest.Licensing.AssemblyLicenseProviderAttribute.EntryAssemblyOnly
   name: EntryAssemblyOnly
-  href: api/DevZest.Licensing.AssemblyLicenseProviderAttribute.html#DevZest_Licensing_AssemblyLicenseProviderAttribute_EntryAssemblyOnly
+  href: api/DevZest.Licensing.AssemblyLicenseProviderAttribute.EntryAssemblyOnly.html#DevZest_Licensing_AssemblyLicenseProviderAttribute_EntryAssemblyOnly
   commentId: P:DevZest.Licensing.AssemblyLicenseProviderAttribute.EntryAssemblyOnly
   fullName: DevZest.Licensing.AssemblyLicenseProviderAttribute.EntryAssemblyOnly
   nameWithType: AssemblyLicenseProviderAttribute.EntryAssemblyOnly
 - uid: DevZest.Licensing.AssemblyLicenseProviderAttribute.EntryAssemblyOnly*
   name: EntryAssemblyOnly
-  href: api/DevZest.Licensing.AssemblyLicenseProviderAttribute.html#DevZest_Licensing_AssemblyLicenseProviderAttribute_EntryAssemblyOnly_
+  href: api/DevZest.Licensing.AssemblyLicenseProviderAttribute.EntryAssemblyOnly.html
   commentId: Overload:DevZest.Licensing.AssemblyLicenseProviderAttribute.EntryAssemblyOnly
-  isSpec: "True"
   fullName: DevZest.Licensing.AssemblyLicenseProviderAttribute.EntryAssemblyOnly
   nameWithType: AssemblyLicenseProviderAttribute.EntryAssemblyOnly
 - uid: DevZest.Licensing.AssemblyLicenseProviderAttribute.GetAssemblyLicenseFileName(System.Reflection.AssemblyName)
   name: GetAssemblyLicenseFileName(AssemblyName)
-  href: api/DevZest.Licensing.AssemblyLicenseProviderAttribute.html#DevZest_Licensing_AssemblyLicenseProviderAttribute_GetAssemblyLicenseFileName_System_Reflection_AssemblyName_
+  href: api/DevZest.Licensing.AssemblyLicenseProviderAttribute.GetAssemblyLicenseFileName.html#DevZest_Licensing_AssemblyLicenseProviderAttribute_GetAssemblyLicenseFileName_System_Reflection_AssemblyName_
   commentId: M:DevZest.Licensing.AssemblyLicenseProviderAttribute.GetAssemblyLicenseFileName(System.Reflection.AssemblyName)
   fullName: DevZest.Licensing.AssemblyLicenseProviderAttribute.GetAssemblyLicenseFileName(System.Reflection.AssemblyName)
   nameWithType: AssemblyLicenseProviderAttribute.GetAssemblyLicenseFileName(AssemblyName)
 - uid: DevZest.Licensing.AssemblyLicenseProviderAttribute.GetAssemblyLicenseFileName*
   name: GetAssemblyLicenseFileName
-  href: api/DevZest.Licensing.AssemblyLicenseProviderAttribute.html#DevZest_Licensing_AssemblyLicenseProviderAttribute_GetAssemblyLicenseFileName_
+  href: api/DevZest.Licensing.AssemblyLicenseProviderAttribute.GetAssemblyLicenseFileName.html
   commentId: Overload:DevZest.Licensing.AssemblyLicenseProviderAttribute.GetAssemblyLicenseFileName
-  isSpec: "True"
   fullName: DevZest.Licensing.AssemblyLicenseProviderAttribute.GetAssemblyLicenseFileName
   nameWithType: AssemblyLicenseProviderAttribute.GetAssemblyLicenseFileName
 - uid: DevZest.Licensing.AssemblyLicenseProviderAttribute.GetTraceMessage(DevZest.Licensing.LicenseProviderResult)
   name: GetTraceMessage(LicenseProviderResult)
-  href: api/DevZest.Licensing.AssemblyLicenseProviderAttribute.html#DevZest_Licensing_AssemblyLicenseProviderAttribute_GetTraceMessage_DevZest_Licensing_LicenseProviderResult_
+  href: api/DevZest.Licensing.AssemblyLicenseProviderAttribute.GetTraceMessage.html#DevZest_Licensing_AssemblyLicenseProviderAttribute_GetTraceMessage_DevZest_Licensing_LicenseProviderResult_
   commentId: M:DevZest.Licensing.AssemblyLicenseProviderAttribute.GetTraceMessage(DevZest.Licensing.LicenseProviderResult)
   fullName: DevZest.Licensing.AssemblyLicenseProviderAttribute.GetTraceMessage(DevZest.Licensing.LicenseProviderResult)
   nameWithType: AssemblyLicenseProviderAttribute.GetTraceMessage(LicenseProviderResult)
 - uid: DevZest.Licensing.AssemblyLicenseProviderAttribute.GetTraceMessage*
   name: GetTraceMessage
-  href: api/DevZest.Licensing.AssemblyLicenseProviderAttribute.html#DevZest_Licensing_AssemblyLicenseProviderAttribute_GetTraceMessage_
+  href: api/DevZest.Licensing.AssemblyLicenseProviderAttribute.GetTraceMessage.html
   commentId: Overload:DevZest.Licensing.AssemblyLicenseProviderAttribute.GetTraceMessage
-  isSpec: "True"
   fullName: DevZest.Licensing.AssemblyLicenseProviderAttribute.GetTraceMessage
   nameWithType: AssemblyLicenseProviderAttribute.GetTraceMessage
 - uid: DevZest.Licensing.AssemblyLicenseProviderAttribute.ProvideLicense
   name: ProvideLicense()
-  href: api/DevZest.Licensing.AssemblyLicenseProviderAttribute.html#DevZest_Licensing_AssemblyLicenseProviderAttribute_ProvideLicense
+  href: api/DevZest.Licensing.AssemblyLicenseProviderAttribute.ProvideLicense.html#DevZest_Licensing_AssemblyLicenseProviderAttribute_ProvideLicense
   commentId: M:DevZest.Licensing.AssemblyLicenseProviderAttribute.ProvideLicense
   fullName: DevZest.Licensing.AssemblyLicenseProviderAttribute.ProvideLicense()
   nameWithType: AssemblyLicenseProviderAttribute.ProvideLicense()
 - uid: DevZest.Licensing.AssemblyLicenseProviderAttribute.ProvideLicense*
   name: ProvideLicense
-  href: api/DevZest.Licensing.AssemblyLicenseProviderAttribute.html#DevZest_Licensing_AssemblyLicenseProviderAttribute_ProvideLicense_
+  href: api/DevZest.Licensing.AssemblyLicenseProviderAttribute.ProvideLicense.html
   commentId: Overload:DevZest.Licensing.AssemblyLicenseProviderAttribute.ProvideLicense
-  isSpec: "True"
   fullName: DevZest.Licensing.AssemblyLicenseProviderAttribute.ProvideLicense
   nameWithType: AssemblyLicenseProviderAttribute.ProvideLicense
 - uid: DevZest.Licensing.AssemblyLicenseProviderAttribute.Reset
   name: Reset()
-  href: api/DevZest.Licensing.AssemblyLicenseProviderAttribute.html#DevZest_Licensing_AssemblyLicenseProviderAttribute_Reset
+  href: api/DevZest.Licensing.AssemblyLicenseProviderAttribute.Reset.html#DevZest_Licensing_AssemblyLicenseProviderAttribute_Reset
   commentId: M:DevZest.Licensing.AssemblyLicenseProviderAttribute.Reset
   fullName: DevZest.Licensing.AssemblyLicenseProviderAttribute.Reset()
   nameWithType: AssemblyLicenseProviderAttribute.Reset()
 - uid: DevZest.Licensing.AssemblyLicenseProviderAttribute.Reset*
   name: Reset
-  href: api/DevZest.Licensing.AssemblyLicenseProviderAttribute.html#DevZest_Licensing_AssemblyLicenseProviderAttribute_Reset_
+  href: api/DevZest.Licensing.AssemblyLicenseProviderAttribute.Reset.html
   commentId: Overload:DevZest.Licensing.AssemblyLicenseProviderAttribute.Reset
-  isSpec: "True"
   fullName: DevZest.Licensing.AssemblyLicenseProviderAttribute.Reset
   nameWithType: AssemblyLicenseProviderAttribute.Reset
 - uid: DevZest.Licensing.CachedLicenseProviderAttribute
@@ -285,54 +267,50 @@ references:
   nameWithType: CachedLicenseProviderAttribute
 - uid: DevZest.Licensing.CachedLicenseProviderAttribute.GetTraceMessage(DevZest.Licensing.LicenseProviderResult)
   name: GetTraceMessage(LicenseProviderResult)
-  href: api/DevZest.Licensing.CachedLicenseProviderAttribute.html#DevZest_Licensing_CachedLicenseProviderAttribute_GetTraceMessage_DevZest_Licensing_LicenseProviderResult_
+  href: api/DevZest.Licensing.CachedLicenseProviderAttribute.GetTraceMessage.html#DevZest_Licensing_CachedLicenseProviderAttribute_GetTraceMessage_DevZest_Licensing_LicenseProviderResult_
   commentId: M:DevZest.Licensing.CachedLicenseProviderAttribute.GetTraceMessage(DevZest.Licensing.LicenseProviderResult)
   fullName: DevZest.Licensing.CachedLicenseProviderAttribute.GetTraceMessage(DevZest.Licensing.LicenseProviderResult)
   nameWithType: CachedLicenseProviderAttribute.GetTraceMessage(LicenseProviderResult)
 - uid: DevZest.Licensing.CachedLicenseProviderAttribute.GetTraceMessage*
   name: GetTraceMessage
-  href: api/DevZest.Licensing.CachedLicenseProviderAttribute.html#DevZest_Licensing_CachedLicenseProviderAttribute_GetTraceMessage_
+  href: api/DevZest.Licensing.CachedLicenseProviderAttribute.GetTraceMessage.html
   commentId: Overload:DevZest.Licensing.CachedLicenseProviderAttribute.GetTraceMessage
-  isSpec: "True"
   fullName: DevZest.Licensing.CachedLicenseProviderAttribute.GetTraceMessage
   nameWithType: CachedLicenseProviderAttribute.GetTraceMessage
 - uid: DevZest.Licensing.CachedLicenseProviderAttribute.Load
   name: Load()
-  href: api/DevZest.Licensing.CachedLicenseProviderAttribute.html#DevZest_Licensing_CachedLicenseProviderAttribute_Load
+  href: api/DevZest.Licensing.CachedLicenseProviderAttribute.Load.html#DevZest_Licensing_CachedLicenseProviderAttribute_Load
   commentId: M:DevZest.Licensing.CachedLicenseProviderAttribute.Load
   fullName: DevZest.Licensing.CachedLicenseProviderAttribute.Load()
   nameWithType: CachedLicenseProviderAttribute.Load()
 - uid: DevZest.Licensing.CachedLicenseProviderAttribute.Load*
   name: Load
-  href: api/DevZest.Licensing.CachedLicenseProviderAttribute.html#DevZest_Licensing_CachedLicenseProviderAttribute_Load_
+  href: api/DevZest.Licensing.CachedLicenseProviderAttribute.Load.html
   commentId: Overload:DevZest.Licensing.CachedLicenseProviderAttribute.Load
-  isSpec: "True"
   fullName: DevZest.Licensing.CachedLicenseProviderAttribute.Load
   nameWithType: CachedLicenseProviderAttribute.Load
 - uid: DevZest.Licensing.CachedLicenseProviderAttribute.ProvideLicense
   name: ProvideLicense()
-  href: api/DevZest.Licensing.CachedLicenseProviderAttribute.html#DevZest_Licensing_CachedLicenseProviderAttribute_ProvideLicense
+  href: api/DevZest.Licensing.CachedLicenseProviderAttribute.ProvideLicense.html#DevZest_Licensing_CachedLicenseProviderAttribute_ProvideLicense
   commentId: M:DevZest.Licensing.CachedLicenseProviderAttribute.ProvideLicense
   fullName: DevZest.Licensing.CachedLicenseProviderAttribute.ProvideLicense()
   nameWithType: CachedLicenseProviderAttribute.ProvideLicense()
 - uid: DevZest.Licensing.CachedLicenseProviderAttribute.ProvideLicense*
   name: ProvideLicense
-  href: api/DevZest.Licensing.CachedLicenseProviderAttribute.html#DevZest_Licensing_CachedLicenseProviderAttribute_ProvideLicense_
+  href: api/DevZest.Licensing.CachedLicenseProviderAttribute.ProvideLicense.html
   commentId: Overload:DevZest.Licensing.CachedLicenseProviderAttribute.ProvideLicense
-  isSpec: "True"
   fullName: DevZest.Licensing.CachedLicenseProviderAttribute.ProvideLicense
   nameWithType: CachedLicenseProviderAttribute.ProvideLicense
 - uid: DevZest.Licensing.CachedLicenseProviderAttribute.Reset
   name: Reset()
-  href: api/DevZest.Licensing.CachedLicenseProviderAttribute.html#DevZest_Licensing_CachedLicenseProviderAttribute_Reset
+  href: api/DevZest.Licensing.CachedLicenseProviderAttribute.Reset.html#DevZest_Licensing_CachedLicenseProviderAttribute_Reset
   commentId: M:DevZest.Licensing.CachedLicenseProviderAttribute.Reset
   fullName: DevZest.Licensing.CachedLicenseProviderAttribute.Reset()
   nameWithType: CachedLicenseProviderAttribute.Reset()
 - uid: DevZest.Licensing.CachedLicenseProviderAttribute.Reset*
   name: Reset
-  href: api/DevZest.Licensing.CachedLicenseProviderAttribute.html#DevZest_Licensing_CachedLicenseProviderAttribute_Reset_
+  href: api/DevZest.Licensing.CachedLicenseProviderAttribute.Reset.html
   commentId: Overload:DevZest.Licensing.CachedLicenseProviderAttribute.Reset
-  isSpec: "True"
   fullName: DevZest.Licensing.CachedLicenseProviderAttribute.Reset
   nameWithType: CachedLicenseProviderAttribute.Reset
 - uid: DevZest.Licensing.FileLicenseProviderAttribute
@@ -343,67 +321,62 @@ references:
   nameWithType: FileLicenseProviderAttribute
 - uid: DevZest.Licensing.FileLicenseProviderAttribute.#ctor
   name: FileLicenseProviderAttribute()
-  href: api/DevZest.Licensing.FileLicenseProviderAttribute.html#DevZest_Licensing_FileLicenseProviderAttribute__ctor
+  href: api/DevZest.Licensing.FileLicenseProviderAttribute.-ctor.html#DevZest_Licensing_FileLicenseProviderAttribute__ctor
   commentId: M:DevZest.Licensing.FileLicenseProviderAttribute.#ctor
   fullName: DevZest.Licensing.FileLicenseProviderAttribute.FileLicenseProviderAttribute()
   nameWithType: FileLicenseProviderAttribute.FileLicenseProviderAttribute()
 - uid: DevZest.Licensing.FileLicenseProviderAttribute.#ctor*
   name: FileLicenseProviderAttribute
-  href: api/DevZest.Licensing.FileLicenseProviderAttribute.html#DevZest_Licensing_FileLicenseProviderAttribute__ctor_
+  href: api/DevZest.Licensing.FileLicenseProviderAttribute.-ctor.html
   commentId: Overload:DevZest.Licensing.FileLicenseProviderAttribute.#ctor
-  isSpec: "True"
   fullName: DevZest.Licensing.FileLicenseProviderAttribute.FileLicenseProviderAttribute
   nameWithType: FileLicenseProviderAttribute.FileLicenseProviderAttribute
 - uid: DevZest.Licensing.FileLicenseProviderAttribute.FolderOption
   name: FolderOption
-  href: api/DevZest.Licensing.FileLicenseProviderAttribute.html#DevZest_Licensing_FileLicenseProviderAttribute_FolderOption
+  href: api/DevZest.Licensing.FileLicenseProviderAttribute.FolderOption.html#DevZest_Licensing_FileLicenseProviderAttribute_FolderOption
   commentId: P:DevZest.Licensing.FileLicenseProviderAttribute.FolderOption
   fullName: DevZest.Licensing.FileLicenseProviderAttribute.FolderOption
   nameWithType: FileLicenseProviderAttribute.FolderOption
 - uid: DevZest.Licensing.FileLicenseProviderAttribute.FolderOption*
   name: FolderOption
-  href: api/DevZest.Licensing.FileLicenseProviderAttribute.html#DevZest_Licensing_FileLicenseProviderAttribute_FolderOption_
+  href: api/DevZest.Licensing.FileLicenseProviderAttribute.FolderOption.html
   commentId: Overload:DevZest.Licensing.FileLicenseProviderAttribute.FolderOption
-  isSpec: "True"
   fullName: DevZest.Licensing.FileLicenseProviderAttribute.FolderOption
   nameWithType: FileLicenseProviderAttribute.FolderOption
 - uid: DevZest.Licensing.FileLicenseProviderAttribute.Load
   name: Load()
-  href: api/DevZest.Licensing.FileLicenseProviderAttribute.html#DevZest_Licensing_FileLicenseProviderAttribute_Load
+  href: api/DevZest.Licensing.FileLicenseProviderAttribute.Load.html#DevZest_Licensing_FileLicenseProviderAttribute_Load
   commentId: M:DevZest.Licensing.FileLicenseProviderAttribute.Load
   fullName: DevZest.Licensing.FileLicenseProviderAttribute.Load()
   nameWithType: FileLicenseProviderAttribute.Load()
 - uid: DevZest.Licensing.FileLicenseProviderAttribute.Load*
   name: Load
-  href: api/DevZest.Licensing.FileLicenseProviderAttribute.html#DevZest_Licensing_FileLicenseProviderAttribute_Load_
+  href: api/DevZest.Licensing.FileLicenseProviderAttribute.Load.html
   commentId: Overload:DevZest.Licensing.FileLicenseProviderAttribute.Load
-  isSpec: "True"
   fullName: DevZest.Licensing.FileLicenseProviderAttribute.Load
   nameWithType: FileLicenseProviderAttribute.Load
 - uid: DevZest.Licensing.FileLicenseProviderAttribute.Name
   name: Name
-  href: api/DevZest.Licensing.FileLicenseProviderAttribute.html#DevZest_Licensing_FileLicenseProviderAttribute_Name
+  href: api/DevZest.Licensing.FileLicenseProviderAttribute.Name.html#DevZest_Licensing_FileLicenseProviderAttribute_Name
   commentId: P:DevZest.Licensing.FileLicenseProviderAttribute.Name
   fullName: DevZest.Licensing.FileLicenseProviderAttribute.Name
   nameWithType: FileLicenseProviderAttribute.Name
 - uid: DevZest.Licensing.FileLicenseProviderAttribute.Name*
   name: Name
-  href: api/DevZest.Licensing.FileLicenseProviderAttribute.html#DevZest_Licensing_FileLicenseProviderAttribute_Name_
+  href: api/DevZest.Licensing.FileLicenseProviderAttribute.Name.html
   commentId: Overload:DevZest.Licensing.FileLicenseProviderAttribute.Name
-  isSpec: "True"
   fullName: DevZest.Licensing.FileLicenseProviderAttribute.Name
   nameWithType: FileLicenseProviderAttribute.Name
 - uid: DevZest.Licensing.FileLicenseProviderAttribute.SpecialFolder
   name: SpecialFolder
-  href: api/DevZest.Licensing.FileLicenseProviderAttribute.html#DevZest_Licensing_FileLicenseProviderAttribute_SpecialFolder
+  href: api/DevZest.Licensing.FileLicenseProviderAttribute.SpecialFolder.html#DevZest_Licensing_FileLicenseProviderAttribute_SpecialFolder
   commentId: P:DevZest.Licensing.FileLicenseProviderAttribute.SpecialFolder
   fullName: DevZest.Licensing.FileLicenseProviderAttribute.SpecialFolder
   nameWithType: FileLicenseProviderAttribute.SpecialFolder
 - uid: DevZest.Licensing.FileLicenseProviderAttribute.SpecialFolder*
   name: SpecialFolder
-  href: api/DevZest.Licensing.FileLicenseProviderAttribute.html#DevZest_Licensing_FileLicenseProviderAttribute_SpecialFolder_
+  href: api/DevZest.Licensing.FileLicenseProviderAttribute.SpecialFolder.html
   commentId: Overload:DevZest.Licensing.FileLicenseProviderAttribute.SpecialFolder
-  isSpec: "True"
   fullName: DevZest.Licensing.FileLicenseProviderAttribute.SpecialFolder
   nameWithType: FileLicenseProviderAttribute.SpecialFolder
 - uid: DevZest.Licensing.FolderOption
@@ -441,7 +414,7 @@ references:
   nameWithType.vb: Freezable(Of T)
 - uid: DevZest.Licensing.Freezable`1.IsFrozen
   name: IsFrozen
-  href: api/DevZest.Licensing.Freezable-1.html#DevZest_Licensing_Freezable_1_IsFrozen
+  href: api/DevZest.Licensing.Freezable-1.IsFrozen.html#DevZest_Licensing_Freezable_1_IsFrozen
   commentId: P:DevZest.Licensing.Freezable`1.IsFrozen
   fullName: DevZest.Licensing.Freezable<T>.IsFrozen
   fullName.vb: DevZest.Licensing.Freezable(Of T).IsFrozen
@@ -449,16 +422,15 @@ references:
   nameWithType.vb: Freezable(Of T).IsFrozen
 - uid: DevZest.Licensing.Freezable`1.IsFrozen*
   name: IsFrozen
-  href: api/DevZest.Licensing.Freezable-1.html#DevZest_Licensing_Freezable_1_IsFrozen_
+  href: api/DevZest.Licensing.Freezable-1.IsFrozen.html
   commentId: Overload:DevZest.Licensing.Freezable`1.IsFrozen
-  isSpec: "True"
   fullName: DevZest.Licensing.Freezable<T>.IsFrozen
   fullName.vb: DevZest.Licensing.Freezable(Of T).IsFrozen
   nameWithType: Freezable<T>.IsFrozen
   nameWithType.vb: Freezable(Of T).IsFrozen
 - uid: DevZest.Licensing.Freezable`1.VerifyFrozenAccess
   name: VerifyFrozenAccess()
-  href: api/DevZest.Licensing.Freezable-1.html#DevZest_Licensing_Freezable_1_VerifyFrozenAccess
+  href: api/DevZest.Licensing.Freezable-1.VerifyFrozenAccess.html#DevZest_Licensing_Freezable_1_VerifyFrozenAccess
   commentId: M:DevZest.Licensing.Freezable`1.VerifyFrozenAccess
   fullName: DevZest.Licensing.Freezable<T>.VerifyFrozenAccess()
   fullName.vb: DevZest.Licensing.Freezable(Of T).VerifyFrozenAccess()
@@ -466,9 +438,8 @@ references:
   nameWithType.vb: Freezable(Of T).VerifyFrozenAccess()
 - uid: DevZest.Licensing.Freezable`1.VerifyFrozenAccess*
   name: VerifyFrozenAccess
-  href: api/DevZest.Licensing.Freezable-1.html#DevZest_Licensing_Freezable_1_VerifyFrozenAccess_
+  href: api/DevZest.Licensing.Freezable-1.VerifyFrozenAccess.html
   commentId: Overload:DevZest.Licensing.Freezable`1.VerifyFrozenAccess
-  isSpec: "True"
   fullName: DevZest.Licensing.Freezable<T>.VerifyFrozenAccess
   fullName.vb: DevZest.Licensing.Freezable(Of T).VerifyFrozenAccess
   nameWithType: Freezable<T>.VerifyFrozenAccess
@@ -481,15 +452,14 @@ references:
   nameWithType: IAssemblyLicenseLoader
 - uid: DevZest.Licensing.IAssemblyLicenseLoader.Load(System.Reflection.Assembly)
   name: Load(Assembly)
-  href: api/DevZest.Licensing.IAssemblyLicenseLoader.html#DevZest_Licensing_IAssemblyLicenseLoader_Load_System_Reflection_Assembly_
+  href: api/DevZest.Licensing.IAssemblyLicenseLoader.Load.html#DevZest_Licensing_IAssemblyLicenseLoader_Load_System_Reflection_Assembly_
   commentId: M:DevZest.Licensing.IAssemblyLicenseLoader.Load(System.Reflection.Assembly)
   fullName: DevZest.Licensing.IAssemblyLicenseLoader.Load(System.Reflection.Assembly)
   nameWithType: IAssemblyLicenseLoader.Load(Assembly)
 - uid: DevZest.Licensing.IAssemblyLicenseLoader.Load*
   name: Load
-  href: api/DevZest.Licensing.IAssemblyLicenseLoader.html#DevZest_Licensing_IAssemblyLicenseLoader_Load_
+  href: api/DevZest.Licensing.IAssemblyLicenseLoader.Load.html
   commentId: Overload:DevZest.Licensing.IAssemblyLicenseLoader.Load
-  isSpec: "True"
   fullName: DevZest.Licensing.IAssemblyLicenseLoader.Load
   nameWithType: IAssemblyLicenseLoader.Load
 - uid: DevZest.Licensing.ILicensePublisher
@@ -500,15 +470,14 @@ references:
   nameWithType: ILicensePublisher
 - uid: DevZest.Licensing.ILicensePublisher.Publish(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
   name: Publish(Int32, String, String, String, String, String, String, String, String)
-  href: api/DevZest.Licensing.ILicensePublisher.html#DevZest_Licensing_ILicensePublisher_Publish_System_Int32_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_
+  href: api/DevZest.Licensing.ILicensePublisher.Publish.html#DevZest_Licensing_ILicensePublisher_Publish_System_Int32_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_
   commentId: M:DevZest.Licensing.ILicensePublisher.Publish(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
   fullName: DevZest.Licensing.ILicensePublisher.Publish(System.Int32, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String)
   nameWithType: ILicensePublisher.Publish(Int32, String, String, String, String, String, String, String, String)
 - uid: DevZest.Licensing.ILicensePublisher.Publish*
   name: Publish
-  href: api/DevZest.Licensing.ILicensePublisher.html#DevZest_Licensing_ILicensePublisher_Publish_
+  href: api/DevZest.Licensing.ILicensePublisher.Publish.html
   commentId: Overload:DevZest.Licensing.ILicensePublisher.Publish
-  isSpec: "True"
   fullName: DevZest.Licensing.ILicensePublisher.Publish
   nameWithType: ILicensePublisher.Publish
 - uid: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute
@@ -519,67 +488,62 @@ references:
   nameWithType: IsolatedStorageFileLicenseProviderAttribute
 - uid: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.#ctor(System.IO.IsolatedStorage.IsolatedStorageScope,System.Type,System.String)
   name: IsolatedStorageFileLicenseProviderAttribute(IsolatedStorageScope, Type, String)
-  href: api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.html#DevZest_Licensing_IsolatedStorageFileLicenseProviderAttribute__ctor_System_IO_IsolatedStorage_IsolatedStorageScope_System_Type_System_String_
+  href: api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.-ctor.html#DevZest_Licensing_IsolatedStorageFileLicenseProviderAttribute__ctor_System_IO_IsolatedStorage_IsolatedStorageScope_System_Type_System_String_
   commentId: M:DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.#ctor(System.IO.IsolatedStorage.IsolatedStorageScope,System.Type,System.String)
   fullName: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.IsolatedStorageFileLicenseProviderAttribute(System.IO.IsolatedStorage.IsolatedStorageScope, System.Type, System.String)
   nameWithType: IsolatedStorageFileLicenseProviderAttribute.IsolatedStorageFileLicenseProviderAttribute(IsolatedStorageScope, Type, String)
 - uid: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.#ctor*
   name: IsolatedStorageFileLicenseProviderAttribute
-  href: api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.html#DevZest_Licensing_IsolatedStorageFileLicenseProviderAttribute__ctor_
+  href: api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.-ctor.html
   commentId: Overload:DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.#ctor
-  isSpec: "True"
   fullName: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.IsolatedStorageFileLicenseProviderAttribute
   nameWithType: IsolatedStorageFileLicenseProviderAttribute.IsolatedStorageFileLicenseProviderAttribute
 - uid: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.ApplicationEvidenceType
   name: ApplicationEvidenceType
-  href: api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.html#DevZest_Licensing_IsolatedStorageFileLicenseProviderAttribute_ApplicationEvidenceType
+  href: api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.ApplicationEvidenceType.html#DevZest_Licensing_IsolatedStorageFileLicenseProviderAttribute_ApplicationEvidenceType
   commentId: P:DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.ApplicationEvidenceType
   fullName: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.ApplicationEvidenceType
   nameWithType: IsolatedStorageFileLicenseProviderAttribute.ApplicationEvidenceType
 - uid: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.ApplicationEvidenceType*
   name: ApplicationEvidenceType
-  href: api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.html#DevZest_Licensing_IsolatedStorageFileLicenseProviderAttribute_ApplicationEvidenceType_
+  href: api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.ApplicationEvidenceType.html
   commentId: Overload:DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.ApplicationEvidenceType
-  isSpec: "True"
   fullName: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.ApplicationEvidenceType
   nameWithType: IsolatedStorageFileLicenseProviderAttribute.ApplicationEvidenceType
 - uid: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Load
   name: Load()
-  href: api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.html#DevZest_Licensing_IsolatedStorageFileLicenseProviderAttribute_Load
+  href: api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Load.html#DevZest_Licensing_IsolatedStorageFileLicenseProviderAttribute_Load
   commentId: M:DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Load
   fullName: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Load()
   nameWithType: IsolatedStorageFileLicenseProviderAttribute.Load()
 - uid: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Load*
   name: Load
-  href: api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.html#DevZest_Licensing_IsolatedStorageFileLicenseProviderAttribute_Load_
+  href: api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Load.html
   commentId: Overload:DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Load
-  isSpec: "True"
   fullName: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Load
   nameWithType: IsolatedStorageFileLicenseProviderAttribute.Load
 - uid: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Path
   name: Path
-  href: api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.html#DevZest_Licensing_IsolatedStorageFileLicenseProviderAttribute_Path
+  href: api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Path.html#DevZest_Licensing_IsolatedStorageFileLicenseProviderAttribute_Path
   commentId: P:DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Path
   fullName: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Path
   nameWithType: IsolatedStorageFileLicenseProviderAttribute.Path
 - uid: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Path*
   name: Path
-  href: api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.html#DevZest_Licensing_IsolatedStorageFileLicenseProviderAttribute_Path_
+  href: api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Path.html
   commentId: Overload:DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Path
-  isSpec: "True"
   fullName: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Path
   nameWithType: IsolatedStorageFileLicenseProviderAttribute.Path
 - uid: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Scope
   name: Scope
-  href: api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.html#DevZest_Licensing_IsolatedStorageFileLicenseProviderAttribute_Scope
+  href: api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Scope.html#DevZest_Licensing_IsolatedStorageFileLicenseProviderAttribute_Scope
   commentId: P:DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Scope
   fullName: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Scope
   nameWithType: IsolatedStorageFileLicenseProviderAttribute.Scope
 - uid: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Scope*
   name: Scope
-  href: api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.html#DevZest_Licensing_IsolatedStorageFileLicenseProviderAttribute_Scope_
+  href: api/DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Scope.html
   commentId: Overload:DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Scope
-  isSpec: "True"
   fullName: DevZest.Licensing.IsolatedStorageFileLicenseProviderAttribute.Scope
   nameWithType: IsolatedStorageFileLicenseProviderAttribute.Scope
 - uid: DevZest.Licensing.License
@@ -590,137 +554,127 @@ references:
   nameWithType: License
 - uid: DevZest.Licensing.License.#ctor
   name: License()
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License__ctor
+  href: api/DevZest.Licensing.License.-ctor.html#DevZest_Licensing_License__ctor
   commentId: M:DevZest.Licensing.License.#ctor
   fullName: DevZest.Licensing.License.License()
   nameWithType: License.License()
 - uid: DevZest.Licensing.License.#ctor*
   name: License
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License__ctor_
+  href: api/DevZest.Licensing.License.-ctor.html
   commentId: Overload:DevZest.Licensing.License.#ctor
-  isSpec: "True"
   fullName: DevZest.Licensing.License.License
   nameWithType: License.License
 - uid: DevZest.Licensing.License.Assembly
   name: Assembly
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Assembly
+  href: api/DevZest.Licensing.License.Assembly.html#DevZest_Licensing_License_Assembly
   commentId: P:DevZest.Licensing.License.Assembly
   fullName: DevZest.Licensing.License.Assembly
   nameWithType: License.Assembly
 - uid: DevZest.Licensing.License.Assembly*
   name: Assembly
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Assembly_
+  href: api/DevZest.Licensing.License.Assembly.html
   commentId: Overload:DevZest.Licensing.License.Assembly
-  isSpec: "True"
   fullName: DevZest.Licensing.License.Assembly
   nameWithType: License.Assembly
 - uid: DevZest.Licensing.License.Category
   name: Category
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Category
+  href: api/DevZest.Licensing.License.Category.html#DevZest_Licensing_License_Category
   commentId: P:DevZest.Licensing.License.Category
   fullName: DevZest.Licensing.License.Category
   nameWithType: License.Category
 - uid: DevZest.Licensing.License.Category*
   name: Category
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Category_
+  href: api/DevZest.Licensing.License.Category.html
   commentId: Overload:DevZest.Licensing.License.Category
-  isSpec: "True"
   fullName: DevZest.Licensing.License.Category
   nameWithType: License.Category
 - uid: DevZest.Licensing.License.Company
   name: Company
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Company
+  href: api/DevZest.Licensing.License.Company.html#DevZest_Licensing_License_Company
   commentId: P:DevZest.Licensing.License.Company
   fullName: DevZest.Licensing.License.Company
   nameWithType: License.Company
 - uid: DevZest.Licensing.License.Company*
   name: Company
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Company_
+  href: api/DevZest.Licensing.License.Company.html
   commentId: Overload:DevZest.Licensing.License.Company
-  isSpec: "True"
   fullName: DevZest.Licensing.License.Company
   nameWithType: License.Company
 - uid: DevZest.Licensing.License.Data
   name: Data
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Data
+  href: api/DevZest.Licensing.License.Data.html#DevZest_Licensing_License_Data
   commentId: P:DevZest.Licensing.License.Data
   fullName: DevZest.Licensing.License.Data
   nameWithType: License.Data
 - uid: DevZest.Licensing.License.Data*
   name: Data
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Data_
+  href: api/DevZest.Licensing.License.Data.html
   commentId: Overload:DevZest.Licensing.License.Data
-  isSpec: "True"
   fullName: DevZest.Licensing.License.Data
   nameWithType: License.Data
 - uid: DevZest.Licensing.License.Expiration
   name: Expiration
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Expiration
+  href: api/DevZest.Licensing.License.Expiration.html#DevZest_Licensing_License_Expiration
   commentId: P:DevZest.Licensing.License.Expiration
   fullName: DevZest.Licensing.License.Expiration
   nameWithType: License.Expiration
 - uid: DevZest.Licensing.License.Expiration*
   name: Expiration
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Expiration_
+  href: api/DevZest.Licensing.License.Expiration.html
   commentId: Overload:DevZest.Licensing.License.Expiration
-  isSpec: "True"
   fullName: DevZest.Licensing.License.Expiration
   nameWithType: License.Expiration
 - uid: DevZest.Licensing.License.ExpirationDate
   name: ExpirationDate
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_ExpirationDate
+  href: api/DevZest.Licensing.License.ExpirationDate.html#DevZest_Licensing_License_ExpirationDate
   commentId: P:DevZest.Licensing.License.ExpirationDate
   fullName: DevZest.Licensing.License.ExpirationDate
   nameWithType: License.ExpirationDate
 - uid: DevZest.Licensing.License.ExpirationDate*
   name: ExpirationDate
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_ExpirationDate_
+  href: api/DevZest.Licensing.License.ExpirationDate.html
   commentId: Overload:DevZest.Licensing.License.ExpirationDate
-  isSpec: "True"
   fullName: DevZest.Licensing.License.ExpirationDate
   nameWithType: License.ExpirationDate
 - uid: DevZest.Licensing.License.Id
   name: Id
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Id
+  href: api/DevZest.Licensing.License.Id.html#DevZest_Licensing_License_Id
   commentId: P:DevZest.Licensing.License.Id
   fullName: DevZest.Licensing.License.Id
   nameWithType: License.Id
 - uid: DevZest.Licensing.License.Id*
   name: Id
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Id_
+  href: api/DevZest.Licensing.License.Id.html
   commentId: Overload:DevZest.Licensing.License.Id
-  isSpec: "True"
   fullName: DevZest.Licensing.License.Id
   nameWithType: License.Id
 - uid: DevZest.Licensing.License.IsExpired
   name: IsExpired
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_IsExpired
+  href: api/DevZest.Licensing.License.IsExpired.html#DevZest_Licensing_License_IsExpired
   commentId: P:DevZest.Licensing.License.IsExpired
   fullName: DevZest.Licensing.License.IsExpired
   nameWithType: License.IsExpired
 - uid: DevZest.Licensing.License.IsExpired*
   name: IsExpired
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_IsExpired_
+  href: api/DevZest.Licensing.License.IsExpired.html
   commentId: Overload:DevZest.Licensing.License.IsExpired
-  isSpec: "True"
   fullName: DevZest.Licensing.License.IsExpired
   nameWithType: License.IsExpired
 - uid: DevZest.Licensing.License.IsFrozen
   name: IsFrozen
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_IsFrozen
+  href: api/DevZest.Licensing.License.IsFrozen.html#DevZest_Licensing_License_IsFrozen
   commentId: P:DevZest.Licensing.License.IsFrozen
   fullName: DevZest.Licensing.License.IsFrozen
   nameWithType: License.IsFrozen
 - uid: DevZest.Licensing.License.IsFrozen*
   name: IsFrozen
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_IsFrozen_
+  href: api/DevZest.Licensing.License.IsFrozen.html
   commentId: Overload:DevZest.Licensing.License.IsFrozen
-  isSpec: "True"
   fullName: DevZest.Licensing.License.IsFrozen
   nameWithType: License.IsFrozen
 - uid: DevZest.Licensing.License.Item(System.String)
   name: Item[String]
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Item_System_String_
+  href: api/DevZest.Licensing.License.Item.html#DevZest_Licensing_License_Item_System_String_
   commentId: P:DevZest.Licensing.License.Item(System.String)
   name.vb: Item(String)
   fullName: DevZest.Licensing.License.Item[System.String]
@@ -729,178 +683,164 @@ references:
   nameWithType.vb: License.Item(String)
 - uid: DevZest.Licensing.License.Item*
   name: Item
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Item_
+  href: api/DevZest.Licensing.License.Item.html
   commentId: Overload:DevZest.Licensing.License.Item
-  isSpec: "True"
   fullName: DevZest.Licensing.License.Item
   nameWithType: License.Item
 - uid: DevZest.Licensing.License.Items
   name: Items
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Items
+  href: api/DevZest.Licensing.License.Items.html#DevZest_Licensing_License_Items
   commentId: P:DevZest.Licensing.License.Items
   fullName: DevZest.Licensing.License.Items
   nameWithType: License.Items
 - uid: DevZest.Licensing.License.Items*
   name: Items
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Items_
+  href: api/DevZest.Licensing.License.Items.html
   commentId: Overload:DevZest.Licensing.License.Items
-  isSpec: "True"
   fullName: DevZest.Licensing.License.Items
   nameWithType: License.Items
 - uid: DevZest.Licensing.License.LoadFromXaml(System.String)
   name: LoadFromXaml(String)
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_LoadFromXaml_System_String_
+  href: api/DevZest.Licensing.License.LoadFromXaml.html#DevZest_Licensing_License_LoadFromXaml_System_String_
   commentId: M:DevZest.Licensing.License.LoadFromXaml(System.String)
   fullName: DevZest.Licensing.License.LoadFromXaml(System.String)
   nameWithType: License.LoadFromXaml(String)
 - uid: DevZest.Licensing.License.LoadFromXaml*
   name: LoadFromXaml
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_LoadFromXaml_
+  href: api/DevZest.Licensing.License.LoadFromXaml.html
   commentId: Overload:DevZest.Licensing.License.LoadFromXaml
-  isSpec: "True"
   fullName: DevZest.Licensing.License.LoadFromXaml
   nameWithType: License.LoadFromXaml
 - uid: DevZest.Licensing.License.Product
   name: Product
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Product
+  href: api/DevZest.Licensing.License.Product.html#DevZest_Licensing_License_Product
   commentId: P:DevZest.Licensing.License.Product
   fullName: DevZest.Licensing.License.Product
   nameWithType: License.Product
 - uid: DevZest.Licensing.License.Product*
   name: Product
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Product_
+  href: api/DevZest.Licensing.License.Product.html
   commentId: Overload:DevZest.Licensing.License.Product
-  isSpec: "True"
   fullName: DevZest.Licensing.License.Product
   nameWithType: License.Product
 - uid: DevZest.Licensing.License.Provider
   name: Provider
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Provider
+  href: api/DevZest.Licensing.License.Provider.html#DevZest_Licensing_License_Provider
   commentId: P:DevZest.Licensing.License.Provider
   fullName: DevZest.Licensing.License.Provider
   nameWithType: License.Provider
 - uid: DevZest.Licensing.License.Provider*
   name: Provider
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Provider_
+  href: api/DevZest.Licensing.License.Provider.html
   commentId: Overload:DevZest.Licensing.License.Provider
-  isSpec: "True"
   fullName: DevZest.Licensing.License.Provider
   nameWithType: License.Provider
 - uid: DevZest.Licensing.License.ProviderData
   name: ProviderData
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_ProviderData
+  href: api/DevZest.Licensing.License.ProviderData.html#DevZest_Licensing_License_ProviderData
   commentId: P:DevZest.Licensing.License.ProviderData
   fullName: DevZest.Licensing.License.ProviderData
   nameWithType: License.ProviderData
 - uid: DevZest.Licensing.License.ProviderData*
   name: ProviderData
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_ProviderData_
+  href: api/DevZest.Licensing.License.ProviderData.html
   commentId: Overload:DevZest.Licensing.License.ProviderData
-  isSpec: "True"
   fullName: DevZest.Licensing.License.ProviderData
   nameWithType: License.ProviderData
 - uid: DevZest.Licensing.License.SetExpirationDate(System.DateTime)
   name: SetExpirationDate(DateTime)
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_SetExpirationDate_System_DateTime_
+  href: api/DevZest.Licensing.License.SetExpirationDate.html#DevZest_Licensing_License_SetExpirationDate_System_DateTime_
   commentId: M:DevZest.Licensing.License.SetExpirationDate(System.DateTime)
   fullName: DevZest.Licensing.License.SetExpirationDate(System.DateTime)
   nameWithType: License.SetExpirationDate(DateTime)
 - uid: DevZest.Licensing.License.SetExpirationDate*
   name: SetExpirationDate
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_SetExpirationDate_
+  href: api/DevZest.Licensing.License.SetExpirationDate.html
   commentId: Overload:DevZest.Licensing.License.SetExpirationDate
-  isSpec: "True"
   fullName: DevZest.Licensing.License.SetExpirationDate
   nameWithType: License.SetExpirationDate
 - uid: DevZest.Licensing.License.SetUpgradeExpirationDate(System.DateTime)
   name: SetUpgradeExpirationDate(DateTime)
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_SetUpgradeExpirationDate_System_DateTime_
+  href: api/DevZest.Licensing.License.SetUpgradeExpirationDate.html#DevZest_Licensing_License_SetUpgradeExpirationDate_System_DateTime_
   commentId: M:DevZest.Licensing.License.SetUpgradeExpirationDate(System.DateTime)
   fullName: DevZest.Licensing.License.SetUpgradeExpirationDate(System.DateTime)
   nameWithType: License.SetUpgradeExpirationDate(DateTime)
 - uid: DevZest.Licensing.License.SetUpgradeExpirationDate*
   name: SetUpgradeExpirationDate
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_SetUpgradeExpirationDate_
+  href: api/DevZest.Licensing.License.SetUpgradeExpirationDate.html
   commentId: Overload:DevZest.Licensing.License.SetUpgradeExpirationDate
-  isSpec: "True"
   fullName: DevZest.Licensing.License.SetUpgradeExpirationDate
   nameWithType: License.SetUpgradeExpirationDate
 - uid: DevZest.Licensing.License.SignedString
   name: SignedString
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_SignedString
+  href: api/DevZest.Licensing.License.SignedString.html#DevZest_Licensing_License_SignedString
   commentId: P:DevZest.Licensing.License.SignedString
   fullName: DevZest.Licensing.License.SignedString
   nameWithType: License.SignedString
 - uid: DevZest.Licensing.License.SignedString*
   name: SignedString
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_SignedString_
+  href: api/DevZest.Licensing.License.SignedString.html
   commentId: Overload:DevZest.Licensing.License.SignedString
-  isSpec: "True"
   fullName: DevZest.Licensing.License.SignedString
   nameWithType: License.SignedString
 - uid: DevZest.Licensing.License.UpgradeExpiration
   name: UpgradeExpiration
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_UpgradeExpiration
+  href: api/DevZest.Licensing.License.UpgradeExpiration.html#DevZest_Licensing_License_UpgradeExpiration
   commentId: P:DevZest.Licensing.License.UpgradeExpiration
   fullName: DevZest.Licensing.License.UpgradeExpiration
   nameWithType: License.UpgradeExpiration
 - uid: DevZest.Licensing.License.UpgradeExpiration*
   name: UpgradeExpiration
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_UpgradeExpiration_
+  href: api/DevZest.Licensing.License.UpgradeExpiration.html
   commentId: Overload:DevZest.Licensing.License.UpgradeExpiration
-  isSpec: "True"
   fullName: DevZest.Licensing.License.UpgradeExpiration
   nameWithType: License.UpgradeExpiration
 - uid: DevZest.Licensing.License.UpgradeExpirationDate
   name: UpgradeExpirationDate
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_UpgradeExpirationDate
+  href: api/DevZest.Licensing.License.UpgradeExpirationDate.html#DevZest_Licensing_License_UpgradeExpirationDate
   commentId: P:DevZest.Licensing.License.UpgradeExpirationDate
   fullName: DevZest.Licensing.License.UpgradeExpirationDate
   nameWithType: License.UpgradeExpirationDate
 - uid: DevZest.Licensing.License.UpgradeExpirationDate*
   name: UpgradeExpirationDate
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_UpgradeExpirationDate_
+  href: api/DevZest.Licensing.License.UpgradeExpirationDate.html
   commentId: Overload:DevZest.Licensing.License.UpgradeExpirationDate
-  isSpec: "True"
   fullName: DevZest.Licensing.License.UpgradeExpirationDate
   nameWithType: License.UpgradeExpirationDate
 - uid: DevZest.Licensing.License.UserCompany
   name: UserCompany
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_UserCompany
+  href: api/DevZest.Licensing.License.UserCompany.html#DevZest_Licensing_License_UserCompany
   commentId: P:DevZest.Licensing.License.UserCompany
   fullName: DevZest.Licensing.License.UserCompany
   nameWithType: License.UserCompany
 - uid: DevZest.Licensing.License.UserCompany*
   name: UserCompany
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_UserCompany_
+  href: api/DevZest.Licensing.License.UserCompany.html
   commentId: Overload:DevZest.Licensing.License.UserCompany
-  isSpec: "True"
   fullName: DevZest.Licensing.License.UserCompany
   nameWithType: License.UserCompany
 - uid: DevZest.Licensing.License.UserName
   name: UserName
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_UserName
+  href: api/DevZest.Licensing.License.UserName.html#DevZest_Licensing_License_UserName
   commentId: P:DevZest.Licensing.License.UserName
   fullName: DevZest.Licensing.License.UserName
   nameWithType: License.UserName
 - uid: DevZest.Licensing.License.UserName*
   name: UserName
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_UserName_
+  href: api/DevZest.Licensing.License.UserName.html
   commentId: Overload:DevZest.Licensing.License.UserName
-  isSpec: "True"
   fullName: DevZest.Licensing.License.UserName
   nameWithType: License.UserName
 - uid: DevZest.Licensing.License.Validate
   name: Validate()
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Validate
+  href: api/DevZest.Licensing.License.Validate.html#DevZest_Licensing_License_Validate
   commentId: M:DevZest.Licensing.License.Validate
   fullName: DevZest.Licensing.License.Validate()
   nameWithType: License.Validate()
 - uid: DevZest.Licensing.License.Validate*
   name: Validate
-  href: api/DevZest.Licensing.License.html#DevZest_Licensing_License_Validate_
+  href: api/DevZest.Licensing.License.Validate.html
   commentId: Overload:DevZest.Licensing.License.Validate
-  isSpec: "True"
   fullName: DevZest.Licensing.License.Validate
   nameWithType: License.Validate
 - uid: DevZest.Licensing.LicenseClient
@@ -911,65 +851,62 @@ references:
   nameWithType: LicenseClient
 - uid: DevZest.Licensing.LicenseClient.#ctor(System.String)
   name: LicenseClient(String)
-  href: api/DevZest.Licensing.LicenseClient.html#DevZest_Licensing_LicenseClient__ctor_System_String_
+  href: api/DevZest.Licensing.LicenseClient.-ctor.html#DevZest_Licensing_LicenseClient__ctor_System_String_
   commentId: M:DevZest.Licensing.LicenseClient.#ctor(System.String)
   fullName: DevZest.Licensing.LicenseClient.LicenseClient(System.String)
   nameWithType: LicenseClient.LicenseClient(String)
 - uid: DevZest.Licensing.LicenseClient.#ctor(System.String,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)
   name: LicenseClient(String, Binding, EndpointAddress)
-  href: api/DevZest.Licensing.LicenseClient.html#DevZest_Licensing_LicenseClient__ctor_System_String_System_ServiceModel_Channels_Binding_System_ServiceModel_EndpointAddress_
+  href: api/DevZest.Licensing.LicenseClient.-ctor.html#DevZest_Licensing_LicenseClient__ctor_System_String_System_ServiceModel_Channels_Binding_System_ServiceModel_EndpointAddress_
   commentId: M:DevZest.Licensing.LicenseClient.#ctor(System.String,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)
   fullName: DevZest.Licensing.LicenseClient.LicenseClient(System.String, System.ServiceModel.Channels.Binding, System.ServiceModel.EndpointAddress)
   nameWithType: LicenseClient.LicenseClient(String, Binding, EndpointAddress)
 - uid: DevZest.Licensing.LicenseClient.#ctor(System.String,System.String)
   name: LicenseClient(String, String)
-  href: api/DevZest.Licensing.LicenseClient.html#DevZest_Licensing_LicenseClient__ctor_System_String_System_String_
+  href: api/DevZest.Licensing.LicenseClient.-ctor.html#DevZest_Licensing_LicenseClient__ctor_System_String_System_String_
   commentId: M:DevZest.Licensing.LicenseClient.#ctor(System.String,System.String)
   fullName: DevZest.Licensing.LicenseClient.LicenseClient(System.String, System.String)
   nameWithType: LicenseClient.LicenseClient(String, String)
 - uid: DevZest.Licensing.LicenseClient.#ctor*
   name: LicenseClient
-  href: api/DevZest.Licensing.LicenseClient.html#DevZest_Licensing_LicenseClient__ctor_
+  href: api/DevZest.Licensing.LicenseClient.-ctor.html
   commentId: Overload:DevZest.Licensing.LicenseClient.#ctor
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseClient.LicenseClient
   nameWithType: LicenseClient.LicenseClient
 - uid: DevZest.Licensing.LicenseClient.GetLicense(System.Globalization.CultureInfo,System.String,System.Version,DevZest.Licensing.LicenseKey,System.String,System.String,System.String,System.String,System.String)
   name: GetLicense(CultureInfo, String, Version, LicenseKey, String, String, String, String, String)
-  href: api/DevZest.Licensing.LicenseClient.html#DevZest_Licensing_LicenseClient_GetLicense_System_Globalization_CultureInfo_System_String_System_Version_DevZest_Licensing_LicenseKey_System_String_System_String_System_String_System_String_System_String_
+  href: api/DevZest.Licensing.LicenseClient.GetLicense.html#DevZest_Licensing_LicenseClient_GetLicense_System_Globalization_CultureInfo_System_String_System_Version_DevZest_Licensing_LicenseKey_System_String_System_String_System_String_System_String_System_String_
   commentId: M:DevZest.Licensing.LicenseClient.GetLicense(System.Globalization.CultureInfo,System.String,System.Version,DevZest.Licensing.LicenseKey,System.String,System.String,System.String,System.String,System.String)
   fullName: DevZest.Licensing.LicenseClient.GetLicense(System.Globalization.CultureInfo, System.String, System.Version, DevZest.Licensing.LicenseKey, System.String, System.String, System.String, System.String, System.String)
   nameWithType: LicenseClient.GetLicense(CultureInfo, String, Version, LicenseKey, String, String, String, String, String)
 - uid: DevZest.Licensing.LicenseClient.GetLicense(System.String,System.Version,DevZest.Licensing.LicenseKey,System.String,System.String,System.String,System.String,System.String)
   name: GetLicense(String, Version, LicenseKey, String, String, String, String, String)
-  href: api/DevZest.Licensing.LicenseClient.html#DevZest_Licensing_LicenseClient_GetLicense_System_String_System_Version_DevZest_Licensing_LicenseKey_System_String_System_String_System_String_System_String_System_String_
+  href: api/DevZest.Licensing.LicenseClient.GetLicense.html#DevZest_Licensing_LicenseClient_GetLicense_System_String_System_Version_DevZest_Licensing_LicenseKey_System_String_System_String_System_String_System_String_System_String_
   commentId: M:DevZest.Licensing.LicenseClient.GetLicense(System.String,System.Version,DevZest.Licensing.LicenseKey,System.String,System.String,System.String,System.String,System.String)
   fullName: DevZest.Licensing.LicenseClient.GetLicense(System.String, System.Version, DevZest.Licensing.LicenseKey, System.String, System.String, System.String, System.String, System.String)
   nameWithType: LicenseClient.GetLicense(String, Version, LicenseKey, String, String, String, String, String)
 - uid: DevZest.Licensing.LicenseClient.GetLicense*
   name: GetLicense
-  href: api/DevZest.Licensing.LicenseClient.html#DevZest_Licensing_LicenseClient_GetLicense_
+  href: api/DevZest.Licensing.LicenseClient.GetLicense.html
   commentId: Overload:DevZest.Licensing.LicenseClient.GetLicense
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseClient.GetLicense
   nameWithType: LicenseClient.GetLicense
 - uid: DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly(System.Reflection.Assembly)
   name: PublicKeyXmlFromAssembly(Assembly)
-  href: api/DevZest.Licensing.LicenseClient.html#DevZest_Licensing_LicenseClient_PublicKeyXmlFromAssembly_System_Reflection_Assembly_
+  href: api/DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly.html#DevZest_Licensing_LicenseClient_PublicKeyXmlFromAssembly_System_Reflection_Assembly_
   commentId: M:DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly(System.Reflection.Assembly)
   fullName: DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly(System.Reflection.Assembly)
   nameWithType: LicenseClient.PublicKeyXmlFromAssembly(Assembly)
 - uid: DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly(System.String)
   name: PublicKeyXmlFromAssembly(String)
-  href: api/DevZest.Licensing.LicenseClient.html#DevZest_Licensing_LicenseClient_PublicKeyXmlFromAssembly_System_String_
+  href: api/DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly.html#DevZest_Licensing_LicenseClient_PublicKeyXmlFromAssembly_System_String_
   commentId: M:DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly(System.String)
   fullName: DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly(System.String)
   nameWithType: LicenseClient.PublicKeyXmlFromAssembly(String)
 - uid: DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly*
   name: PublicKeyXmlFromAssembly
-  href: api/DevZest.Licensing.LicenseClient.html#DevZest_Licensing_LicenseClient_PublicKeyXmlFromAssembly_
+  href: api/DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly.html
   commentId: Overload:DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly
   nameWithType: LicenseClient.PublicKeyXmlFromAssembly
 - uid: DevZest.Licensing.LicenseError
@@ -980,80 +917,74 @@ references:
   nameWithType: LicenseError
 - uid: DevZest.Licensing.LicenseError.#ctor(System.Reflection.Assembly,DevZest.Licensing.LicenseErrorReason,System.String,DevZest.Licensing.License)
   name: LicenseError(Assembly, LicenseErrorReason, String, License)
-  href: api/DevZest.Licensing.LicenseError.html#DevZest_Licensing_LicenseError__ctor_System_Reflection_Assembly_DevZest_Licensing_LicenseErrorReason_System_String_DevZest_Licensing_License_
+  href: api/DevZest.Licensing.LicenseError.-ctor.html#DevZest_Licensing_LicenseError__ctor_System_Reflection_Assembly_DevZest_Licensing_LicenseErrorReason_System_String_DevZest_Licensing_License_
   commentId: M:DevZest.Licensing.LicenseError.#ctor(System.Reflection.Assembly,DevZest.Licensing.LicenseErrorReason,System.String,DevZest.Licensing.License)
   fullName: DevZest.Licensing.LicenseError.LicenseError(System.Reflection.Assembly, DevZest.Licensing.LicenseErrorReason, System.String, DevZest.Licensing.License)
   nameWithType: LicenseError.LicenseError(Assembly, LicenseErrorReason, String, License)
 - uid: DevZest.Licensing.LicenseError.#ctor*
   name: LicenseError
-  href: api/DevZest.Licensing.LicenseError.html#DevZest_Licensing_LicenseError__ctor_
+  href: api/DevZest.Licensing.LicenseError.-ctor.html
   commentId: Overload:DevZest.Licensing.LicenseError.#ctor
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseError.LicenseError
   nameWithType: LicenseError.LicenseError
 - uid: DevZest.Licensing.LicenseError.Assembly
   name: Assembly
-  href: api/DevZest.Licensing.LicenseError.html#DevZest_Licensing_LicenseError_Assembly
+  href: api/DevZest.Licensing.LicenseError.Assembly.html#DevZest_Licensing_LicenseError_Assembly
   commentId: P:DevZest.Licensing.LicenseError.Assembly
   fullName: DevZest.Licensing.LicenseError.Assembly
   nameWithType: LicenseError.Assembly
 - uid: DevZest.Licensing.LicenseError.Assembly*
   name: Assembly
-  href: api/DevZest.Licensing.LicenseError.html#DevZest_Licensing_LicenseError_Assembly_
+  href: api/DevZest.Licensing.LicenseError.Assembly.html
   commentId: Overload:DevZest.Licensing.LicenseError.Assembly
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseError.Assembly
   nameWithType: LicenseError.Assembly
 - uid: DevZest.Licensing.LicenseError.ExceptionMessage
   name: ExceptionMessage
-  href: api/DevZest.Licensing.LicenseError.html#DevZest_Licensing_LicenseError_ExceptionMessage
+  href: api/DevZest.Licensing.LicenseError.ExceptionMessage.html#DevZest_Licensing_LicenseError_ExceptionMessage
   commentId: P:DevZest.Licensing.LicenseError.ExceptionMessage
   fullName: DevZest.Licensing.LicenseError.ExceptionMessage
   nameWithType: LicenseError.ExceptionMessage
 - uid: DevZest.Licensing.LicenseError.ExceptionMessage*
   name: ExceptionMessage
-  href: api/DevZest.Licensing.LicenseError.html#DevZest_Licensing_LicenseError_ExceptionMessage_
+  href: api/DevZest.Licensing.LicenseError.ExceptionMessage.html
   commentId: Overload:DevZest.Licensing.LicenseError.ExceptionMessage
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseError.ExceptionMessage
   nameWithType: LicenseError.ExceptionMessage
 - uid: DevZest.Licensing.LicenseError.License
   name: License
-  href: api/DevZest.Licensing.LicenseError.html#DevZest_Licensing_LicenseError_License
+  href: api/DevZest.Licensing.LicenseError.License.html#DevZest_Licensing_LicenseError_License
   commentId: P:DevZest.Licensing.LicenseError.License
   fullName: DevZest.Licensing.LicenseError.License
   nameWithType: LicenseError.License
 - uid: DevZest.Licensing.LicenseError.License*
   name: License
-  href: api/DevZest.Licensing.LicenseError.html#DevZest_Licensing_LicenseError_License_
+  href: api/DevZest.Licensing.LicenseError.License.html
   commentId: Overload:DevZest.Licensing.LicenseError.License
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseError.License
   nameWithType: LicenseError.License
 - uid: DevZest.Licensing.LicenseError.Message
   name: Message
-  href: api/DevZest.Licensing.LicenseError.html#DevZest_Licensing_LicenseError_Message
+  href: api/DevZest.Licensing.LicenseError.Message.html#DevZest_Licensing_LicenseError_Message
   commentId: P:DevZest.Licensing.LicenseError.Message
   fullName: DevZest.Licensing.LicenseError.Message
   nameWithType: LicenseError.Message
 - uid: DevZest.Licensing.LicenseError.Message*
   name: Message
-  href: api/DevZest.Licensing.LicenseError.html#DevZest_Licensing_LicenseError_Message_
+  href: api/DevZest.Licensing.LicenseError.Message.html
   commentId: Overload:DevZest.Licensing.LicenseError.Message
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseError.Message
   nameWithType: LicenseError.Message
 - uid: DevZest.Licensing.LicenseError.Reason
   name: Reason
-  href: api/DevZest.Licensing.LicenseError.html#DevZest_Licensing_LicenseError_Reason
+  href: api/DevZest.Licensing.LicenseError.Reason.html#DevZest_Licensing_LicenseError_Reason
   commentId: P:DevZest.Licensing.LicenseError.Reason
   fullName: DevZest.Licensing.LicenseError.Reason
   nameWithType: LicenseError.Reason
 - uid: DevZest.Licensing.LicenseError.Reason*
   name: Reason
-  href: api/DevZest.Licensing.LicenseError.html#DevZest_Licensing_LicenseError_Reason_
+  href: api/DevZest.Licensing.LicenseError.Reason.html
   commentId: Overload:DevZest.Licensing.LicenseError.Reason
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseError.Reason
   nameWithType: LicenseError.Reason
 - uid: DevZest.Licensing.LicenseErrorReason
@@ -1088,59 +1019,56 @@ references:
   nameWithType: LicenseException
 - uid: DevZest.Licensing.LicenseException.#ctor
   name: LicenseException()
-  href: api/DevZest.Licensing.LicenseException.html#DevZest_Licensing_LicenseException__ctor
+  href: api/DevZest.Licensing.LicenseException.-ctor.html#DevZest_Licensing_LicenseException__ctor
   commentId: M:DevZest.Licensing.LicenseException.#ctor
   fullName: DevZest.Licensing.LicenseException.LicenseException()
   nameWithType: LicenseException.LicenseException()
 - uid: DevZest.Licensing.LicenseException.#ctor(DevZest.Licensing.LicenseError)
   name: LicenseException(LicenseError)
-  href: api/DevZest.Licensing.LicenseException.html#DevZest_Licensing_LicenseException__ctor_DevZest_Licensing_LicenseError_
+  href: api/DevZest.Licensing.LicenseException.-ctor.html#DevZest_Licensing_LicenseException__ctor_DevZest_Licensing_LicenseError_
   commentId: M:DevZest.Licensing.LicenseException.#ctor(DevZest.Licensing.LicenseError)
   fullName: DevZest.Licensing.LicenseException.LicenseException(DevZest.Licensing.LicenseError)
   nameWithType: LicenseException.LicenseException(LicenseError)
 - uid: DevZest.Licensing.LicenseException.#ctor(System.String)
   name: LicenseException(String)
-  href: api/DevZest.Licensing.LicenseException.html#DevZest_Licensing_LicenseException__ctor_System_String_
+  href: api/DevZest.Licensing.LicenseException.-ctor.html#DevZest_Licensing_LicenseException__ctor_System_String_
   commentId: M:DevZest.Licensing.LicenseException.#ctor(System.String)
   fullName: DevZest.Licensing.LicenseException.LicenseException(System.String)
   nameWithType: LicenseException.LicenseException(String)
 - uid: DevZest.Licensing.LicenseException.#ctor(System.String,System.Exception)
   name: LicenseException(String, Exception)
-  href: api/DevZest.Licensing.LicenseException.html#DevZest_Licensing_LicenseException__ctor_System_String_System_Exception_
+  href: api/DevZest.Licensing.LicenseException.-ctor.html#DevZest_Licensing_LicenseException__ctor_System_String_System_Exception_
   commentId: M:DevZest.Licensing.LicenseException.#ctor(System.String,System.Exception)
   fullName: DevZest.Licensing.LicenseException.LicenseException(System.String, System.Exception)
   nameWithType: LicenseException.LicenseException(String, Exception)
 - uid: DevZest.Licensing.LicenseException.#ctor*
   name: LicenseException
-  href: api/DevZest.Licensing.LicenseException.html#DevZest_Licensing_LicenseException__ctor_
+  href: api/DevZest.Licensing.LicenseException.-ctor.html
   commentId: Overload:DevZest.Licensing.LicenseException.#ctor
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseException.LicenseException
   nameWithType: LicenseException.LicenseException
 - uid: DevZest.Licensing.LicenseException.Error
   name: Error
-  href: api/DevZest.Licensing.LicenseException.html#DevZest_Licensing_LicenseException_Error
+  href: api/DevZest.Licensing.LicenseException.Error.html#DevZest_Licensing_LicenseException_Error
   commentId: P:DevZest.Licensing.LicenseException.Error
   fullName: DevZest.Licensing.LicenseException.Error
   nameWithType: LicenseException.Error
 - uid: DevZest.Licensing.LicenseException.Error*
   name: Error
-  href: api/DevZest.Licensing.LicenseException.html#DevZest_Licensing_LicenseException_Error_
+  href: api/DevZest.Licensing.LicenseException.Error.html
   commentId: Overload:DevZest.Licensing.LicenseException.Error
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseException.Error
   nameWithType: LicenseException.Error
 - uid: DevZest.Licensing.LicenseException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
   name: GetObjectData(SerializationInfo, StreamingContext)
-  href: api/DevZest.Licensing.LicenseException.html#DevZest_Licensing_LicenseException_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  href: api/DevZest.Licensing.LicenseException.GetObjectData.html#DevZest_Licensing_LicenseException_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
   commentId: M:DevZest.Licensing.LicenseException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
   fullName: DevZest.Licensing.LicenseException.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
   nameWithType: LicenseException.GetObjectData(SerializationInfo, StreamingContext)
 - uid: DevZest.Licensing.LicenseException.GetObjectData*
   name: GetObjectData
-  href: api/DevZest.Licensing.LicenseException.html#DevZest_Licensing_LicenseException_GetObjectData_
+  href: api/DevZest.Licensing.LicenseException.GetObjectData.html
   commentId: Overload:DevZest.Licensing.LicenseException.GetObjectData
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseException.GetObjectData
   nameWithType: LicenseException.GetObjectData
 - uid: DevZest.Licensing.LicenseItem
@@ -1151,92 +1079,86 @@ references:
   nameWithType: LicenseItem
 - uid: DevZest.Licensing.LicenseItem.#ctor
   name: LicenseItem()
-  href: api/DevZest.Licensing.LicenseItem.html#DevZest_Licensing_LicenseItem__ctor
+  href: api/DevZest.Licensing.LicenseItem.-ctor.html#DevZest_Licensing_LicenseItem__ctor
   commentId: M:DevZest.Licensing.LicenseItem.#ctor
   fullName: DevZest.Licensing.LicenseItem.LicenseItem()
   nameWithType: LicenseItem.LicenseItem()
 - uid: DevZest.Licensing.LicenseItem.#ctor(System.String)
   name: LicenseItem(String)
-  href: api/DevZest.Licensing.LicenseItem.html#DevZest_Licensing_LicenseItem__ctor_System_String_
+  href: api/DevZest.Licensing.LicenseItem.-ctor.html#DevZest_Licensing_LicenseItem__ctor_System_String_
   commentId: M:DevZest.Licensing.LicenseItem.#ctor(System.String)
   fullName: DevZest.Licensing.LicenseItem.LicenseItem(System.String)
   nameWithType: LicenseItem.LicenseItem(String)
 - uid: DevZest.Licensing.LicenseItem.#ctor(System.String,System.Boolean)
   name: LicenseItem(String, Boolean)
-  href: api/DevZest.Licensing.LicenseItem.html#DevZest_Licensing_LicenseItem__ctor_System_String_System_Boolean_
+  href: api/DevZest.Licensing.LicenseItem.-ctor.html#DevZest_Licensing_LicenseItem__ctor_System_String_System_Boolean_
   commentId: M:DevZest.Licensing.LicenseItem.#ctor(System.String,System.Boolean)
   fullName: DevZest.Licensing.LicenseItem.LicenseItem(System.String, System.Boolean)
   nameWithType: LicenseItem.LicenseItem(String, Boolean)
 - uid: DevZest.Licensing.LicenseItem.#ctor*
   name: LicenseItem
-  href: api/DevZest.Licensing.LicenseItem.html#DevZest_Licensing_LicenseItem__ctor_
+  href: api/DevZest.Licensing.LicenseItem.-ctor.html
   commentId: Overload:DevZest.Licensing.LicenseItem.#ctor
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseItem.LicenseItem
   nameWithType: LicenseItem.LicenseItem
 - uid: DevZest.Licensing.LicenseItem.IsFrozen
   name: IsFrozen
-  href: api/DevZest.Licensing.LicenseItem.html#DevZest_Licensing_LicenseItem_IsFrozen
+  href: api/DevZest.Licensing.LicenseItem.IsFrozen.html#DevZest_Licensing_LicenseItem_IsFrozen
   commentId: P:DevZest.Licensing.LicenseItem.IsFrozen
   fullName: DevZest.Licensing.LicenseItem.IsFrozen
   nameWithType: LicenseItem.IsFrozen
 - uid: DevZest.Licensing.LicenseItem.IsFrozen*
   name: IsFrozen
-  href: api/DevZest.Licensing.LicenseItem.html#DevZest_Licensing_LicenseItem_IsFrozen_
+  href: api/DevZest.Licensing.LicenseItem.IsFrozen.html
   commentId: Overload:DevZest.Licensing.LicenseItem.IsFrozen
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseItem.IsFrozen
   nameWithType: LicenseItem.IsFrozen
 - uid: DevZest.Licensing.LicenseItem.License
   name: License
-  href: api/DevZest.Licensing.LicenseItem.html#DevZest_Licensing_LicenseItem_License
+  href: api/DevZest.Licensing.LicenseItem.License.html#DevZest_Licensing_LicenseItem_License
   commentId: P:DevZest.Licensing.LicenseItem.License
   fullName: DevZest.Licensing.LicenseItem.License
   nameWithType: LicenseItem.License
 - uid: DevZest.Licensing.LicenseItem.License*
   name: License
-  href: api/DevZest.Licensing.LicenseItem.html#DevZest_Licensing_LicenseItem_License_
+  href: api/DevZest.Licensing.LicenseItem.License.html
   commentId: Overload:DevZest.Licensing.LicenseItem.License
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseItem.License
   nameWithType: LicenseItem.License
 - uid: DevZest.Licensing.LicenseItem.Name
   name: Name
-  href: api/DevZest.Licensing.LicenseItem.html#DevZest_Licensing_LicenseItem_Name
+  href: api/DevZest.Licensing.LicenseItem.Name.html#DevZest_Licensing_LicenseItem_Name
   commentId: P:DevZest.Licensing.LicenseItem.Name
   fullName: DevZest.Licensing.LicenseItem.Name
   nameWithType: LicenseItem.Name
 - uid: DevZest.Licensing.LicenseItem.Name*
   name: Name
-  href: api/DevZest.Licensing.LicenseItem.html#DevZest_Licensing_LicenseItem_Name_
+  href: api/DevZest.Licensing.LicenseItem.Name.html
   commentId: Overload:DevZest.Licensing.LicenseItem.Name
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseItem.Name
   nameWithType: LicenseItem.Name
 - uid: DevZest.Licensing.LicenseItem.OverrideExpirationDate
   name: OverrideExpirationDate
-  href: api/DevZest.Licensing.LicenseItem.html#DevZest_Licensing_LicenseItem_OverrideExpirationDate
+  href: api/DevZest.Licensing.LicenseItem.OverrideExpirationDate.html#DevZest_Licensing_LicenseItem_OverrideExpirationDate
   commentId: P:DevZest.Licensing.LicenseItem.OverrideExpirationDate
   fullName: DevZest.Licensing.LicenseItem.OverrideExpirationDate
   nameWithType: LicenseItem.OverrideExpirationDate
 - uid: DevZest.Licensing.LicenseItem.OverrideExpirationDate*
   name: OverrideExpirationDate
-  href: api/DevZest.Licensing.LicenseItem.html#DevZest_Licensing_LicenseItem_OverrideExpirationDate_
+  href: api/DevZest.Licensing.LicenseItem.OverrideExpirationDate.html
   commentId: Overload:DevZest.Licensing.LicenseItem.OverrideExpirationDate
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseItem.OverrideExpirationDate
   nameWithType: LicenseItem.OverrideExpirationDate
 - uid: DevZest.Licensing.LicenseItem.Validate
   name: Validate()
-  href: api/DevZest.Licensing.LicenseItem.html#DevZest_Licensing_LicenseItem_Validate
+  href: api/DevZest.Licensing.LicenseItem.Validate.html#DevZest_Licensing_LicenseItem_Validate
   commentId: M:DevZest.Licensing.LicenseItem.Validate
   fullName: DevZest.Licensing.LicenseItem.Validate()
   nameWithType: LicenseItem.Validate()
 - uid: DevZest.Licensing.LicenseItem.Validate*
   name: Validate
-  href: api/DevZest.Licensing.LicenseItem.html#DevZest_Licensing_LicenseItem_Validate_
+  href: api/DevZest.Licensing.LicenseItem.Validate.html
   commentId: Overload:DevZest.Licensing.LicenseItem.Validate
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseItem.Validate
   nameWithType: LicenseItem.Validate
 - uid: DevZest.Licensing.LicenseItemAttribute
@@ -1247,79 +1169,74 @@ references:
   nameWithType: LicenseItemAttribute
 - uid: DevZest.Licensing.LicenseItemAttribute.#ctor(System.String)
   name: LicenseItemAttribute(String)
-  href: api/DevZest.Licensing.LicenseItemAttribute.html#DevZest_Licensing_LicenseItemAttribute__ctor_System_String_
+  href: api/DevZest.Licensing.LicenseItemAttribute.-ctor.html#DevZest_Licensing_LicenseItemAttribute__ctor_System_String_
   commentId: M:DevZest.Licensing.LicenseItemAttribute.#ctor(System.String)
   fullName: DevZest.Licensing.LicenseItemAttribute.LicenseItemAttribute(System.String)
   nameWithType: LicenseItemAttribute.LicenseItemAttribute(String)
 - uid: DevZest.Licensing.LicenseItemAttribute.#ctor(System.String,System.String,System.String)
   name: LicenseItemAttribute(String, String, String)
-  href: api/DevZest.Licensing.LicenseItemAttribute.html#DevZest_Licensing_LicenseItemAttribute__ctor_System_String_System_String_System_String_
+  href: api/DevZest.Licensing.LicenseItemAttribute.-ctor.html#DevZest_Licensing_LicenseItemAttribute__ctor_System_String_System_String_System_String_
   commentId: M:DevZest.Licensing.LicenseItemAttribute.#ctor(System.String,System.String,System.String)
   fullName: DevZest.Licensing.LicenseItemAttribute.LicenseItemAttribute(System.String, System.String, System.String)
   nameWithType: LicenseItemAttribute.LicenseItemAttribute(String, String, String)
 - uid: DevZest.Licensing.LicenseItemAttribute.#ctor*
   name: LicenseItemAttribute
-  href: api/DevZest.Licensing.LicenseItemAttribute.html#DevZest_Licensing_LicenseItemAttribute__ctor_
+  href: api/DevZest.Licensing.LicenseItemAttribute.-ctor.html
   commentId: Overload:DevZest.Licensing.LicenseItemAttribute.#ctor
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseItemAttribute.LicenseItemAttribute
   nameWithType: LicenseItemAttribute.LicenseItemAttribute
 - uid: DevZest.Licensing.LicenseItemAttribute.DescriptionResourceBaseName
   name: DescriptionResourceBaseName
-  href: api/DevZest.Licensing.LicenseItemAttribute.html#DevZest_Licensing_LicenseItemAttribute_DescriptionResourceBaseName
+  href: api/DevZest.Licensing.LicenseItemAttribute.DescriptionResourceBaseName.html#DevZest_Licensing_LicenseItemAttribute_DescriptionResourceBaseName
   commentId: P:DevZest.Licensing.LicenseItemAttribute.DescriptionResourceBaseName
   fullName: DevZest.Licensing.LicenseItemAttribute.DescriptionResourceBaseName
   nameWithType: LicenseItemAttribute.DescriptionResourceBaseName
 - uid: DevZest.Licensing.LicenseItemAttribute.DescriptionResourceBaseName*
   name: DescriptionResourceBaseName
-  href: api/DevZest.Licensing.LicenseItemAttribute.html#DevZest_Licensing_LicenseItemAttribute_DescriptionResourceBaseName_
+  href: api/DevZest.Licensing.LicenseItemAttribute.DescriptionResourceBaseName.html
   commentId: Overload:DevZest.Licensing.LicenseItemAttribute.DescriptionResourceBaseName
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseItemAttribute.DescriptionResourceBaseName
   nameWithType: LicenseItemAttribute.DescriptionResourceBaseName
 - uid: DevZest.Licensing.LicenseItemAttribute.DescriptionResourceName
   name: DescriptionResourceName
-  href: api/DevZest.Licensing.LicenseItemAttribute.html#DevZest_Licensing_LicenseItemAttribute_DescriptionResourceName
+  href: api/DevZest.Licensing.LicenseItemAttribute.DescriptionResourceName.html#DevZest_Licensing_LicenseItemAttribute_DescriptionResourceName
   commentId: P:DevZest.Licensing.LicenseItemAttribute.DescriptionResourceName
   fullName: DevZest.Licensing.LicenseItemAttribute.DescriptionResourceName
   nameWithType: LicenseItemAttribute.DescriptionResourceName
 - uid: DevZest.Licensing.LicenseItemAttribute.DescriptionResourceName*
   name: DescriptionResourceName
-  href: api/DevZest.Licensing.LicenseItemAttribute.html#DevZest_Licensing_LicenseItemAttribute_DescriptionResourceName_
+  href: api/DevZest.Licensing.LicenseItemAttribute.DescriptionResourceName.html
   commentId: Overload:DevZest.Licensing.LicenseItemAttribute.DescriptionResourceName
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseItemAttribute.DescriptionResourceName
   nameWithType: LicenseItemAttribute.DescriptionResourceName
 - uid: DevZest.Licensing.LicenseItemAttribute.GetDescription(System.Reflection.Assembly)
   name: GetDescription(Assembly)
-  href: api/DevZest.Licensing.LicenseItemAttribute.html#DevZest_Licensing_LicenseItemAttribute_GetDescription_System_Reflection_Assembly_
+  href: api/DevZest.Licensing.LicenseItemAttribute.GetDescription.html#DevZest_Licensing_LicenseItemAttribute_GetDescription_System_Reflection_Assembly_
   commentId: M:DevZest.Licensing.LicenseItemAttribute.GetDescription(System.Reflection.Assembly)
   fullName: DevZest.Licensing.LicenseItemAttribute.GetDescription(System.Reflection.Assembly)
   nameWithType: LicenseItemAttribute.GetDescription(Assembly)
 - uid: DevZest.Licensing.LicenseItemAttribute.GetDescription(System.Reflection.Assembly,System.Globalization.CultureInfo)
   name: GetDescription(Assembly, CultureInfo)
-  href: api/DevZest.Licensing.LicenseItemAttribute.html#DevZest_Licensing_LicenseItemAttribute_GetDescription_System_Reflection_Assembly_System_Globalization_CultureInfo_
+  href: api/DevZest.Licensing.LicenseItemAttribute.GetDescription.html#DevZest_Licensing_LicenseItemAttribute_GetDescription_System_Reflection_Assembly_System_Globalization_CultureInfo_
   commentId: M:DevZest.Licensing.LicenseItemAttribute.GetDescription(System.Reflection.Assembly,System.Globalization.CultureInfo)
   fullName: DevZest.Licensing.LicenseItemAttribute.GetDescription(System.Reflection.Assembly, System.Globalization.CultureInfo)
   nameWithType: LicenseItemAttribute.GetDescription(Assembly, CultureInfo)
 - uid: DevZest.Licensing.LicenseItemAttribute.GetDescription*
   name: GetDescription
-  href: api/DevZest.Licensing.LicenseItemAttribute.html#DevZest_Licensing_LicenseItemAttribute_GetDescription_
+  href: api/DevZest.Licensing.LicenseItemAttribute.GetDescription.html
   commentId: Overload:DevZest.Licensing.LicenseItemAttribute.GetDescription
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseItemAttribute.GetDescription
   nameWithType: LicenseItemAttribute.GetDescription
 - uid: DevZest.Licensing.LicenseItemAttribute.Name
   name: Name
-  href: api/DevZest.Licensing.LicenseItemAttribute.html#DevZest_Licensing_LicenseItemAttribute_Name
+  href: api/DevZest.Licensing.LicenseItemAttribute.Name.html#DevZest_Licensing_LicenseItemAttribute_Name
   commentId: P:DevZest.Licensing.LicenseItemAttribute.Name
   fullName: DevZest.Licensing.LicenseItemAttribute.Name
   nameWithType: LicenseItemAttribute.Name
 - uid: DevZest.Licensing.LicenseItemAttribute.Name*
   name: Name
-  href: api/DevZest.Licensing.LicenseItemAttribute.html#DevZest_Licensing_LicenseItemAttribute_Name_
+  href: api/DevZest.Licensing.LicenseItemAttribute.Name.html
   commentId: Overload:DevZest.Licensing.LicenseItemAttribute.Name
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseItemAttribute.Name
   nameWithType: LicenseItemAttribute.Name
 - uid: DevZest.Licensing.LicenseItemCollection
@@ -1330,20 +1247,19 @@ references:
   nameWithType: LicenseItemCollection
 - uid: DevZest.Licensing.LicenseItemCollection.ClearItems
   name: ClearItems()
-  href: api/DevZest.Licensing.LicenseItemCollection.html#DevZest_Licensing_LicenseItemCollection_ClearItems
+  href: api/DevZest.Licensing.LicenseItemCollection.ClearItems.html#DevZest_Licensing_LicenseItemCollection_ClearItems
   commentId: M:DevZest.Licensing.LicenseItemCollection.ClearItems
   fullName: DevZest.Licensing.LicenseItemCollection.ClearItems()
   nameWithType: LicenseItemCollection.ClearItems()
 - uid: DevZest.Licensing.LicenseItemCollection.ClearItems*
   name: ClearItems
-  href: api/DevZest.Licensing.LicenseItemCollection.html#DevZest_Licensing_LicenseItemCollection_ClearItems_
+  href: api/DevZest.Licensing.LicenseItemCollection.ClearItems.html
   commentId: Overload:DevZest.Licensing.LicenseItemCollection.ClearItems
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseItemCollection.ClearItems
   nameWithType: LicenseItemCollection.ClearItems
 - uid: DevZest.Licensing.LicenseItemCollection.Item(System.String)
   name: Item[String]
-  href: api/DevZest.Licensing.LicenseItemCollection.html#DevZest_Licensing_LicenseItemCollection_Item_System_String_
+  href: api/DevZest.Licensing.LicenseItemCollection.Item.html#DevZest_Licensing_LicenseItemCollection_Item_System_String_
   commentId: P:DevZest.Licensing.LicenseItemCollection.Item(System.String)
   name.vb: Item(String)
   fullName: DevZest.Licensing.LicenseItemCollection.Item[System.String]
@@ -1352,35 +1268,32 @@ references:
   nameWithType.vb: LicenseItemCollection.Item(String)
 - uid: DevZest.Licensing.LicenseItemCollection.Item*
   name: Item
-  href: api/DevZest.Licensing.LicenseItemCollection.html#DevZest_Licensing_LicenseItemCollection_Item_
+  href: api/DevZest.Licensing.LicenseItemCollection.Item.html
   commentId: Overload:DevZest.Licensing.LicenseItemCollection.Item
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseItemCollection.Item
   nameWithType: LicenseItemCollection.Item
 - uid: DevZest.Licensing.LicenseItemCollection.License
   name: License
-  href: api/DevZest.Licensing.LicenseItemCollection.html#DevZest_Licensing_LicenseItemCollection_License
+  href: api/DevZest.Licensing.LicenseItemCollection.License.html#DevZest_Licensing_LicenseItemCollection_License
   commentId: P:DevZest.Licensing.LicenseItemCollection.License
   fullName: DevZest.Licensing.LicenseItemCollection.License
   nameWithType: LicenseItemCollection.License
 - uid: DevZest.Licensing.LicenseItemCollection.License*
   name: License
-  href: api/DevZest.Licensing.LicenseItemCollection.html#DevZest_Licensing_LicenseItemCollection_License_
+  href: api/DevZest.Licensing.LicenseItemCollection.License.html
   commentId: Overload:DevZest.Licensing.LicenseItemCollection.License
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseItemCollection.License
   nameWithType: LicenseItemCollection.License
 - uid: DevZest.Licensing.LicenseItemCollection.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
   name: OnCollectionChanged(NotifyCollectionChangedEventArgs)
-  href: api/DevZest.Licensing.LicenseItemCollection.html#DevZest_Licensing_LicenseItemCollection_OnCollectionChanged_System_Collections_Specialized_NotifyCollectionChangedEventArgs_
+  href: api/DevZest.Licensing.LicenseItemCollection.OnCollectionChanged.html#DevZest_Licensing_LicenseItemCollection_OnCollectionChanged_System_Collections_Specialized_NotifyCollectionChangedEventArgs_
   commentId: M:DevZest.Licensing.LicenseItemCollection.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
   fullName: DevZest.Licensing.LicenseItemCollection.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)
   nameWithType: LicenseItemCollection.OnCollectionChanged(NotifyCollectionChangedEventArgs)
 - uid: DevZest.Licensing.LicenseItemCollection.OnCollectionChanged*
   name: OnCollectionChanged
-  href: api/DevZest.Licensing.LicenseItemCollection.html#DevZest_Licensing_LicenseItemCollection_OnCollectionChanged_
+  href: api/DevZest.Licensing.LicenseItemCollection.OnCollectionChanged.html
   commentId: Overload:DevZest.Licensing.LicenseItemCollection.OnCollectionChanged
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseItemCollection.OnCollectionChanged
   nameWithType: LicenseItemCollection.OnCollectionChanged
 - uid: DevZest.Licensing.LicenseKey
@@ -1391,138 +1304,128 @@ references:
   nameWithType: LicenseKey
 - uid: DevZest.Licensing.LicenseKey.#ctor(System.String)
   name: LicenseKey(String)
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey__ctor_System_String_
+  href: api/DevZest.Licensing.LicenseKey.-ctor.html#DevZest_Licensing_LicenseKey__ctor_System_String_
   commentId: M:DevZest.Licensing.LicenseKey.#ctor(System.String)
   fullName: DevZest.Licensing.LicenseKey.LicenseKey(System.String)
   nameWithType: LicenseKey.LicenseKey(String)
 - uid: DevZest.Licensing.LicenseKey.#ctor*
   name: LicenseKey
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey__ctor_
+  href: api/DevZest.Licensing.LicenseKey.-ctor.html
   commentId: Overload:DevZest.Licensing.LicenseKey.#ctor
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseKey.LicenseKey
   nameWithType: LicenseKey.LicenseKey
 - uid: DevZest.Licensing.LicenseKey.CanConvertFrom(System.String)
   name: CanConvertFrom(String)
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_CanConvertFrom_System_String_
+  href: api/DevZest.Licensing.LicenseKey.CanConvertFrom.html#DevZest_Licensing_LicenseKey_CanConvertFrom_System_String_
   commentId: M:DevZest.Licensing.LicenseKey.CanConvertFrom(System.String)
   fullName: DevZest.Licensing.LicenseKey.CanConvertFrom(System.String)
   nameWithType: LicenseKey.CanConvertFrom(String)
 - uid: DevZest.Licensing.LicenseKey.CanConvertFrom*
   name: CanConvertFrom
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_CanConvertFrom_
+  href: api/DevZest.Licensing.LicenseKey.CanConvertFrom.html
   commentId: Overload:DevZest.Licensing.LicenseKey.CanConvertFrom
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseKey.CanConvertFrom
   nameWithType: LicenseKey.CanConvertFrom
 - uid: DevZest.Licensing.LicenseKey.Empty
   name: Empty
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_Empty
+  href: api/DevZest.Licensing.LicenseKey.Empty.html#DevZest_Licensing_LicenseKey_Empty
   commentId: P:DevZest.Licensing.LicenseKey.Empty
   fullName: DevZest.Licensing.LicenseKey.Empty
   nameWithType: LicenseKey.Empty
 - uid: DevZest.Licensing.LicenseKey.Empty*
   name: Empty
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_Empty_
+  href: api/DevZest.Licensing.LicenseKey.Empty.html
   commentId: Overload:DevZest.Licensing.LicenseKey.Empty
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseKey.Empty
   nameWithType: LicenseKey.Empty
 - uid: DevZest.Licensing.LicenseKey.Equals(DevZest.Licensing.LicenseKey,DevZest.Licensing.LicenseKey)
   name: Equals(LicenseKey, LicenseKey)
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_Equals_DevZest_Licensing_LicenseKey_DevZest_Licensing_LicenseKey_
+  href: api/DevZest.Licensing.LicenseKey.Equals.html#DevZest_Licensing_LicenseKey_Equals_DevZest_Licensing_LicenseKey_DevZest_Licensing_LicenseKey_
   commentId: M:DevZest.Licensing.LicenseKey.Equals(DevZest.Licensing.LicenseKey,DevZest.Licensing.LicenseKey)
   fullName: DevZest.Licensing.LicenseKey.Equals(DevZest.Licensing.LicenseKey, DevZest.Licensing.LicenseKey)
   nameWithType: LicenseKey.Equals(LicenseKey, LicenseKey)
 - uid: DevZest.Licensing.LicenseKey.Equals(System.Object)
   name: Equals(Object)
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_Equals_System_Object_
+  href: api/DevZest.Licensing.LicenseKey.Equals.html#DevZest_Licensing_LicenseKey_Equals_System_Object_
   commentId: M:DevZest.Licensing.LicenseKey.Equals(System.Object)
   fullName: DevZest.Licensing.LicenseKey.Equals(System.Object)
   nameWithType: LicenseKey.Equals(Object)
 - uid: DevZest.Licensing.LicenseKey.Equals*
   name: Equals
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_Equals_
+  href: api/DevZest.Licensing.LicenseKey.Equals.html
   commentId: Overload:DevZest.Licensing.LicenseKey.Equals
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseKey.Equals
   nameWithType: LicenseKey.Equals
 - uid: DevZest.Licensing.LicenseKey.GetHashCode
   name: GetHashCode()
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_GetHashCode
+  href: api/DevZest.Licensing.LicenseKey.GetHashCode.html#DevZest_Licensing_LicenseKey_GetHashCode
   commentId: M:DevZest.Licensing.LicenseKey.GetHashCode
   fullName: DevZest.Licensing.LicenseKey.GetHashCode()
   nameWithType: LicenseKey.GetHashCode()
 - uid: DevZest.Licensing.LicenseKey.GetHashCode*
   name: GetHashCode
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_GetHashCode_
+  href: api/DevZest.Licensing.LicenseKey.GetHashCode.html
   commentId: Overload:DevZest.Licensing.LicenseKey.GetHashCode
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseKey.GetHashCode
   nameWithType: LicenseKey.GetHashCode
 - uid: DevZest.Licensing.LicenseKey.IsEmpty
   name: IsEmpty
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_IsEmpty
+  href: api/DevZest.Licensing.LicenseKey.IsEmpty.html#DevZest_Licensing_LicenseKey_IsEmpty
   commentId: P:DevZest.Licensing.LicenseKey.IsEmpty
   fullName: DevZest.Licensing.LicenseKey.IsEmpty
   nameWithType: LicenseKey.IsEmpty
 - uid: DevZest.Licensing.LicenseKey.IsEmpty*
   name: IsEmpty
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_IsEmpty_
+  href: api/DevZest.Licensing.LicenseKey.IsEmpty.html
   commentId: Overload:DevZest.Licensing.LicenseKey.IsEmpty
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseKey.IsEmpty
   nameWithType: LicenseKey.IsEmpty
 - uid: DevZest.Licensing.LicenseKey.NewLicenseKey
   name: NewLicenseKey()
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_NewLicenseKey
+  href: api/DevZest.Licensing.LicenseKey.NewLicenseKey.html#DevZest_Licensing_LicenseKey_NewLicenseKey
   commentId: M:DevZest.Licensing.LicenseKey.NewLicenseKey
   fullName: DevZest.Licensing.LicenseKey.NewLicenseKey()
   nameWithType: LicenseKey.NewLicenseKey()
 - uid: DevZest.Licensing.LicenseKey.NewLicenseKey*
   name: NewLicenseKey
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_NewLicenseKey_
+  href: api/DevZest.Licensing.LicenseKey.NewLicenseKey.html
   commentId: Overload:DevZest.Licensing.LicenseKey.NewLicenseKey
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseKey.NewLicenseKey
   nameWithType: LicenseKey.NewLicenseKey
 - uid: DevZest.Licensing.LicenseKey.op_Equality(DevZest.Licensing.LicenseKey,DevZest.Licensing.LicenseKey)
   name: Equality(LicenseKey, LicenseKey)
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_op_Equality_DevZest_Licensing_LicenseKey_DevZest_Licensing_LicenseKey_
+  href: api/DevZest.Licensing.LicenseKey.op_Equality.html#DevZest_Licensing_LicenseKey_op_Equality_DevZest_Licensing_LicenseKey_DevZest_Licensing_LicenseKey_
   commentId: M:DevZest.Licensing.LicenseKey.op_Equality(DevZest.Licensing.LicenseKey,DevZest.Licensing.LicenseKey)
   fullName: DevZest.Licensing.LicenseKey.Equality(DevZest.Licensing.LicenseKey, DevZest.Licensing.LicenseKey)
   nameWithType: LicenseKey.Equality(LicenseKey, LicenseKey)
 - uid: DevZest.Licensing.LicenseKey.op_Equality*
   name: Equality
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_op_Equality_
+  href: api/DevZest.Licensing.LicenseKey.op_Equality.html
   commentId: Overload:DevZest.Licensing.LicenseKey.op_Equality
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseKey.Equality
   nameWithType: LicenseKey.Equality
 - uid: DevZest.Licensing.LicenseKey.op_Inequality(DevZest.Licensing.LicenseKey,DevZest.Licensing.LicenseKey)
   name: Inequality(LicenseKey, LicenseKey)
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_op_Inequality_DevZest_Licensing_LicenseKey_DevZest_Licensing_LicenseKey_
+  href: api/DevZest.Licensing.LicenseKey.op_Inequality.html#DevZest_Licensing_LicenseKey_op_Inequality_DevZest_Licensing_LicenseKey_DevZest_Licensing_LicenseKey_
   commentId: M:DevZest.Licensing.LicenseKey.op_Inequality(DevZest.Licensing.LicenseKey,DevZest.Licensing.LicenseKey)
   fullName: DevZest.Licensing.LicenseKey.Inequality(DevZest.Licensing.LicenseKey, DevZest.Licensing.LicenseKey)
   nameWithType: LicenseKey.Inequality(LicenseKey, LicenseKey)
 - uid: DevZest.Licensing.LicenseKey.op_Inequality*
   name: Inequality
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_op_Inequality_
+  href: api/DevZest.Licensing.LicenseKey.op_Inequality.html
   commentId: Overload:DevZest.Licensing.LicenseKey.op_Inequality
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseKey.Inequality
   nameWithType: LicenseKey.Inequality
 - uid: DevZest.Licensing.LicenseKey.ToString
   name: ToString()
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_ToString
+  href: api/DevZest.Licensing.LicenseKey.ToString.html#DevZest_Licensing_LicenseKey_ToString
   commentId: M:DevZest.Licensing.LicenseKey.ToString
   fullName: DevZest.Licensing.LicenseKey.ToString()
   nameWithType: LicenseKey.ToString()
 - uid: DevZest.Licensing.LicenseKey.ToString*
   name: ToString
-  href: api/DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_ToString_
+  href: api/DevZest.Licensing.LicenseKey.ToString.html
   commentId: Overload:DevZest.Licensing.LicenseKey.ToString
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseKey.ToString
   nameWithType: LicenseKey.ToString
 - uid: DevZest.Licensing.LicenseManager
@@ -1533,144 +1436,140 @@ references:
   nameWithType: LicenseManager
 - uid: DevZest.Licensing.LicenseManager.Check(System.String)
   name: Check(String)
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Check_System_String_
+  href: api/DevZest.Licensing.LicenseManager.Check.html#DevZest_Licensing_LicenseManager_Check_System_String_
   commentId: M:DevZest.Licensing.LicenseManager.Check(System.String)
   fullName: DevZest.Licensing.LicenseManager.Check(System.String)
   nameWithType: LicenseManager.Check(String)
 - uid: DevZest.Licensing.LicenseManager.Check(System.String,System.Boolean)
   name: Check(String, Boolean)
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Check_System_String_System_Boolean_
+  href: api/DevZest.Licensing.LicenseManager.Check.html#DevZest_Licensing_LicenseManager_Check_System_String_System_Boolean_
   commentId: M:DevZest.Licensing.LicenseManager.Check(System.String,System.Boolean)
   fullName: DevZest.Licensing.LicenseManager.Check(System.String, System.Boolean)
   nameWithType: LicenseManager.Check(String, Boolean)
 - uid: DevZest.Licensing.LicenseManager.Check(System.String,System.Reflection.Assembly)
   name: Check(String, Assembly)
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Check_System_String_System_Reflection_Assembly_
+  href: api/DevZest.Licensing.LicenseManager.Check.html#DevZest_Licensing_LicenseManager_Check_System_String_System_Reflection_Assembly_
   commentId: M:DevZest.Licensing.LicenseManager.Check(System.String,System.Reflection.Assembly)
   fullName: DevZest.Licensing.LicenseManager.Check(System.String, System.Reflection.Assembly)
   nameWithType: LicenseManager.Check(String, Assembly)
 - uid: DevZest.Licensing.LicenseManager.Check(System.String,System.Reflection.Assembly,System.Boolean)
   name: Check(String, Assembly, Boolean)
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Check_System_String_System_Reflection_Assembly_System_Boolean_
+  href: api/DevZest.Licensing.LicenseManager.Check.html#DevZest_Licensing_LicenseManager_Check_System_String_System_Reflection_Assembly_System_Boolean_
   commentId: M:DevZest.Licensing.LicenseManager.Check(System.String,System.Reflection.Assembly,System.Boolean)
   fullName: DevZest.Licensing.LicenseManager.Check(System.String, System.Reflection.Assembly, System.Boolean)
   nameWithType: LicenseManager.Check(String, Assembly, Boolean)
 - uid: DevZest.Licensing.LicenseManager.Check(System.String,System.Type)
   name: Check(String, Type)
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Check_System_String_System_Type_
+  href: api/DevZest.Licensing.LicenseManager.Check.html#DevZest_Licensing_LicenseManager_Check_System_String_System_Type_
   commentId: M:DevZest.Licensing.LicenseManager.Check(System.String,System.Type)
   fullName: DevZest.Licensing.LicenseManager.Check(System.String, System.Type)
   nameWithType: LicenseManager.Check(String, Type)
 - uid: DevZest.Licensing.LicenseManager.Check(System.String,System.Type,System.Boolean)
   name: Check(String, Type, Boolean)
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Check_System_String_System_Type_System_Boolean_
+  href: api/DevZest.Licensing.LicenseManager.Check.html#DevZest_Licensing_LicenseManager_Check_System_String_System_Type_System_Boolean_
   commentId: M:DevZest.Licensing.LicenseManager.Check(System.String,System.Type,System.Boolean)
   fullName: DevZest.Licensing.LicenseManager.Check(System.String, System.Type, System.Boolean)
   nameWithType: LicenseManager.Check(String, Type, Boolean)
 - uid: DevZest.Licensing.LicenseManager.Check*
   name: Check
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Check_
+  href: api/DevZest.Licensing.LicenseManager.Check.html
   commentId: Overload:DevZest.Licensing.LicenseManager.Check
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseManager.Check
   nameWithType: LicenseManager.Check
 - uid: DevZest.Licensing.LicenseManager.GetLicense
   name: GetLicense()
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_GetLicense
+  href: api/DevZest.Licensing.LicenseManager.GetLicense.html#DevZest_Licensing_LicenseManager_GetLicense
   commentId: M:DevZest.Licensing.LicenseManager.GetLicense
   fullName: DevZest.Licensing.LicenseManager.GetLicense()
   nameWithType: LicenseManager.GetLicense()
 - uid: DevZest.Licensing.LicenseManager.GetLicense(System.Boolean)
   name: GetLicense(Boolean)
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_GetLicense_System_Boolean_
+  href: api/DevZest.Licensing.LicenseManager.GetLicense.html#DevZest_Licensing_LicenseManager_GetLicense_System_Boolean_
   commentId: M:DevZest.Licensing.LicenseManager.GetLicense(System.Boolean)
   fullName: DevZest.Licensing.LicenseManager.GetLicense(System.Boolean)
   nameWithType: LicenseManager.GetLicense(Boolean)
 - uid: DevZest.Licensing.LicenseManager.GetLicense(System.Reflection.Assembly,System.Boolean)
   name: GetLicense(Assembly, Boolean)
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_GetLicense_System_Reflection_Assembly_System_Boolean_
+  href: api/DevZest.Licensing.LicenseManager.GetLicense.html#DevZest_Licensing_LicenseManager_GetLicense_System_Reflection_Assembly_System_Boolean_
   commentId: M:DevZest.Licensing.LicenseManager.GetLicense(System.Reflection.Assembly,System.Boolean)
   fullName: DevZest.Licensing.LicenseManager.GetLicense(System.Reflection.Assembly, System.Boolean)
   nameWithType: LicenseManager.GetLicense(Assembly, Boolean)
 - uid: DevZest.Licensing.LicenseManager.GetLicense(System.Type,System.Boolean)
   name: GetLicense(Type, Boolean)
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_GetLicense_System_Type_System_Boolean_
+  href: api/DevZest.Licensing.LicenseManager.GetLicense.html#DevZest_Licensing_LicenseManager_GetLicense_System_Type_System_Boolean_
   commentId: M:DevZest.Licensing.LicenseManager.GetLicense(System.Type,System.Boolean)
   fullName: DevZest.Licensing.LicenseManager.GetLicense(System.Type, System.Boolean)
   nameWithType: LicenseManager.GetLicense(Type, Boolean)
 - uid: DevZest.Licensing.LicenseManager.GetLicense*
   name: GetLicense
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_GetLicense_
+  href: api/DevZest.Licensing.LicenseManager.GetLicense.html
   commentId: Overload:DevZest.Licensing.LicenseManager.GetLicense
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseManager.GetLicense
   nameWithType: LicenseManager.GetLicense
 - uid: DevZest.Licensing.LicenseManager.Reset
   name: Reset()
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Reset
+  href: api/DevZest.Licensing.LicenseManager.Reset.html#DevZest_Licensing_LicenseManager_Reset
   commentId: M:DevZest.Licensing.LicenseManager.Reset
   fullName: DevZest.Licensing.LicenseManager.Reset()
   nameWithType: LicenseManager.Reset()
 - uid: DevZest.Licensing.LicenseManager.Reset(System.Reflection.Assembly)
   name: Reset(Assembly)
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Reset_System_Reflection_Assembly_
+  href: api/DevZest.Licensing.LicenseManager.Reset.html#DevZest_Licensing_LicenseManager_Reset_System_Reflection_Assembly_
   commentId: M:DevZest.Licensing.LicenseManager.Reset(System.Reflection.Assembly)
   fullName: DevZest.Licensing.LicenseManager.Reset(System.Reflection.Assembly)
   nameWithType: LicenseManager.Reset(Assembly)
 - uid: DevZest.Licensing.LicenseManager.Reset(System.Type)
   name: Reset(Type)
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Reset_System_Type_
+  href: api/DevZest.Licensing.LicenseManager.Reset.html#DevZest_Licensing_LicenseManager_Reset_System_Type_
   commentId: M:DevZest.Licensing.LicenseManager.Reset(System.Type)
   fullName: DevZest.Licensing.LicenseManager.Reset(System.Type)
   nameWithType: LicenseManager.Reset(Type)
 - uid: DevZest.Licensing.LicenseManager.Reset*
   name: Reset
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Reset_
+  href: api/DevZest.Licensing.LicenseManager.Reset.html
   commentId: Overload:DevZest.Licensing.LicenseManager.Reset
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseManager.Reset
   nameWithType: LicenseManager.Reset
 - uid: DevZest.Licensing.LicenseManager.Validate(System.String)
   name: Validate(String)
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Validate_System_String_
+  href: api/DevZest.Licensing.LicenseManager.Validate.html#DevZest_Licensing_LicenseManager_Validate_System_String_
   commentId: M:DevZest.Licensing.LicenseManager.Validate(System.String)
   fullName: DevZest.Licensing.LicenseManager.Validate(System.String)
   nameWithType: LicenseManager.Validate(String)
 - uid: DevZest.Licensing.LicenseManager.Validate(System.String,System.Boolean)
   name: Validate(String, Boolean)
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Validate_System_String_System_Boolean_
+  href: api/DevZest.Licensing.LicenseManager.Validate.html#DevZest_Licensing_LicenseManager_Validate_System_String_System_Boolean_
   commentId: M:DevZest.Licensing.LicenseManager.Validate(System.String,System.Boolean)
   fullName: DevZest.Licensing.LicenseManager.Validate(System.String, System.Boolean)
   nameWithType: LicenseManager.Validate(String, Boolean)
 - uid: DevZest.Licensing.LicenseManager.Validate(System.String,System.Reflection.Assembly)
   name: Validate(String, Assembly)
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Validate_System_String_System_Reflection_Assembly_
+  href: api/DevZest.Licensing.LicenseManager.Validate.html#DevZest_Licensing_LicenseManager_Validate_System_String_System_Reflection_Assembly_
   commentId: M:DevZest.Licensing.LicenseManager.Validate(System.String,System.Reflection.Assembly)
   fullName: DevZest.Licensing.LicenseManager.Validate(System.String, System.Reflection.Assembly)
   nameWithType: LicenseManager.Validate(String, Assembly)
 - uid: DevZest.Licensing.LicenseManager.Validate(System.String,System.Reflection.Assembly,System.Boolean)
   name: Validate(String, Assembly, Boolean)
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Validate_System_String_System_Reflection_Assembly_System_Boolean_
+  href: api/DevZest.Licensing.LicenseManager.Validate.html#DevZest_Licensing_LicenseManager_Validate_System_String_System_Reflection_Assembly_System_Boolean_
   commentId: M:DevZest.Licensing.LicenseManager.Validate(System.String,System.Reflection.Assembly,System.Boolean)
   fullName: DevZest.Licensing.LicenseManager.Validate(System.String, System.Reflection.Assembly, System.Boolean)
   nameWithType: LicenseManager.Validate(String, Assembly, Boolean)
 - uid: DevZest.Licensing.LicenseManager.Validate(System.String,System.Type)
   name: Validate(String, Type)
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Validate_System_String_System_Type_
+  href: api/DevZest.Licensing.LicenseManager.Validate.html#DevZest_Licensing_LicenseManager_Validate_System_String_System_Type_
   commentId: M:DevZest.Licensing.LicenseManager.Validate(System.String,System.Type)
   fullName: DevZest.Licensing.LicenseManager.Validate(System.String, System.Type)
   nameWithType: LicenseManager.Validate(String, Type)
 - uid: DevZest.Licensing.LicenseManager.Validate(System.String,System.Type,System.Boolean)
   name: Validate(String, Type, Boolean)
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Validate_System_String_System_Type_System_Boolean_
+  href: api/DevZest.Licensing.LicenseManager.Validate.html#DevZest_Licensing_LicenseManager_Validate_System_String_System_Type_System_Boolean_
   commentId: M:DevZest.Licensing.LicenseManager.Validate(System.String,System.Type,System.Boolean)
   fullName: DevZest.Licensing.LicenseManager.Validate(System.String, System.Type, System.Boolean)
   nameWithType: LicenseManager.Validate(String, Type, Boolean)
 - uid: DevZest.Licensing.LicenseManager.Validate*
   name: Validate
-  href: api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Validate_
+  href: api/DevZest.Licensing.LicenseManager.Validate.html
   commentId: Overload:DevZest.Licensing.LicenseManager.Validate
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseManager.Validate
   nameWithType: LicenseManager.Validate
 - uid: DevZest.Licensing.LicenseProviderAttribute
@@ -1681,119 +1580,110 @@ references:
   nameWithType: LicenseProviderAttribute
 - uid: DevZest.Licensing.LicenseProviderAttribute.Assembly
   name: Assembly
-  href: api/DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_Assembly
+  href: api/DevZest.Licensing.LicenseProviderAttribute.Assembly.html#DevZest_Licensing_LicenseProviderAttribute_Assembly
   commentId: P:DevZest.Licensing.LicenseProviderAttribute.Assembly
   fullName: DevZest.Licensing.LicenseProviderAttribute.Assembly
   nameWithType: LicenseProviderAttribute.Assembly
 - uid: DevZest.Licensing.LicenseProviderAttribute.Assembly*
   name: Assembly
-  href: api/DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_Assembly_
+  href: api/DevZest.Licensing.LicenseProviderAttribute.Assembly.html
   commentId: Overload:DevZest.Licensing.LicenseProviderAttribute.Assembly
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseProviderAttribute.Assembly
   nameWithType: LicenseProviderAttribute.Assembly
 - uid: DevZest.Licensing.LicenseProviderAttribute.Debug
   name: Debug
-  href: api/DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_Debug
+  href: api/DevZest.Licensing.LicenseProviderAttribute.Debug.html#DevZest_Licensing_LicenseProviderAttribute_Debug
   commentId: P:DevZest.Licensing.LicenseProviderAttribute.Debug
   fullName: DevZest.Licensing.LicenseProviderAttribute.Debug
   nameWithType: LicenseProviderAttribute.Debug
 - uid: DevZest.Licensing.LicenseProviderAttribute.Debug*
   name: Debug
-  href: api/DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_Debug_
+  href: api/DevZest.Licensing.LicenseProviderAttribute.Debug.html
   commentId: Overload:DevZest.Licensing.LicenseProviderAttribute.Debug
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseProviderAttribute.Debug
   nameWithType: LicenseProviderAttribute.Debug
 - uid: DevZest.Licensing.LicenseProviderAttribute.DesignMode
   name: DesignMode
-  href: api/DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_DesignMode
+  href: api/DevZest.Licensing.LicenseProviderAttribute.DesignMode.html#DevZest_Licensing_LicenseProviderAttribute_DesignMode
   commentId: P:DevZest.Licensing.LicenseProviderAttribute.DesignMode
   fullName: DevZest.Licensing.LicenseProviderAttribute.DesignMode
   nameWithType: LicenseProviderAttribute.DesignMode
 - uid: DevZest.Licensing.LicenseProviderAttribute.DesignMode*
   name: DesignMode
-  href: api/DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_DesignMode_
+  href: api/DevZest.Licensing.LicenseProviderAttribute.DesignMode.html
   commentId: Overload:DevZest.Licensing.LicenseProviderAttribute.DesignMode
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseProviderAttribute.DesignMode
   nameWithType: LicenseProviderAttribute.DesignMode
 - uid: DevZest.Licensing.LicenseProviderAttribute.GetTraceMessage(DevZest.Licensing.LicenseProviderResult)
   name: GetTraceMessage(LicenseProviderResult)
-  href: api/DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_GetTraceMessage_DevZest_Licensing_LicenseProviderResult_
+  href: api/DevZest.Licensing.LicenseProviderAttribute.GetTraceMessage.html#DevZest_Licensing_LicenseProviderAttribute_GetTraceMessage_DevZest_Licensing_LicenseProviderResult_
   commentId: M:DevZest.Licensing.LicenseProviderAttribute.GetTraceMessage(DevZest.Licensing.LicenseProviderResult)
   fullName: DevZest.Licensing.LicenseProviderAttribute.GetTraceMessage(DevZest.Licensing.LicenseProviderResult)
   nameWithType: LicenseProviderAttribute.GetTraceMessage(LicenseProviderResult)
 - uid: DevZest.Licensing.LicenseProviderAttribute.GetTraceMessage*
   name: GetTraceMessage
-  href: api/DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_GetTraceMessage_
+  href: api/DevZest.Licensing.LicenseProviderAttribute.GetTraceMessage.html
   commentId: Overload:DevZest.Licensing.LicenseProviderAttribute.GetTraceMessage
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseProviderAttribute.GetTraceMessage
   nameWithType: LicenseProviderAttribute.GetTraceMessage
 - uid: DevZest.Licensing.LicenseProviderAttribute.IsFrozen
   name: IsFrozen
-  href: api/DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_IsFrozen
+  href: api/DevZest.Licensing.LicenseProviderAttribute.IsFrozen.html#DevZest_Licensing_LicenseProviderAttribute_IsFrozen
   commentId: P:DevZest.Licensing.LicenseProviderAttribute.IsFrozen
   fullName: DevZest.Licensing.LicenseProviderAttribute.IsFrozen
   nameWithType: LicenseProviderAttribute.IsFrozen
 - uid: DevZest.Licensing.LicenseProviderAttribute.IsFrozen*
   name: IsFrozen
-  href: api/DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_IsFrozen_
+  href: api/DevZest.Licensing.LicenseProviderAttribute.IsFrozen.html
   commentId: Overload:DevZest.Licensing.LicenseProviderAttribute.IsFrozen
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseProviderAttribute.IsFrozen
   nameWithType: LicenseProviderAttribute.IsFrozen
 - uid: DevZest.Licensing.LicenseProviderAttribute.IsTraceEnabled
   name: IsTraceEnabled
-  href: api/DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_IsTraceEnabled
+  href: api/DevZest.Licensing.LicenseProviderAttribute.IsTraceEnabled.html#DevZest_Licensing_LicenseProviderAttribute_IsTraceEnabled
   commentId: P:DevZest.Licensing.LicenseProviderAttribute.IsTraceEnabled
   fullName: DevZest.Licensing.LicenseProviderAttribute.IsTraceEnabled
   nameWithType: LicenseProviderAttribute.IsTraceEnabled
 - uid: DevZest.Licensing.LicenseProviderAttribute.IsTraceEnabled*
   name: IsTraceEnabled
-  href: api/DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_IsTraceEnabled_
+  href: api/DevZest.Licensing.LicenseProviderAttribute.IsTraceEnabled.html
   commentId: Overload:DevZest.Licensing.LicenseProviderAttribute.IsTraceEnabled
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseProviderAttribute.IsTraceEnabled
   nameWithType: LicenseProviderAttribute.IsTraceEnabled
 - uid: DevZest.Licensing.LicenseProviderAttribute.ProvideLicense
   name: ProvideLicense()
-  href: api/DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_ProvideLicense
+  href: api/DevZest.Licensing.LicenseProviderAttribute.ProvideLicense.html#DevZest_Licensing_LicenseProviderAttribute_ProvideLicense
   commentId: M:DevZest.Licensing.LicenseProviderAttribute.ProvideLicense
   fullName: DevZest.Licensing.LicenseProviderAttribute.ProvideLicense()
   nameWithType: LicenseProviderAttribute.ProvideLicense()
 - uid: DevZest.Licensing.LicenseProviderAttribute.ProvideLicense*
   name: ProvideLicense
-  href: api/DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_ProvideLicense_
+  href: api/DevZest.Licensing.LicenseProviderAttribute.ProvideLicense.html
   commentId: Overload:DevZest.Licensing.LicenseProviderAttribute.ProvideLicense
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseProviderAttribute.ProvideLicense
   nameWithType: LicenseProviderAttribute.ProvideLicense
 - uid: DevZest.Licensing.LicenseProviderAttribute.Reset
   name: Reset()
-  href: api/DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_Reset
+  href: api/DevZest.Licensing.LicenseProviderAttribute.Reset.html#DevZest_Licensing_LicenseProviderAttribute_Reset
   commentId: M:DevZest.Licensing.LicenseProviderAttribute.Reset
   fullName: DevZest.Licensing.LicenseProviderAttribute.Reset()
   nameWithType: LicenseProviderAttribute.Reset()
 - uid: DevZest.Licensing.LicenseProviderAttribute.Reset*
   name: Reset
-  href: api/DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_Reset_
+  href: api/DevZest.Licensing.LicenseProviderAttribute.Reset.html
   commentId: Overload:DevZest.Licensing.LicenseProviderAttribute.Reset
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseProviderAttribute.Reset
   nameWithType: LicenseProviderAttribute.Reset
 - uid: DevZest.Licensing.LicenseProviderAttribute.VerifyFrozenAccess
   name: VerifyFrozenAccess()
-  href: api/DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_VerifyFrozenAccess
+  href: api/DevZest.Licensing.LicenseProviderAttribute.VerifyFrozenAccess.html#DevZest_Licensing_LicenseProviderAttribute_VerifyFrozenAccess
   commentId: M:DevZest.Licensing.LicenseProviderAttribute.VerifyFrozenAccess
   fullName: DevZest.Licensing.LicenseProviderAttribute.VerifyFrozenAccess()
   nameWithType: LicenseProviderAttribute.VerifyFrozenAccess()
 - uid: DevZest.Licensing.LicenseProviderAttribute.VerifyFrozenAccess*
   name: VerifyFrozenAccess
-  href: api/DevZest.Licensing.LicenseProviderAttribute.html#DevZest_Licensing_LicenseProviderAttribute_VerifyFrozenAccess_
+  href: api/DevZest.Licensing.LicenseProviderAttribute.VerifyFrozenAccess.html
   commentId: Overload:DevZest.Licensing.LicenseProviderAttribute.VerifyFrozenAccess
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseProviderAttribute.VerifyFrozenAccess
   nameWithType: LicenseProviderAttribute.VerifyFrozenAccess
 - uid: DevZest.Licensing.LicenseProviderResult
@@ -1804,105 +1694,98 @@ references:
   nameWithType: LicenseProviderResult
 - uid: DevZest.Licensing.LicenseProviderResult.Data
   name: Data
-  href: api/DevZest.Licensing.LicenseProviderResult.html#DevZest_Licensing_LicenseProviderResult_Data
+  href: api/DevZest.Licensing.LicenseProviderResult.Data.html#DevZest_Licensing_LicenseProviderResult_Data
   commentId: P:DevZest.Licensing.LicenseProviderResult.Data
   fullName: DevZest.Licensing.LicenseProviderResult.Data
   nameWithType: LicenseProviderResult.Data
 - uid: DevZest.Licensing.LicenseProviderResult.Data*
   name: Data
-  href: api/DevZest.Licensing.LicenseProviderResult.html#DevZest_Licensing_LicenseProviderResult_Data_
+  href: api/DevZest.Licensing.LicenseProviderResult.Data.html
   commentId: Overload:DevZest.Licensing.LicenseProviderResult.Data
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseProviderResult.Data
   nameWithType: LicenseProviderResult.Data
 - uid: DevZest.Licensing.LicenseProviderResult.Empty
   name: Empty
-  href: api/DevZest.Licensing.LicenseProviderResult.html#DevZest_Licensing_LicenseProviderResult_Empty
+  href: api/DevZest.Licensing.LicenseProviderResult.Empty.html#DevZest_Licensing_LicenseProviderResult_Empty
   commentId: P:DevZest.Licensing.LicenseProviderResult.Empty
   fullName: DevZest.Licensing.LicenseProviderResult.Empty
   nameWithType: LicenseProviderResult.Empty
 - uid: DevZest.Licensing.LicenseProviderResult.Empty*
   name: Empty
-  href: api/DevZest.Licensing.LicenseProviderResult.html#DevZest_Licensing_LicenseProviderResult_Empty_
+  href: api/DevZest.Licensing.LicenseProviderResult.Empty.html
   commentId: Overload:DevZest.Licensing.LicenseProviderResult.Empty
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseProviderResult.Empty
   nameWithType: LicenseProviderResult.Empty
 - uid: DevZest.Licensing.LicenseProviderResult.ErrorMessage
   name: ErrorMessage
-  href: api/DevZest.Licensing.LicenseProviderResult.html#DevZest_Licensing_LicenseProviderResult_ErrorMessage
+  href: api/DevZest.Licensing.LicenseProviderResult.ErrorMessage.html#DevZest_Licensing_LicenseProviderResult_ErrorMessage
   commentId: P:DevZest.Licensing.LicenseProviderResult.ErrorMessage
   fullName: DevZest.Licensing.LicenseProviderResult.ErrorMessage
   nameWithType: LicenseProviderResult.ErrorMessage
 - uid: DevZest.Licensing.LicenseProviderResult.ErrorMessage*
   name: ErrorMessage
-  href: api/DevZest.Licensing.LicenseProviderResult.html#DevZest_Licensing_LicenseProviderResult_ErrorMessage_
+  href: api/DevZest.Licensing.LicenseProviderResult.ErrorMessage.html
   commentId: Overload:DevZest.Licensing.LicenseProviderResult.ErrorMessage
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseProviderResult.ErrorMessage
   nameWithType: LicenseProviderResult.ErrorMessage
 - uid: DevZest.Licensing.LicenseProviderResult.FromErrorMessage(System.String)
   name: FromErrorMessage(String)
-  href: api/DevZest.Licensing.LicenseProviderResult.html#DevZest_Licensing_LicenseProviderResult_FromErrorMessage_System_String_
+  href: api/DevZest.Licensing.LicenseProviderResult.FromErrorMessage.html#DevZest_Licensing_LicenseProviderResult_FromErrorMessage_System_String_
   commentId: M:DevZest.Licensing.LicenseProviderResult.FromErrorMessage(System.String)
   fullName: DevZest.Licensing.LicenseProviderResult.FromErrorMessage(System.String)
   nameWithType: LicenseProviderResult.FromErrorMessage(String)
 - uid: DevZest.Licensing.LicenseProviderResult.FromErrorMessage(System.String,System.Object)
   name: FromErrorMessage(String, Object)
-  href: api/DevZest.Licensing.LicenseProviderResult.html#DevZest_Licensing_LicenseProviderResult_FromErrorMessage_System_String_System_Object_
+  href: api/DevZest.Licensing.LicenseProviderResult.FromErrorMessage.html#DevZest_Licensing_LicenseProviderResult_FromErrorMessage_System_String_System_Object_
   commentId: M:DevZest.Licensing.LicenseProviderResult.FromErrorMessage(System.String,System.Object)
   fullName: DevZest.Licensing.LicenseProviderResult.FromErrorMessage(System.String, System.Object)
   nameWithType: LicenseProviderResult.FromErrorMessage(String, Object)
 - uid: DevZest.Licensing.LicenseProviderResult.FromErrorMessage*
   name: FromErrorMessage
-  href: api/DevZest.Licensing.LicenseProviderResult.html#DevZest_Licensing_LicenseProviderResult_FromErrorMessage_
+  href: api/DevZest.Licensing.LicenseProviderResult.FromErrorMessage.html
   commentId: Overload:DevZest.Licensing.LicenseProviderResult.FromErrorMessage
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseProviderResult.FromErrorMessage
   nameWithType: LicenseProviderResult.FromErrorMessage
 - uid: DevZest.Licensing.LicenseProviderResult.FromLicense(System.String)
   name: FromLicense(String)
-  href: api/DevZest.Licensing.LicenseProviderResult.html#DevZest_Licensing_LicenseProviderResult_FromLicense_System_String_
+  href: api/DevZest.Licensing.LicenseProviderResult.FromLicense.html#DevZest_Licensing_LicenseProviderResult_FromLicense_System_String_
   commentId: M:DevZest.Licensing.LicenseProviderResult.FromLicense(System.String)
   fullName: DevZest.Licensing.LicenseProviderResult.FromLicense(System.String)
   nameWithType: LicenseProviderResult.FromLicense(String)
 - uid: DevZest.Licensing.LicenseProviderResult.FromLicense(System.String,System.Object)
   name: FromLicense(String, Object)
-  href: api/DevZest.Licensing.LicenseProviderResult.html#DevZest_Licensing_LicenseProviderResult_FromLicense_System_String_System_Object_
+  href: api/DevZest.Licensing.LicenseProviderResult.FromLicense.html#DevZest_Licensing_LicenseProviderResult_FromLicense_System_String_System_Object_
   commentId: M:DevZest.Licensing.LicenseProviderResult.FromLicense(System.String,System.Object)
   fullName: DevZest.Licensing.LicenseProviderResult.FromLicense(System.String, System.Object)
   nameWithType: LicenseProviderResult.FromLicense(String, Object)
 - uid: DevZest.Licensing.LicenseProviderResult.FromLicense*
   name: FromLicense
-  href: api/DevZest.Licensing.LicenseProviderResult.html#DevZest_Licensing_LicenseProviderResult_FromLicense_
+  href: api/DevZest.Licensing.LicenseProviderResult.FromLicense.html
   commentId: Overload:DevZest.Licensing.LicenseProviderResult.FromLicense
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseProviderResult.FromLicense
   nameWithType: LicenseProviderResult.FromLicense
 - uid: DevZest.Licensing.LicenseProviderResult.IsEmpty
   name: IsEmpty
-  href: api/DevZest.Licensing.LicenseProviderResult.html#DevZest_Licensing_LicenseProviderResult_IsEmpty
+  href: api/DevZest.Licensing.LicenseProviderResult.IsEmpty.html#DevZest_Licensing_LicenseProviderResult_IsEmpty
   commentId: P:DevZest.Licensing.LicenseProviderResult.IsEmpty
   fullName: DevZest.Licensing.LicenseProviderResult.IsEmpty
   nameWithType: LicenseProviderResult.IsEmpty
 - uid: DevZest.Licensing.LicenseProviderResult.IsEmpty*
   name: IsEmpty
-  href: api/DevZest.Licensing.LicenseProviderResult.html#DevZest_Licensing_LicenseProviderResult_IsEmpty_
+  href: api/DevZest.Licensing.LicenseProviderResult.IsEmpty.html
   commentId: Overload:DevZest.Licensing.LicenseProviderResult.IsEmpty
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseProviderResult.IsEmpty
   nameWithType: LicenseProviderResult.IsEmpty
 - uid: DevZest.Licensing.LicenseProviderResult.License
   name: License
-  href: api/DevZest.Licensing.LicenseProviderResult.html#DevZest_Licensing_LicenseProviderResult_License
+  href: api/DevZest.Licensing.LicenseProviderResult.License.html#DevZest_Licensing_LicenseProviderResult_License
   commentId: P:DevZest.Licensing.LicenseProviderResult.License
   fullName: DevZest.Licensing.LicenseProviderResult.License
   nameWithType: LicenseProviderResult.License
 - uid: DevZest.Licensing.LicenseProviderResult.License*
   name: License
-  href: api/DevZest.Licensing.LicenseProviderResult.html#DevZest_Licensing_LicenseProviderResult_License_
+  href: api/DevZest.Licensing.LicenseProviderResult.License.html
   commentId: Overload:DevZest.Licensing.LicenseProviderResult.License
-  isSpec: "True"
   fullName: DevZest.Licensing.LicenseProviderResult.License
   nameWithType: LicenseProviderResult.License
 - uid: DevZest.Licensing.LicensePublicKeyAttribute
@@ -1913,28 +1796,26 @@ references:
   nameWithType: LicensePublicKeyAttribute
 - uid: DevZest.Licensing.LicensePublicKeyAttribute.#ctor(System.String)
   name: LicensePublicKeyAttribute(String)
-  href: api/DevZest.Licensing.LicensePublicKeyAttribute.html#DevZest_Licensing_LicensePublicKeyAttribute__ctor_System_String_
+  href: api/DevZest.Licensing.LicensePublicKeyAttribute.-ctor.html#DevZest_Licensing_LicensePublicKeyAttribute__ctor_System_String_
   commentId: M:DevZest.Licensing.LicensePublicKeyAttribute.#ctor(System.String)
   fullName: DevZest.Licensing.LicensePublicKeyAttribute.LicensePublicKeyAttribute(System.String)
   nameWithType: LicensePublicKeyAttribute.LicensePublicKeyAttribute(String)
 - uid: DevZest.Licensing.LicensePublicKeyAttribute.#ctor*
   name: LicensePublicKeyAttribute
-  href: api/DevZest.Licensing.LicensePublicKeyAttribute.html#DevZest_Licensing_LicensePublicKeyAttribute__ctor_
+  href: api/DevZest.Licensing.LicensePublicKeyAttribute.-ctor.html
   commentId: Overload:DevZest.Licensing.LicensePublicKeyAttribute.#ctor
-  isSpec: "True"
   fullName: DevZest.Licensing.LicensePublicKeyAttribute.LicensePublicKeyAttribute
   nameWithType: LicensePublicKeyAttribute.LicensePublicKeyAttribute
 - uid: DevZest.Licensing.LicensePublicKeyAttribute.PublicKey
   name: PublicKey
-  href: api/DevZest.Licensing.LicensePublicKeyAttribute.html#DevZest_Licensing_LicensePublicKeyAttribute_PublicKey
+  href: api/DevZest.Licensing.LicensePublicKeyAttribute.PublicKey.html#DevZest_Licensing_LicensePublicKeyAttribute_PublicKey
   commentId: P:DevZest.Licensing.LicensePublicKeyAttribute.PublicKey
   fullName: DevZest.Licensing.LicensePublicKeyAttribute.PublicKey
   nameWithType: LicensePublicKeyAttribute.PublicKey
 - uid: DevZest.Licensing.LicensePublicKeyAttribute.PublicKey*
   name: PublicKey
-  href: api/DevZest.Licensing.LicensePublicKeyAttribute.html#DevZest_Licensing_LicensePublicKeyAttribute_PublicKey_
+  href: api/DevZest.Licensing.LicensePublicKeyAttribute.PublicKey.html
   commentId: Overload:DevZest.Licensing.LicensePublicKeyAttribute.PublicKey
-  isSpec: "True"
   fullName: DevZest.Licensing.LicensePublicKeyAttribute.PublicKey
   nameWithType: LicensePublicKeyAttribute.PublicKey
 - uid: DevZest.Licensing.LicensePublisher
@@ -1945,79 +1826,74 @@ references:
   nameWithType: LicensePublisher
 - uid: DevZest.Licensing.LicensePublisher.#ctor
   name: LicensePublisher()
-  href: api/DevZest.Licensing.LicensePublisher.html#DevZest_Licensing_LicensePublisher__ctor
+  href: api/DevZest.Licensing.LicensePublisher.-ctor.html#DevZest_Licensing_LicensePublisher__ctor
   commentId: M:DevZest.Licensing.LicensePublisher.#ctor
   fullName: DevZest.Licensing.LicensePublisher.LicensePublisher()
   nameWithType: LicensePublisher.LicensePublisher()
 - uid: DevZest.Licensing.LicensePublisher.#ctor(System.Boolean)
   name: LicensePublisher(Boolean)
-  href: api/DevZest.Licensing.LicensePublisher.html#DevZest_Licensing_LicensePublisher__ctor_System_Boolean_
+  href: api/DevZest.Licensing.LicensePublisher.-ctor.html#DevZest_Licensing_LicensePublisher__ctor_System_Boolean_
   commentId: M:DevZest.Licensing.LicensePublisher.#ctor(System.Boolean)
   fullName: DevZest.Licensing.LicensePublisher.LicensePublisher(System.Boolean)
   nameWithType: LicensePublisher.LicensePublisher(Boolean)
 - uid: DevZest.Licensing.LicensePublisher.#ctor*
   name: LicensePublisher
-  href: api/DevZest.Licensing.LicensePublisher.html#DevZest_Licensing_LicensePublisher__ctor_
+  href: api/DevZest.Licensing.LicensePublisher.-ctor.html
   commentId: Overload:DevZest.Licensing.LicensePublisher.#ctor
-  isSpec: "True"
   fullName: DevZest.Licensing.LicensePublisher.LicensePublisher
   nameWithType: LicensePublisher.LicensePublisher
 - uid: DevZest.Licensing.LicensePublisher.GetLicense(System.Globalization.CultureInfo,System.String,System.Version,DevZest.Licensing.LicenseKey,System.String,System.String,System.String,System.String,System.String)
   name: GetLicense(CultureInfo, String, Version, LicenseKey, String, String, String, String, String)
-  href: api/DevZest.Licensing.LicensePublisher.html#DevZest_Licensing_LicensePublisher_GetLicense_System_Globalization_CultureInfo_System_String_System_Version_DevZest_Licensing_LicenseKey_System_String_System_String_System_String_System_String_System_String_
+  href: api/DevZest.Licensing.LicensePublisher.GetLicense.html#DevZest_Licensing_LicensePublisher_GetLicense_System_Globalization_CultureInfo_System_String_System_Version_DevZest_Licensing_LicenseKey_System_String_System_String_System_String_System_String_System_String_
   commentId: M:DevZest.Licensing.LicensePublisher.GetLicense(System.Globalization.CultureInfo,System.String,System.Version,DevZest.Licensing.LicenseKey,System.String,System.String,System.String,System.String,System.String)
   fullName: DevZest.Licensing.LicensePublisher.GetLicense(System.Globalization.CultureInfo, System.String, System.Version, DevZest.Licensing.LicenseKey, System.String, System.String, System.String, System.String, System.String)
   nameWithType: LicensePublisher.GetLicense(CultureInfo, String, Version, LicenseKey, String, String, String, String, String)
 - uid: DevZest.Licensing.LicensePublisher.GetLicense*
   name: GetLicense
-  href: api/DevZest.Licensing.LicensePublisher.html#DevZest_Licensing_LicensePublisher_GetLicense_
+  href: api/DevZest.Licensing.LicensePublisher.GetLicense.html
   commentId: Overload:DevZest.Licensing.LicensePublisher.GetLicense
-  isSpec: "True"
   fullName: DevZest.Licensing.LicensePublisher.GetLicense
   nameWithType: LicensePublisher.GetLicense
 - uid: DevZest.Licensing.LicensePublisher.GetPrivateKeyXml(System.String)
   name: GetPrivateKeyXml(String)
-  href: api/DevZest.Licensing.LicensePublisher.html#DevZest_Licensing_LicensePublisher_GetPrivateKeyXml_System_String_
+  href: api/DevZest.Licensing.LicensePublisher.GetPrivateKeyXml.html#DevZest_Licensing_LicensePublisher_GetPrivateKeyXml_System_String_
   commentId: M:DevZest.Licensing.LicensePublisher.GetPrivateKeyXml(System.String)
   fullName: DevZest.Licensing.LicensePublisher.GetPrivateKeyXml(System.String)
   nameWithType: LicensePublisher.GetPrivateKeyXml(String)
 - uid: DevZest.Licensing.LicensePublisher.GetPrivateKeyXml*
   name: GetPrivateKeyXml
-  href: api/DevZest.Licensing.LicensePublisher.html#DevZest_Licensing_LicensePublisher_GetPrivateKeyXml_
+  href: api/DevZest.Licensing.LicensePublisher.GetPrivateKeyXml.html
   commentId: Overload:DevZest.Licensing.LicensePublisher.GetPrivateKeyXml
-  isSpec: "True"
   fullName: DevZest.Licensing.LicensePublisher.GetPrivateKeyXml
   nameWithType: LicensePublisher.GetPrivateKeyXml
 - uid: DevZest.Licensing.LicensePublisher.PrivateKeyXmlFromSnkFile(System.IO.Stream)
   name: PrivateKeyXmlFromSnkFile(Stream)
-  href: api/DevZest.Licensing.LicensePublisher.html#DevZest_Licensing_LicensePublisher_PrivateKeyXmlFromSnkFile_System_IO_Stream_
+  href: api/DevZest.Licensing.LicensePublisher.PrivateKeyXmlFromSnkFile.html#DevZest_Licensing_LicensePublisher_PrivateKeyXmlFromSnkFile_System_IO_Stream_
   commentId: M:DevZest.Licensing.LicensePublisher.PrivateKeyXmlFromSnkFile(System.IO.Stream)
   fullName: DevZest.Licensing.LicensePublisher.PrivateKeyXmlFromSnkFile(System.IO.Stream)
   nameWithType: LicensePublisher.PrivateKeyXmlFromSnkFile(Stream)
 - uid: DevZest.Licensing.LicensePublisher.PrivateKeyXmlFromSnkFile(System.String)
   name: PrivateKeyXmlFromSnkFile(String)
-  href: api/DevZest.Licensing.LicensePublisher.html#DevZest_Licensing_LicensePublisher_PrivateKeyXmlFromSnkFile_System_String_
+  href: api/DevZest.Licensing.LicensePublisher.PrivateKeyXmlFromSnkFile.html#DevZest_Licensing_LicensePublisher_PrivateKeyXmlFromSnkFile_System_String_
   commentId: M:DevZest.Licensing.LicensePublisher.PrivateKeyXmlFromSnkFile(System.String)
   fullName: DevZest.Licensing.LicensePublisher.PrivateKeyXmlFromSnkFile(System.String)
   nameWithType: LicensePublisher.PrivateKeyXmlFromSnkFile(String)
 - uid: DevZest.Licensing.LicensePublisher.PrivateKeyXmlFromSnkFile*
   name: PrivateKeyXmlFromSnkFile
-  href: api/DevZest.Licensing.LicensePublisher.html#DevZest_Licensing_LicensePublisher_PrivateKeyXmlFromSnkFile_
+  href: api/DevZest.Licensing.LicensePublisher.PrivateKeyXmlFromSnkFile.html
   commentId: Overload:DevZest.Licensing.LicensePublisher.PrivateKeyXmlFromSnkFile
-  isSpec: "True"
   fullName: DevZest.Licensing.LicensePublisher.PrivateKeyXmlFromSnkFile
   nameWithType: LicensePublisher.PrivateKeyXmlFromSnkFile
 - uid: DevZest.Licensing.LicensePublisher.Publish(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
   name: Publish(Int32, String, String, String, String, String, String, String, String)
-  href: api/DevZest.Licensing.LicensePublisher.html#DevZest_Licensing_LicensePublisher_Publish_System_Int32_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_
+  href: api/DevZest.Licensing.LicensePublisher.Publish.html#DevZest_Licensing_LicensePublisher_Publish_System_Int32_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_
   commentId: M:DevZest.Licensing.LicensePublisher.Publish(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
   fullName: DevZest.Licensing.LicensePublisher.Publish(System.Int32, System.String, System.String, System.String, System.String, System.String, System.String, System.String, System.String)
   nameWithType: LicensePublisher.Publish(Int32, String, String, String, String, String, String, String, String)
 - uid: DevZest.Licensing.LicensePublisher.Publish*
   name: Publish
-  href: api/DevZest.Licensing.LicensePublisher.html#DevZest_Licensing_LicensePublisher_Publish_
+  href: api/DevZest.Licensing.LicensePublisher.Publish.html
   commentId: Overload:DevZest.Licensing.LicensePublisher.Publish
-  isSpec: "True"
   fullName: DevZest.Licensing.LicensePublisher.Publish
   nameWithType: LicensePublisher.Publish
 - uid: DevZest.Licensing.LicensePublisherResponse
@@ -2028,47 +1904,44 @@ references:
   nameWithType: LicensePublisherResponse
 - uid: DevZest.Licensing.LicensePublisherResponse.#ctor(DevZest.Licensing.License)
   name: LicensePublisherResponse(License)
-  href: api/DevZest.Licensing.LicensePublisherResponse.html#DevZest_Licensing_LicensePublisherResponse__ctor_DevZest_Licensing_License_
+  href: api/DevZest.Licensing.LicensePublisherResponse.-ctor.html#DevZest_Licensing_LicensePublisherResponse__ctor_DevZest_Licensing_License_
   commentId: M:DevZest.Licensing.LicensePublisherResponse.#ctor(DevZest.Licensing.License)
   fullName: DevZest.Licensing.LicensePublisherResponse.LicensePublisherResponse(DevZest.Licensing.License)
   nameWithType: LicensePublisherResponse.LicensePublisherResponse(License)
 - uid: DevZest.Licensing.LicensePublisherResponse.#ctor(System.String)
   name: LicensePublisherResponse(String)
-  href: api/DevZest.Licensing.LicensePublisherResponse.html#DevZest_Licensing_LicensePublisherResponse__ctor_System_String_
+  href: api/DevZest.Licensing.LicensePublisherResponse.-ctor.html#DevZest_Licensing_LicensePublisherResponse__ctor_System_String_
   commentId: M:DevZest.Licensing.LicensePublisherResponse.#ctor(System.String)
   fullName: DevZest.Licensing.LicensePublisherResponse.LicensePublisherResponse(System.String)
   nameWithType: LicensePublisherResponse.LicensePublisherResponse(String)
 - uid: DevZest.Licensing.LicensePublisherResponse.#ctor*
   name: LicensePublisherResponse
-  href: api/DevZest.Licensing.LicensePublisherResponse.html#DevZest_Licensing_LicensePublisherResponse__ctor_
+  href: api/DevZest.Licensing.LicensePublisherResponse.-ctor.html
   commentId: Overload:DevZest.Licensing.LicensePublisherResponse.#ctor
-  isSpec: "True"
   fullName: DevZest.Licensing.LicensePublisherResponse.LicensePublisherResponse
   nameWithType: LicensePublisherResponse.LicensePublisherResponse
 - uid: DevZest.Licensing.LicensePublisherResponse.ErrorMessage
   name: ErrorMessage
-  href: api/DevZest.Licensing.LicensePublisherResponse.html#DevZest_Licensing_LicensePublisherResponse_ErrorMessage
+  href: api/DevZest.Licensing.LicensePublisherResponse.ErrorMessage.html#DevZest_Licensing_LicensePublisherResponse_ErrorMessage
   commentId: P:DevZest.Licensing.LicensePublisherResponse.ErrorMessage
   fullName: DevZest.Licensing.LicensePublisherResponse.ErrorMessage
   nameWithType: LicensePublisherResponse.ErrorMessage
 - uid: DevZest.Licensing.LicensePublisherResponse.ErrorMessage*
   name: ErrorMessage
-  href: api/DevZest.Licensing.LicensePublisherResponse.html#DevZest_Licensing_LicensePublisherResponse_ErrorMessage_
+  href: api/DevZest.Licensing.LicensePublisherResponse.ErrorMessage.html
   commentId: Overload:DevZest.Licensing.LicensePublisherResponse.ErrorMessage
-  isSpec: "True"
   fullName: DevZest.Licensing.LicensePublisherResponse.ErrorMessage
   nameWithType: LicensePublisherResponse.ErrorMessage
 - uid: DevZest.Licensing.LicensePublisherResponse.License
   name: License
-  href: api/DevZest.Licensing.LicensePublisherResponse.html#DevZest_Licensing_LicensePublisherResponse_License
+  href: api/DevZest.Licensing.LicensePublisherResponse.License.html#DevZest_Licensing_LicensePublisherResponse_License
   commentId: P:DevZest.Licensing.LicensePublisherResponse.License
   fullName: DevZest.Licensing.LicensePublisherResponse.License
   nameWithType: LicensePublisherResponse.License
 - uid: DevZest.Licensing.LicensePublisherResponse.License*
   name: License
-  href: api/DevZest.Licensing.LicensePublisherResponse.html#DevZest_Licensing_LicensePublisherResponse_License_
+  href: api/DevZest.Licensing.LicensePublisherResponse.License.html
   commentId: Overload:DevZest.Licensing.LicensePublisherResponse.License
-  isSpec: "True"
   fullName: DevZest.Licensing.LicensePublisherResponse.License
   nameWithType: LicensePublisherResponse.License
 - uid: DevZest.Licensing.MachineLicense
@@ -2079,28 +1952,26 @@ references:
   nameWithType: MachineLicense
 - uid: DevZest.Licensing.MachineLicense.LocalMachineData
   name: LocalMachineData
-  href: api/DevZest.Licensing.MachineLicense.html#DevZest_Licensing_MachineLicense_LocalMachineData
+  href: api/DevZest.Licensing.MachineLicense.LocalMachineData.html#DevZest_Licensing_MachineLicense_LocalMachineData
   commentId: P:DevZest.Licensing.MachineLicense.LocalMachineData
   fullName: DevZest.Licensing.MachineLicense.LocalMachineData
   nameWithType: MachineLicense.LocalMachineData
 - uid: DevZest.Licensing.MachineLicense.LocalMachineData*
   name: LocalMachineData
-  href: api/DevZest.Licensing.MachineLicense.html#DevZest_Licensing_MachineLicense_LocalMachineData_
+  href: api/DevZest.Licensing.MachineLicense.LocalMachineData.html
   commentId: Overload:DevZest.Licensing.MachineLicense.LocalMachineData
-  isSpec: "True"
   fullName: DevZest.Licensing.MachineLicense.LocalMachineData
   nameWithType: MachineLicense.LocalMachineData
 - uid: DevZest.Licensing.MachineLicense.Validate
   name: Validate()
-  href: api/DevZest.Licensing.MachineLicense.html#DevZest_Licensing_MachineLicense_Validate
+  href: api/DevZest.Licensing.MachineLicense.Validate.html#DevZest_Licensing_MachineLicense_Validate
   commentId: M:DevZest.Licensing.MachineLicense.Validate
   fullName: DevZest.Licensing.MachineLicense.Validate()
   nameWithType: MachineLicense.Validate()
 - uid: DevZest.Licensing.MachineLicense.Validate*
   name: Validate
-  href: api/DevZest.Licensing.MachineLicense.html#DevZest_Licensing_MachineLicense_Validate_
+  href: api/DevZest.Licensing.MachineLicense.Validate.html
   commentId: Overload:DevZest.Licensing.MachineLicense.Validate
-  isSpec: "True"
   fullName: DevZest.Licensing.MachineLicense.Validate
   nameWithType: MachineLicense.Validate
 - uid: DevZest.Licensing.RegistryLicenseProviderAttribute
@@ -2111,67 +1982,62 @@ references:
   nameWithType: RegistryLicenseProviderAttribute
 - uid: DevZest.Licensing.RegistryLicenseProviderAttribute.#ctor(System.String,System.String)
   name: RegistryLicenseProviderAttribute(String, String)
-  href: api/DevZest.Licensing.RegistryLicenseProviderAttribute.html#DevZest_Licensing_RegistryLicenseProviderAttribute__ctor_System_String_System_String_
+  href: api/DevZest.Licensing.RegistryLicenseProviderAttribute.-ctor.html#DevZest_Licensing_RegistryLicenseProviderAttribute__ctor_System_String_System_String_
   commentId: M:DevZest.Licensing.RegistryLicenseProviderAttribute.#ctor(System.String,System.String)
   fullName: DevZest.Licensing.RegistryLicenseProviderAttribute.RegistryLicenseProviderAttribute(System.String, System.String)
   nameWithType: RegistryLicenseProviderAttribute.RegistryLicenseProviderAttribute(String, String)
 - uid: DevZest.Licensing.RegistryLicenseProviderAttribute.#ctor*
   name: RegistryLicenseProviderAttribute
-  href: api/DevZest.Licensing.RegistryLicenseProviderAttribute.html#DevZest_Licensing_RegistryLicenseProviderAttribute__ctor_
+  href: api/DevZest.Licensing.RegistryLicenseProviderAttribute.-ctor.html
   commentId: Overload:DevZest.Licensing.RegistryLicenseProviderAttribute.#ctor
-  isSpec: "True"
   fullName: DevZest.Licensing.RegistryLicenseProviderAttribute.RegistryLicenseProviderAttribute
   nameWithType: RegistryLicenseProviderAttribute.RegistryLicenseProviderAttribute
 - uid: DevZest.Licensing.RegistryLicenseProviderAttribute.Load
   name: Load()
-  href: api/DevZest.Licensing.RegistryLicenseProviderAttribute.html#DevZest_Licensing_RegistryLicenseProviderAttribute_Load
+  href: api/DevZest.Licensing.RegistryLicenseProviderAttribute.Load.html#DevZest_Licensing_RegistryLicenseProviderAttribute_Load
   commentId: M:DevZest.Licensing.RegistryLicenseProviderAttribute.Load
   fullName: DevZest.Licensing.RegistryLicenseProviderAttribute.Load()
   nameWithType: RegistryLicenseProviderAttribute.Load()
 - uid: DevZest.Licensing.RegistryLicenseProviderAttribute.Load*
   name: Load
-  href: api/DevZest.Licensing.RegistryLicenseProviderAttribute.html#DevZest_Licensing_RegistryLicenseProviderAttribute_Load_
+  href: api/DevZest.Licensing.RegistryLicenseProviderAttribute.Load.html
   commentId: Overload:DevZest.Licensing.RegistryLicenseProviderAttribute.Load
-  isSpec: "True"
   fullName: DevZest.Licensing.RegistryLicenseProviderAttribute.Load
   nameWithType: RegistryLicenseProviderAttribute.Load
 - uid: DevZest.Licensing.RegistryLicenseProviderAttribute.RegistryHive
   name: RegistryHive
-  href: api/DevZest.Licensing.RegistryLicenseProviderAttribute.html#DevZest_Licensing_RegistryLicenseProviderAttribute_RegistryHive
+  href: api/DevZest.Licensing.RegistryLicenseProviderAttribute.RegistryHive.html#DevZest_Licensing_RegistryLicenseProviderAttribute_RegistryHive
   commentId: P:DevZest.Licensing.RegistryLicenseProviderAttribute.RegistryHive
   fullName: DevZest.Licensing.RegistryLicenseProviderAttribute.RegistryHive
   nameWithType: RegistryLicenseProviderAttribute.RegistryHive
 - uid: DevZest.Licensing.RegistryLicenseProviderAttribute.RegistryHive*
   name: RegistryHive
-  href: api/DevZest.Licensing.RegistryLicenseProviderAttribute.html#DevZest_Licensing_RegistryLicenseProviderAttribute_RegistryHive_
+  href: api/DevZest.Licensing.RegistryLicenseProviderAttribute.RegistryHive.html
   commentId: Overload:DevZest.Licensing.RegistryLicenseProviderAttribute.RegistryHive
-  isSpec: "True"
   fullName: DevZest.Licensing.RegistryLicenseProviderAttribute.RegistryHive
   nameWithType: RegistryLicenseProviderAttribute.RegistryHive
 - uid: DevZest.Licensing.RegistryLicenseProviderAttribute.SubkeyName
   name: SubkeyName
-  href: api/DevZest.Licensing.RegistryLicenseProviderAttribute.html#DevZest_Licensing_RegistryLicenseProviderAttribute_SubkeyName
+  href: api/DevZest.Licensing.RegistryLicenseProviderAttribute.SubkeyName.html#DevZest_Licensing_RegistryLicenseProviderAttribute_SubkeyName
   commentId: P:DevZest.Licensing.RegistryLicenseProviderAttribute.SubkeyName
   fullName: DevZest.Licensing.RegistryLicenseProviderAttribute.SubkeyName
   nameWithType: RegistryLicenseProviderAttribute.SubkeyName
 - uid: DevZest.Licensing.RegistryLicenseProviderAttribute.SubkeyName*
   name: SubkeyName
-  href: api/DevZest.Licensing.RegistryLicenseProviderAttribute.html#DevZest_Licensing_RegistryLicenseProviderAttribute_SubkeyName_
+  href: api/DevZest.Licensing.RegistryLicenseProviderAttribute.SubkeyName.html
   commentId: Overload:DevZest.Licensing.RegistryLicenseProviderAttribute.SubkeyName
-  isSpec: "True"
   fullName: DevZest.Licensing.RegistryLicenseProviderAttribute.SubkeyName
   nameWithType: RegistryLicenseProviderAttribute.SubkeyName
 - uid: DevZest.Licensing.RegistryLicenseProviderAttribute.ValueName
   name: ValueName
-  href: api/DevZest.Licensing.RegistryLicenseProviderAttribute.html#DevZest_Licensing_RegistryLicenseProviderAttribute_ValueName
+  href: api/DevZest.Licensing.RegistryLicenseProviderAttribute.ValueName.html#DevZest_Licensing_RegistryLicenseProviderAttribute_ValueName
   commentId: P:DevZest.Licensing.RegistryLicenseProviderAttribute.ValueName
   fullName: DevZest.Licensing.RegistryLicenseProviderAttribute.ValueName
   nameWithType: RegistryLicenseProviderAttribute.ValueName
 - uid: DevZest.Licensing.RegistryLicenseProviderAttribute.ValueName*
   name: ValueName
-  href: api/DevZest.Licensing.RegistryLicenseProviderAttribute.html#DevZest_Licensing_RegistryLicenseProviderAttribute_ValueName_
+  href: api/DevZest.Licensing.RegistryLicenseProviderAttribute.ValueName.html
   commentId: Overload:DevZest.Licensing.RegistryLicenseProviderAttribute.ValueName
-  isSpec: "True"
   fullName: DevZest.Licensing.RegistryLicenseProviderAttribute.ValueName
   nameWithType: RegistryLicenseProviderAttribute.ValueName
 - uid: DevZest.Licensing.UserLicense
@@ -2182,28 +2048,26 @@ references:
   nameWithType: UserLicense
 - uid: DevZest.Licensing.UserLicense.CurrentUserData
   name: CurrentUserData
-  href: api/DevZest.Licensing.UserLicense.html#DevZest_Licensing_UserLicense_CurrentUserData
+  href: api/DevZest.Licensing.UserLicense.CurrentUserData.html#DevZest_Licensing_UserLicense_CurrentUserData
   commentId: P:DevZest.Licensing.UserLicense.CurrentUserData
   fullName: DevZest.Licensing.UserLicense.CurrentUserData
   nameWithType: UserLicense.CurrentUserData
 - uid: DevZest.Licensing.UserLicense.CurrentUserData*
   name: CurrentUserData
-  href: api/DevZest.Licensing.UserLicense.html#DevZest_Licensing_UserLicense_CurrentUserData_
+  href: api/DevZest.Licensing.UserLicense.CurrentUserData.html
   commentId: Overload:DevZest.Licensing.UserLicense.CurrentUserData
-  isSpec: "True"
   fullName: DevZest.Licensing.UserLicense.CurrentUserData
   nameWithType: UserLicense.CurrentUserData
 - uid: DevZest.Licensing.UserLicense.Validate
   name: Validate()
-  href: api/DevZest.Licensing.UserLicense.html#DevZest_Licensing_UserLicense_Validate
+  href: api/DevZest.Licensing.UserLicense.Validate.html#DevZest_Licensing_UserLicense_Validate
   commentId: M:DevZest.Licensing.UserLicense.Validate
   fullName: DevZest.Licensing.UserLicense.Validate()
   nameWithType: UserLicense.Validate()
 - uid: DevZest.Licensing.UserLicense.Validate*
   name: Validate
-  href: api/DevZest.Licensing.UserLicense.html#DevZest_Licensing_UserLicense_Validate_
+  href: api/DevZest.Licensing.UserLicense.Validate.html
   commentId: Overload:DevZest.Licensing.UserLicense.Validate
-  isSpec: "True"
   fullName: DevZest.Licensing.UserLicense.Validate
   nameWithType: UserLicense.Validate
 - uid: diagnostic_tracing_output

@@ -96,9 +96,9 @@
   </div>
   <h5 id="DevZest_Licensing_LicenseKey_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>A license key is a 25 digits string that can be used to get a <a class="xref" href="DevZest.Licensing.License.html">License</a> from <a class="xref" href="DevZest.Licensing.LicensePublisher.html">LicensePublisher</a>.
-    The first 24 digits are generated randomly and the last digit is checksum. Use <a class="xref" href="DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_NewLicenseKey">NewLicenseKey()</a> to generate
-    a new license key; Use <a class="xref" href="DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_ToString">ToString()</a> method to convert <a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a> into a string formatted as
-    &quot;xxxxx-xxxxx-xxxxx-xxxxx-xxxxx&quot;; Use <a class="xref" href="DevZest.Licensing.LicenseKey.html#DevZest_Licensing_LicenseKey_CanConvertFrom_System_String_">CanConvertFrom(String)</a>to determine if the provided string has correct
+    The first 24 digits are generated randomly and the last digit is checksum. Use <a class="xref" href="DevZest.Licensing.LicenseKey.NewLicenseKey.html#DevZest_Licensing_LicenseKey_NewLicenseKey">NewLicenseKey()</a> to generate
+    a new license key; Use <a class="xref" href="DevZest.Licensing.LicenseKey.ToString.html#DevZest_Licensing_LicenseKey_ToString">ToString()</a> method to convert <a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a> into a string formatted as
+    &quot;xxxxx-xxxxx-xxxxx-xxxxx-xxxxx&quot;; Use <a class="xref" href="DevZest.Licensing.LicenseKey.CanConvertFrom.html#DevZest_Licensing_LicenseKey_CanConvertFrom_System_String_">CanConvertFrom(String)</a>to determine if the provided string has correct
     format and checksum.</p>
 <p><a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a> is also used to encrypt the reponse sent from <a class="xref" href="DevZest.Licensing.LicensePublisher.html">LicensePublisher</a> to
 <a class="xref" href="DevZest.Licensing.LicenseClient.html">LicenseClient</a>.</p>
@@ -107,474 +107,120 @@ stored as encrypted and never be displayed as clear text by your application.</p
 </div>
   <h3 id="constructors">Constructors
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseKey__ctor_System_String_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseKey.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseKey.cs/#L33">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_LicenseKey__ctor_" data-uid="DevZest.Licensing.LicenseKey.#ctor*"></a>
-  <h4 id="DevZest_Licensing_LicenseKey__ctor_System_String_" data-uid="DevZest.Licensing.LicenseKey.#ctor(System.String)">LicenseKey(String)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of <a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a> structure.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LicenseKey(string key)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
         <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">key</span></td>
-        <td><p>The string representation of the key.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p><code data-dev-comment-type="paramref" class="paramref">key</code> is invalid.</p>
+        <td id="DevZest_Licensing_LicenseKey__ctor_System_String_" data-uid="DevZest.Licensing.LicenseKey.#ctor(System.String)">
+          <a class="xref" href="DevZest.Licensing.LicenseKey.-ctor.html#DevZest_Licensing_LicenseKey__ctor_System_String_">LicenseKey(String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Initializes a new instance of <a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a> structure.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseKey_Empty.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseKey.Empty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseKey.cs/#L46">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_LicenseKey_Empty_" data-uid="DevZest.Licensing.LicenseKey.Empty*"></a>
-  <h4 id="DevZest_Licensing_LicenseKey_Empty" data-uid="DevZest.Licensing.LicenseKey.Empty">Empty</h4>
-  <div class="markdown level1 summary"><p>Gets an empty <a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LicenseKey Empty { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a></td>
-        <td><p>An empty <a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a>.</p>
+        <td id="DevZest_Licensing_LicenseKey_Empty" data-uid="DevZest.Licensing.LicenseKey.Empty">
+          <a class="xref" href="DevZest.Licensing.LicenseKey.Empty.html#DevZest_Licensing_LicenseKey_Empty">Empty</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets an empty <a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a>.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseKey_IsEmpty.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseKey.IsEmpty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseKey.cs/#L53">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_LicenseKey_IsEmpty_" data-uid="DevZest.Licensing.LicenseKey.IsEmpty*"></a>
-  <h4 id="DevZest_Licensing_LicenseKey_IsEmpty" data-uid="DevZest.Licensing.LicenseKey.IsEmpty">IsEmpty</h4>
-  <div class="markdown level1 summary"><p>Determines whether this license key is empty.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if this license key is empty. Otherwise <span class="xref">false</span>.</p>
+        <td id="DevZest_Licensing_LicenseKey_IsEmpty" data-uid="DevZest.Licensing.LicenseKey.IsEmpty">
+          <a class="xref" href="DevZest.Licensing.LicenseKey.IsEmpty.html#DevZest_Licensing_LicenseKey_IsEmpty">IsEmpty</a>
+        </td>
+        <td class="markdown level1 summary"><p>Determines whether this license key is empty.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseKey_CanConvertFrom_System_String_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseKey.CanConvertFrom(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseKey.cs/#L223">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_LicenseKey_CanConvertFrom_" data-uid="DevZest.Licensing.LicenseKey.CanConvertFrom*"></a>
-  <h4 id="DevZest_Licensing_LicenseKey_CanConvertFrom_System_String_" data-uid="DevZest.Licensing.LicenseKey.CanConvertFrom(System.String)">CanConvertFrom(String)</h4>
-  <div class="markdown level1 summary"><p>Determines the specified string can be converted to a <a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool CanConvertFrom(string value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
         <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>The specified string.</p>
+        <td id="DevZest_Licensing_LicenseKey_CanConvertFrom_System_String_" data-uid="DevZest.Licensing.LicenseKey.CanConvertFrom(System.String)">
+          <a class="xref" href="DevZest.Licensing.LicenseKey.CanConvertFrom.html#DevZest_Licensing_LicenseKey_CanConvertFrom_System_String_">CanConvertFrom(String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Determines the specified string can be converted to a <a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a>.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
+        <td id="DevZest_Licensing_LicenseKey_Equals_DevZest_Licensing_LicenseKey_DevZest_Licensing_LicenseKey_" data-uid="DevZest.Licensing.LicenseKey.Equals(DevZest.Licensing.LicenseKey,DevZest.Licensing.LicenseKey)">
+          <a class="xref" href="DevZest.Licensing.LicenseKey.Equals.html#DevZest_Licensing_LicenseKey_Equals_DevZest_Licensing_LicenseKey_DevZest_Licensing_LicenseKey_">Equals(LicenseKey, LicenseKey)</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
-    </thead>
-    <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the string can be converted, otherwise <span class="xref">false</span>.</p>
+        <td id="DevZest_Licensing_LicenseKey_Equals_System_Object_" data-uid="DevZest.Licensing.LicenseKey.Equals(System.Object)">
+          <a class="xref" href="DevZest.Licensing.LicenseKey.Equals.html#DevZest_Licensing_LicenseKey_Equals_System_Object_">Equals(Object)</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
+        <td id="DevZest_Licensing_LicenseKey_GetHashCode" data-uid="DevZest.Licensing.LicenseKey.GetHashCode">
+          <a class="xref" href="DevZest.Licensing.LicenseKey.GetHashCode.html#DevZest_Licensing_LicenseKey_GetHashCode">GetHashCode()</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
+        <td id="DevZest_Licensing_LicenseKey_NewLicenseKey" data-uid="DevZest.Licensing.LicenseKey.NewLicenseKey">
+          <a class="xref" href="DevZest.Licensing.LicenseKey.NewLicenseKey.html#DevZest_Licensing_LicenseKey_NewLicenseKey">NewLicenseKey()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Initializes a new instance of <a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a>.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseKey_Equals_DevZest_Licensing_LicenseKey_DevZest_Licensing_LicenseKey_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseKey.Equals(DevZest.Licensing.LicenseKey%2CDevZest.Licensing.LicenseKey)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseKey.cs/#L291">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_LicenseKey_Equals_" data-uid="DevZest.Licensing.LicenseKey.Equals*"></a>
-  <h4 id="DevZest_Licensing_LicenseKey_Equals_DevZest_Licensing_LicenseKey_DevZest_Licensing_LicenseKey_" data-uid="DevZest.Licensing.LicenseKey.Equals(DevZest.Licensing.LicenseKey,DevZest.Licensing.LicenseKey)">Equals(LicenseKey, LicenseKey)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool Equals(LicenseKey value1, LicenseKey value2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a></td>
-        <td><span class="parametername">value1</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a></td>
-        <td><span class="parametername">value2</span></td>
-        <td></td>
+        <td id="DevZest_Licensing_LicenseKey_ToString" data-uid="DevZest.Licensing.LicenseKey.ToString">
+          <a class="xref" href="DevZest.Licensing.LicenseKey.ToString.html#DevZest_Licensing_LicenseKey_ToString">ToString()</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseKey_Equals_System_Object_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseKey.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseKey.cs/#L285">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_LicenseKey_Equals_" data-uid="DevZest.Licensing.LicenseKey.Equals*"></a>
-  <h4 id="DevZest_Licensing_LicenseKey_Equals_System_Object_" data-uid="DevZest.Licensing.LicenseKey.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">obj</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseKey_GetHashCode.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseKey.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseKey.cs/#L309">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_LicenseKey_GetHashCode_" data-uid="DevZest.Licensing.LicenseKey.GetHashCode*"></a>
-  <h4 id="DevZest_Licensing_LicenseKey_GetHashCode" data-uid="DevZest.Licensing.LicenseKey.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseKey_NewLicenseKey.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseKey.NewLicenseKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseKey.cs/#L60">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_LicenseKey_NewLicenseKey_" data-uid="DevZest.Licensing.LicenseKey.NewLicenseKey*"></a>
-  <h4 id="DevZest_Licensing_LicenseKey_NewLicenseKey" data-uid="DevZest.Licensing.LicenseKey.NewLicenseKey">NewLicenseKey()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of <a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LicenseKey NewLicenseKey()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a></td>
-        <td><p>A new <a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a> object.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseKey_ToString.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseKey.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseKey.cs/#L315">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_LicenseKey_ToString_" data-uid="DevZest.Licensing.LicenseKey.ToString*"></a>
-  <h4 id="DevZest_Licensing_LicenseKey_ToString" data-uid="DevZest.Licensing.LicenseKey.ToString">ToString()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.ValueType.ToString()</span></div>
   <h3 id="operators">Operators
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseKey_op_Equality_DevZest_Licensing_LicenseKey_DevZest_Licensing_LicenseKey_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseKey.op_Equality(DevZest.Licensing.LicenseKey%2CDevZest.Licensing.LicenseKey)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseKey.cs/#L297">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_LicenseKey_op_Equality_" data-uid="DevZest.Licensing.LicenseKey.op_Equality*"></a>
-  <h4 id="DevZest_Licensing_LicenseKey_op_Equality_DevZest_Licensing_LicenseKey_DevZest_Licensing_LicenseKey_" data-uid="DevZest.Licensing.LicenseKey.op_Equality(DevZest.Licensing.LicenseKey,DevZest.Licensing.LicenseKey)">Equality(LicenseKey, LicenseKey)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator ==(LicenseKey value1, LicenseKey value2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
         <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a></td>
-        <td><span class="parametername">value1</span></td>
-        <td></td>
+        <td id="DevZest_Licensing_LicenseKey_op_Equality_DevZest_Licensing_LicenseKey_DevZest_Licensing_LicenseKey_" data-uid="DevZest.Licensing.LicenseKey.op_Equality(DevZest.Licensing.LicenseKey,DevZest.Licensing.LicenseKey)">
+          <a class="xref" href="DevZest.Licensing.LicenseKey.op_Equality.html#DevZest_Licensing_LicenseKey_op_Equality_DevZest_Licensing_LicenseKey_DevZest_Licensing_LicenseKey_">Equality(LicenseKey, LicenseKey)</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
       <tr>
-        <td><a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a></td>
-        <td><span class="parametername">value2</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/Licensing/new/master/apiSpec/new?filename=DevZest_Licensing_LicenseKey_op_Inequality_DevZest_Licensing_LicenseKey_DevZest_Licensing_LicenseKey_.md&amp;value=---%0Auid%3A%20DevZest.Licensing.LicenseKey.op_Inequality(DevZest.Licensing.LicenseKey%2CDevZest.Licensing.LicenseKey)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/Licensing/blob/master/src/LicenseKey.cs/#L303">View Source</a>
-  </span>
-  <a id="DevZest_Licensing_LicenseKey_op_Inequality_" data-uid="DevZest.Licensing.LicenseKey.op_Inequality*"></a>
-  <h4 id="DevZest_Licensing_LicenseKey_op_Inequality_DevZest_Licensing_LicenseKey_DevZest_Licensing_LicenseKey_" data-uid="DevZest.Licensing.LicenseKey.op_Inequality(DevZest.Licensing.LicenseKey,DevZest.Licensing.LicenseKey)">Inequality(LicenseKey, LicenseKey)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator !=(LicenseKey value1, LicenseKey value2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a></td>
-        <td><span class="parametername">value1</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DevZest.Licensing.LicenseKey.html">LicenseKey</a></td>
-        <td><span class="parametername">value2</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td id="DevZest_Licensing_LicenseKey_op_Inequality_DevZest_Licensing_LicenseKey_DevZest_Licensing_LicenseKey_" data-uid="DevZest.Licensing.LicenseKey.op_Inequality(DevZest.Licensing.LicenseKey,DevZest.Licensing.LicenseKey)">
+          <a class="xref" href="DevZest.Licensing.LicenseKey.op_Inequality.html#DevZest_Licensing_LicenseKey_op_Inequality_DevZest_Licensing_LicenseKey_DevZest_Licensing_LicenseKey_">Inequality(LicenseKey, LicenseKey)</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
     </tbody>
   </table>
