@@ -72,7 +72,7 @@ namespace DevZest.Licensing
         /// <summary>Determines whether a runtime license can be granted for the specified license item name of executing assembly.</summary>
         /// <param name="licenseItemName">The specified license item name.</param>
         /// <remarks><para>This method throws a <see cref="LicenseException" /> when a valid <see cref="License"/> cannot be granted.
-        /// The <see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see> method does not throw an exception.</para>
+        /// The <see href="xref:DevZest.Licensing.LicenseManager.Check*">LicenseManager.Check</see> method does not throw an exception.</para>
         /// <para>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
         /// the same strong name key, the validation will succeed. It's not neccessary to provide a <see cref="License" /> for assemblies
         /// signed with the same strong name key.</para></remarks>
@@ -88,7 +88,7 @@ namespace DevZest.Licensing
         /// <returns><see langword="null" /> if a valid <see cref="License" /> can be granted. Otherwise a <see cref="LicenseError" />
         /// indicates the error.</returns>
         /// <remarks><para>This method does not throw a <see cref="LicenseException" /> when a valid <see cref="License" /> cannot be granted.
-        /// The <see cref="O:DevZest.Licensing.LicenseManager.Validate">LicenseManager.Validate</see> method throws exception.</para>
+        /// The <see href="xref:DevZest.Licensing.LicenseManager.Validate*">LicenseManager.Validate</see> method throws exception.</para>
         /// <para>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
         /// the same strong name key, the validation will succeed. It's not neccessary to provide a <see cref="License" /> for assemblies
         /// signed with the same strong name key.</para></remarks>
@@ -102,7 +102,7 @@ namespace DevZest.Licensing
         /// <param name="licenseItemName">The specified license item name.</param>
         /// <param name="type">The type contained by the assembly.</param>
         /// <remarks><para>This method throws a <see cref="LicenseException" /> when a valid <see cref="License"/> cannot be granted.
-        /// The <see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see> method does not throw an exception.</para>
+        /// The <see href="xref:DevZest.Licensing.LicenseManager.Check*">LicenseManager.Check</see> method does not throw an exception.</para>
         /// <para>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
         /// the same strong name key, the validation will succeed. It's not neccessary to provide a <see cref="License" /> for assemblies
         /// signed with the same strong name key.</para></remarks>
@@ -117,7 +117,7 @@ namespace DevZest.Licensing
         /// <returns><see langword="null" /> if a valid <see cref="License" /> can be granted. Otherwise a <see cref="LicenseError" />
         /// indicates the error.</returns>
         /// <remarks><para>This method does not throw a <see cref="LicenseException" /> when a valid <see cref="License" /> cannot be granted.
-        /// The <see cref="O:DevZest.Licensing.LicenseManager.Validate">LicenseManager.Validate</see> method throws exception.</para>
+        /// The <see href="xref:DevZest.Licensing.LicenseManager.Validate*">LicenseManager.Validate</see> method throws exception.</para>
         /// <para>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
         /// the same strong name key, the validation will succeed. It's not neccessary to provide a <see cref="License" /> for assemblies
         /// signed with the same strong name key.</para></remarks>
@@ -130,7 +130,7 @@ namespace DevZest.Licensing
         /// <param name="licenseItemName">The specified license item name.</param>
         /// <param name="assembly">The specified assembly.</param>
         /// <remarks><para>This method throws a <see cref="LicenseException" /> when a valid <see cref="License"/> cannot be granted.
-        /// The <see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see> method does not throw an exception.</para>
+        /// The <see href="xref:DevZest.Licensing.LicenseManager.Check*">LicenseManager.Check</see> method does not throw an exception.</para>
         /// <para>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
         /// the same strong name key, the validation will succeed. It's not neccessary to provide a <see cref="License" /> for assemblies
         /// signed with the same strong name key.</para></remarks>
@@ -145,7 +145,7 @@ namespace DevZest.Licensing
         /// <returns><see langword="null" /> if a valid <see cref="License" /> can be granted. Otherwise a <see cref="LicenseError" />
         /// indicates the error.</returns>
         /// <remarks><para>This method does not throw a <see cref="LicenseException" /> when a valid <see cref="License" /> cannot be granted.
-        /// The <see cref="O:DevZest.Licensing.LicenseManager.Validate">LicenseManager.Validate</see> method throws exception.</para>
+        /// The <see href="xref:DevZest.Licensing.LicenseManager.Validate*">LicenseManager.Validate</see> method throws exception.</para>
         /// <para>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
         /// the same strong name key, the validation will succeed. It's not neccessary to provide a <see cref="License" /> for assemblies
         /// signed with the same strong name key.</para></remarks>
@@ -159,7 +159,7 @@ namespace DevZest.Licensing
         /// <param name="licenseItemName">The specified license item name.</param>
         /// <param name="designMode">Specifies the design time or runtime mode. <see langword="true"/> for design time, otherwise runtime.</param>
         /// <remarks><para>This method throws a <see cref="LicenseException" /> when a valid <see cref="License"/> cannot be granted.
-        /// The <see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see> method does not throw an exception.</para>
+        /// The <see href="xref:DevZest.Licensing.LicenseManager.Check*">LicenseManager.Check</see> method does not throw an exception.</para>
         /// <para>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
         /// the same strong name key, the validation will succeed. It's not neccessary to provide a <see cref="License" /> for assemblies
         /// signed with the same strong name key.</para></remarks>
@@ -176,7 +176,7 @@ namespace DevZest.Licensing
         /// <returns><see langword="null" /> if a valid <see cref="License" /> can be granted. Otherwise a <see cref="LicenseError" />
         /// indicates the error.</returns>
         /// <remarks><para>This method does not throw a <see cref="LicenseException" /> when a valid <see cref="License" /> cannot be granted.
-        /// The <see cref="O:DevZest.Licensing.LicenseManager.Validate">LicenseManager.Validate</see> method throws exception.</para>
+        /// The <see href="xref:DevZest.Licensing.LicenseManager.Validate*">LicenseManager.Validate</see> method throws exception.</para>
         /// <para>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
         /// the same strong name key, the validation will succeed. It's not neccessary to provide a <see cref="License" /> for assemblies
         /// signed with the same strong name key.</para></remarks>
@@ -192,7 +192,7 @@ namespace DevZest.Licensing
         /// <param name="type">The type contained by the assembly.</param>
         /// <param name="designMode">Specifies the design time or runtime mode. <see langword="true"/> for design time, otherwise runtime.</param>
         /// <remarks><para>This method throws a <see cref="LicenseException" /> when a valid <see cref="License"/> cannot be granted.
-        /// The <see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see> method does not throw an exception.</para>
+        /// The <see href="xref:DevZest.Licensing.LicenseManager.Check*">LicenseManager.Check</see> method does not throw an exception.</para>
         /// <para>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
         /// the same strong name key, the validation will succeed. It's not neccessary to provide a <see cref="License" /> for assemblies
         /// signed with the same strong name key.</para></remarks>
@@ -209,7 +209,7 @@ namespace DevZest.Licensing
         /// <returns><see langword="null" /> if a valid <see cref="License" /> can be granted. Otherwise a <see cref="LicenseError" />
         /// indicates the error.</returns>
         /// <remarks><para>This method does not throw a <see cref="LicenseException" /> when a valid <see cref="License" /> cannot be granted.
-        /// The <see cref="O:DevZest.Licensing.LicenseManager.Validate">LicenseManager.Validate</see> method throws exception.</para>
+        /// The <see href="xref:DevZest.Licensing.LicenseManager.Validate*">LicenseManager.Validate</see> method throws exception.</para>
         /// <para>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
         /// the same strong name key, the validation will succeed. It's not neccessary to provide a <see cref="License" /> for assemblies
         /// signed with the same strong name key.</para></remarks>
@@ -224,7 +224,7 @@ namespace DevZest.Licensing
         /// <param name="assembly">The specified assembly.</param>
         /// <param name="designMode">Specifies the design time or runtime mode. <see langword="true"/> for design time, otherwise runtime.</param>
         /// <remarks><para>This method throws a <see cref="LicenseException" /> when a valid <see cref="License"/> cannot be granted.
-        /// The <see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see> method does not throw an exception.</para>
+        /// The <see href="xref:DevZest.Licensing.LicenseManager.Check*">LicenseManager.Check</see> method does not throw an exception.</para>
         /// <para>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
         /// the same strong name key, the validation will succeed. It's not neccessary to provide a <see cref="License" /> for assemblies
         /// signed with the same strong name key.</para></remarks>
@@ -241,7 +241,7 @@ namespace DevZest.Licensing
         /// <returns><see langword="null" /> if a valid <see cref="License" /> can be granted. Otherwise a <see cref="LicenseError" />
         /// indicates the error.</returns>
         /// <remarks><para>This method does not throw a <see cref="LicenseException" /> when a valid <see cref="License" /> cannot be granted.
-        /// The <see cref="O:DevZest.Licensing.LicenseManager.Validate">LicenseManager.Validate</see> method throws exception.</para>
+        /// The <see href="xref:DevZest.Licensing.LicenseManager.Validate*">LicenseManager.Validate</see> method throws exception.</para>
         /// <para>If the assembly is not licensed, all callers in the call stack will be checked. If any caller assembly is signed with
         /// the same strong name key, the validation will succeed. It's not neccessary to provide a <see cref="License" /> for assemblies
         /// signed with the same strong name key.</para></remarks>
@@ -314,7 +314,7 @@ namespace DevZest.Licensing
         /// <summary>Gets a license for executing assembly.</summary>
         /// <returns>A <see cref="License" /> object, or <see langword="null" /> for the assembly is not licensed.</returns>
         /// <remarks>The returned <see cref="License" /> object may not be able to be granted as a valid license. Call
-        /// <see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see> method to determine whether a
+        /// <see href="xref:DevZest.Licensing.LicenseManager.Check*">LicenseManager.Check</see> method to determine whether a
         /// valid license can be granted.</remarks>
         [MethodImpl(MethodImplOptions.NoInlining)]
         public static License GetLicense()
@@ -326,7 +326,7 @@ namespace DevZest.Licensing
         /// <param name="designMode">Specifies the design time or runtime mode. <see langword="true" /> for design time, otherwise runtime.</param>
         /// <returns>A <see cref="License" /> object, or <see langword="null" /> for the assembly is not licensed.</returns>
         /// <remarks>The returned <see cref="License" /> object may not be able to be granted as a valid license. Call
-        /// <see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see> method to determine whether a
+        /// <see href="xref:DevZest.Licensing.LicenseManager.Check*">LicenseManager.Check</see> method to determine whether a
         /// valid license can be granted.</remarks>
         [MethodImpl(MethodImplOptions.NoInlining)]
         public static License GetLicense(bool designMode)
@@ -339,7 +339,7 @@ namespace DevZest.Licensing
         /// <param name="designMode">Specifies the design time or runtime mode. <see langword="true" /> for design time, otherwise runtime.</param>
         /// <returns>A <see cref="License" /> object, or <see langword="null" /> for the assembly is not licensed.</returns>
         /// <remarks>The returned <see cref="License" /> object may not be able to be granted as a valid license. Call
-        /// <see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see> method to determine whether a
+        /// <see href="xref:DevZest.Licensing.LicenseManager.Check*">LicenseManager.Check</see> method to determine whether a
         /// valid license can be granted.</remarks>
         /// <exception cref="ArgumentNullException"><paramref name="type" /> is <see langword="null"/>.</exception>
         public static License GetLicense(Type type, bool designMode)
@@ -355,7 +355,7 @@ namespace DevZest.Licensing
         /// <param name="designMode">Specifies the design time or runtime mode. <see langword="true" /> for design time, otherwise runtime.</param>
         /// <returns>A <see cref="License" /> object, or <see langword="null" /> for the assembly is not licensed.</returns>
         /// <remarks>The returned <see cref="License" /> object may not be able to be granted as a valid license. Call
-        /// <see cref="O:DevZest.Licensing.LicenseManager.Check">LicenseManager.Check</see> method to determine whether a
+        /// <see href="xref:DevZest.Licensing.LicenseManager.Check*">LicenseManager.Check</see> method to determine whether a
         /// valid license can be granted.</remarks>
         /// <exception cref="ArgumentNullException"><paramref name="assembly" /> is <see langword="null"/>.</exception>
         public static License GetLicense(Assembly assembly, bool designMode)
