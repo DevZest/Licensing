@@ -8,18 +8,6 @@
       "source_relative_path": "api/DevZest.Licensing.AssemblyInfo.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DevZest.Licensing.AssemblyInfo.LicenseItems.html",
-          "hash": "ELx46SS43Sm4xxEoPC1A/A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.AssemblyInfo.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/DevZest.Licensing.AssemblyInfo.PublicKeyXml.html",
           "hash": "vovi5vqmF0BdAdOtNbcAqQ=="
         }
@@ -125,6 +113,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.AssemblyInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Licensing.AssemblyInfo.LicenseItems.html",
+          "hash": "ELx46SS43Sm4xxEoPC1A/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DevZest.Licensing.AssemblyLicense.yml",
       "output": {
         ".html": {
@@ -200,6 +200,30 @@
       "source_relative_path": "api/DevZest.Licensing.AssemblyLicenseProviderAttribute.yml",
       "output": {
         ".html": {
+          "relative_path": "api/DevZest.Licensing.AssemblyLicenseProviderAttribute.GetTraceMessage.html",
+          "hash": "5rsex/jANymzsfrdKtI0ZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.AssemblyLicenseProviderAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Licensing.AssemblyLicenseProviderAttribute.html",
+          "hash": "wJfrKy84f+40/dgPD5jRXg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.AssemblyLicenseProviderAttribute.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/DevZest.Licensing.AssemblyLicenseProviderAttribute.EntryAssemblyOnly.html",
           "hash": "lt/zRTO0DADv6pmeQ0RvRQ=="
         }
@@ -238,30 +262,6 @@
         ".html": {
           "relative_path": "api/DevZest.Licensing.AssemblyLicenseProviderAttribute.Reset.html",
           "hash": "n+YBu1IEHrtVUT4rIuIwsw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.AssemblyLicenseProviderAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.AssemblyLicenseProviderAttribute.GetTraceMessage.html",
-          "hash": "5rsex/jANymzsfrdKtI0ZA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.AssemblyLicenseProviderAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.AssemblyLicenseProviderAttribute.html",
-          "hash": "wJfrKy84f+40/dgPD5jRXg=="
         }
       },
       "is_incremental": false,
@@ -572,6 +572,114 @@
       "source_relative_path": "api/DevZest.Licensing.License.yml",
       "output": {
         ".html": {
+          "relative_path": "api/DevZest.Licensing.License.SetExpirationDate.html",
+          "hash": "cBT4rh/+VPoIHYLwxFAfGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.License.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Licensing.License.IsExpired.html",
+          "hash": "raLaAia065OK9+KicWG7Ow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.License.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Licensing.License.UpgradeExpiration.html",
+          "hash": "1M4q3ziNJYWN6BeDlvwIwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.License.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Licensing.License.UpgradeExpirationDate.html",
+          "hash": "ySwdc8dP8M2aDHu9zogjmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.License.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Licensing.License.SetUpgradeExpirationDate.html",
+          "hash": "4zp3Iq7u/FqcuA71eYuK7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.License.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Licensing.License.Data.html",
+          "hash": "kSaibotBuClui/VuzG1cHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.License.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Licensing.License.Validate.html",
+          "hash": "3vBk1q8dxKGFp230GotlMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.License.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Licensing.License.LoadFromXaml.html",
+          "hash": "Qg7nKaAkZV5H5dsyYZCTHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.License.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Licensing.License.html",
+          "hash": "ndUz+CtgOlZ8B1xsPyezNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.License.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/DevZest.Licensing.License.-ctor.html",
           "hash": "6ItjyWSjwnid24CgPlcglw=="
         }
@@ -761,114 +869,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.License.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.License.SetExpirationDate.html",
-          "hash": "cBT4rh/+VPoIHYLwxFAfGQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.License.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.License.IsExpired.html",
-          "hash": "raLaAia065OK9+KicWG7Ow=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.License.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.License.UpgradeExpiration.html",
-          "hash": "1M4q3ziNJYWN6BeDlvwIwA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.License.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.License.UpgradeExpirationDate.html",
-          "hash": "ySwdc8dP8M2aDHu9zogjmA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.License.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.License.SetUpgradeExpirationDate.html",
-          "hash": "4zp3Iq7u/FqcuA71eYuK7Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.License.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.License.Data.html",
-          "hash": "kSaibotBuClui/VuzG1cHw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.License.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.License.Validate.html",
-          "hash": "3vBk1q8dxKGFp230GotlMA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.License.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.License.LoadFromXaml.html",
-          "hash": "Qg7nKaAkZV5H5dsyYZCTHQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.License.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.License.html",
-          "hash": "ndUz+CtgOlZ8B1xsPyezNA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/DevZest.Licensing.LicenseClient.yml",
       "output": {
         ".html": {
@@ -1016,6 +1016,18 @@
       "source_relative_path": "api/DevZest.Licensing.LicenseException.yml",
       "output": {
         ".html": {
+          "relative_path": "api/DevZest.Licensing.LicenseException.-ctor.html",
+          "hash": "GjT4kabqZJ3JYMm3v4Gxlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.LicenseException.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/DevZest.Licensing.LicenseException.Error.html",
           "hash": "jFMBkkr+TuLB7Q6d+OfhdQ=="
         }
@@ -1041,7 +1053,7 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Licensing.LicenseException.html",
-          "hash": "RA3kACCJWBCL7qNO5C6fVA=="
+          "hash": "6STEpWlwg4f0HqnpvogkFA=="
         }
       },
       "is_incremental": false,
@@ -1049,11 +1061,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.LicenseException.yml",
+      "source_relative_path": "api/DevZest.Licensing.LicenseItem.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DevZest.Licensing.LicenseException.-ctor.html",
-          "hash": "GjT4kabqZJ3JYMm3v4Gxlw=="
+          "relative_path": "api/DevZest.Licensing.LicenseItem.html",
+          "hash": "8K8pljh+mcAlFo2qe15ztQ=="
         }
       },
       "is_incremental": false,
@@ -1133,30 +1145,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.LicenseItem.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.LicenseItem.html",
-          "hash": "8K8pljh+mcAlFo2qe15ztQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.LicenseItemAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.LicenseItemAttribute.html",
-          "hash": "0DQOl8Tm+cwfDeyszqqNlg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/DevZest.Licensing.LicenseItemAttribute.yml",
       "output": {
         ".html": {
@@ -1196,6 +1184,18 @@
       "source_relative_path": "api/DevZest.Licensing.LicenseItemAttribute.yml",
       "output": {
         ".html": {
+          "relative_path": "api/DevZest.Licensing.LicenseItemAttribute.html",
+          "hash": "0DQOl8Tm+cwfDeyszqqNlg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.LicenseItemAttribute.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/DevZest.Licensing.LicenseItemAttribute.-ctor.html",
           "hash": "wDTwAA2C01ClrJcXcJNeCQ=="
         }
@@ -1210,18 +1210,6 @@
         ".html": {
           "relative_path": "api/DevZest.Licensing.LicenseItemAttribute.Name.html",
           "hash": "42FRBG5NYLVu+zt7RVTmCw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.LicenseItemCollection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.LicenseItemCollection.html",
-          "hash": "Fn54ekSLsSj47H8yeppNjg=="
         }
       },
       "is_incremental": false,
@@ -1270,6 +1258,78 @@
         ".html": {
           "relative_path": "api/DevZest.Licensing.LicenseItemCollection.ClearItems.html",
           "hash": "Azxsjf3TJo2dZgcuUrqiQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.LicenseItemCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Licensing.LicenseItemCollection.html",
+          "hash": "Fn54ekSLsSj47H8yeppNjg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.LicenseKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Licensing.LicenseKey.-ctor.html",
+          "hash": "KOtL7JZX2V5wYIdTYW3zig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.LicenseKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Licensing.LicenseKey.Empty.html",
+          "hash": "DZLWorekGSYirOtT1ML6WQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.LicenseKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Licensing.LicenseKey.IsEmpty.html",
+          "hash": "lNaHfuSgzN7ZQlhkwebI6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.LicenseKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Licensing.LicenseKey.NewLicenseKey.html",
+          "hash": "Y/d3ZsWpfxLNBzZZT/9GvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.LicenseKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Licensing.LicenseKey.CanConvertFrom.html",
+          "hash": "7acDOoik1YHBrIN44Uq0Kg=="
         }
       },
       "is_incremental": false,
@@ -1342,66 +1402,6 @@
         ".html": {
           "relative_path": "api/DevZest.Licensing.LicenseKey.html",
           "hash": "Rb+2tmjaC5rPLkq9yiv+lw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.LicenseKey.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.LicenseKey.-ctor.html",
-          "hash": "KOtL7JZX2V5wYIdTYW3zig=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.LicenseKey.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.LicenseKey.Empty.html",
-          "hash": "DZLWorekGSYirOtT1ML6WQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.LicenseKey.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.LicenseKey.IsEmpty.html",
-          "hash": "lNaHfuSgzN7ZQlhkwebI6g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.LicenseKey.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.LicenseKey.NewLicenseKey.html",
-          "hash": "Y/d3ZsWpfxLNBzZZT/9GvA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.LicenseKey.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.LicenseKey.CanConvertFrom.html",
-          "hash": "7acDOoik1YHBrIN44Uq0Kg=="
         }
       },
       "is_incremental": false,
@@ -1688,6 +1688,18 @@
       "source_relative_path": "api/DevZest.Licensing.LicensePublicKeyAttribute.yml",
       "output": {
         ".html": {
+          "relative_path": "api/DevZest.Licensing.LicensePublicKeyAttribute.html",
+          "hash": "l2egLlokqNI0ZprGRG2k/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.LicensePublicKeyAttribute.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/DevZest.Licensing.LicensePublicKeyAttribute.-ctor.html",
           "hash": "zSGzGCNokye/9AKfGEMevQ=="
         }
@@ -1709,11 +1721,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.LicensePublicKeyAttribute.yml",
+      "source_relative_path": "api/DevZest.Licensing.LicensePublisher.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DevZest.Licensing.LicensePublicKeyAttribute.html",
-          "hash": "l2egLlokqNI0ZprGRG2k/Q=="
+          "relative_path": "api/DevZest.Licensing.LicensePublisher.-ctor.html",
+          "hash": "mxyp+cxCdH//Hw2/kH6/xA=="
         }
       },
       "is_incremental": false,
@@ -1781,11 +1793,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.LicensePublisher.yml",
+      "source_relative_path": "api/DevZest.Licensing.LicensePublisherResponse.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DevZest.Licensing.LicensePublisher.-ctor.html",
-          "hash": "mxyp+cxCdH//Hw2/kH6/xA=="
+          "relative_path": "api/DevZest.Licensing.LicensePublisherResponse.html",
+          "hash": "FI9YfI7nYOaxJMatVYUpyQ=="
         }
       },
       "is_incremental": false,
@@ -1829,18 +1841,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.LicensePublisherResponse.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.LicensePublisherResponse.html",
-          "hash": "FI9YfI7nYOaxJMatVYUpyQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/DevZest.Licensing.MachineLicense.yml",
       "output": {
         ".html": {
@@ -1870,6 +1870,30 @@
         ".html": {
           "relative_path": "api/DevZest.Licensing.MachineLicense.html",
           "hash": "N8x7llgYMxglrE8YQk9VqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.RegistryLicenseProviderAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Licensing.RegistryLicenseProviderAttribute.Load.html",
+          "hash": "HSFfrfK5JE32bRtPWs1Edw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Licensing.RegistryLicenseProviderAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Licensing.RegistryLicenseProviderAttribute.html",
+          "hash": "QuO+gEsYCvFnazuOyM1fuQ=="
         }
       },
       "is_incremental": false,
@@ -1918,30 +1942,6 @@
         ".html": {
           "relative_path": "api/DevZest.Licensing.RegistryLicenseProviderAttribute.ValueName.html",
           "hash": "H90z5fSN29/+YS9dTyqb9A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.RegistryLicenseProviderAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.RegistryLicenseProviderAttribute.Load.html",
-          "hash": "HSFfrfK5JE32bRtPWs1Edw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DevZest.Licensing.RegistryLicenseProviderAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DevZest.Licensing.RegistryLicenseProviderAttribute.html",
-          "hash": "QuO+gEsYCvFnazuOyM1fuQ=="
         }
       },
       "is_incremental": false,
@@ -2540,6 +2540,11 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -2551,11 +2556,6 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
