@@ -68,11 +68,11 @@ namespace DevZest.Licensing
         /// <param name="product">The specified product.</param>
         /// <returns>The XML string of the private key.</returns>
         /// <remarks>
-        /// <format type="text/markdown">The XML string of the private key, which was used to sign the assembly corresponding the product name, should be returned by
-        /// the derived class. If wrong private key is returned, the signed license can not be validated.
-        /// 
-        /// The derived class can call [PrivateKeyXmlFromSnkFile](xref:DevZest.Licensing.LicensePublisher.PrivateKeyXmlFromSnkFile*)
-        /// to get private key XML string from a .snk file or stream.</format></remarks>
+        /// <para>The XML string of the private key, which was used to sign the assembly corresponding the product name, should be returned by
+        /// the derived class. If wrong private key is returned, the signed license can not be validated.</para>
+        /// <para>The derived class can call <see href="xref:DevZest.Licensing.LicensePublisher.PrivateKeyXmlFromSnkFile*">PrivateKeyXmlFromSnkFile</see> 
+        /// to get private key XML string from a .snk file or stream.</para>
+        /// </remarks>
         protected abstract string GetPrivateKeyXml(string product);
 
         /// <summary>Gets the requested license.</summary>

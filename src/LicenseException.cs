@@ -8,7 +8,7 @@ using System.Reflection;
 namespace DevZest.Licensing
 {
     /// <summary>Represents the exception thrown when license validation failed.</summary>
-    /// <remarks>The <format type="text/markdown">[LicenseManager.Validate](xref:DevZest.Licensing.LicenseManager.Validate*)</format> method throws 
+    /// <remarks>The <see href="xref:DevZest.Licensing.LicenseManager.Validate*">LicenseManager.Validate</see> method throws 
     /// <see cref="LicenseException" /> when validation failed. This occurs when an assembly is either not licensed, or is licensed but
     /// cannot be granted a valid license.</remarks>
     [Serializable]
