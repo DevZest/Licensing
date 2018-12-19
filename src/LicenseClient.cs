@@ -25,7 +25,7 @@ namespace DevZest.Licensing
         /// <summary>Initializes a new instance of the <see cref="LicenseClient" /> class using specified public key XML string
         /// and the default target endpoint from the application configuration file.</summary>
         /// <param name="publicKeyXml">The public key XML string.</param>
-        /// <remarks>The <see cref="O:DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly">LicenseClient.PublicKeyXmlFromAssembly</see> method returns
+        /// <remarks>The <format type="text/markdown">[LicenseClient.PublicKeyXmlFromAssembly](xref:DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly*)</format> method returns
         /// the public key XML string for specified assembly.</remarks>
         /// <exception cref="ArgumentNullException"><paramref name="publicKeyXml"/> is <see langword="null" /> or empty string.</exception>
         public LicenseClient(string publicKeyXml)
@@ -37,7 +37,7 @@ namespace DevZest.Licensing
         /// and the configuration information specified in the application configuration file by endpointConfigurationName.</summary>
         /// <param name="publicKeyXml">The public key XML string.</param>
         /// <param name="endpointConfigurationName">The name of the endpoint in the application configuration file.</param>
-        /// <remarks>The <see cref="O:DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly">LicenseClient.PublicKeyXmlFromAssembly</see> method returns
+        /// <remarks>The <format type="text/markdown">[LicenseClient.PublicKeyXmlFromAssembly](xref:DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly*)</format> method returns
         /// the public key XML string for specified assembly.</remarks>
         /// <exception cref="ArgumentNullException"><paramref name="publicKeyXml"/> is <see langword="null" /> or empty string.</exception>
         public LicenseClient(string publicKeyXml, string endpointConfigurationName)
@@ -51,7 +51,7 @@ namespace DevZest.Licensing
         /// <param name="publicKeyXml">The public key XML string.</param>
         /// <param name="binding">The binding with which to make calls to the service.</param>
         /// <param name="remoteAddress">The address of the service endpoint.</param>
-        /// <remarks>The <see cref="O:DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly">LicenseClient.PublicKeyXmlFromAssembly</see> method returns
+        /// <remarks>The <format type="text/markdown">[LicenseClient.PublicKeyXmlFromAssembly](xref:DevZest.Licensing.LicenseClient.PublicKeyXmlFromAssembly*)</format> method returns
         /// the public key XML string for specified assembly.</remarks>
         /// <exception cref="ArgumentNullException"><paramref name="publicKeyXml"/> is <see langword="null" /> or empty string.</exception>
         public LicenseClient(string publicKeyXml, Binding binding, EndpointAddress remoteAddress)
