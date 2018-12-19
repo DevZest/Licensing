@@ -8,11 +8,11 @@ To develop your license publisher, derive your class from the abstract @DevZest.
 
 ## Implement Class Derived from LicensePublisher
 
-The abstract class @DevZest.Licensing.LicensePublisher has two abstract methods: [GetPrivateKeyXml](xref:DevZest.Licensing.LicensePublisher#DevZest_Licensing_LicensePublisher_GetPrivateKeyXml_System_String_) and [GetLicense](xref:DevZest.Licensing.LicensePublisher#DevZest_Licensing_LicensePublisher_GetLicense_System_Globalization_CultureInfo_System_String_System_Version_DevZest_Licensing_LicenseKey_System_String_System_String_System_String_System_String_System_String_). The derived class must provide the implementation by overriding these two methods.
+The abstract class @DevZest.Licensing.LicensePublisher has two abstract methods: [GetPrivateKeyXml](xref:DevZest.Licensing.LicensePublisher.GetPrivateKeyXml*) and [GetLicense](xref:DevZest.Licensing.LicensePublisher.GetLicense*). The derived class must provide the implementation by overriding these two methods.
 
 ### Override GetPrivateKeyXml
 
-The derived class must override the [GetPrivateKeyXml](xref:DevZest.Licensing.LicensePublisher#DevZest_Licensing_LicensePublisher_GetPrivateKeyXml_System_String_) method to provide the private key used to sign the license. The implementation must return the same private key used to sign the corresponding product assembly, otherwise the published license cannot be validated. You can embed the .snk file as embedded resource, and call PrivateKeyXmlFromSnkFile to get the private key xml:
+The derived class must override the [GetPrivateKeyXml](xref:DevZest.Licensing.LicensePublisher.GetPrivateKeyXml*) method to provide the private key used to sign the license. The implementation must return the same private key used to sign the corresponding product assembly, otherwise the published license cannot be validated. You can embed the .snk file as embedded resource, and call PrivateKeyXmlFromSnkFile to get the private key xml:
 
 ```csharp
 using System;
@@ -69,7 +69,7 @@ End Class
 
 ### Override GetLicense
 
-The derived class must override the [GetLicense](xref:DevZest.Licensing.LicensePublisher#DevZest_Licensing_LicensePublisher_GetLicense_System_Globalization_CultureInfo_System_String_System_Version_DevZest_Licensing_LicenseKey_System_String_System_String_System_String_System_String_System_String_) method to provide the license to publish, based on the combination of provided product name, license key and license category. Since all your business logic is implemented here, this is the core of your licensing system.
+The derived class must override the [GetLicense](xref:DevZest.Licensing.LicensePublisher.GetLicense*) method to provide the license to publish, based on the combination of provided product name, license key and license category. Since all your business logic is implemented here, this is the core of your licensing system.
 
 ```csharp
 using System;

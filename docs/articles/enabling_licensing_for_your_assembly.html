@@ -91,12 +91,12 @@
 </code></pre>
 <p>.Net Licensing will attempt to load the evaluation or developer license from &quot;RuntimeLicense&quot; value under registry key &quot;HKLM\Software\DevZest.Net Licensing\X.x&quot;, where &quot;X.x&quot; stands for the major and minor version of DevZest.Licensing.dll. If the evaluation or developer license can not be found, it will try to look up a distributable license from the chain of caller assembly.</p>
 <h2 id="call-licensemanager-method">Call LicenseManager Method</h2>
-<p>You can then call <a class="xref" href="../api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Validate_System_String_">LicenseManager.Validate</a> or <a class="xref" href="../api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Check_System_String_">LicenseManager.Check</a> to determine whether a valid license can be granted for your assembly:</p>
+<p>You can then call <a class="xref" href="../api/DevZest.Licensing.LicenseManager.Validate.html">LicenseManager.Validate</a> or <a class="xref" href="../api/DevZest.Licensing.LicenseManager.Check.html">LicenseManager.Check</a> to determine whether a valid license can be granted for your assembly:</p>
 <pre><code class="lang-csharp">LicenseManager.Validate(&quot;Your License Item Name&quot;);
 </code></pre>
 <pre><code class="lang-vb">LicenseManager.Validate(&quot;Your License Item Name&quot;)
 </code></pre>
-<p>The <a class="xref" href="../api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Validate_System_String_">LicenseManager.Validate</a> method throws a <a class="xref" href="../api/DevZest.Licensing.LicenseException.html">LicenseException</a> when a valid license cannot be granted; the <a class="xref" href="../api/DevZest.Licensing.LicenseManager.html#DevZest_Licensing_LicenseManager_Check_System_String_">LicenseManager.Check</a> method does not.</p>
+<p>The <a class="xref" href="../api/DevZest.Licensing.LicenseManager.Validate.html">LicenseManager.Validate</a> method throws a <a class="xref" href="../api/DevZest.Licensing.LicenseException.html">LicenseException</a> when a valid license cannot be granted; the <a class="xref" href="../api/DevZest.Licensing.LicenseManager.Check.html">LicenseManager.Check</a> method does not.</p>
 </article>
           </div>
           

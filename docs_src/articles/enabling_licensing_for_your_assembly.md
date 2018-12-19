@@ -46,7 +46,7 @@ You must apply one or more @DevZest.Licensing.LicenseProviderAttribute to specif
 
 ## Call LicenseManager Method
 
-You can then call [LicenseManager.Validate](xref:DevZest.Licensing.LicenseManager#DevZest_Licensing_LicenseManager_Validate_System_String_) or [LicenseManager.Check](xref:DevZest.Licensing.LicenseManager#DevZest_Licensing_LicenseManager_Check_System_String_) to determine whether a valid license can be granted for your assembly:
+You can then call [LicenseManager.Validate](xref:DevZest.Licensing.LicenseManager.Validate*) or [LicenseManager.Check](xref:DevZest.Licensing.LicenseManager.Check*) to determine whether a valid license can be granted for your assembly:
 
 ```csharp
 LicenseManager.Validate("Your License Item Name");
@@ -56,4 +56,4 @@ LicenseManager.Validate("Your License Item Name");
 LicenseManager.Validate("Your License Item Name")
 ```
 
-The [LicenseManager.Validate](xref:DevZest.Licensing.LicenseManager#DevZest_Licensing_LicenseManager_Validate_System_String_) method throws a @DevZest.Licensing.LicenseException when a valid license cannot be granted; the [LicenseManager.Check](xref:DevZest.Licensing.LicenseManager#DevZest_Licensing_LicenseManager_Check_System_String_) method does not.
+The [LicenseManager.Validate](xref:DevZest.Licensing.LicenseManager.Validate*) method throws a @DevZest.Licensing.LicenseException when a valid license cannot be granted; the [LicenseManager.Check](xref:DevZest.Licensing.LicenseManager.Check*) method does not.

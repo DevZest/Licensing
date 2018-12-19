@@ -81,7 +81,7 @@ End Sub
 
 ### Configure for license publisher hosted as .asmx web service
 
-The following configuration file demostrates how to configure license client for license publisher hosted as .asmx web service (the endpoint address needs to be replaced with the actual one of course):
+The following configuration file demonstrates how to configure license client for license publisher hosted as .asmx web service (the endpoint address needs to be replaced with the actual one of course):
 
 App.Config
 

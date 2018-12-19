@@ -14,8 +14,8 @@ For each kind of license you will grant to your user, you need to map it to one 
 
 | License | Description |
 | --- | --- |
-| Evaluation License | @DevZest.Licensing.MachineLicense object with [Expiration](xref:DevZest.Licensing.License#DevZest_Licensing_License_Expiration) property set. This license can be obtained without a license key, valid on local machine only. |
-| Paid License | @DevZest.Licensing.MachineLicense object with [Expiration](xref:DevZest.Licensing.License#DevZest_Licensing_License_Expiration) property set. This license can be only be obtained with a valid license key, valid on local machine only. |
+| Evaluation License | @DevZest.Licensing.MachineLicense object with [Expiration](xref:DevZest.Licensing.License.Expiration) property set. This license can be obtained without a license key, valid on local machine only. |
+| Paid License | @DevZest.Licensing.MachineLicense object with [Expiration](xref:DevZest.Licensing.License.Expiration) property set. This license can be only be obtained with a valid license key, valid on local machine only. |
 | Distributable License | @DevZest.Licensing.AssemblyLicense object. This license can be only be obtained with a valid license key, valid for one specific caller assembly only. |
 
 ## License Provider

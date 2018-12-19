@@ -26,4 +26,4 @@ For more information, see XAML documentation.
 
 ## Custom License Provider
 
-Call [VerifyFrozenAccess](xref:DevZest.Licensing.LicenseProviderAttribute#DevZest_Licensing_LicenseProviderAttribute_VerifyFrozenAccess) method in all the public methods and property setters. Before performing the validation on the License or License Item object, the license provider seals the object and any attempt to modify the object throws an InvalidOperationException. Your derived classes should respect this rule for consistency.
+Call [VerifyFrozenAccess](xref:DevZest.Licensing.LicenseProviderAttribute.VerifyFrozenAccess*) method in all the public methods and property setters. Before performing the validation on the License or License Item object, the license provider seals the object and any attempt to modify the object throws an InvalidOperationException. Your derived classes should respect this rule for consistency.
