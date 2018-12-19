@@ -13,7 +13,7 @@ namespace DevZest.Licensing
 {
     /// <summary>Represents the license that can be validated against the calling assembly.</summary>
     /// <remarks><para>When publishing an <see cref="AssemblyLicense" />, the <see cref="License.Data" /> property should be set as the string
-    /// value returned by <see cref="O:DevZest.Licensing.AssemblyLicense.GetAssemblyData">AssemblyLicense.GetAssemblyData</see>, otherwise the validation will always fail.</para>
+    /// value returned by <see href="xref:DevZest.Licensing.AssemblyLicense.GetAssemblyData*">AssemblyLicense.GetAssemblyData</see>, otherwise the validation will always fail.</para>
     /// <para>The <see cref="AssemblyLicense" /> is loaded by <see cref="AssemblyLicenseProviderAttribute" />.</para></remarks>
     [Obfuscation(Exclude = true, StripAfterObfuscation = true)]
     public sealed class AssemblyLicense : License
@@ -45,7 +45,7 @@ namespace DevZest.Licensing
         /// <returns><see langword="string" /> represents the calling assembly.</returns>
         /// <remarks>
         /// <para>When publishing an <see cref="AssemblyLicense" />, the <see cref="License.Data" /> property should be set as the string
-        /// value returned by <see cref="O:DevZest.Licensing.AssemblyLicense.GetAssemblyData">AssemblyLicense.GetAssemblyData</see>,
+        /// value returned by <see href="xref:DevZest.Licensing.AssemblyLicense.GetAssemblyData*">AssemblyLicense.GetAssemblyData</see>,
         /// otherwise the validation will always fail.</para>
         /// <para>The returned data is formated as "[AssemblyName],[PublicKeyToken]" if the assembly is signed with a strong name,
         /// or "[AssemblyName]:[AssemblyHash]" if the assembly is not signed. When assembly is not signed, every compile may result
@@ -64,7 +64,7 @@ namespace DevZest.Licensing
         /// <returns><see langword="string" /> represents the calling assembly file.</returns>
         /// <remarks>
         /// <para>When publishing an <see cref="AssemblyLicense" />, the <see cref="License.Data" /> property should be set as the string
-        /// value returned by <see cref="O:DevZest.Licensing.AssemblyLicense.GetAssemblyData">AssemblyLicense.GetAssemblyData</see>,
+        /// value returned by <see href="xref:DevZest.Licensing.AssemblyLicense.GetAssemblyData*">AssemblyLicense.GetAssemblyData</see>,
         /// otherwise the validation will always fail.</para>
         /// <para>The returned data is formated as "[AssemblyName],[PublicKeyToken]" if the assembly is signed with a strong name,
         /// or "[AssemblyName]:[AssemblyHash]" if the assembly is not signed. When assembly is not signed, every compile may result
